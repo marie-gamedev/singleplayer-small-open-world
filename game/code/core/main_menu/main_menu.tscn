@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d3cusby3dpjhl"]
+
+[ext_resource type="Script" uid="uid://c2rsbc7mkslod" path="res://code/core/main_menu/networking_manager.gd" id="1_lti8b"]
+
+[node name="NetworkBootstrap" type="Node2D" unique_id=204166516 groups=["networking_manager"]]
+script = ExtResource("1_lti8b")
+
+[node name="MenuUI" type="Control" parent="." unique_id=1331477976]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="network_mode" type="OptionButton" parent="MenuUI" unique_id=926602435]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 323.0
+offset_bottom = 47.0
+
+[node name="host_button" type="Button" parent="MenuUI" unique_id=2082984375]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 57.0
+offset_right = 323.0
+offset_bottom = 117.0
+text = "HOST"
+
+[node name="join_button" type="Button" parent="MenuUI" unique_id=1141992505]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 172.0
+offset_right = 315.0
+offset_bottom = 232.0
+disabled = true
+text = "JOIN"
+
+[node name="id_prompt" type="LineEdit" parent="MenuUI" unique_id=1712534520]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 127.0
+offset_right = 309.0
+offset_bottom = 162.0
+placeholder_text = "Server address (127.0.0.1)"
+
+[connection signal="item_selected" from="MenuUI/network_mode" to="." method="_on_network_mode_item_selected"]
+[connection signal="pressed" from="MenuUI/host_button" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="MenuUI/join_button" to="." method="_on_join_button_pressed"]
+[connection signal="text_changed" from="MenuUI/id_prompt" to="." method="_on_id_prompt_text_changed"]

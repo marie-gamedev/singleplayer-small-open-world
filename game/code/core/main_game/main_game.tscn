@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://csrfmmqrclbmn"]
+
+[ext_resource type="Script" uid="uid://by0s53alpqaxy" path="res://code/core/main_game/main_game.gd" id="1_qt7ve"]
+[ext_resource type="Script" uid="uid://dht130yokumwe" path="res://code/core/main_menu/multiplayer_spawner.gd" id="2_ee3bm"]
+[ext_resource type="PackedScene" uid="uid://cr2ersq7g6q6f" path="res://code/gameplay/player/player.tscn" id="3_sajgk"]
+
+[node name="MainGame" type="Node" unique_id=507016725 groups=["main_game"]]
+process_mode = 3
+script = ExtResource("1_qt7ve")
+
+[node name="Systems" type="Node" parent="." unique_id=1500864984]
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="Systems" unique_id=129258657]
+spawn_path = NodePath("../../World/EntityRoot")
+script = ExtResource("2_ee3bm")
+player = ExtResource("3_sajgk")
+
+[node name="World" type="Node3D" parent="." unique_id=1450917833]
+process_mode = 1
+
+[node name="LevelRoot" type="Node3D" parent="World" unique_id=941194941]
+
+[node name="EntityRoot" type="Node3D" parent="World" unique_id=29080351]
+
+[node name="EffectRoot" type="Node3D" parent="World" unique_id=606443119]
+
+[node name="HUDLayer" type="CanvasLayer" parent="." unique_id=1282867188]
+process_mode = 1
+layer = 10
+
+[node name="HudRoot" type="Control" parent="HUDLayer" unique_id=505968815]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="PauseLayer" type="CanvasLayer" parent="." unique_id=565520899]
+process_mode = 2
+layer = 20
+
+[node name="PauseRoot" type="Control" parent="PauseLayer" unique_id=32608008]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="TransitionLayer" type="CanvasLayer" parent="." unique_id=1474213477]
+process_mode = 3
+layer = 100
+
+[node name="TransitionRoot" type="Control" parent="TransitionLayer" unique_id=1879699309]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="DebugLayer" type="CanvasLayer" parent="." unique_id=1067070956]
+process_mode = 3
+layer = 128
+
+[node name="DebugRoot" type="Control" parent="DebugLayer" unique_id=1809102573]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://wxw3v1fy8mr5"]
+
+[ext_resource type="Script" uid="uid://digh88dpkin77" path="res://code/levels/level.gd" id="1_u8eri"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_irpmq"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u8eri"]
+points = PackedVector3Array(1.0158731, 0.015873017, 1.0158731, -1.0158731, -0.015873017, -1.0158731, -1.0158731, 0.015873017, -1.0158731, 1.0158731, -0.015873017, -1.0158731, -1.0158731, -0.015873017, 1.0158731, -1.0158731, 0.015873017, 1.0158731, 1.0158731, 0.015873017, -1.0158731, 1.0158731, -0.015873017, 1.0158731)
+
+[node name="LevelPrototype" type="Node3D" unique_id=379469037]
+script = ExtResource("1_u8eri")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2095054999]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=597206206]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irpmq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=60128273]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_u8eri")
+
+[node name="PlayerSpawn" type="Marker3D" parent="." unique_id=751483994]
