@@ -23,22 +23,8 @@ const ANIMATION_BLEND : float = 7.0
 
 @onready var camera = %Camera3D
 
-# Multiplayer Stuff
-var initial_position : Vector3
-@onready var display_name = $Playername
-
 func _ready():
-	global_position = initial_position
-	
-	if is_multiplayer_authority():
-		var main_game := get_tree().get_first_node_in_group("main_game") as MainGame
-	
-		if main_game != null:
-			main_game.register_player(self)
-			display_name.hide()
-			camera.current = true
-	else:
-		camera.current = false
+	pass
 
 func _physics_process(delta):
 	if not is_multiplayer_authority():

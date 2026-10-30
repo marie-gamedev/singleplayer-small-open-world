@@ -1,9 +1,8 @@
 class_name MainGame
 extends Node
 
-@onready var multiplayer_spawner = $Systems/MultiplayerSpawner
-
 const LEVEL_PROTOTYPE = "uid://wxw3v1fy8mr5"
+const PLAYER_SCENE_UID = "uid://cr2ersq7g6q6f"
 
 var player : Player = null
 
@@ -23,38 +22,27 @@ var is_level_ready := false
 @onready var debug_root = $DebugLayer/DebugRoot
 
 func _ready():
+	_init_player()
 	load_level(LEVEL_PROTOTYPE)
 
-func _process(delta):
+func _process(_delta):
 	pass
 
-func register_player(new_player : Player) -> void:
-	if not new_player.is_multiplayer_authority():
-		return
-	
-	player = new_player
-	
-	# TODO
-	#if has_loaded_level():
-		 #setuplevelcamera
-	
-	print("[GAME] Local player registed: ", player.name)
-
-'func _init_player() -> void:
-	var player_scene : PackedScene = PLAYER_SCENE_UID
+func _init_player() -> void:
+	var player_scene : PackedScene = load(PLAYER_SCENE_UID)
 	if player_scene == null:
 		push_error("Could not load player scene: ", PLAYER_SCENE_UID)
 		return
 	
 	player = player_scene.instantiate() as Player
+	
 	if player == null:
 		push_error("Loaded player scene does not extend player ", PLAYER_SCENE_UID)
 		return
 	
 	entity_root.add_child(player)
 	print("player initialized!")
-	'
-	
+
 func load_level(level_scene : String) -> void:
 	_deferred_load_level.call_deferred(level_scene)
 
@@ -87,19 +75,12 @@ func _deferred_load_level(level_scene_uid : String) -> void:
 	level_loaded.emit()
 	
 	print("[GAME] Level loaded!")
-	#_place_player_at_level_spawn()
+	_place_player_at_level_spawn()
 	#_setup_level_camera()
 
 func has_loaded_level() -> bool:
 	return is_level_ready and is_instance_valid(_current_level) and not _current_level.is_queued_for_deletion()
 
-func get_player_spawn_position() -> Vector3:
-	if _current_level == null:
-		push_error("Cannot get spawn pos: no level loaded!")
-		return Vector3.ZERO
-	
-	return _current_level.get_default_player_spawn()
-'
 func _place_player_at_level_spawn() -> void:
 	if player == null:
 		push_error("Cannot place player in level, because player is null")
@@ -108,7 +89,7 @@ func _place_player_at_level_spawn() -> void:
 		push_error("Cannot place player in level, because level is null")
 		return
 	
-	player.global_position = _current_level.get_default_player_spawn()'
+	player.global_position = _current_level.get_default_player_spawn()
 
 func _setup_level_camera() -> void:
 	if player == null or _current_level == null:
