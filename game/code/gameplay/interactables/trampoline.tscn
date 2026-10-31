@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://canjmfsujlbew"]
+
+[ext_resource type="Script" uid="uid://30lsymbesjtc" path="res://code/gameplay/interactables/trampoline.gd" id="1_j3a8o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i833x"]
+albedo_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4plt3"]
+material = SubResource("StandardMaterial3D_i833x")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j3a8o"]
+points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+
+[node name="Trampoline" type="StaticBody3D" unique_id=1428804331]
+script = ExtResource("1_j3a8o")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=652963795]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("BoxMesh_4plt3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=888905646]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_j3a8o")

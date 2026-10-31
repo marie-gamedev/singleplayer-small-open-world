@@ -23,14 +23,13 @@ const ANIMATION_BLEND : float = 7.0
 
 @onready var camera = %Camera3D
 
+@onready var floor_raycast = $FloorRaycast
+var in_air_time: float = 0
+
 func _ready():
 	pass
 
 func _physics_process(delta):
-	if not is_multiplayer_authority():
-		_apply_animation()
-		return
-	
 	var move_direction : Vector3 = Vector3.ZERO
 	move_direction.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	move_direction.z = Input.get_action_strength("move_backwards") - Input.get_action_strength("move_forwards")
@@ -49,13 +48,24 @@ func _physics_process(delta):
 	if move_direction:
 		player_mesh.rotation.y = lerp_angle(player_mesh.rotation.y, atan2(velocity.x, velocity.z), LERP_VALUE)
 	
+	if not is_on_floor():
+		in_air_time += delta
+	
 	var just_landed := is_on_floor() and snap_vector == Vector3.ZERO
 	var is_jumping := is_on_floor() and Input.is_action_just_pressed("jump")
+	var on_trampoline := true if floor_raycast.is_colliding() and floor_raycast.get_collider() is Trampoline else false
+	
 	if is_jumping:
 		velocity.y = jump_strength
 		snap_vector = Vector3.ZERO
 	elif just_landed:
 		snap_vector = Vector3.DOWN
+		if on_trampoline:
+			print("first value= ", jump_strength + jump_strength * in_air_time**2)
+			print("added jump strength = ", clampf(jump_strength + jump_strength * in_air_time, jump_strength, jump_strength*3))
+			velocity.y = clampf(jump_strength + jump_strength * in_air_time**2, jump_strength, jump_strength*3)
+			snap_vector = Vector3.ZERO
+		in_air_time = 0
 	
 	apply_floor_snap()
 	move_and_slide()
