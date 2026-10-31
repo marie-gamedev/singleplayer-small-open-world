@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://d2ri0373g4gkm"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_q64pu"]
+[ext_resource type="Texture2D" uid="uid://bbbxvc27u6868" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Brick.png" id="2_76q5t"]
+
+[resource]
+resource_name = "Generic_Brick_mat"
+render_priority = 0
+shader = ExtResource("1_q64pu")
+shader_parameter/Albedo_Map = ExtResource("2_76q5t")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0.90435284, 0.8838352, 0.9374252, 1)
+shader_parameter/Alpha_Clip_Threshold = 16.76

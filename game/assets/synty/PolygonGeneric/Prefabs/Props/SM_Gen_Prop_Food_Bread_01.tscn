@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://0a7k1671bnjo"]
+
+[ext_resource type="ArrayMesh" uid="uid://ckqf85lksjnp8" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Food_Bread_01.res" id="1_no1qf"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_0avpk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0seed"]
+size = Vector3(0.19114685, 0.21005023, 0.42947388)
+
+[node name="SM_Gen_Prop_Food_Bread_01" type="MeshInstance3D" unique_id=2125717113]
+gi_mode = 2
+mesh = ExtResource("1_no1qf")
+surface_material_override/0 = ExtResource("2_0avpk")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=989745085]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1108855027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0018463135, 0.10298839, 0.003917694)
+shape = SubResource("BoxShape3D_0seed")

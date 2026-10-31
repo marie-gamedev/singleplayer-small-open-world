@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dvxyfm0kgvv7l"]
+
+[ext_resource type="ArrayMesh" uid="uid://dty1fw17woxi0" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Kelp_06.res" id="1_hkvm7"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ic5cb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_63p5u"]
+points = PackedVector3Array(-0.54560935, -0.5259024, 0.21470994, 0.25570452, -0.52617407, 0.48197144, -0.4566108, -0.43678415, 0.30386102, -0.41205704, 1.9658754, 0.2591896, -0.4566108, 2.1441119, -0.052072287, -0.4566108, -0.5259024, -0.14122337, 0.52259123, -0.52617407, 0.48197144, 0.30014932, 1.3428631, 0.48197144, 0.56725395, -0.52617407, 0.2591896, 0.34459412, 1.6102178, 0.43730003, -0.34800422, 2.2495322, 0.11884856, 0.34459412, 1.8324699, -0.27475825, 0.16659701, 1.6990643, -0.45277283, 0.16659701, -0.48161495, -0.49734837, 0.43359268, -0.48161495, -0.40819728, 0.52259123, 1.5653868, 0.2591896)
+
+[node name="SM_Env_Plant_Kelp_06" type="MeshInstance3D" unique_id=495147206]
+gi_mode = 2
+mesh = ExtResource("1_hkvm7")
+surface_material_override/0 = ExtResource("2_ic5cb")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=595673019]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1643091953]
+shape = SubResource("ConvexPolygonShape3D_63p5u")

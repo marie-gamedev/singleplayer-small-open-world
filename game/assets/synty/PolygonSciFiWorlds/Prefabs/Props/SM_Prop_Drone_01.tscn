@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b4myflo4fe57v"]
+
+[ext_resource type="ArrayMesh" uid="uid://bgd5larb45wfk" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_01.res" id="1_hpcc7"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_5bxcc"]
+[ext_resource type="ArrayMesh" uid="uid://dqcjn5knxteyi" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_01_Wing_l.res" id="3_5bxcc"]
+[ext_resource type="ArrayMesh" uid="uid://dprxropaw0vjo" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_01_Wing_r.res" id="4_jc2nu"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n1nod"]
+points = PackedVector3Array(-0.07528418, -0.04339759, -0.5047653, -0.6027453, -0.09985645, -0.14688072, -0.07528418, 0.23906456, -0.5047653, 0.07528412, -0.04339759, -0.5047653, 0.048498094, -0.20832796, -0.06099233, -0.6027453, -0.04339759, 0.060284793, -0.6027453, -0.04339759, -0.14688072, 0.03504604, -0.24112947, 0.17990464, -0.018762052, 0.61590445, 0.1168288, 0.07528412, 0.23906456, -0.5047653, 0.6027453, -0.09985645, -0.14688072, 0.01793605, 0.037809238, 0.49118912, -0.069974184, 0.07698648, 0.45872504, 0.018762052, 0.61590445, 0.17317784, 0.6027453, -0.04339759, 0.060284793, 0.6027453, -0.04339759, -0.14688072)
+
+[node name="SM_Prop_Drone_01" type="MeshInstance3D" unique_id=1837357511]
+gi_mode = 2
+mesh = ExtResource("1_hpcc7")
+surface_material_override/0 = ExtResource("2_5bxcc")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=701034874]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1631700971]
+shape = SubResource("ConvexPolygonShape3D_n1nod")
+
+[node name="SM_Prop_Drone_01_Wing_l" type="MeshInstance3D" parent="." unique_id=1770316317]
+transform = Transform3D(0.8290376, 0.3741732, -0.41556123, -0.5591929, 0.5547345, -0.6160949, 0, 0.74314475, 0.66913074, 0.09478676, 0.35484767, -0.13047431)
+gi_mode = 2
+mesh = ExtResource("3_5bxcc")
+surface_material_override/0 = ExtResource("2_5bxcc")
+
+[node name="SM_Prop_Drone_01_Wing_r" type="MeshInstance3D" parent="." unique_id=1769218480]
+transform = Transform3D(0.8290376, -0.3741732, 0.41556123, 0.5591929, 0.5547345, -0.6160949, 0, 0.74314475, 0.66913074, -0.09478676, 0.35484767, -0.13047431)
+gi_mode = 2
+mesh = ExtResource("4_jc2nu")
+surface_material_override/0 = ExtResource("2_5bxcc")

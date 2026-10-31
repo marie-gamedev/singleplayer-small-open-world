@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c75w4trhoyeha"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_2gx2n"]
+[ext_resource type="Texture2D" uid="uid://pci2uj3vc8x7" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Dirt.png" id="2_falbj"]
+[ext_resource type="Texture2D" uid="uid://b6oglunrjn1fw" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Grass_Normals.png" id="3_p66tw"]
+
+[resource]
+resource_name = "Generic_Dirt_mat"
+render_priority = 0
+shader = ExtResource("1_2gx2n")
+shader_parameter/Albedo_Map = ExtResource("2_falbj")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Normal_Map = ExtResource("3_p66tw")
+shader_parameter/Alpha_Clip_Threshold = 0.5

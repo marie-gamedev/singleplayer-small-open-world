@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://qcto44l5ewdk"]
+
+[ext_resource type="ArrayMesh" uid="uid://bmmmtvtsnumrs" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02.res" id="1_4wset"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_u76h7"]
+[ext_resource type="ArrayMesh" uid="uid://qbqstfyodb0k" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Chamber_01.res" id="3_u76h7"]
+[ext_resource type="ArrayMesh" uid="uid://d0f4f4a3uoxrt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Grenade_01.res" id="4_bsnbw"]
+[ext_resource type="ArrayMesh" uid="uid://ycag7e8r51wd" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Grenade_02.res" id="5_iugiw"]
+[ext_resource type="ArrayMesh" uid="uid://bqaacbf1jo3n0" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Grenade_03.res" id="6_5cm0d"]
+[ext_resource type="ArrayMesh" uid="uid://bejthu21o2myn" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Grenade_04.res" id="7_sndys"]
+[ext_resource type="ArrayMesh" uid="uid://4rkr5wanvwr3" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Grenade_05.res" id="8_sce66"]
+[ext_resource type="ArrayMesh" uid="uid://bxnbdwkmcsfvh" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Grenade_06.res" id="9_cjrum"]
+[ext_resource type="ArrayMesh" uid="uid://qekj30ifthp3" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_02_Trigger_01.res" id="10_h22mm"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_riibb"]
+points = PackedVector3Array(-0.02609615, -0.15646338, -0.0958316, -0.12045835, -0.038508214, 0.09293917, -0.046678618, 0.1776219, -0.13219622, 0.032853007, -0.109212965, -0.17846501, 0.019856825, -0.14539841, -0.080901414, 0.044636622, -0.062133424, 0.50581056, -0.056752205, -0.084690586, 0.3292352, -0.15496972, 0.13246483, 0.17727253, 0.009254694, 0.27998358, 0.10469115, 0.03963092, 0.18291941, -0.11719212, 0.16265932, 0.11477798, 0.16374668, 0.11540049, -0.038508214, 0.09293917, 0.16265932, 0.11477798, 0.28170994, 0.044636622, 0.18552545, 0.5766181, -0.037910864, 0.055821747, 0.5766181, -0.07332388, 0.15019444, 0.5766181)
+
+[node name="SM_Wep_Heavy_02" type="MeshInstance3D" unique_id=2062764284]
+gi_mode = 2
+mesh = ExtResource("1_4wset")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=272865035]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1490024136]
+shape = SubResource("ConvexPolygonShape3D_riibb")
+
+[node name="SM_Wep_Heavy_02_Chamber_01" type="MeshInstance3D" parent="." unique_id=380752937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03623259, 0.1896353)
+gi_mode = 2
+mesh = ExtResource("3_u76h7")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="SM_Wep_Heavy_02_Grenade_01" type="MeshInstance3D" parent="SM_Wep_Heavy_02_Chamber_01" unique_id=742667858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00018760335, 0.08429713, 0.00847657)
+gi_mode = 2
+mesh = ExtResource("4_bsnbw")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="SM_Wep_Heavy_02_Grenade_02" type="MeshInstance3D" parent="SM_Wep_Heavy_02_Chamber_01" unique_id=504510052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0732208, 0.041912317, 0.008445218)
+gi_mode = 2
+mesh = ExtResource("5_iugiw")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="SM_Wep_Heavy_02_Grenade_03" type="MeshInstance3D" parent="SM_Wep_Heavy_02_Chamber_01" unique_id=1934664448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07303107, -0.042528685, 0.008387163)
+gi_mode = 2
+mesh = ExtResource("6_5cm0d")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="SM_Wep_Heavy_02_Grenade_04" type="MeshInstance3D" parent="SM_Wep_Heavy_02_Chamber_01" unique_id=1973669038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00019186715, -0.08458488, 0.008360416)
+gi_mode = 2
+mesh = ExtResource("7_sndys")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="SM_Wep_Heavy_02_Grenade_05" type="MeshInstance3D" parent="SM_Wep_Heavy_02_Chamber_01" unique_id=2017847790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073225066, -0.04220006, 0.008391738)
+gi_mode = 2
+mesh = ExtResource("8_sce66")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="SM_Wep_Heavy_02_Grenade_06" type="MeshInstance3D" parent="SM_Wep_Heavy_02_Chamber_01" unique_id=881727660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07303534, 0.042240947, 0.008449808)
+gi_mode = 2
+mesh = ExtResource("9_cjrum")
+surface_material_override/0 = ExtResource("2_u76h7")
+
+[node name="SM_Wep_Heavy_02_Trigger_01" type="MeshInstance3D" parent="." unique_id=471798659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.429587e-07, -0.029205171, 0.0028684426)
+gi_mode = 2
+mesh = ExtResource("10_h22mm")
+surface_material_override/0 = ExtResource("2_u76h7")

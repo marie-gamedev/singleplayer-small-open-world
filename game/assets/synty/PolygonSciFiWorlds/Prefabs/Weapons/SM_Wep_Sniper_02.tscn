@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://8t5r4uyd3hkj"]
+
+[ext_resource type="ArrayMesh" uid="uid://cx884ieorf5vt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Sniper_02.res" id="1_3d0ba"]
+[ext_resource type="Material" uid="uid://bg2lgny8l2s30" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_04_A_mat.tres" id="2_rkcpd"]
+[ext_resource type="ArrayMesh" uid="uid://cexic6b1ged67" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Sniper_02_Mag_01.res" id="3_rkcpd"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="4_ilj32"]
+[ext_resource type="ArrayMesh" uid="uid://boqdt4biwdnqs" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Sniper_02_Scope_01.res" id="5_xn4qu"]
+[ext_resource type="ArrayMesh" uid="uid://dncv2verjqn3y" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Sniper_02_Trigger_01.res" id="6_ilj32"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pb3h7"]
+points = PackedVector3Array(-0.029069863, -0.19753397, 0.03285867, -0.080737345, 0.11242032, 0.21363413, -0.029069863, -0.06837286, -0.27722713, 0.048438944, -0.19753397, 0.03285867, -0.05491119, -0.042516366, 1.3502378, -0.029069863, 0.1899898, -0.27722713, -0.05491119, 0.13827682, 1.3502378, -0.029069863, 0.2158463, 0.29115558, 0.048438944, 0.16413331, -0.30312157, 0.048438944, -0.042516366, -0.27722713, 0.07428027, 0.034891278, 0.18773973, 0.048438944, -0.042516366, 1.3502378, 0.048438944, 0.2158463, 0.29115558, 0.048438944, 0.16413331, 1.3502378, -0.029069863, 0.1899898, 1.3241816, 0.07428027, 0.13827682, 0.21363413)
+
+[node name="SM_Wep_Sniper_02" type="MeshInstance3D" unique_id=1943203000]
+gi_mode = 2
+mesh = ExtResource("1_3d0ba")
+surface_material_override/0 = ExtResource("2_rkcpd")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1499064113]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1270843078]
+shape = SubResource("ConvexPolygonShape3D_pb3h7")
+
+[node name="SM_Wep_Sniper_02_Mag_01" type="MeshInstance3D" parent="." unique_id=2027015119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.017840853, 0.39160028)
+gi_mode = 2
+mesh = ExtResource("3_rkcpd")
+surface_material_override/0 = ExtResource("4_ilj32")
+
+[node name="SM_Wep_Sniper_02_Scope_01" type="MeshInstance3D" parent="." unique_id=1409033671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24818195, 0.2261956)
+gi_mode = 2
+mesh = ExtResource("5_xn4qu")
+surface_material_override/0 = ExtResource("2_rkcpd")
+
+[node name="SM_Wep_Sniper_02_Trigger_01" type="MeshInstance3D" parent="." unique_id=1114403761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2782554e-09, 0.007221216, 0.055417795)
+gi_mode = 2
+mesh = ExtResource("6_ilj32")
+surface_material_override/0 = ExtResource("4_ilj32")

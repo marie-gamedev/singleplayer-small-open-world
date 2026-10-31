@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ds00y3pj6y5h5"]
+
+[ext_resource type="ArrayMesh" uid="uid://b1s21upu5ytew" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Hook_01.res" id="1_1cmfh"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_on2j3"]
+
+[node name="SM_Gen_Prop_Hook_01" type="MeshInstance3D" unique_id=1063661962]
+mesh = ExtResource("1_1cmfh")
+surface_material_override/0 = ExtResource("2_on2j3")

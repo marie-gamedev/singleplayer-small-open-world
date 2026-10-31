@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b5bihj7acdvy5"]
+
+[ext_resource type="ArrayMesh" uid="uid://d4h4i66qo8jt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Junk_Paper_04.res" id="1_5ahum"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_3dk3v"]
+
+[node name="SM_Prop_Junk_Paper_04" type="MeshInstance3D" unique_id=1413222896]
+gi_mode = 2
+mesh = ExtResource("1_5ahum")
+surface_material_override/0 = ExtResource("2_3dk3v")

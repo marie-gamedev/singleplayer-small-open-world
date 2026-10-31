@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://durpjmk05xjt"]
+
+[ext_resource type="ArrayMesh" uid="uid://be5sfp3bdctqv" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Patch_Medic_01.res" id="1_wcwsu"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_eyx7m"]
+
+[node name="SM_Chr_Attach_Patch_Medic_01" type="MeshInstance3D" unique_id=205432616]
+gi_mode = 2
+mesh = ExtResource("1_wcwsu")
+surface_material_override/0 = ExtResource("2_eyx7m")

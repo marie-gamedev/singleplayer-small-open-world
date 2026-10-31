@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://74kh2vwfidbg"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_eh4wu"]
+
+[resource]
+resource_name = "Cloud_01_mat"
+render_priority = 0
+shader = ExtResource("1_eh4wu")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.0
+shader_parameter/Enable_Emission = true
+shader_parameter/Emission_Color = Color(0.7529412, 0.7372549, 0.6784314, 1)
+shader_parameter/Alpha_Clip_Threshold = 0.0

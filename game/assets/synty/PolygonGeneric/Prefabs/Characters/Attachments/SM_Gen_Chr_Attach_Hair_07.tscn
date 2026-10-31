@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ddtoed76c6d3b"]
+
+[ext_resource type="ArrayMesh" uid="uid://b26q31386xil2" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Chr_Attach_Hair_07.res" id="1_boqkx"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_1onwe"]
+
+[node name="SM_Gen_Chr_Attach_Hair_07" type="MeshInstance3D" unique_id=672840328]
+mesh = ExtResource("1_boqkx")
+surface_material_override/0 = ExtResource("2_1onwe")

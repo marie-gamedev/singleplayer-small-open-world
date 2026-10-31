@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dnq5n1vq8m3p0"]
+
+[ext_resource type="ArrayMesh" uid="uid://cly8tq1n47d4g" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Platform_Base_Large_Corner_01.res" id="1_ioywv"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_wcn0o"]
+
+[node name="SM_Bld_Platform_Base_Large_Corner_01" type="MeshInstance3D" unique_id=2146296721]
+gi_mode = 2
+mesh = ExtResource("1_ioywv")
+surface_material_override/0 = ExtResource("2_wcn0o")

@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://d05ivl87r1bl"]
+
+[ext_resource type="Shader" uid="uid://c1ot8152pukiy" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Standard.gdshader" id="1_cmlcj"]
+[ext_resource type="Texture2D" uid="uid://rp5x2bp5uarf" path="res://Assets/Synty/PolygonGeneric/Textures/Alts/Generic_02_A.png" id="2_84d2w"]
+[ext_resource type="Texture2D" uid="uid://beew0ppgjjypg" path="res://Assets/Synty/PolygonGeneric/Textures/Emissive/Generic_Emissive_02_A.png" id="3_qrqf6"]
+[ext_resource type="Texture2D" uid="uid://bvxkrfaqi0kav" path="res://Assets/Synty/PolygonGeneric/Textures/HairMask.png" id="4_dvfh6"]
+[ext_resource type="Texture2D" uid="uid://k2dtark21h8w" path="res://Assets/Synty/PolygonGeneric/Textures/SkinMask.png" id="5_768hi"]
+
+[resource]
+resource_name = "Generic_02_A_mat"
+render_priority = 0
+shader = ExtResource("1_cmlcj")
+shader_parameter/Albedo_Map = ExtResource("2_84d2w")
+shader_parameter/BaseColor = Color(1, 1, 1, 0)
+shader_parameter/SkinColor = Color(1, 0.8, 0.682353, 0)
+shader_parameter/Skin_Mask = ExtResource("5_768hi")
+shader_parameter/Hair_Color = Color(0.30980387, 0.25490198, 0.17647055, 0)
+shader_parameter/Hair_Mask = ExtResource("4_dvfh6")
+shader_parameter/USE_METALLIC_SMOOTHNESS_MAP = false
+shader_parameter/Smoothness = 0.5
+shader_parameter/Metallic = 0.0
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Map = ExtResource("3_qrqf6")
+shader_parameter/Emission_Color = Color(0, 0, 0, 0)
+shader_parameter/Alpha_Clip_Threshold = 0.0

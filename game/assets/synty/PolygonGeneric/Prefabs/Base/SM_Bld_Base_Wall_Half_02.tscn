@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bsyf6dsgwwii"]
+
+[ext_resource type="ArrayMesh" uid="uid://bhph8fi0jo01k" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Wall_Half_02.res" id="1_r0ugv"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="2_umirw"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="3_vgp3c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_etsje"]
+size = Vector3(1.2499951, 3.0057428, 0.225)
+
+[node name="SM_Bld_Base_Wall_Half_02" type="MeshInstance3D" unique_id=839277737]
+gi_mode = 2
+mesh = ExtResource("1_r0ugv")
+surface_material_override/0 = ExtResource("2_umirw")
+surface_material_override/1 = ExtResource("3_vgp3c")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1861980585]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1875947823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62499756, 1.5028714, 0)
+shape = SubResource("BoxShape3D_etsje")

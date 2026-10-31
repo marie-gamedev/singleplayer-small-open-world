@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d0qdmdxapw545"]
+
+[ext_resource type="ArrayMesh" uid="uid://6iebj7klpi6p" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Roof_Trim_Corner_01.res" id="1_a0vql"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_qo4fd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3rgq"]
+size = Vector3(0.32484007, 0.16359289, 0.31689584)
+
+[node name="SM_Bld_Base_Roof_Trim_Corner_01" type="MeshInstance3D" unique_id=1413065254]
+gi_mode = 2
+mesh = ExtResource("1_a0vql")
+surface_material_override/0 = ExtResource("2_qo4fd")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=319448810]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=2006194592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12702698, -0.0058344156, 0.12388777)
+shape = SubResource("BoxShape3D_m3rgq")

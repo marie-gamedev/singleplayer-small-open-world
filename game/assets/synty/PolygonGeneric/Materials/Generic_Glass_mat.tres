@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dkerecwsrwoeh"]
+
+[ext_resource type="Shader" uid="uid://gp6f1xdnogoy" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic_Transparent.gdshader" id="1_onfxl"]
+[ext_resource type="Texture2D" uid="uid://bwmf83iv51orj" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Grass.png" id="2_fdg2h"]
+[ext_resource type="Texture2D" uid="uid://b6oglunrjn1fw" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Grass_Normals.png" id="3_jnjde"]
+
+[resource]
+resource_name = "Generic_Glass_mat"
+render_priority = 0
+shader = ExtResource("1_onfxl")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("2_fdg2h")
+shader_parameter/Alpha_Transparency = 1.0
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Map = ExtResource("3_jnjde")
+shader_parameter/Normal_Strength = 1.0

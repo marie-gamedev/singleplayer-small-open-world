@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c1ocv26kj2lt7"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5jiexmi2kp10" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Powerline_Antenna_01.res" id="1_0kt6s"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ha7au"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jn72r"]
+points = PackedVector3Array(-2.2011223, 0.5209715, 1.1678945, -1.9562396, 0.5209715, 1.41309, -2.0788248, 1.5621132, 1.3515303, -2.0788248, 1.6238985, 1.1678945, -0.48636782, 2.4198174, -0.36344683, -0.18019247, -0.030492067, -0.30223492, 0.18698764, -0.030492067, 0.24936795, -0.35773957, 2.3568807, 0.97852015, -0.48636782, 2.7252905, 1.0454707, -0.18019247, 3.890003, 0.24919403, -0.18019247, 3.890003, -0.2408491, 0.6770408, 2.297014, -0.118425265, 0.6603508, 1.6396327, -0.026085675, 0.73862123, 1.6235148, 0.065558285, 0.59848285, 1.6404002, -0.082428485, 0.30957294, 3.5833786, 0.49404174)
+
+[node name="SM_Prop_Powerline_Antenna_01" type="MeshInstance3D" unique_id=610087853]
+gi_mode = 2
+mesh = ExtResource("1_0kt6s")
+surface_material_override/0 = ExtResource("2_ha7au")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=537183756]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1057540319]
+shape = SubResource("ConvexPolygonShape3D_jn72r")

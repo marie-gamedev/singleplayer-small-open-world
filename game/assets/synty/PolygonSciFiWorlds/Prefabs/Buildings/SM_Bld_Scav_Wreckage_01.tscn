@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dx3103c66g34y"]
+
+[ext_resource type="ArrayMesh" uid="uid://d0i0mt87d6dnf" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Wreckage_01.res" id="1_3n81r"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_lja6y"]
+[ext_resource type="Shape3D" uid="uid://dnehqedxc7pjd" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Scav_Wreckage_01_Collision.res" id="3_he5de"]
+[ext_resource type="ArrayMesh" uid="uid://dn3po4qealitb" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Wreckage_01_Scaffolding_01.res" id="3_lja6y"]
+[ext_resource type="ArrayMesh" uid="uid://1enjvdle6nim" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Wreckage_01_Supports_01.res" id="4_c7y56"]
+[ext_resource type="Shape3D" uid="uid://boso7br7rsnqg" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Scav_Wreckage_01_Scaffolding_01_Collision.res" id="5_4dh0s"]
+[ext_resource type="Shape3D" uid="uid://c5ibgtmnsa3nu" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Scav_Wreckage_01_Supports_01_Collision.res" id="7_blqdd"]
+
+[node name="SM_Bld_Scav_Wreckage_01" type="MeshInstance3D" unique_id=1522414173]
+gi_mode = 2
+mesh = ExtResource("1_3n81r")
+surface_material_override/0 = ExtResource("2_lja6y")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1328642490]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=687713128]
+shape = ExtResource("3_he5de")
+
+[node name="SM_Bld_Scav_Wreckage_01_Scaffolding_01" type="MeshInstance3D" parent="." unique_id=255746246]
+gi_mode = 2
+mesh = ExtResource("3_lja6y")
+surface_material_override/0 = ExtResource("2_lja6y")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Scav_Wreckage_01_Scaffolding_01" unique_id=1871160111]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Scav_Wreckage_01_Scaffolding_01/MeshCollider" unique_id=398192667]
+shape = ExtResource("5_4dh0s")
+
+[node name="SM_Bld_Scav_Wreckage_01_Supports_01" type="MeshInstance3D" parent="." unique_id=2072838680]
+gi_mode = 2
+mesh = ExtResource("4_c7y56")
+surface_material_override/0 = ExtResource("2_lja6y")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Scav_Wreckage_01_Supports_01" unique_id=126123553]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Scav_Wreckage_01_Supports_01/MeshCollider" unique_id=2016509530]
+shape = ExtResource("7_blqdd")

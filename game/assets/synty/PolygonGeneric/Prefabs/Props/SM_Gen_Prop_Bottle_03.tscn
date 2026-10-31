@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dbjqpcwum1i4e"]
+
+[ext_resource type="ArrayMesh" uid="uid://bq5ccjkpp60gp" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Bottle_03.res" id="1_vie4g"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_mgeak"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2fl0i"]
+points = PackedVector3Array(-0.07749659, 0.01061295, 0.009816125, -0.049260244, 0.01061295, -0.060691915, -0.049260244, 0.01061295, 0.059213057, -0.07046408, 0.28627592, 0.002452612, -0.036835644, 0.28981948, -0.05920505, 0.037575252, 0.2846467, -0.06011369, 0.03807649, 0.032159302, -0.060904324, 0.07767421, 0.01061295, -0.011294983, 0.04945305, 0.01061295, 0.059213057, 0.031849004, 0.29841357, 0.059649676, -0.03718499, 0.29047114, 0.05829262, -0.035149664, 0.42671418, 0.009816125, 0.02829478, 0.42671418, -0.025420193, 0.07048981, 0.28615373, 0.002452612, 0.07767421, 0.01061295, 0.009816125, 0.021247081, 0.42671418, 0.030986242)
+
+[node name="SM_Gen_Prop_Bottle_03" type="MeshInstance3D" unique_id=470006504]
+gi_mode = 2
+mesh = ExtResource("1_vie4g")
+surface_material_override/0 = ExtResource("2_mgeak")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1663999297]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=741468776]
+shape = SubResource("ConvexPolygonShape3D_2fl0i")

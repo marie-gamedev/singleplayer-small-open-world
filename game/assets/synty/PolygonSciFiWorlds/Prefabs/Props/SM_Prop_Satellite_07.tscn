@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://diosythgd6yy5"]
+
+[ext_resource type="ArrayMesh" uid="uid://bjo1o2mwkgr5d" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07.res" id="1_2sg3g"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_fmw2v"]
+[ext_resource type="ArrayMesh" uid="uid://b6f8f4hl3m3kx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_Leg_01.res" id="3_fmw2v"]
+[ext_resource type="ArrayMesh" uid="uid://bllxxxl6o46a5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_Leg_02.res" id="4_cbke6"]
+[ext_resource type="ArrayMesh" uid="uid://bh3k31uv04p80" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_Leg_03.res" id="5_fh1es"]
+[ext_resource type="ArrayMesh" uid="uid://j8jx4mugxadw" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_Leg_04.res" id="6_pn7qn"]
+[ext_resource type="ArrayMesh" uid="uid://cd0e1j7wsdg0j" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_Stand_01.res" id="7_isj21"]
+[ext_resource type="ArrayMesh" uid="uid://d13kn3pjo3pa2" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_Dish_01.res" id="8_bi8of"]
+[ext_resource type="ArrayMesh" uid="uid://7c3y7a44mk2y" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_DishArm_01.res" id="9_xxo0h"]
+[ext_resource type="ArrayMesh" uid="uid://b08y8ep0jlao8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_DishArm_02.res" id="10_h6rgc"]
+[ext_resource type="ArrayMesh" uid="uid://jyp8s2in7n5y" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_DishArm_03.res" id="11_wpyhs"]
+[ext_resource type="ArrayMesh" uid="uid://dfyqe0r5nwctc" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_07_DishArm_04.res" id="12_p1qtt"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dny54"]
+points = PackedVector3Array(-0.12126219, 1.4760231, 0.38830736, 0.26869518, 1.6755484, 0.24416837, -0.34497458, 1.6824545, 0.09858498, -0.38830316, 1.4760231, 0.12131575, -0.21544486, 0.19930136, 0.31114438, 0.16957152, 0.1910441, 0.33912072, 0.33908516, 0.1910441, 0.16959015, 0.38826692, 1.475873, 0.12131575, 0.24421829, 1.6755484, -0.2687566, -0.12133819, 1.4760231, -0.38834026, -0.38830316, 1.475873, -0.12134862, -0.3596455, 0.14870691, -0.12849477, 0.33908516, 0.1910441, -0.16962303, 0.35892504, 1.2970659, -0.11222592, 0.16957152, 0.1910441, -0.3391536, -0.26006573, 0.23172987, -0.28365704)
+
+[node name="SM_Prop_Satellite_07" type="MeshInstance3D" unique_id=161039019]
+gi_mode = 2
+mesh = ExtResource("1_2sg3g")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1441459311]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=61112492]
+shape = SubResource("ConvexPolygonShape3D_dny54")
+
+[node name="SM_Prop_Satellite_07_Leg_01" type="MeshInstance3D" parent="." unique_id=799425338]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8146972e-08, 0.22245061, 0.33021456)
+gi_mode = 2
+mesh = ExtResource("3_fmw2v")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_Leg_02" type="MeshInstance3D" parent="." unique_id=261250233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33021456, 0.22245061, -3.8146972e-08)
+gi_mode = 2
+mesh = ExtResource("4_cbke6")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_Leg_03" type="MeshInstance3D" parent="." unique_id=1115957901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8146972e-08, 0.22245061, -0.33021456)
+gi_mode = 2
+mesh = ExtResource("5_fh1es")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_Leg_04" type="MeshInstance3D" parent="." unique_id=489757330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33021456, 0.22245061, 3.8146972e-08)
+gi_mode = 2
+mesh = ExtResource("6_pn7qn")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_Stand_01" type="MeshInstance3D" parent="." unique_id=1096267402]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9073477e-08, 0.4146361, 9.536743e-09)
+gi_mode = 2
+mesh = ExtResource("7_isj21")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_Dish_01" type="MeshInstance3D" parent="SM_Prop_Satellite_07_Stand_01" unique_id=1101225181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.677512e-08, 0.19407293, -8.38756e-09)
+gi_mode = 2
+mesh = ExtResource("8_bi8of")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_DishArm_01" type="MeshInstance3D" parent="SM_Prop_Satellite_07_Stand_01/SM_Prop_Satellite_07_Dish_01" unique_id=1437537211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25098658, 0.29304135, 2.516268e-08)
+gi_mode = 2
+mesh = ExtResource("9_xxo0h")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_DishArm_02" type="MeshInstance3D" parent="SM_Prop_Satellite_07_Stand_01/SM_Prop_Satellite_07_Dish_01" unique_id=1521228869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.516268e-08, 0.29304135, 0.25098658)
+gi_mode = 2
+mesh = ExtResource("10_h6rgc")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_DishArm_03" type="MeshInstance3D" parent="SM_Prop_Satellite_07_Stand_01/SM_Prop_Satellite_07_Dish_01" unique_id=124230099]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25098658, 0.29304135, -2.516268e-08)
+gi_mode = 2
+mesh = ExtResource("11_wpyhs")
+surface_material_override/0 = ExtResource("2_fmw2v")
+
+[node name="SM_Prop_Satellite_07_DishArm_04" type="MeshInstance3D" parent="SM_Prop_Satellite_07_Stand_01/SM_Prop_Satellite_07_Dish_01" unique_id=1757972329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7503965e-08, 0.29304135, -0.25098658)
+gi_mode = 2
+mesh = ExtResource("12_p1qtt")
+surface_material_override/0 = ExtResource("2_fmw2v")

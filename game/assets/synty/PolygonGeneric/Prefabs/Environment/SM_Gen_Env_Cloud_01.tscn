@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://behm3adn4dvm6"]
+
+[ext_resource type="ArrayMesh" uid="uid://way47v3unjsb" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Cloud_01.res" id="1_db81v"]
+[ext_resource type="Material" uid="uid://b4qsegd28adij" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Cloud_mat.tres" id="2_fhnai"]
+
+[node name="SM_Gen_Env_Cloud_01" type="MeshInstance3D" unique_id=1124541220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.854107, 0.24265671, 1.4081459)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("1_db81v")
+surface_material_override/0 = ExtResource("2_fhnai")

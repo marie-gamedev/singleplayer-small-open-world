@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://rg3n1imxixlt"]
+
+[ext_resource type="ArrayMesh" uid="uid://c4w4y7y4qefym" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_Small_Rocks_01.res" id="1_b1t6v"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_vteqv"]
+
+[node name="SM_Generic_Small_Rocks_01" type="MeshInstance3D" unique_id=1630432352]
+gi_mode = 2
+mesh = ExtResource("1_b1t6v")
+surface_material_override/0 = ExtResource("2_vteqv")

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b6nhj4ytuges0"]
+
+[ext_resource type="ArrayMesh" uid="uid://6pjwkfuw0yab" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Potion_01.res" id="1_up4cb"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_xvtv8"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_up4cb"]
+radius = 0.121630326
+
+[node name="SM_Gen_Prop_Potion_01" type="MeshInstance3D" unique_id=412373856]
+gi_mode = 2
+mesh = ExtResource("1_up4cb")
+surface_material_override/0 = ExtResource("2_xvtv8")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=895087404]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2033085951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003917098, 0.11224674, 0.015740588)
+shape = SubResource("SphereShape3D_up4cb")

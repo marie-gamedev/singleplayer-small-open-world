@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dpkgfuhqgpfmf"]
+
+[ext_resource type="ArrayMesh" uid="uid://cb8ut2p7fn6lh" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Hat_04.res" id="1_3w01r"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_mmv0l"]
+
+[node name="SM_Chr_Attach_Hat_04" type="MeshInstance3D" unique_id=988397437]
+gi_mode = 2
+mesh = ExtResource("1_3w01r")
+surface_material_override/0 = ExtResource("2_mmv0l")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://fjln6jcdfi0r"]
+
+[ext_resource type="ArrayMesh" uid="uid://cdqmm6dm55vm7" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Sack_Stack_02.res" id="1_6bie3"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_gd3uk"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6bie3"]
+points = PackedVector3Array(0.039798647, 0.5350261, 0.5062815, -0.17413536, 0.010168313, -0.50313073, -0.09718218, 0.026890375, -0.5265801, 0.23465064, 0.0100459885, 0.48952252, 0.32772332, 0.35864437, -0.5901075, -0.32007307, 0.4940742, 0.058922894, -0.27587882, 0.06360089, 0.5365385, 0.3471248, 0.70688754, 0.060101338, -0.09461264, 0.7447627, -0.18915789, -0.3212294, 0.26663736, -0.56712514, 0.35004765, 0.22503096, 0.5648289, 0.28981543, 0.033921096, -0.47838432, -0.056212947, 0.78309613, 0.19418842, -0.33498633, 0.22177601, 0.5560081, 0.38945693, 0.2635955, -0.40502992, -0.34554663, 0.091263846, 0.0024893985, 0.03964427, 0.74539405, -0.2471445, -0.24865581, 0.5532838, -0.40108788, -0.19734699, 0.20142408, -0.6504515, -0.2517647, 0.01046063, 0.4111204, 0.32772332, 0.35864437, 0.5772413, 0.15522635, 0.7653248, 0.23363651, 0.38363644, 0.6670113, 0.0022185922, 0.27047822, 0.7455946, -0.11271401, 0.32772332, 0.071732074, 0.4133556, -0.27575257, 0.024223873, -0.49075556, -0.19547069, 0.22281022, 0.6115927, 0.31532237, 0.22258791, -0.62607837, 0.38413617, 0.26555488, 0.442528, -0.34896642, 0.24392788, -0.50262326, -0.1669421, 0.34332237, -0.5976558, 0.27351046, 0.010208458, -0.38639313)
+
+[node name="SM_Gen_Prop_Sack_Stack_02" type="MeshInstance3D" unique_id=1222942727]
+gi_mode = 2
+mesh = ExtResource("1_6bie3")
+surface_material_override/0 = ExtResource("2_gd3uk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1957927273]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2121163509]
+shape = SubResource("ConvexPolygonShape3D_6bie3")

@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://ccqew26dfy68m"]
+
+[ext_resource type="ArrayMesh" uid="uid://ddk5lf2flov6o" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_09.res" id="1_1s7vq"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_0yyip"]
+[ext_resource type="ArrayMesh" uid="uid://1t3beah1gvfn" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_09_Glass_01.res" id="3_0yyip"]
+[ext_resource type="Material" uid="uid://nba6c1250d1v" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_11_mat.tres" id="4_0phwm"]
+[ext_resource type="Material" uid="uid://bf14aburd3nrq" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_12_mat.tres" id="5_l3uib"]
+[ext_resource type="Material" uid="uid://cw1ongrilkkas" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_09_mat.tres" id="6_fikpe"]
+[ext_resource type="Material" uid="uid://cwnjv4quufq75" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_08_mat.tres" id="7_fuhqk"]
+[ext_resource type="ArrayMesh" uid="uid://lhlgtbvuohfv" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_09_Glass_02.res" id="8_onh88"]
+[ext_resource type="Material" uid="uid://cxxjt4ags6adw" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_03_mat.tres" id="9_tqesl"]
+[ext_resource type="Material" uid="uid://dcp0uscao2i00" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_07_mat.tres" id="10_inpsh"]
+[ext_resource type="Material" uid="uid://dujlvy0ujn1ia" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_04_mat.tres" id="11_3vi2n"]
+[ext_resource type="Material" uid="uid://broqim28xg5by" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_06_mat.tres" id="12_kb125"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mlml2"]
+size = Vector3(0.64019555, 7.4329224, 0.6401895)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ltnmy"]
+size = Vector3(1.69148, 2.0697021, 1.69148)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j53us"]
+size = Vector3(1.69148, 2.0697021, 1.69148)
+
+[node name="SM_Prop_Billboard_09" type="MeshInstance3D" unique_id=352328386]
+gi_mode = 2
+mesh = ExtResource("1_1s7vq")
+surface_material_override/0 = ExtResource("2_0yyip")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1387782031]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=593575189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7164612, 0)
+shape = SubResource("BoxShape3D_mlml2")
+
+[node name="SM_Prop_Billboard_09_Glass_01" type="MeshInstance3D" parent="." unique_id=282832523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.062797, 0)
+gi_mode = 2
+mesh = ExtResource("3_0yyip")
+surface_material_override/0 = ExtResource("2_0yyip")
+surface_material_override/1 = ExtResource("4_0phwm")
+surface_material_override/2 = ExtResource("5_l3uib")
+surface_material_override/3 = ExtResource("6_fikpe")
+surface_material_override/4 = ExtResource("7_fuhqk")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Prop_Billboard_09_Glass_01" unique_id=71118001]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Billboard_09_Glass_01/BoxCollider" unique_id=169654518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.9604645e-08, 0)
+shape = SubResource("BoxShape3D_ltnmy")
+
+[node name="SM_Prop_Billboard_09_Glass_02" type="MeshInstance3D" parent="." unique_id=1869999321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.340873, 0)
+gi_mode = 2
+mesh = ExtResource("8_onh88")
+surface_material_override/0 = ExtResource("2_0yyip")
+surface_material_override/1 = ExtResource("9_tqesl")
+surface_material_override/2 = ExtResource("10_inpsh")
+surface_material_override/3 = ExtResource("11_3vi2n")
+surface_material_override/4 = ExtResource("12_kb125")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Prop_Billboard_09_Glass_02" unique_id=597888046]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Billboard_09_Glass_02/BoxCollider" unique_id=914050794]
+shape = SubResource("BoxShape3D_j53us")

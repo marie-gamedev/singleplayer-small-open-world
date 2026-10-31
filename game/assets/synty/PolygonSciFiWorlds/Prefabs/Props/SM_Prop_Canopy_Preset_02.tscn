@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://d2vlpoui1j8d5"]
+
+[ext_resource type="ArrayMesh" uid="uid://jgiosdv5460f" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Canopy_Preset_02.res" id="1_kate8"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_56415"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u53ch"]
+size = Vector3(0.18632507, 6.912718, 0.28547287)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g7cq6"]
+size = Vector3(0.09727478, 7.0935154, 0.18024158)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eyee6"]
+size = Vector3(0.29595566, 7.0883656, 0.25730562)
+
+[node name="SM_Prop_Canopy_Preset_02" type="MeshInstance3D" unique_id=1347248143]
+gi_mode = 2
+mesh = ExtResource("1_kate8")
+surface_material_override/0 = ExtResource("2_56415")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1404139507]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1313577583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.080589294, 3.26188, 0.23647118)
+shape = SubResource("BoxShape3D_u53ch")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="BoxCollider" unique_id=202373020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.321312, 6.108021, 2.6865144)
+shape = SubResource("BoxShape3D_g7cq6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="BoxCollider" unique_id=952664103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.397581, 6.1105957, -2.647982)
+shape = SubResource("BoxShape3D_eyee6")

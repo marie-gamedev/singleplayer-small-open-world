@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cxu240x2t86p2"]
+
+[ext_resource type="ArrayMesh" uid="uid://rj2nxmc5khnk" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Patch_Repair_01.res" id="1_fps4m"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_5k7ea"]
+
+[node name="SM_Chr_Attach_Patch_Repair_01" type="MeshInstance3D" unique_id=1558953401]
+gi_mode = 2
+mesh = ExtResource("1_fps4m")
+surface_material_override/0 = ExtResource("2_5k7ea")

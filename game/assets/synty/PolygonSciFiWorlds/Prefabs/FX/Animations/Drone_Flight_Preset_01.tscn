@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://bxsm116xc2u12"]
+
+[ext_resource type="ArrayMesh" uid="uid://bgd5larb45wfk" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_01.res" id="4_emt6l"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="5_n4ywf"]
+[ext_resource type="ArrayMesh" uid="uid://dqcjn5knxteyi" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_01_Wing_l.res" id="6_qddbt"]
+[ext_resource type="ArrayMesh" uid="uid://dprxropaw0vjo" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_01_Wing_r.res" id="7_wei67"]
+
+[sub_resource type="Animation" id="Animation_x2oxk"]
+resource_name = "Drone_Flight_Preset_01"
+length = 20.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SM_Prop_Drone_01:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.04, 5.04, 9.01, 10, 14.02, 14.982696, 19.002695, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 50), Vector3(0, 0, 50), Vector3(-50, 0, 50), Vector3(-50, 0, 50), Vector3(-50, 0, 0), Vector3(-50, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SM_Prop_Drone_01:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4.04, 5.04, 9.01, 10, 14.02, 14.982696, 19.002695, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, -1.5707964, 0), Vector3(0, -1.5707964, 0), Vector3(0, -3.1415927, 0), Vector3(0, -3.1415927, 0), Vector3(0, -4.712389, 0), Vector3(0, -4.712389, 0), Vector3(0, -6.2831855, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4jo0o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SM_Prop_Drone_01:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SM_Prop_Drone_01:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nir5y"]
+_data = {
+&"Drone_Flight_Preset_01": SubResource("Animation_x2oxk"),
+&"RESET": SubResource("Animation_4jo0o")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_eu1yp"]
+animation = &"Drone_Flight_Preset_01"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_8731c"]
+nodes/output/position = Vector2(720, 160)
+nodes/Animation/node = SubResource("AnimationNodeAnimation_eu1yp")
+nodes/Animation/position = Vector2(420, 140)
+node_connections = [&"output", 0, &"Animation"]
+
+[node name="Drone_Flight_Preset_01" type="Node3D" unique_id=1747128796]
+
+[node name="SM_Prop_Drone_01" type="MeshInstance3D" parent="." unique_id=1994081487]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
+gi_mode = 2
+mesh = ExtResource("4_emt6l")
+surface_material_override/0 = ExtResource("5_n4ywf")
+
+[node name="SM_Prop_Drone_01_Wing_l" type="MeshInstance3D" parent="SM_Prop_Drone_01" unique_id=2105097944]
+transform = Transform3D(0.8290376, 0.3741732, -0.41556123, -0.5591929, 0.5547345, -0.6160949, 0, 0.74314475, 0.66913074, 0.09478676, 0.35484767, -0.13047409)
+gi_mode = 2
+mesh = ExtResource("6_qddbt")
+surface_material_override/0 = ExtResource("5_n4ywf")
+
+[node name="SM_Prop_Drone_01_Wing_r" type="MeshInstance3D" parent="SM_Prop_Drone_01" unique_id=1173701980]
+transform = Transform3D(0.8290376, -0.3741732, 0.41556123, 0.5591929, 0.5547345, -0.6160949, 0, 0.74314475, 0.66913074, -0.09478676, 0.35484767, -0.13047409)
+gi_mode = 2
+mesh = ExtResource("7_wei67")
+surface_material_override/0 = ExtResource("5_n4ywf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2058183629]
+libraries/ = SubResource("AnimationLibrary_nir5y")
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=178450069]
+tree_root = SubResource("AnimationNodeBlendTree_8731c")
+anim_player = NodePath("../AnimationPlayer")

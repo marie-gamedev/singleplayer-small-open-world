@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://2fh06ugvtuxc"]
+
+[ext_resource type="ArrayMesh" uid="uid://cckgrx846lj0" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01.res" id="1_7tl8x"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_m0v8n"]
+[ext_resource type="ArrayMesh" uid="uid://8n1engc6dc4y" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_01.res" id="3_m0v8n"]
+[ext_resource type="ArrayMesh" uid="uid://n6xqnu03mwu6" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_02.res" id="4_7y5ao"]
+[ext_resource type="ArrayMesh" uid="uid://dr6roc1lhio7x" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_03.res" id="5_782jr"]
+[ext_resource type="ArrayMesh" uid="uid://dveyf4sqydypr" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_04.res" id="6_0lfqv"]
+[ext_resource type="ArrayMesh" uid="uid://db5hxjxuxsb45" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_05.res" id="7_yf6u4"]
+[ext_resource type="ArrayMesh" uid="uid://4gws6fsmumgs" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_06.res" id="8_ukh47"]
+[ext_resource type="ArrayMesh" uid="uid://jvx1ojt0rs58" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_07.res" id="9_okwuq"]
+[ext_resource type="ArrayMesh" uid="uid://dbaho223kj5mi" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_08.res" id="10_1rq1j"]
+[ext_resource type="ArrayMesh" uid="uid://coalnaqu0pkes" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_09.res" id="11_ksq8j"]
+[ext_resource type="ArrayMesh" uid="uid://df2ap30wrqvfc" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Light_01.res" id="12_nx0bb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7tl8x"]
+size = Vector3(0.19604492, 0.19555664, 0.05517578)
+
+[node name="SM_Gen_Prop_Keypad_01" type="MeshInstance3D" unique_id=400820435]
+gi_mode = 2
+mesh = ExtResource("1_7tl8x")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=106379618]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1672355721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00012207031, 0.00061035156, 0.026611328)
+shape = SubResource("BoxShape3D_7tl8x")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_01" type="MeshInstance3D" parent="." unique_id=526662674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.053562403, 0.05731254, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("3_m0v8n")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_02" type="MeshInstance3D" parent="." unique_id=847504820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003267545, 0.05731254, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("4_7y5ao")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_03" type="MeshInstance3D" parent="." unique_id=237556662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.046362918, 0.05731254, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("5_782jr")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_04" type="MeshInstance3D" parent="." unique_id=14390296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.053562403, 0.01177882, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("6_0lfqv")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_05" type="MeshInstance3D" parent="." unique_id=1686483215]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003267545, 0.01177882, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("7_yf6u4")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_06" type="MeshInstance3D" parent="." unique_id=1278645699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.046362918, 0.01177882, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("8_ukh47")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_07" type="MeshInstance3D" parent="." unique_id=799638760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.053562403, -0.033127163, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("9_okwuq")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_08" type="MeshInstance3D" parent="." unique_id=1632333687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003267545, -0.033127163, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("10_1rq1j")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Key_09" type="MeshInstance3D" parent="." unique_id=618230367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.046362918, -0.033127163, 0.06615142)
+gi_mode = 2
+mesh = ExtResource("11_ksq8j")
+surface_material_override/0 = ExtResource("2_m0v8n")
+
+[node name="SM_Gen_Prop_Keypad_01_Light_01" type="MeshInstance3D" parent="." unique_id=993983965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051398057, -0.06720215, 0.060160227)
+gi_mode = 2
+mesh = ExtResource("12_nx0bb")
+surface_material_override/0 = ExtResource("2_m0v8n")

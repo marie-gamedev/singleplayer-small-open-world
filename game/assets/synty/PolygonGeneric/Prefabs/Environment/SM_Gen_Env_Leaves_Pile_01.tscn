@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cix5uogcinfuy"]
+
+[ext_resource type="ArrayMesh" uid="uid://u0i4ikikty10" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Leaves_Pile_01.res" id="1_gydl2"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_7klx2"]
+
+[node name="SM_Gen_Env_Leaves_Pile_01" type="MeshInstance3D" unique_id=71997095]
+gi_mode = 2
+mesh = ExtResource("1_gydl2")
+surface_material_override/0 = ExtResource("2_7klx2")

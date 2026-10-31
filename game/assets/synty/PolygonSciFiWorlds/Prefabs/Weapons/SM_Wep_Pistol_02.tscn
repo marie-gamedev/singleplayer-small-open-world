@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://b6exu87gj70tk"]
+
+[ext_resource type="ArrayMesh" uid="uid://bb15ya5e3n8qb" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Pistol_02.res" id="1_m33pv"]
+[ext_resource type="Material" uid="uid://mu6jv754j2c3" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_03_C_mat.tres" id="2_xfxjn"]
+[ext_resource type="ArrayMesh" uid="uid://dqlq0bcrsnexq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Pistol_02_Cylander_01.res" id="3_xfxjn"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="4_dk6r2"]
+[ext_resource type="ArrayMesh" uid="uid://bh377nh55c16p" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Pistol_02_Hammer_01.res" id="5_7ajyi"]
+[ext_resource type="ArrayMesh" uid="uid://b6vcawvwf7lym" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Pistol_02_Trigger_01.res" id="6_dk6r2"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xmf0h"]
+points = PackedVector3Array(0.02325479, -0.075963646, -0.004328735, -0.019284872, -0.075963646, 0.02126655, -0.019284872, -0.05893345, -0.06389109, 0.02325479, -0.05893345, -0.06389109, 0.040291652, 0.09426831, 0.11490263, 0.03176572, 0.026194192, 0.46379834, -0.019284872, 0.009163998, 0.45521325, -0.036314234, 0.03470929, 0.46379834, -0.036314234, 0.04320106, 0.080828905, -0.019284872, -0.024873063, -0.08095461, 0.02325479, -0.024873063, -0.08095461, 0.03176572, 0.11979027, 0.45521325, 0.014743857, 0.16236576, 0.029798314, -0.036314234, 0.11127518, 0.46379834, -0.019284872, 0.14533557, 0.029798314, -0.001985561, 0.15457387, 0.41415414)
+
+[node name="SM_Wep_Pistol_02" type="MeshInstance3D" unique_id=898916073]
+gi_mode = 2
+mesh = ExtResource("1_m33pv")
+surface_material_override/0 = ExtResource("2_xfxjn")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1321412075]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=638138702]
+shape = SubResource("ConvexPolygonShape3D_xmf0h")
+
+[node name="SM_Wep_Pistol_02_Cylander_01" type="MeshInstance3D" parent="." unique_id=1853573418]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.289228e-10, 0.07279373, 0.14635576)
+gi_mode = 2
+mesh = ExtResource("3_xfxjn")
+surface_material_override/0 = ExtResource("4_dk6r2")
+
+[node name="SM_Wep_Pistol_02_Hammer_01" type="MeshInstance3D" parent="." unique_id=676334213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.289221e-10, 0.11169369, 0.030902227)
+gi_mode = 2
+mesh = ExtResource("5_7ajyi")
+surface_material_override/0 = ExtResource("4_dk6r2")
+
+[node name="SM_Wep_Pistol_02_Trigger_01" type="MeshInstance3D" parent="." unique_id=140933868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.2892276e-10, 0.009885328, 0.09587356)
+gi_mode = 2
+mesh = ExtResource("6_dk6r2")
+surface_material_override/0 = ExtResource("4_dk6r2")

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://doa5jf5wqnrac"]
+
+[ext_resource type="ArrayMesh" uid="uid://buu5umnvwlqs6" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Crate_Building_Pillar_01.res" id="1_3gt8o"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_iqfwb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3gt8o"]
+size = Vector3(0.8467551, 3.8931713, 0.268184)
+
+[node name="SM_Bld_Crate_Building_Pillar_01" type="MeshInstance3D" unique_id=772991387]
+gi_mode = 2
+mesh = ExtResource("1_3gt8o")
+surface_material_override/0 = ExtResource("2_iqfwb")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=394697570]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1408042411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4901161e-07, 1.7933756, -1.4901161e-08)
+shape = SubResource("BoxShape3D_3gt8o")

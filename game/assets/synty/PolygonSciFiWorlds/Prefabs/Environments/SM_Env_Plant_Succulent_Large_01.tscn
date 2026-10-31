@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dlkql3pobn4tf"]
+
+[ext_resource type="ArrayMesh" uid="uid://btx33mr7vty5u" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Succulent_Large_01.res" id="1_dqmob"]
+[ext_resource type="Material" uid="uid://bg2lgny8l2s30" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_04_A_mat.tres" id="2_or02f"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_31yiy"]
+points = PackedVector3Array(2.1449223, 2.1396177, 1.7325373, -0.6037941, 2.4832191, 2.6779895, 0.061320305, -0.23923746, 0.9738078, 2.0586133, 0.5943868, 0.10099983, 2.0586133, 2.4835446, -1.2727846, 1.886971, 3.0848472, 0.61542916, -1.634136, 2.9127212, 1.4742465, -2.836608, 2.1396177, 0.78708506, -1.5483148, 0.50881183, 1.3876114, -0.7369144, -0.21841311, -0.7061591, 0.7127812, 0.72063434, -1.9368074, -0.0030457973, 2.2261689, -2.8193011, -0.34584284, 2.9986215, -2.1310635, -2.0637295, 2.6546946, -1.2722465, -2.2348843, 1.0242141, -0.49898815, -0.94659114, 0.68028724, -1.8738489)
+
+[node name="SM_Env_Plant_Succulent_Large_01" type="MeshInstance3D" unique_id=1629444191]
+gi_mode = 2
+mesh = ExtResource("1_dqmob")
+surface_material_override/0 = ExtResource("2_or02f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=6272308]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=662936542]
+shape = SubResource("ConvexPolygonShape3D_31yiy")

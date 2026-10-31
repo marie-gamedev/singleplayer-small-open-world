@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c8aqrqxvrwyx8"]
+
+[ext_resource type="ArrayMesh" uid="uid://cd51qk70uh3fy" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pillar_03.res" id="1_ktcty"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_lsuhv"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ktcty"]
+points = PackedVector3Array(0.33852687, 3.4949288, 0.48369095, 0.48369095, 3.4949288, 0.33852687, -0.33862156, 3.4949288, 0.48369095, 0.33852687, 0, 0.48369095, 0.48369095, 3.4949288, -0.33862156, 0.48369095, 0, 0.33852687, -0.48369095, 3.4949288, 0.33852687, -0.33862156, 0, 0.48369095, 0.33852687, 3.4949288, -0.48369095, 0.48369095, 0, -0.33862156, -0.48369095, 3.4949288, -0.33862156, -0.48369095, 0, 0.33852687, -0.33862156, 3.4949288, -0.48369095, 0.33852687, 0, -0.48369095, -0.48369095, 0, -0.33862156, -0.33862156, 0, -0.48369095)
+
+[node name="SM_Bld_Pillar_03" type="MeshInstance3D" unique_id=1663901571]
+gi_mode = 2
+mesh = ExtResource("1_ktcty")
+surface_material_override/0 = ExtResource("2_lsuhv")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1649883790]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1380018117]
+shape = SubResource("ConvexPolygonShape3D_ktcty")

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bi0ri6lrb8poo"]
+
+[ext_resource type="ArrayMesh" uid="uid://b1qo6rwv0kn00" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Roof_Cap_End_01.res" id="1_lmfiv"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_naxr8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0fqdc"]
+size = Vector3(0.4869703, 0.19716898, 0.48697093)
+
+[node name="SM_Bld_Base_Roof_Cap_End_01" type="MeshInstance3D" unique_id=836700280]
+gi_mode = 2
+mesh = ExtResource("1_lmfiv")
+surface_material_override/0 = ExtResource("2_naxr8")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=466388788]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=942522313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7252903e-08, 0.085029185, 0)
+shape = SubResource("BoxShape3D_0fqdc")

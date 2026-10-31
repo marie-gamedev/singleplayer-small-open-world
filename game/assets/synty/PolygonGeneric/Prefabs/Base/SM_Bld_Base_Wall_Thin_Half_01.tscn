@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d0rnsw3jnhbqo"]
+
+[ext_resource type="ArrayMesh" uid="uid://dolkbxukb3nub" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Wall_Thin_Half_01.res" id="1_m2lwg"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="2_xu2x5"]
+
+[node name="SM_Bld_Base_Wall_Thin_Half_01" type="MeshInstance3D" unique_id=2031693705]
+gi_mode = 2
+mesh = ExtResource("1_m2lwg")
+surface_material_override/0 = ExtResource("2_xu2x5")

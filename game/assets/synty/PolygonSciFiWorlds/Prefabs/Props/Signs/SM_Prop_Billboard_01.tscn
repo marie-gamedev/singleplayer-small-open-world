@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://nmo02sxd66d0"]
+
+[ext_resource type="ArrayMesh" uid="uid://bsfgl6fwiu6en" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_01.res" id="1_qh3aq"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_j4jp6"]
+[ext_resource type="ArrayMesh" uid="uid://j2yqir05kuc" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Billboard_01_Glass_01.res" id="3_j4jp6"]
+[ext_resource type="Material" uid="uid://cxxjt4ags6adw" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_03_mat.tres" id="4_3xpr2"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ifps2"]
+points = PackedVector3Array(-1.6716025, -0.063913345, -0.21821737, -1.6716025, -0.063913345, 0.25037515, -1.6716025, 0.21726036, -0.21821737, 1.7022638, -0.063913345, -0.21821737, -1.4836885, -5.1232815, -0.12446217, -1.4836885, -5.1232815, 0.15661994, 1.7022638, -0.063913345, 0.25037515, -1.6716025, 0.12392712, 0.25037515, -1.3898965, 0.873528, 0.062818885, 1.3003457, 0.811893, -0.029835477, 1.7022638, 0.21726036, -0.21821737, 1.7022638, -0.15724659, -0.12446217, 1.5146799, -5.1232815, -0.12446217, 1.5146799, -5.1232815, 0.15661994, 1.7022638, 0.12392712, 0.25037515, 1.3270962, 0.873528, 0.062818885)
+
+[node name="SM_Prop_Billboard_01" type="MeshInstance3D" unique_id=1611043673]
+gi_mode = 2
+mesh = ExtResource("1_qh3aq")
+surface_material_override/0 = ExtResource("2_j4jp6")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=476694212]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=160424654]
+shape = SubResource("ConvexPolygonShape3D_ifps2")
+
+[node name="SM_Bld_Billboard_01_Glass_01" type="MeshInstance3D" parent="." unique_id=720019931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.6128738, 0)
+gi_mode = 2
+mesh = ExtResource("3_j4jp6")
+surface_material_override/0 = ExtResource("4_3xpr2")

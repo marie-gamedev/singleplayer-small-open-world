@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://caxa063qq2r3g"]
+
+[ext_resource type="ArrayMesh" uid="uid://bej0m7fcq6pf3" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Road_Parking_05.res" id="1_e1kcv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e1kcv"]
+size = Vector3(10.00002, 0.001, 4.999985)
+
+[node name="SM_Gen_Env_Road_Parking_05" type="MeshInstance3D" unique_id=938098486]
+mesh = ExtResource("1_e1kcv")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=321797388]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=842370481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.00001, -5.349089e-05, 2.4999926)
+shape = SubResource("BoxShape3D_e1kcv")

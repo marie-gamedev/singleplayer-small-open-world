@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cni02504pmux4"]
+
+[ext_resource type="ArrayMesh" uid="uid://cnafycjglyvrs" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Refinery_Silo_03.res" id="1_kb1ng"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_305ni"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a5jp8"]
+points = PackedVector3Array(-2.5194082, 14.335985, 0.38622308, -2.2821712, 14.335985, -1.2715133, -2.23638, 5.9963665, -0.2835939, -1.5714343, -0.11849117, 1.571434, -1.5714343, 14.335985, 2.0454211, 0.08678937, 14.573274, -2.4572115, -1.5714343, -0.11849117, -1.5087504, 1.5087504, -0.11849117, 1.571434, 0.2831068, 5.9963665, 2.2358928, -0.38622332, 14.335985, 2.5194082, 2.4572115, 14.335985, 0.6234603, 2.2194872, 14.335985, -1.2715133, 1.5087504, -0.11849117, -1.5087504, 1.2715132, 14.335985, 2.2821712, 2.177106, 5.99349, -0.49452543, 2.1673632, 6.000681, 0.5542865)
+
+[node name="SM_Bld_Scav_Refinery_Silo_03" type="MeshInstance3D" unique_id=1786787509]
+gi_mode = 2
+mesh = ExtResource("1_kb1ng")
+surface_material_override/0 = ExtResource("2_305ni")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1642550861]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1204637208]
+shape = SubResource("ConvexPolygonShape3D_a5jp8")

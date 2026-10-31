@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dujlvy0ujn1ia"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_o3tby"]
+[ext_resource type="Texture2D" uid="uid://dfs8q27gmnb53" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Signs/Caution_01.png" id="2_vl0yp"]
+
+[resource]
+resource_name = "Sign_04_mat"
+render_priority = 0
+shader = ExtResource("1_o3tby")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("2_vl0yp")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = true
+shader_parameter/Emission_Map = ExtResource("2_vl0yp")
+shader_parameter/Emission_Color = Color(1, 1, 1, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Strength = 1.0
+shader_parameter/Alpha_Clip_Threshold = 0.0

@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cvn3vsou4yxaj"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxi4ya1mmtkuu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_02.res" id="1_iuclc"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_nkkqp"]
+[ext_resource type="ArrayMesh" uid="uid://d36y0c2200vkp" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_02_Arm_01.res" id="3_nkkqp"]
+[ext_resource type="ArrayMesh" uid="uid://d12b6uq230a88" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_02_Arm_02.res" id="4_7xiqq"]
+[ext_resource type="ArrayMesh" uid="uid://cnnr7taqudg4k" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_02_Claw_01.res" id="5_e654y"]
+[ext_resource type="ArrayMesh" uid="uid://ddxbs7e73kfr4" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drone_02_Claw_02.res" id="6_mkcnl"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2mftp"]
+points = PackedVector3Array(0.064094365, 0.017207801, 0.50881225, 0.066161245, 0.32332057, 0.23836893, -0.07444827, 0.017092168, 0.5056761, -0.15668449, -0.60218513, 0.3251366, 0.06572282, -0.57097274, 0.3259729, 0.33266166, -0.3011588, 0.28760695, 0.10674697, 0.4892087, -0.55916184, -0.059980214, 0.57879996, -0.5194369, -0.111463964, 0.30020028, 0.23429191, 0.23852536, 0.31985253, -0.18271562, -0.3071899, -0.31988624, 0.34395367, -0.3071899, -0.3387293, -0.22034979, -0.17541155, -0.4328289, -0.31453973, 0.182031, -0.4328289, -0.31453973, 0.294957, -0.35757232, -0.23916686, -0.23190588, 0.3386956, -0.20153269)
+
+[node name="SM_Prop_Drone_02" type="MeshInstance3D" unique_id=2063492304]
+gi_mode = 2
+mesh = ExtResource("1_iuclc")
+surface_material_override/0 = ExtResource("2_nkkqp")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1779254565]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=711991971]
+shape = SubResource("ConvexPolygonShape3D_2mftp")
+
+[node name="SM_Prop_Drone_02_Arm_01" type="MeshInstance3D" parent="." unique_id=1264272790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08405774, -0.52083665, 0.28733718)
+gi_mode = 2
+mesh = ExtResource("3_nkkqp")
+surface_material_override/0 = ExtResource("2_nkkqp")
+
+[node name="SM_Prop_Drone_02_Arm_02" type="MeshInstance3D" parent="SM_Prop_Drone_02_Arm_01" unique_id=1084040088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.047584765, 0.00013309717, -0.663956)
+gi_mode = 2
+mesh = ExtResource("4_7xiqq")
+surface_material_override/0 = ExtResource("2_nkkqp")
+
+[node name="SM_Prop_Drone_02_Claw_01" type="MeshInstance3D" parent="SM_Prop_Drone_02_Arm_01/SM_Prop_Drone_02_Arm_02" unique_id=1053696369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03647297, -0.021513224, 0.37710002)
+gi_mode = 2
+mesh = ExtResource("5_e654y")
+surface_material_override/0 = ExtResource("2_nkkqp")
+
+[node name="SM_Prop_Drone_02_Claw_02" type="MeshInstance3D" parent="SM_Prop_Drone_02_Arm_01/SM_Prop_Drone_02_Arm_02/SM_Prop_Drone_02_Claw_01" unique_id=604192009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.043040693, 0)
+gi_mode = 2
+mesh = ExtResource("6_mkcnl")
+surface_material_override/0 = ExtResource("2_nkkqp")

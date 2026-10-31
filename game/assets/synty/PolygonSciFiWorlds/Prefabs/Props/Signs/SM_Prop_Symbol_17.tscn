@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://hvjelbka52n"]
+
+[ext_resource type="ArrayMesh" uid="uid://davw07f2yqkga" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Symbol_17.res" id="1_108oc"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_nhwuk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_itb42"]
+size = Vector3(0.42985892, 0.02, 0.33193135)
+
+[node name="SM_Prop_Symbol_17" type="MeshInstance3D" unique_id=1029741344]
+gi_mode = 2
+mesh = ExtResource("1_108oc")
+surface_material_override/0 = ExtResource("2_nhwuk")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1456934879]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=776833287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.450581e-09, 0, 1.4901161e-08)
+shape = SubResource("BoxShape3D_itb42")

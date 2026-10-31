@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d1pkemyfw4sov"]
+
+[ext_resource type="ArrayMesh" uid="uid://2cs755mkdk5h" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Ivy_07.res" id="1_wopvh"]
+[ext_resource type="Material" uid="uid://c0ylfqbd04kem" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Ivy_mat.tres" id="2_qnutp"]
+
+[node name="SM_Gen_Env_Ivy_07" type="MeshInstance3D" unique_id=1285149652]
+gi_mode = 2
+mesh = ExtResource("1_wopvh")
+surface_material_override/0 = ExtResource("2_qnutp")

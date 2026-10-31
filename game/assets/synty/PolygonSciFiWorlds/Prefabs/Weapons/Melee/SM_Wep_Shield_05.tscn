@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cydy8mboq7ffm"]
+
+[ext_resource type="ArrayMesh" uid="uid://droorb5u1mf2g" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Shield_05.res" id="1_knkao"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_jcg8l"]
+[ext_resource type="ArrayMesh" uid="uid://b6o0t4cseaqbx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Shield_05_Glass_01.res" id="3_jcg8l"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_cgwuh"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bkyxm"]
+points = PackedVector3Array(-0.14211276, -0.074920274, 0.05824834, 0.011851847, -0.0968834, -0.019243851, -0.05561828, -0.18451917, 0.07554086, -0.10176895, -0.13838938, 0.115920946, -0.12131869, 0.080230445, 0.1058127, -0.14211276, 0.07499251, 0.05824834, 0.011851847, 0.096847266, -0.019243851, 0.1403769, -0.074920274, 0.05824834, 0.059661612, -0.18451917, 0.07554086, -0.05155348, -0.17082834, 0.110985905, 0.10000543, -0.13838938, 0.115920946, -0.10176895, 0.13835326, 0.115920946, -0.05561828, 0.18451917, 0.07554086, 0.1403769, 0.07499251, 0.05824834, 0.059661612, 0.18451917, 0.07554086, 0.10000543, 0.13835326, 0.115920946)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_agfps"]
+points = PackedVector3Array(-0.22622447, -0.23444477, 0.040502645, 0.20349096, -0.2735554, 0.040502645, -0.13502538, -0.39064634, 0.053520884, -0.10896851, -0.39064634, 0.092583254, -0.22622447, 0.23432058, 0.06656207, -0.2001676, 0.27343118, 0.040502645, 0.12540956, -0.41674685, 0.06655442, 0.22959246, -0.22135435, 0.040502645, 0.22959246, -0.22135435, 0.06655442, 0.008153588, -0.23444477, 0.11864268, -0.0048302263, 0.23432058, 0.11864268, -0.13502538, 0.40369284, 0.07957266, 0.138438, 0.39060247, 0.053536184, 0.20349096, 0.27343118, 0.040502645, 0.22959246, 0.2213105, 0.06655442, 0.112381116, 0.39060247, 0.092583254)
+
+[node name="SM_Wep_Shield_05" type="MeshInstance3D" unique_id=1471924550]
+gi_mode = 2
+mesh = ExtResource("1_knkao")
+surface_material_override/0 = ExtResource("2_jcg8l")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=821637002]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1589302940]
+shape = SubResource("ConvexPolygonShape3D_bkyxm")
+
+[node name="SM_Wep_Shield_05_Glass_01" type="MeshInstance3D" parent="." unique_id=2054880799]
+gi_mode = 2
+mesh = ExtResource("3_jcg8l")
+surface_material_override/0 = ExtResource("4_cgwuh")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Wep_Shield_05_Glass_01" unique_id=2083459972]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Wep_Shield_05_Glass_01/MeshCollider" unique_id=897363950]
+shape = SubResource("ConvexPolygonShape3D_agfps")

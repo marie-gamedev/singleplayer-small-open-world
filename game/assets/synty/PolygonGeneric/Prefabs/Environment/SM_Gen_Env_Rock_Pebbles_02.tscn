@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b2rb4nnjobnd2"]
+
+[ext_resource type="ArrayMesh" uid="uid://dwvp3tyon67f4" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Rock_Pebbles_02.res" id="1_xid1p"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_8elws"]
+
+[node name="SM_Gen_Env_Rock_Pebbles_02" type="MeshInstance3D" unique_id=891726313]
+gi_mode = 2
+mesh = ExtResource("1_xid1p")
+surface_material_override/0 = ExtResource("2_8elws")

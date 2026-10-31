@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b6ymmij1tmfat"]
+
+[ext_resource type="ArrayMesh" uid="uid://dly5833mwyilk" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_Cloud_04.res" id="1_cy5be"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_56q81"]
+
+[node name="SM_Generic_Cloud_04" type="MeshInstance3D" unique_id=1566962144]
+gi_mode = 2
+mesh = ExtResource("1_cy5be")
+surface_material_override/0 = ExtResource("2_56q81")

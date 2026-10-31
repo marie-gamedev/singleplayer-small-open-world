@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://y528pv1efspy"]
+
+[ext_resource type="ArrayMesh" uid="uid://tdxm3je0umoe" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Wep_Axe_01.res" id="1_8pu4r"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_vjfhi"]
+
+[node name="SM_Gen_Wep_Axe_01" type="MeshInstance3D" unique_id=1613102370]
+gi_mode = 2
+mesh = ExtResource("1_8pu4r")
+surface_material_override/0 = ExtResource("2_vjfhi")

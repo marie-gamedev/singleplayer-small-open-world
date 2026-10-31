@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://b02dph68xaemn"]
+
+[ext_resource type="ArrayMesh" uid="uid://vt3qqjwf2u0x" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_Gate_01.res" id="1_hbvpu"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_hbvpu"]
+[ext_resource type="ArrayMesh" uid="uid://bsuh65qbvmr3e" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_Gate_01_Door_01.res" id="3_0qwxf"]
+[ext_resource type="Shape3D" uid="uid://d06xnohcwb1ss" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Wall_Gate_01_Collision.res" id="3_2dlpe"]
+[ext_resource type="ArrayMesh" uid="uid://b8vpcc1gla05w" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_Gate_01_Towers_01.res" id="4_fsoxk"]
+[ext_resource type="ArrayMesh" uid="uid://oene1n2sue84" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_Gate_01_Towers_012.res" id="5_2dlpe"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="6_05qpo"]
+[ext_resource type="ArrayMesh" uid="uid://byrkab1gce2ft" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_Gate_01_Towers_Glass_01.res" id="6_6ejwh"]
+[ext_resource type="Shape3D" uid="uid://dmi3g8cc1ymsl" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Wall_Gate_01_Towers_01_Collision1.res" id="6_opf18"]
+[ext_resource type="ArrayMesh" uid="uid://236womvmpmxk" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_Gate_01_Turret_01.res" id="8_opf18"]
+[ext_resource type="Shape3D" uid="uid://miaoi48qivnl" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Wall_Gate_01_Towers_01_Collision.res" id="8_ued68"]
+[ext_resource type="ArrayMesh" uid="uid://ck50n2ii7ekqa" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_Gate_01_Turret_02.res" id="9_ued68"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hbvpu"]
+points = PackedVector3Array(-7.351466, -0.11486673, -0.5056666, 5.972707, 7.0068665, 0.41326666, 6.6620865, 6.54677, 0.41326666, 5.972707, 7.0068665, -0.5056666, 7.351466, -0.11486673, -0.5056666, -6.9919996, 0.059249885, 0.3908, -5.972707, 7.0068665, 0.41326666, 6.9919996, 0.059249885, 0.3908, -6.6620865, 6.54677, -0.5056666, -7.351466, 5.85802, 0.41326666, 7.351466, 5.85802, -0.5056666, 7.351466, 5.85802, 0.41326666, -5.972707, 7.0068665, -0.5056666, -7.351466, 5.85802, -0.5056666, 6.6620865, 6.54677, -0.5056666, -6.6620865, 6.54677, 0.41326666)
+
+[node name="SM_Bld_Corp_Wall_Gate_01" type="MeshInstance3D" unique_id=1709681466]
+gi_mode = 2
+mesh = ExtResource("1_hbvpu")
+surface_material_override/0 = ExtResource("2_hbvpu")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1656693065]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=935986606]
+shape = ExtResource("3_2dlpe")
+
+[node name="SM_Bld_Corp_Wall_Gate_01_Door_01" type="MeshInstance3D" parent="." unique_id=282952881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1.3855805e-16, 1.6002011)
+gi_mode = 2
+mesh = ExtResource("3_0qwxf")
+surface_material_override/0 = ExtResource("2_hbvpu")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Corp_Wall_Gate_01_Door_01" unique_id=1707998615]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Corp_Wall_Gate_01_Door_01/MeshCollider" unique_id=542138965]
+shape = SubResource("ConvexPolygonShape3D_hbvpu")
+
+[node name="SM_Bld_Corp_Wall_Gate_01_Towers_01" type="MeshInstance3D" parent="." unique_id=578174941]
+gi_mode = 2
+mesh = ExtResource("4_fsoxk")
+surface_material_override/0 = ExtResource("2_hbvpu")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01" unique_id=2044203616]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01/MeshCollider" unique_id=2047907574]
+shape = ExtResource("6_opf18")
+
+[node name="SM_Bld_Corp_Wall_Gate_01_Towers_01 1" type="MeshInstance3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01" unique_id=1163347440]
+gi_mode = 2
+mesh = ExtResource("5_2dlpe")
+surface_material_override/0 = ExtResource("2_hbvpu")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01/SM_Bld_Corp_Wall_Gate_01_Towers_01 1" unique_id=116621275]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01/SM_Bld_Corp_Wall_Gate_01_Towers_01 1/MeshCollider" unique_id=1085547674]
+shape = ExtResource("8_ued68")
+
+[node name="SM_Bld_Corp_Wall_Gate_01_Towers_Glass_01" type="MeshInstance3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01/SM_Bld_Corp_Wall_Gate_01_Towers_01 1" unique_id=1006450346]
+gi_mode = 2
+mesh = ExtResource("6_6ejwh")
+surface_material_override/0 = ExtResource("6_05qpo")
+
+[node name="SM_Bld_Corp_Wall_Gate_01_Turret_01" type="MeshInstance3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01" unique_id=1725707127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6752568, 9.406882, 3.3142736)
+gi_mode = 2
+mesh = ExtResource("8_opf18")
+surface_material_override/0 = ExtResource("2_hbvpu")
+
+[node name="SM_Bld_Corp_Wall_Gate_01_Turret_02" type="MeshInstance3D" parent="SM_Bld_Corp_Wall_Gate_01_Towers_01" unique_id=202111714]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.675257, 9.406882, 3.3142736)
+gi_mode = 2
+mesh = ExtResource("9_ued68")
+surface_material_override/0 = ExtResource("2_hbvpu")

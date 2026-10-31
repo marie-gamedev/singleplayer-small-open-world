@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b52h38v20adpk"]
+
+[ext_resource type="ArrayMesh" uid="uid://bx8v002wcshdg" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_06.res" id="1_oqdpq"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_8pwyu"]
+[ext_resource type="ArrayMesh" uid="uid://dkjeub5lstnme" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_06_Dish_01.res" id="3_8pwyu"]
+[ext_resource type="ArrayMesh" uid="uid://p7xsyipx3f6h" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_06_Dish_02.res" id="4_e41qc"]
+[ext_resource type="ArrayMesh" uid="uid://ceh3ftmm8bwji" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_06_Dish_03.res" id="5_ah6yb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_io11l"]
+points = PackedVector3Array(-1.1329243, -0.034389973, -0.43946645, 1.136812, -0.034389973, -0.43946645, -0.16979718, -0.033965837, 1.2109344, -1.1329243, 0.10345416, -0.43946645, -1.1329243, 0.17174001, -0.64583975, -1.0642724, 0.17174001, -0.714761, 1.0279465, 0.04789237, -0.6776646, 1.0679379, 0.17174001, -0.714761, 1.136812, 0.10345416, -0.43946645, 0.17368484, 0.10345416, 1.2109344, -0.101367354, 0.17216414, 1.2798556, -0.16979718, 4.298581, 0.04181099, -0.101367354, 4.298581, -0.16436708, 0.1050328, 4.298581, -0.16436708, 0.17368484, 4.298581, 0.04181099, -0.032271028, 4.298581, 0.17945826)
+
+[node name="SM_Prop_Satellite_06" type="MeshInstance3D" unique_id=258921288]
+gi_mode = 2
+mesh = ExtResource("1_oqdpq")
+surface_material_override/0 = ExtResource("2_8pwyu")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1694823953]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1114600677]
+shape = SubResource("ConvexPolygonShape3D_io11l")
+
+[node name="SM_Prop_Satellite_06_Dish_01" type="MeshInstance3D" parent="." unique_id=242693144]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7220458e-08, 3.7971573, 7.27104e-10)
+gi_mode = 2
+mesh = ExtResource("3_8pwyu")
+surface_material_override/0 = ExtResource("2_8pwyu")
+
+[node name="SM_Prop_Satellite_06_Dish_02" type="MeshInstance3D" parent="." unique_id=1514485973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7220458e-08, 2.8356, 7.27104e-10)
+gi_mode = 2
+mesh = ExtResource("4_e41qc")
+surface_material_override/0 = ExtResource("2_8pwyu")
+
+[node name="SM_Prop_Satellite_06_Dish_03" type="MeshInstance3D" parent="." unique_id=1043167188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7220458e-08, 1.8740425, 7.27104e-10)
+gi_mode = 2
+mesh = ExtResource("5_ah6yb")
+surface_material_override/0 = ExtResource("2_8pwyu")

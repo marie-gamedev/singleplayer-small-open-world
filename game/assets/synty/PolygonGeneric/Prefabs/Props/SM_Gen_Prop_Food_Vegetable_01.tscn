@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dkylhca7bwbyq"]
+
+[ext_resource type="ArrayMesh" uid="uid://b0dtb15rhmoo7" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Food_Vegetable_01.res" id="1_4vp2n"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_6xepo"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0ejx1"]
+radius = 0.070161894
+
+[node name="SM_Gen_Prop_Food_Vegetable_01" type="MeshInstance3D" unique_id=1482693164]
+gi_mode = 2
+mesh = ExtResource("1_4vp2n")
+surface_material_override/0 = ExtResource("2_6xepo")
+
+[node name="SphereCollider" type="StaticBody3D" parent="." unique_id=740900307]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SphereCollider" unique_id=508212398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.062323738, 0)
+shape = SubResource("SphereShape3D_0ejx1")

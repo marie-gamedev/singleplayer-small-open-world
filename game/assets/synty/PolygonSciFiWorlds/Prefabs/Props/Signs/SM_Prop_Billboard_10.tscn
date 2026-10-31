@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://2gdt6kalqp2c"]
+
+[ext_resource type="ArrayMesh" uid="uid://v2u6kdf67n3f" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_10.res" id="1_der5i"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_7i1dm"]
+[ext_resource type="ArrayMesh" uid="uid://clst11exuqydd" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_10_Glass_01.res" id="3_7i1dm"]
+[ext_resource type="Material" uid="uid://bkevt8rulpw8i" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_01_mat.tres" id="4_k6bd4"]
+[ext_resource type="Material" uid="uid://b8ga8rc6onj4j" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_10_mat.tres" id="5_85cns"]
+[ext_resource type="Material" uid="uid://b8yvsk4bbmcc3" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_13_mat.tres" id="6_wlgh1"]
+[ext_resource type="Material" uid="uid://nba6c1250d1v" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_11_mat.tres" id="7_mqxcd"]
+[ext_resource type="ArrayMesh" uid="uid://dnpdgppand0ub" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_10_Glass_02.res" id="8_6gx1r"]
+[ext_resource type="Material" uid="uid://bj4o20i8jwpnb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_02_mat.tres" id="9_ef8lb"]
+[ext_resource type="Material" uid="uid://bxy8rwiwwlvvp" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_05_mat.tres" id="10_kshp4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rhogy"]
+size = Vector3(0.64019555, 6.7064543, 0.6401895)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uchpr"]
+size = Vector3(2.436209, 1.3359759, 2.436209)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0tlk4"]
+size = Vector3(2.436209, 1.3359759, 2.436209)
+
+[node name="SM_Prop_Billboard_10" type="MeshInstance3D" unique_id=270225123]
+gi_mode = 2
+mesh = ExtResource("1_der5i")
+surface_material_override/0 = ExtResource("2_7i1dm")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1211572637]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=939168440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3532271, 0)
+shape = SubResource("BoxShape3D_rhogy")
+
+[node name="SM_Prop_Billboard_10_Glass_01" type="MeshInstance3D" parent="." unique_id=121243318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6738405, -7.105427e-17)
+gi_mode = 2
+mesh = ExtResource("3_7i1dm")
+surface_material_override/0 = ExtResource("2_7i1dm")
+surface_material_override/1 = ExtResource("4_k6bd4")
+surface_material_override/2 = ExtResource("5_85cns")
+surface_material_override/3 = ExtResource("6_wlgh1")
+surface_material_override/4 = ExtResource("7_mqxcd")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Prop_Billboard_10_Glass_01" unique_id=1187015529]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Billboard_10_Glass_01/BoxCollider" unique_id=1112797399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4901161e-07, 0)
+shape = SubResource("BoxShape3D_uchpr")
+
+[node name="SM_Prop_Billboard_10_Glass_02" type="MeshInstance3D" parent="." unique_id=1001539169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3999305, -7.105427e-17)
+gi_mode = 2
+mesh = ExtResource("8_6gx1r")
+surface_material_override/0 = ExtResource("2_7i1dm")
+surface_material_override/1 = ExtResource("6_wlgh1")
+surface_material_override/2 = ExtResource("9_ef8lb")
+surface_material_override/3 = ExtResource("4_k6bd4")
+surface_material_override/4 = ExtResource("10_kshp4")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Prop_Billboard_10_Glass_02" unique_id=1247229123]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Billboard_10_Glass_02/BoxCollider" unique_id=320328239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4901161e-07, 0)
+shape = SubResource("BoxShape3D_0tlk4")

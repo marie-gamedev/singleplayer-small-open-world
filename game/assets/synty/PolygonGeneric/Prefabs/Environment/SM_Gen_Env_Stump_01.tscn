@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bc4xgrpttl3vj"]
+
+[ext_resource type="ArrayMesh" uid="uid://dynt5rfy1t4kg" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Stump_01.res" id="1_03e3v"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_g0ake"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_678wl"]
+radius = 0.3
+height = 0.8315428
+
+[node name="SM_Gen_Env_Stump_01" type="MeshInstance3D" unique_id=540662817]
+gi_mode = 2
+mesh = ExtResource("1_03e3v")
+surface_material_override/0 = ExtResource("2_g0ake")
+
+[node name="CapsuleCollider" type="StaticBody3D" parent="." unique_id=539137993]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CapsuleCollider" unique_id=1781872658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021290064, 0.33, -0.03)
+shape = SubResource("CapsuleShape3D_678wl")

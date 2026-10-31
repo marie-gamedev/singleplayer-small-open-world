@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dvne38jehrpoh"]
+
+[ext_resource type="ArrayMesh" uid="uid://elq2jhbbfd42" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Chr_Attach_Sunglasses_01.res" id="1_f5q6r"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_scvof"]
+
+[node name="SM_Gen_Chr_Attach_Sunglasses_01" type="MeshInstance3D" unique_id=833364787]
+mesh = ExtResource("1_f5q6r")
+surface_material_override/0 = ExtResource("2_scvof")

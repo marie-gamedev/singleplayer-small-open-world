@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://d00e066nlf0b0"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_lj3g7"]
+[ext_resource type="Texture2D" uid="uid://dmilr7jxmoi02" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Alts/Skin_Alt/PolygonScifiWorlds_04_C.png" id="2_uwj1h"]
+[ext_resource type="Texture2D" uid="uid://b3c0w1qw16fkf" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Emissive/PolygonScifiWorlds_04_Emissive.png" id="3_dxc38"]
+[ext_resource type="Texture2D" uid="uid://c86er5rhkucnd" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/PolygonScifiWorlds_A_01_Normals.png" id="4_ckmv0"]
+
+[resource]
+resource_name = "PolygonScifiWorlds_04_C_Alt_mat"
+render_priority = 0
+shader = ExtResource("1_lj3g7")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("2_uwj1h")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.5
+shader_parameter/Enable_Emission = true
+shader_parameter/Emission_Map = ExtResource("3_dxc38")
+shader_parameter/Emission_Color = Color(1, 1, 1, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Map = ExtResource("4_ckmv0")
+shader_parameter/Normal_Strength = 1.0
+shader_parameter/Alpha_Clip_Threshold = 0.0

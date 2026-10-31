@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ywxvj5dxcht5"]
+
+[ext_resource type="ArrayMesh" uid="uid://vryvajn1a1xk" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_45_Wall_Door_01.res" id="1_j68og"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_0quw6"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="3_lp0d8"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="4_ufgiy"]
+
+[node name="SM_Bld_Base_45_Wall_Door_01" type="MeshInstance3D" unique_id=800234068]
+mesh = ExtResource("1_j68og")
+surface_material_override/0 = ExtResource("2_0quw6")
+surface_material_override/1 = ExtResource("3_lp0d8")
+surface_material_override/2 = ExtResource("4_ufgiy")

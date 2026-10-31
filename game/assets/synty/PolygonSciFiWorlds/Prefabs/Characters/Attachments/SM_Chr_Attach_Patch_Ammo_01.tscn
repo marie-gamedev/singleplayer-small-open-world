@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b424tu7xc68tk"]
+
+[ext_resource type="ArrayMesh" uid="uid://ci8m243xhs3uu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Patch_Ammo_01.res" id="1_u350d"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_nrrme"]
+
+[node name="SM_Chr_Attach_Patch_Ammo_01" type="MeshInstance3D" unique_id=1702624303]
+gi_mode = 2
+mesh = ExtResource("1_u350d")
+surface_material_override/0 = ExtResource("2_nrrme")

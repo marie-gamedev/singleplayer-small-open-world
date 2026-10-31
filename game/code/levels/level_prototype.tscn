@@ -1,77 +1,401 @@
 [gd_scene format=3 uid="uid://wxw3v1fy8mr5"]
 
 [ext_resource type="Script" uid="uid://digh88dpkin77" path="res://code/levels/level.gd" id="1_u8eri"]
+[ext_resource type="Environment" uid="uid://cc48whmj1yhph" path="res://assets/synty/PolygonSciFiWorlds/Materials/World Environments/WorldEnvironmentLighting_Explorer.tres" id="2_lgtl3"]
 [ext_resource type="PackedScene" uid="uid://canjmfsujlbew" path="res://code/gameplay/interactables/trampoline.tscn" id="2_tv6m2"]
+[ext_resource type="ArrayMesh" uid="uid://ca8j6pkohlq6x" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01.res" id="3_p2fqh"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://assets/synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="4_6rtpm"]
+[ext_resource type="Material" uid="uid://bb0jivr4lvtmf" path="res://assets/synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_C_mat.tres" id="4_mqff5"]
+[ext_resource type="Material" uid="uid://dkdp38e88tdq" path="res://assets/synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_C_Destroyed_mat.tres" id="4_tuij6"]
+[ext_resource type="Shape3D" uid="uid://cer7td8oqb4o2" path="res://assets/synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Veh_DropShip_01_Collision.res" id="5_mqff5"]
+[ext_resource type="ArrayMesh" uid="uid://ch18cncyxr5vl" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_CargoDoor_01.res" id="6_tuij6"]
+[ext_resource type="ArrayMesh" uid="uid://byst2y8eie4dp" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Cockpit_01.res" id="7_n15je"]
+[ext_resource type="ArrayMesh" uid="uid://6sgjmdkq0ocw" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_01.res" id="8_sml6l"]
+[ext_resource type="ArrayMesh" uid="uid://dtdb8wn6mwod7" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_02.res" id="9_i6vsf"]
+[ext_resource type="ArrayMesh" uid="uid://dr8138frs08gn" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Glass_01.res" id="10_gk7r8"]
+[ext_resource type="PackedScene" uid="uid://msa2p6t1m4eu" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Ground_04.tscn" id="13_n15je"]
+[ext_resource type="ArrayMesh" uid="uid://bu2td5euafjc2" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_FX_Skydome_01.res" id="14_m6md1"]
+[ext_resource type="Material" uid="uid://cunaqn40v5rh7" path="res://assets/synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Exp_01_mat.tres" id="14_sml6l"]
+[ext_resource type="PackedScene" uid="uid://d0rtxvgiamg4o" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Ground_05.tscn" id="15_5n7ov"]
+[ext_resource type="Material" uid="uid://t1jsy7y7dn4y" path="res://assets/synty/PolygonSciFiWorlds/Materials/Sky/Skybox_Exp_01_mat.tres" id="15_jfmsd"]
+[ext_resource type="ArrayMesh" uid="uid://drsmtqdvgxffd" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_FX_Skydome_Planet_01.res" id="16_tsjua"]
+[ext_resource type="PackedScene" uid="uid://dljph7rf8a28y" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Ground_03.tscn" id="16_xd42x"]
+[ext_resource type="Material" uid="uid://rlj4joludmst" path="res://assets/synty/PolygonSciFiWorlds/Materials/Sky/Planet_01_mat.tres" id="17_chegt"]
+[ext_resource type="PackedScene" uid="uid://b0xmp721n0cal" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Ground_Slope_01.tscn" id="17_lgtl3"]
+[ext_resource type="PackedScene" uid="uid://de1drspucgcbl" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Ground_02.tscn" id="18_83vj5"]
+[ext_resource type="Material" uid="uid://c3oyghfgoppql" path="res://assets/synty/PolygonSciFiWorlds/Materials/Sky/Planet_02_Alt_01_mat.tres" id="18_uptfx"]
+[ext_resource type="PackedScene" uid="uid://bunuovw0rs1d2" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/FX/SM_FX_Skydome_Sun_01.tscn" id="19_1rqj1"]
+[ext_resource type="PackedScene" uid="uid://b8eth2xq3qii3" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_02.tscn" id="19_xd42x"]
+[ext_resource type="Material" uid="uid://bnw4n6h8iyvni" path="res://assets/synty/PolygonSciFiWorlds/Materials/Sky/Planet_03_mat.tres" id="20_ylu7y"]
+[ext_resource type="PackedScene" uid="uid://3u3o2vmh58ke" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Generic/SM_Generic_CloudRing_01.tscn" id="21_pt6en"]
+[ext_resource type="PackedScene" uid="uid://jdyl1l8bmys7" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Generic/SM_Generic_CloudRing_02.tscn" id="22_s3x01"]
+[ext_resource type="PackedScene" uid="uid://bwic5pqopwygp" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Generic/SM_Generic_CloudRing_03.tscn" id="23_mephf"]
+[ext_resource type="Material" uid="uid://bl453gyof2q4k" path="res://assets/synty/PolygonSciFiWorlds/Materials/Sky/Planet_01_Alt_01_mat.tres" id="24_ttc5u"]
+[ext_resource type="PackedScene" uid="uid://lk1as8ph11h1" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Cliff_Curved_02.tscn" id="32_chegt"]
+[ext_resource type="PackedScene" uid="uid://bg82t8qph4hen" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Cliff_Curved_Large_01.tscn" id="33_uptfx"]
+[ext_resource type="PackedScene" uid="uid://cs5lh45ad1pnm" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Cliff_Flat_01.tscn" id="34_1rqj1"]
+[ext_resource type="PackedScene" uid="uid://cmkuvlymyaya3" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Cliff_Rough_02.tscn" id="35_uptfx"]
+[ext_resource type="PackedScene" uid="uid://b4du218r8yjmt" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Tall_03.tscn" id="36_pt6en"]
+[ext_resource type="PackedScene" uid="uid://df5ce0rismnft" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Tall_02.tscn" id="37_s3x01"]
+[ext_resource type="PackedScene" uid="uid://71veswsekdqw" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Tall_01.tscn" id="38_mephf"]
+[ext_resource type="PackedScene" uid="uid://dj5x1epkcpocl" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Large_Spiral_Preset_04.tscn" id="39_77een"]
+[ext_resource type="PackedScene" uid="uid://bncu2yr4upfqt" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Large_Spiral_Preset_03.tscn" id="40_prm5s"]
+[ext_resource type="PackedScene" uid="uid://c1bmuik3wfoav" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Large_Spiral_Preset_02.tscn" id="41_aan2f"]
+[ext_resource type="PackedScene" uid="uid://btfin3pb4kwmc" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Large_Spiral_Preset_01.tscn" id="42_xnqc6"]
+[ext_resource type="PackedScene" uid="uid://baypgk3tj61u6" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Large_Spiral_04.tscn" id="43_oo4fi"]
+[ext_resource type="PackedScene" uid="uid://dvxyfm0kgvv7l" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Kelp_06.tscn" id="44_wkkla"]
+[ext_resource type="PackedScene" uid="uid://dkqb0ey7p2854" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Kelp_02.tscn" id="45_b8b7y"]
+[ext_resource type="PackedScene" uid="uid://ctgxbns5jdl1k" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Hallowed_02.tscn" id="46_28aka"]
+[ext_resource type="PackedScene" uid="uid://hspy3og0cp5n" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Hallowed_01.tscn" id="47_7mu0g"]
+[ext_resource type="PackedScene" uid="uid://cg62g3w7agcd1" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Hallowed_03.tscn" id="48_0gdse"]
+[ext_resource type="PackedScene" uid="uid://cau7ho4qp05ox" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Grass_Flower_02.tscn" id="49_g1x5y"]
+[ext_resource type="PackedScene" uid="uid://8nmjj81x4rdd" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Grass_Flower_01.tscn" id="50_juxfn"]
+[ext_resource type="PackedScene" uid="uid://bgmpavla2nicl" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Grass_Flower_03.tscn" id="51_0x3ks"]
+[ext_resource type="PackedScene" uid="uid://djfyulvrivar5" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Flower_Large_03.tscn" id="52_mfuwk"]
+[ext_resource type="PackedScene" uid="uid://k63i2ga33ytc" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Flower_Large_01.tscn" id="53_xnqc6"]
+[ext_resource type="PackedScene" uid="uid://v2ebunmwi5ak" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Flower_Large_Pod_01.tscn" id="54_oo4fi"]
+[ext_resource type="PackedScene" uid="uid://pvm02wa0i2u" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Flower_Large_Pod_02.tscn" id="55_wkkla"]
+[ext_resource type="PackedScene" uid="uid://kxylt42k1304" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Fester_02.tscn" id="56_wkkla"]
+[ext_resource type="PackedScene" uid="uid://cqmmrk1ucsqbm" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Fern_02.tscn" id="57_b8b7y"]
+[ext_resource type="PackedScene" uid="uid://bvswj43vpcojd" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Fern_01.tscn" id="58_b8b7y"]
+[ext_resource type="PackedScene" uid="uid://do8hvc54632x" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Coral_03.tscn" id="59_7mu0g"]
+[ext_resource type="PackedScene" uid="uid://dtt5cr6ymhohl" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Cactus_02.tscn" id="60_0gdse"]
+[ext_resource type="PackedScene" uid="uid://4q3n1r68k8xr" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Bulb_02.tscn" id="61_0gdse"]
+[ext_resource type="PackedScene" uid="uid://c1em10i75slru" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_01.tscn" id="62_juxfn"]
+[ext_resource type="PackedScene" uid="uid://d1dxclhfstd5g" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_02.tscn" id="63_0x3ks"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_irpmq"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5tdup"]
+points = PackedVector3Array(-5.057419, 5.5114803, -1.4397776, -4.9972653, 4.6090093, -1.5199194, -4.817792, 0.24419941, -0.37850654, -4.817792, 0.50434625, -0.05811298, -4.4193993, 4.84475, -1.2173929, -2.7143984, 4.95014, -1.159455, 2.7132049, 4.95014, -1.159455, 5.01678, 5.488184, -1.4942462, -4.958807, 5.3583875, -1.6897435, 4.996072, 5.069952, -1.640132, 4.97635, 0.7045873, -0.4987191, -4.5022335, -0.15517323, -0.14311182, 4.4103165, -0.0719706, -0.27113044, -2.7143984, 0.1842935, 0.082395315, 2.7132049, 0.1842935, 0.082395315, 4.875765, 0.6446814, -0.09818387)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u8eri"]
-points = PackedVector3Array(1.0158731, 0.015873017, 1.0158731, -1.0158731, -0.015873017, -1.0158731, -1.0158731, 0.015873017, -1.0158731, 1.0158731, -0.015873017, -1.0158731, -1.0158731, -0.015873017, 1.0158731, -1.0158731, 0.015873017, 1.0158731, 1.0158731, 0.015873017, -1.0158731, 1.0158731, -0.015873017, 1.0158731)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lqysd"]
+points = PackedVector3Array(-4.8677993, -3.6765156, -4.6992106, 0.60886, -3.6765156, -4.6992106, -3.6106765, -2.876909, 4.3521504, -4.096907, -2.3748138, 4.333751, -4.8677993, 3.682746, -4.6992106, -4.792211, -3.574944, -5.080482, 0.51933336, -3.5569348, -5.05595, 0.60886, 3.682746, -4.6992106, -0.16524887, 2.3767219, 4.326596, -0.5083442, -2.3488805, 4.7702203, -3.594594, 2.525838, 4.7886195, -4.096907, 2.380324, 4.333751, -4.7895308, 3.5768523, -5.0753713, -0.64987135, 2.8788176, 4.3460174, -3.7645335, -2.36761, -5.6529, -0.66059303, 2.5330415, -5.645745)
 
-[sub_resource type="BoxMesh" id="BoxMesh_4plt3"]
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tv6m2"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4hvcc"]
+points = PackedVector3Array(4.8983717, -3.6765156, -4.6998277, -0.5021785, -3.5756643, -5.080777, 4.8088627, -3.5569348, -5.0561996, 4.8983717, 3.682746, -4.6998277, 4.1206627, -2.3668897, 4.316997, 3.6200554, -2.5124037, 4.7727017, 0.67912483, -2.8776293, 4.3518147, -0.49949858, 3.5775728, -5.0766807, 0.68555665, -2.5361757, -5.666538, 0.18816572, -2.3798563, 4.3425984, -0.5772159, 3.682746, -4.6998277, 3.7878177, 2.3637552, -5.634792, 3.6377432, 2.875936, 4.34055, 4.1206627, 2.3723998, 4.316997, 0.69359636, 2.5287194, 4.7952313, 0.18816572, 2.3853664, 4.3425984)
 
 [node name="LevelPrototype" type="Node3D" unique_id=379469037]
 script = ExtResource("1_u8eri")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2095054999]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=597206206]
-transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
-mesh = SubResource("PlaneMesh_irpmq")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=60128273]
-transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_u8eri")
-
-[node name="Trampoline" parent="StaticBody3D" unique_id=1188454185 instance=ExtResource("2_tv6m2")]
-transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, -12.009065, -0.8909775, 15.384485)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1419311849]
+environment = ExtResource("2_lgtl3")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=751483994]
 
-[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=830808304]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.186335, 0, 8.242208)
+[node name="Interactable" type="Node3D" parent="." unique_id=844206784]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2" unique_id=1966974305]
-mesh = SubResource("BoxMesh_4plt3")
+[node name="Trampoline4" parent="Interactable" unique_id=1428804331 instance=ExtResource("2_tv6m2")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -16.559807, -2.2286448, 9.917873)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=1361923791]
-shape = SubResource("ConvexPolygonShape3D_tv6m2")
+[node name="Trampoline" parent="Interactable" unique_id=1188454185 instance=ExtResource("2_tv6m2")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -12.009065, 1.6047597, 15.384485)
 
-[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=2098792556]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.2125225, 0.47930312, 8.242208)
+[node name="Trampoline5" parent="Interactable" unique_id=1845348166 instance=ExtResource("2_tv6m2")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 4, -4.6572742, 8.102681, 17.270214)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D3" unique_id=108046602]
-mesh = SubResource("BoxMesh_4plt3")
+[node name="Trampoline2" parent="Interactable" unique_id=428362030 instance=ExtResource("2_tv6m2")]
+transform = Transform3D(2.5407164, 0, 1.5952306, 0, 2, 0, -1.5952306, 0, 2.5407164, 1.0545015, 12.937737, 11.677003)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=1110897905]
-shape = SubResource("ConvexPolygonShape3D_tv6m2")
+[node name="Trampoline3" parent="Interactable" unique_id=1793045224 instance=ExtResource("2_tv6m2")]
+transform = Transform3D(2.7842426, 0, -1.1171355, 0, 2, 0, 1.1171355, 0, 2.7842426, 10.977908, 19.262676, 11.65483)
 
-[node name="StaticBody3D4" type="StaticBody3D" parent="." unique_id=1238927924]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.305126, 1.06969, 8.242208)
+[node name="SM_Veh_DropShip_01" type="MeshInstance3D" parent="." unique_id=1303975371]
+transform = Transform3D(0.9715004, -0.23332764, 0.04177649, 0.23703815, 0.95629305, -0.17122088, -3.963407e-09, 0.17624377, 0.98434657, 12.390131, 4.9049854, -10.54896)
+gi_mode = 2
+mesh = ExtResource("3_p2fqh")
+surface_material_override/0 = ExtResource("4_tuij6")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D4" unique_id=1400123463]
-mesh = SubResource("BoxMesh_4plt3")
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_DropShip_01" unique_id=1493746807]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D4" unique_id=1946918263]
-shape = SubResource("ConvexPolygonShape3D_tv6m2")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_DropShip_01/MeshCollider" unique_id=372053386]
+shape = ExtResource("5_mqff5")
 
-[node name="StaticBody3D5" type="StaticBody3D" parent="." unique_id=1317010949]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.403387, 1.6325362, 8.242208)
+[node name="SM_Veh_DropShip_01_CargoDoor_01" type="MeshInstance3D" parent="SM_Veh_DropShip_01" unique_id=1254026590]
+transform = Transform3D(0.99999976, 0, 0, 0, -0.034899466, 0.9993907, 0, -0.99939096, -0.03489946, 0, -3.80335, -11.176467)
+gi_mode = 2
+mesh = ExtResource("6_tuij6")
+surface_material_override/0 = ExtResource("4_mqff5")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D5" unique_id=1562004602]
-mesh = SubResource("BoxMesh_4plt3")
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_DropShip_01/SM_Veh_DropShip_01_CargoDoor_01" unique_id=593216090]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D5" unique_id=944480135]
-shape = SubResource("ConvexPolygonShape3D_tv6m2")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_DropShip_01/SM_Veh_DropShip_01_CargoDoor_01/MeshCollider" unique_id=488093254]
+shape = SubResource("ConvexPolygonShape3D_5tdup")
 
-[node name="StaticBody3D6" type="StaticBody3D" parent="." unique_id=880968436]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.461363, 2.2850049, 8.242208)
+[node name="SM_Veh_DropShip_01_Cockpit_01" type="MeshInstance3D" parent="SM_Veh_DropShip_01" unique_id=1216429742]
+gi_mode = 2
+mesh = ExtResource("7_n15je")
+surface_material_override/0 = ExtResource("4_6rtpm")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D6" unique_id=130854936]
-mesh = SubResource("BoxMesh_4plt3")
+[node name="SM_Veh_DropShip_01_Engine_01" type="MeshInstance3D" parent="SM_Veh_DropShip_01" unique_id=547892297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.651812, 1.8949407, -1.4243951)
+gi_mode = 2
+mesh = ExtResource("8_sml6l")
+surface_material_override/0 = ExtResource("4_mqff5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D6" unique_id=1761295527]
-shape = SubResource("ConvexPolygonShape3D_tv6m2")
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_DropShip_01/SM_Veh_DropShip_01_Engine_01" unique_id=1869199460]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_DropShip_01/SM_Veh_DropShip_01_Engine_01/MeshCollider" unique_id=1312585291]
+shape = SubResource("ConvexPolygonShape3D_lqysd")
+
+[node name="SM_Veh_DropShip_01_Engine_02" type="MeshInstance3D" parent="SM_Veh_DropShip_01" unique_id=1256569888]
+transform = Transform3D(-0.063113675, 0.99672556, -0.050545566, -0.98740953, -0.055002466, 0.14831504, 0.14504921, 0.05926986, 0.9876478, 11.287214, -3.731443, -3.1001062)
+gi_mode = 2
+mesh = ExtResource("9_i6vsf")
+surface_material_override/0 = ExtResource("4_mqff5")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_DropShip_01/SM_Veh_DropShip_01_Engine_02" unique_id=502646870]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_DropShip_01/SM_Veh_DropShip_01_Engine_02/MeshCollider" unique_id=1020795672]
+shape = SubResource("ConvexPolygonShape3D_4hvcc")
+
+[node name="SM_Veh_DropShip_01_Glass_01" type="MeshInstance3D" parent="SM_Veh_DropShip_01" unique_id=575643450]
+visible = false
+gi_mode = 2
+mesh = ExtResource("10_gk7r8")
+surface_material_override/0 = ExtResource("4_6rtpm")
+
+[node name="Environment" type="Node3D" parent="." unique_id=702366130]
+
+[node name="SkyDome" type="Node3D" parent="Environment" unique_id=1673120846]
+transform = Transform3D(-2.3782, 0, 1.4566115, 0, 2.7888238, 0, -1.4566125, 0, -2.3781984, 0, 0, 0)
+
+[node name="SM_FX_Skydome_01" type="MeshInstance3D" parent="Environment/SkyDome" unique_id=1628806974]
+layers = 32
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("14_m6md1")
+surface_material_override/0 = ExtResource("15_jfmsd")
+
+[node name="GameObject_Planet_Pivot_01" type="Node3D" parent="Environment/SkyDome" unique_id=332107195]
+transform = Transform3D(0.5828238, 0.44239244, 0.68161964, -0.07525742, 0.8645957, -0.4968003, -0.8091061, 0.23825008, 0.53720033, 0, 0, 0)
+
+[node name="SM_FX_Skydome_Planet_01" type="MeshInstance3D" parent="Environment/SkyDome/GameObject_Planet_Pivot_01" unique_id=580997288]
+transform = Transform3D(2.5691106, 0, 0, 0, 2.5691097, 0, 0, 0, 2.5691097, 0, 0, -1168)
+layers = 32
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("16_tsjua")
+surface_material_override/0 = ExtResource("17_chegt")
+
+[node name="GameObject_Planet_Pivot_02" type="Node3D" parent="Environment/SkyDome" unique_id=2037355633]
+transform = Transform3D(0.9958093, 0.058564745, -0.07024184, -0.07712229, 0.9505587, -0.3008161, 0.04915178, 0.30497268, 0.9510919, 0, 0, 0)
+
+[node name="SM_FX_Skydome_Planet_02" type="MeshInstance3D" parent="Environment/SkyDome/GameObject_Planet_Pivot_02" unique_id=992380883]
+transform = Transform3D(1.7331764, 0, 0, 0, 1.7331771, 0, 0, 0, 1.7331771, 29, -53, -1162)
+layers = 32
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("16_tsjua")
+surface_material_override/0 = ExtResource("18_uptfx")
+
+[node name="GameObject_Sun_Pivot" type="Node3D" parent="Environment/SkyDome" unique_id=1300455264]
+transform = Transform3D(1.3227913, 0.36822078, 0.32116893, -0.063889764, 1.049305, -0.93988866, -0.48441103, 0.86711365, 1.0009862, 0, 0, 0)
+
+[node name="SM_FX_Skydone_Sun_01" parent="Environment/SkyDome/GameObject_Sun_Pivot" unique_id=857667698 instance=ExtResource("19_1rqj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.005, 0, -819.7)
+
+[node name="GameObject_Planet_Pivot_03" type="Node3D" parent="Environment/SkyDome" unique_id=1120922298]
+transform = Transform3D(-0.5201577, -0.5681896, -0.6376493, -0.7314657, 0.68179214, -0.010836363, 0.4409014, 0.46078193, -0.7702507, 0, 0, 0)
+visible = false
+
+[node name="SM_FX_Skydome_Planet_03" type="MeshInstance3D" parent="Environment/SkyDome/GameObject_Planet_Pivot_03" unique_id=67281813]
+transform = Transform3D(2.9398246, 1.4901161e-08, 0, -1.4714897e-07, 2.939826, 2.4214387e-08, -1.1920929e-07, 9.313226e-08, 2.9398258, 0, -1.1444092e-05, -1122)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("16_tsjua")
+surface_material_override/0 = ExtResource("20_ylu7y")
+
+[node name="SM_Generic_CloudRing_01" parent="Environment/SkyDome" unique_id=406457506 instance=ExtResource("21_pt6en")]
+visible = false
+
+[node name="SM_Generic_CloudRing_02" parent="Environment/SkyDome" unique_id=1452450066 instance=ExtResource("22_s3x01")]
+visible = false
+
+[node name="SM_Generic_CloudRing_03" parent="Environment/SkyDome" unique_id=1466507295 instance=ExtResource("23_mephf")]
+visible = false
+
+[node name="GameObject_Planet_Pivot_02 (2)" type="Node3D" parent="Environment/SkyDome" unique_id=687601358]
+transform = Transform3D(-0.6171174, 0.374234, -0.6921812, 0.5654092, 0.8226756, -0.059306372, 0.54724616, -0.42796475, -0.71928275, 0, 0, 0)
+
+[node name="SM_FX_Skydome_Planet_02" type="MeshInstance3D" parent="Environment/SkyDome/GameObject_Planet_Pivot_02 (2)" unique_id=879991561]
+transform = Transform3D(4.004261, 3.31763, -0.46697298, -3.228497, 4.0154405, 0.8437336, 0.8952879, -0.358343, 5.1311693, -235.004, -238.001, -1212.034)
+layers = 32
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("16_tsjua")
+surface_material_override/0 = ExtResource("24_ttc5u")
+
+[node name="GameObject_Planet_Pivot_02 (3)" type="Node3D" parent="Environment/SkyDome" unique_id=403631238]
+transform = Transform3D(0.541253, 0.25819048, -0.80023915, -0.78595984, -0.18289858, -0.5906056, -0.29885134, 0.94862306, 0.103932954, 0, 0, 0)
+
+[node name="SM_FX_Skydome_Planet_02" type="MeshInstance3D" parent="Environment/SkyDome/GameObject_Planet_Pivot_02 (3)" unique_id=1140078473]
+transform = Transform3D(0.15764838, -2.2952676, -0.15662435, 2.2500625, 0.18655372, -0.46909678, 0.47958452, -0.12075566, 2.2523444, 62.23869, 37.80789, -1255.9697)
+layers = 32
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("16_tsjua")
+surface_material_override/0 = ExtResource("20_ylu7y")
+
+[node name="GameObject_Sun_Pivot (1)" type="Node3D" parent="Environment/SkyDome" unique_id=1862231181]
+transform = Transform3D(-1.2412391, -0.52982867, -0.52637166, -0.17384522, 1.1978829, -0.79580796, 0.72633636, -0.6187185, -1.0899915, 0, 0, 0)
+
+[node name="SM_FX_Skydone_Sun_01" parent="Environment/SkyDome/GameObject_Sun_Pivot (1)" unique_id=1336525182 instance=ExtResource("19_1rqj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.005, 0, -819.7)
+
+[node name="Ground" type="Node3D" parent="Environment" unique_id=2010635627]
+
+[node name="SM_Env_Ground_04" parent="Environment/Ground" unique_id=1715950258 instance=ExtResource("13_n15je")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.0658, -0.47653484, -7.7596283)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Ground_05" parent="Environment/Ground" unique_id=895919727 instance=ExtResource("15_5n7ov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.032534, -2.757158, -5.492017)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Ground_03" parent="Environment/Ground" unique_id=2023912376 instance=ExtResource("16_xd42x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6203899, -1.9073486e-06, -36.629868)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Ground_06" parent="Environment/Ground" unique_id=998539274 instance=ExtResource("16_xd42x")]
+transform = Transform3D(0.7293192, 0, -0.6841736, 0, 1, 0, 0.6841736, 0, 0.7293192, -19.339014, -1.9073486e-06, -33.740982)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Ground_Slope_01" parent="Environment/Ground" unique_id=997307587 instance=ExtResource("17_lgtl3")]
+transform = Transform3D(0.18851402, 0, -0.9820705, 0, 1, 0, 0.9820705, 0, 0.18851402, 17.672972, 0.17444134, 9.738152)
+
+[node name="SM_Env_Ground_07" parent="Environment/Ground" unique_id=1291997864 instance=ExtResource("15_5n7ov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.284603, -1.0349021, 10.645643)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Ground_08" parent="Environment/Ground" unique_id=2007333283 instance=ExtResource("16_xd42x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.9231415, -0.24603844, 25.385624)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Ground_02" parent="Environment/Ground" unique_id=1278280369 instance=ExtResource("18_83vj5")]
+transform = Transform3D(-0.39379448, 0, -0.9191985, 0, 1, 0, 0.9191985, 0, -0.39379448, 34.48947, -3.0727277, 28.046808)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="Cliffs" type="Node3D" parent="Environment" unique_id=484261312]
+
+[node name="SM_Env_Floating_Rocks_02" parent="Environment/Cliffs" unique_id=817713406 instance=ExtResource("19_xd42x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.978415, 9.471439, 31.847645)
+
+[node name="SM_Env_Cliff_Curved_02" parent="Environment/Cliffs" unique_id=1121719663 instance=ExtResource("32_chegt")]
+transform = Transform3D(0.5804618, 0, 0.8142875, 0, 1, 0, -0.8142875, 0, 0.5804618, -35.636974, 2.1969032, -41.25985)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Cliff_Curved_Large_01" parent="Environment/Cliffs" unique_id=1432758033 instance=ExtResource("33_uptfx")]
+transform = Transform3D(-0.4407035, 0, -0.89765275, 0, 1, 0, 0.89765275, 0, -0.4407035, 72.80575, 7.3894367, -2.894853)
+
+[node name="SM_Env_Cliff_Flat_01" parent="Environment/Cliffs" unique_id=887593462 instance=ExtResource("34_1rqj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.988291, -9.689003, 63.87886)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Cliff_Flat_02" parent="Environment/Cliffs" unique_id=914592582 instance=ExtResource("34_1rqj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.908663, -7.0246277, 101.71976)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Cliff_Flat_03" parent="Environment/Cliffs" unique_id=788292767 instance=ExtResource("34_1rqj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.56679, -15.86351, 93.44194)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Cliff_Rough_02" parent="Environment/Cliffs" unique_id=824606482 instance=ExtResource("35_uptfx")]
+transform = Transform3D(0.12152394, 0, -0.9925885, 0, 1, 0, 0.9925885, 0, 0.12152394, -56.026516, 8.403509, -3.8947306)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Plant_Tall_03" parent="Environment" unique_id=1154006048 instance=ExtResource("36_pt6en")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.702172, 2.0619414, -31.953524)
+
+[node name="SM_Env_Plant_Tall_02" parent="Environment" unique_id=1214447885 instance=ExtResource("37_s3x01")]
+transform = Transform3D(0.8966894, 0, 0.4426602, 0, 1, 0, -0.4426602, 0, 0.8966894, -15.603388, 2.3714013, -31.69487)
+
+[node name="SM_Env_Plant_Tall_01" parent="Environment" unique_id=732554163 instance=ExtResource("38_mephf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.560024, -0.1284146, -19.45182)
+
+[node name="SM_Env_Plant_Tall_04" parent="Environment" unique_id=1646710067 instance=ExtResource("37_s3x01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.517254, 0.06651625, -17.239378)
+
+[node name="SM_Env_Plant_Large_Spiral_Preset_04" parent="Environment" unique_id=1539604 instance=ExtResource("39_77een")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.01796, -0.13773441, -23.332361)
+
+[node name="SM_Env_Plant_Large_Spiral_Preset_03" parent="Environment" unique_id=610498103 instance=ExtResource("40_prm5s")]
+transform = Transform3D(-0.54922616, 0, -0.83567375, -0.016793234, 0.99979806, 0.011036944, 0.835505, 0.020095443, -0.54911524, -15.001068, -0.70151854, -43.948517)
+
+[node name="SM_Env_Plant_Large_Spiral_Preset_02" parent="Environment" unique_id=290741548 instance=ExtResource("41_aan2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.719902, -0.92621136, 13.491136)
+
+[node name="SM_Env_Plant_Large_Spiral_Preset_01" parent="Environment" unique_id=1896988051 instance=ExtResource("42_xnqc6")]
+transform = Transform3D(0.90356433, 0, 0.4284525, 0, 1, 0, -0.4284525, 0, 0.90356433, -34.859993, -1.4067843, 26.647823)
+
+[node name="SM_Env_Plant_Large_Spiral_04" parent="Environment" unique_id=1568987871 instance=ExtResource("43_oo4fi")]
+transform = Transform3D(0.13052064, 0.9914455, 0, -0.9914455, 0.13052064, 0, 0, 0, 1, -1.4395168, 0.9500575, -49.411068)
+
+[node name="SM_Env_Plant_Kelp_06" parent="Environment" unique_id=495147206 instance=ExtResource("44_wkkla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.829164, 0.68558264, -52.044895)
+
+[node name="SM_Env_Plant_Kelp_02" parent="Environment" unique_id=1738408287 instance=ExtResource("45_b8b7y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8005834, 0.57566667, -53.621094)
+
+[node name="SM_Env_Plant_Kelp_03" parent="Environment" unique_id=1653425516 instance=ExtResource("45_b8b7y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.854212, 0.101964, -35.682796)
+
+[node name="SM_Env_Plant_Kelp_04" parent="Environment" unique_id=121179653 instance=ExtResource("45_b8b7y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.503017, -0.8068948, -31.849676)
+
+[node name="SM_Env_Plant_Hallowed_02" parent="Environment" unique_id=1842328331 instance=ExtResource("46_28aka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.305891, 1.1058478, -7.489952)
+
+[node name="SM_Env_Plant_Hallowed_01" parent="Environment" unique_id=1824359603 instance=ExtResource("47_7mu0g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.0538, 1.4030738, -3.1269505)
+
+[node name="SM_Env_Plant_Hallowed_03" parent="Environment" unique_id=1377508568 instance=ExtResource("48_0gdse")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.125416, 1.3488498, -11.694626)
+
+[node name="SM_Env_Plant_Grass_Flower_02" parent="Environment" unique_id=2109493788 instance=ExtResource("49_g1x5y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.833511, 1.6550665, -16.907747)
+
+[node name="SM_Env_Plant_Grass_Flower_01" parent="Environment" unique_id=1309338994 instance=ExtResource("50_juxfn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.345442, 1.4011567, -13.746689)
+
+[node name="SM_Env_Plant_Grass_Flower_03" parent="Environment" unique_id=465676251 instance=ExtResource("51_0x3ks")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.040201, 1.4565461, -16.024078)
+
+[node name="SM_Env_Plant_Flower_Large_03" parent="Environment" unique_id=1602100009 instance=ExtResource("52_mfuwk")]
+transform = Transform3D(0.6797341, 0, -0.73345864, 0, 1, 0, 0.73345864, 0, 0.6797341, 10.84883, 1.5724716, 21.164425)
+
+[node name="SM_Env_Plant_Flower_Large_01" parent="Environment" unique_id=1690978013 instance=ExtResource("53_xnqc6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.080633, 1.6779504, 29.75864)
+
+[node name="SM_Env_Plant_Flower_Large_Pod_01" parent="Environment" unique_id=1901389662 instance=ExtResource("54_oo4fi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.947921, 1.7370858, 24.13085)
+
+[node name="SM_Env_Plant_Flower_Large_Pod_02" parent="Environment" unique_id=654223066 instance=ExtResource("55_wkkla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.308996, 9.105167, 41.503315)
+
+[node name="SM_Env_Plant_Fester_02" parent="Environment" unique_id=1458441796 instance=ExtResource("56_wkkla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9612913, 0.065274954, 40.38503)
+
+[node name="SM_Env_Plant_Fern_02" parent="Environment" unique_id=1159874166 instance=ExtResource("57_b8b7y")]
+transform = Transform3D(0.98807377, -0.15269262, 0.0198783, 0.15398109, 0.97980565, -0.12755607, 0, 0.12909569, 0.9916321, 2.67234, 0.5132625, 37.76979)
+
+[node name="SM_Env_Plant_Fern_01" parent="Environment" unique_id=1099408488 instance=ExtResource("58_b8b7y")]
+transform = Transform3D(0.9522082, -0.26564094, 0.15077966, 0.26871303, 0.9632203, 0, -0.14523403, 0.04051646, 0.9885674, 6.05448, 1.0440814, 36.564404)
+
+[node name="SM_Env_Plant_Coral_03" parent="Environment" unique_id=1881091641 instance=ExtResource("59_7mu0g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1170063, -0.41969073, 40.700405)
+
+[node name="SM_Env_Plant_Cactus_02" parent="Environment" unique_id=2070484264 instance=ExtResource("60_0gdse")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.813208, 1.8720508, 41.989723)
+
+[node name="SM_Env_Plant_Bulb_02" parent="Environment" unique_id=551779738 instance=ExtResource("61_0gdse")]
+transform = Transform3D(0.99538577, -0.08530908, 0.04392666, 0.08539151, 0.9963475, 0, -0.043766215, 0.0037509636, 0.99903476, -3.7406456, -0.0026090145, 37.954067)
+
+[node name="SM_Env_Floating_Rocks_Spiral_01" parent="Environment" unique_id=687205285 instance=ExtResource("62_juxfn")]
+transform = Transform3D(0.72010434, 0, 0.6938658, 0, 1, 0, -0.6938658, 0, 0.72010434, -22.083916, 0.36203718, 46.187958)
+
+[node name="SM_Env_Floating_Rocks_Spiral_02" parent="Environment" unique_id=187704637 instance=ExtResource("63_0x3ks")]
+transform = Transform3D(-0.69739383, 0, 0.7166881, 0, 1, 0, -0.7166881, 0, -0.69739383, -20.028076, 6.615858, 43.54636)
+
+[editable path="Environment/SkyDome/GameObject_Sun_Pivot/SM_FX_Skydone_Sun_01"]
+[editable path="Environment/SkyDome/SM_Generic_CloudRing_01"]
+[editable path="Environment/SkyDome/SM_Generic_CloudRing_02"]
+[editable path="Environment/SkyDome/SM_Generic_CloudRing_03"]

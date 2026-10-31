@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dwjb67uo5cmog"]
+
+[ext_resource type="ArrayMesh" uid="uid://dnc8rxksota1j" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Core_Antenna_Greeble_01.res" id="1_11hva"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_lrqs5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bux2u"]
+radius = 1.4991426
+height = 60.765503
+
+[node name="SM_Bld_Core_Antenna_Greeble_01" type="MeshInstance3D" unique_id=1584809423]
+gi_mode = 2
+mesh = ExtResource("1_11hva")
+surface_material_override/0 = ExtResource("2_lrqs5")
+
+[node name="CapsuleCollider" type="StaticBody3D" parent="." unique_id=654179524]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CapsuleCollider" unique_id=1817177375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1837703, 18.563253, -0.01769352)
+shape = SubResource("CapsuleShape3D_bux2u")

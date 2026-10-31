@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://1c17q0dfb7x0"]
+
+[ext_resource type="ArrayMesh" uid="uid://bnheglpoq3b6h" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Bld_Background_10.res" id="1_jk5tu"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_qe1gs"]
+[ext_resource type="Material" uid="uid://bsh8gc1g3sdi" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Glass_Opaque_mat.tres" id="3_1ifhx"]
+
+[node name="SM_Gen_Bld_Background_10" type="MeshInstance3D" unique_id=45567233]
+mesh = ExtResource("1_jk5tu")
+surface_material_override/0 = ExtResource("2_qe1gs")
+surface_material_override/1 = ExtResource("3_1ifhx")

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bdswrilvgvc6y"]
+
+[ext_resource type="ArrayMesh" uid="uid://bsdfsaagjp1fx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_03.res" id="1_6r1cd"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_mwueg"]
+[ext_resource type="ArrayMesh" uid="uid://bokhq3lp22f4i" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_03_Glass_01.res" id="3_mwueg"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_lkmeg"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iq8t3"]
+points = PackedVector3Array(-0.57169574, 1.0192678, -0.08496183, -0.54453397, 1.7264647, -0.11214033, -0.48909256, 0.31666952, -0.41464892, -0.51737213, -0.01359421, -0.11205593, -0.40850136, -0.01359421, 0.4315986, -0.29985413, 1.7264647, -0.22085436, -0.35261285, 0.85643524, -0.43068594, -0.35417774, 0.52991873, 0.4315986, 0.54294425, 1.7264647, -0.11214033, 0.46492392, 0.28703266, -0.4174343, 0.4417861, 0.06935496, -0.20009066, 0.4070235, -0.01359421, 0.4315986, 0.2982645, 1.7264647, -0.22085436, 0.4771077, 0.85643524, -0.4059552, 0.37986165, 0.5031774, 0.4315986, 0.5702179, 0.9921858, -0.08496183)
+
+[node name="SM_Prop_Monitor_03" type="MeshInstance3D" unique_id=337678024]
+gi_mode = 2
+mesh = ExtResource("1_6r1cd")
+surface_material_override/0 = ExtResource("2_mwueg")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1154231163]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1039153651]
+shape = SubResource("ConvexPolygonShape3D_iq8t3")
+
+[node name="SM_Prop_Monitor_03_Glass_01" type="MeshInstance3D" parent="." unique_id=1160901549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8812774e-08, 1.347339, -0.16294874)
+gi_mode = 2
+mesh = ExtResource("3_mwueg")
+surface_material_override/0 = ExtResource("4_lkmeg")

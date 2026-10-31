@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dhlmbbqr33o3p"]
+
+[ext_resource type="ArrayMesh" uid="uid://cllekxw6ek3un" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_28.res" id="1_564f8"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_n634o"]
+[ext_resource type="ArrayMesh" uid="uid://ttysvytkxomt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_28_Tank_01.res" id="3_n634o"]
+
+[node name="SM_Bld_Greeble_28" type="MeshInstance3D" unique_id=1595870668]
+gi_mode = 2
+mesh = ExtResource("1_564f8")
+surface_material_override/0 = ExtResource("2_n634o")
+
+[node name="SM_Bld_Greeble_28_Tank_01" type="MeshInstance3D" parent="." unique_id=1662036510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45444438, 0)
+gi_mode = 2
+mesh = ExtResource("3_n634o")
+surface_material_override/0 = ExtResource("2_n634o")

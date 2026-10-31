@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d282j5hyw1b5a"]
+
+[ext_resource type="ArrayMesh" uid="uid://cigcw0hwrcknu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_Plate_01.res" id="1_t1vam"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_f5ypm"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2rxtl"]
+points = PackedVector3Array(1.9886439, -0.033056106, 1.5242076, 1.9225323, 0.43095428, 1.5906053, 1.6054344, 0.046762623, 2.05539, -2.0556395, 0.046669483, 1.605092, -1.9887363, -0.033149242, -1.5248598, 1.5460529, -8.5476786e-05, -1.8564464, 1.6050386, 0.046669483, -2.0556397, 1.9217405, 0.43086115, -1.5908551, -1.5912753, 0.43095428, 1.9217894, 0.5377531, 0.9124745, -0.71722114, -0.30309033, 0.9183422, 0.8473525, -1.9222288, 0.43086115, -1.5908551, -2.0556395, 0.046762623, -1.6057444, -1.5908794, 0.43086115, -1.9228442, 1.5899951, 0.43086115, -1.9228442, -0.84663, 0.9175039, -0.3023355)
+
+[node name="SM_Prop_Drill_Plate_01" type="MeshInstance3D" unique_id=1174897321]
+gi_mode = 2
+mesh = ExtResource("1_t1vam")
+surface_material_override/0 = ExtResource("2_f5ypm")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=72984771]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1076182902]
+shape = SubResource("ConvexPolygonShape3D_2rxtl")

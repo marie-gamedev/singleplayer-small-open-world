@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dr7oi37pfxbw8"]
+
+[ext_resource type="ArrayMesh" uid="uid://cqasf335xwkr8" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Twig_04.res" id="1_slsv6"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_kcg7j"]
+
+[node name="SM_Gen_Env_Twig_04" type="MeshInstance3D" unique_id=1596181267]
+gi_mode = 2
+mesh = ExtResource("1_slsv6")
+surface_material_override/0 = ExtResource("2_kcg7j")

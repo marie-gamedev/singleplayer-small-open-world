@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://p5dg3rjr63kr"]
+
+[ext_resource type="ArrayMesh" uid="uid://inh6cvoo3byr" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Containment_02.res" id="1_yfm84"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_yfm84"]
+[ext_resource type="ArrayMesh" uid="uid://dx7w2plccic6i" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Containment_02_Capsule_01.res" id="3_wht44"]
+[ext_resource type="ArrayMesh" uid="uid://b1d4sloo4t8s3" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Containment_02_Glass_01.res" id="4_mfaws"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="5_5y6v5"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_say1b"]
+points = PackedVector3Array(2.1827037, 0.0027146675, 1.9465165, 1.1241958, 2.037696, 1.356483, 0.62229824, 1.2292134, 2.5313492, 0.59171057, -0.0001853481, 2.4211907, -1.6442101, -0.05134988, -2.298604, 2.1827037, 0.0027146675, -1.9851488, 1.3421872, 2.0648317, -1.1454858, -0.560284, 1.2292134, 2.5313492, -1.1565295, 2.0343816, 1.3531735, -1.9371631, 0.0027146675, 2.2278223, 1.7066553, 0.44144535, -2.1997924, -2.2184842, 0.0027146675, -1.8920105, -1.178501, 2.0540602, -1.317106, -1.9401789, 1.130613, 1.7422738, -1.353842, 2.0461888, -1.1209011, -2.1629093, 0.21151567, 1.9025474)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5y6v5"]
+points = PackedVector3Array(-1.6443644, 4.4813075, 1.2498362, -1.2499486, 4.4813075, 1.6442679, -1.2499486, 5.665086, 1.6442679, -1.3354408, 5.8223934, 1.1515417, -1.0801771, 6.1266804, 0.68987614, -1.1517236, 4.4813075, 0.65891194, -1.1068554, 2.1987603, 0.77292967, -1.133837, 2.311974, 1.3298993, 1.1286724, 2.2599354, 1.3348188, 1.3126926, 4.4813075, 1.6442679, 1.3126926, 5.665086, 1.6442679, 0.9182768, 6.256975, 1.2498362, 1.0962338, 6.058752, 0.70598525, 1.2138612, 4.4813075, 0.65891194, 1.12079, 2.2734416, 0.78720593, 1.452754, 4.3645186, 1.0625076)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o3qlj"]
+points = PackedVector3Array(0.6228421, 6.256975, -0.918584, 1.1157131, 6.256975, -0.6228421, 0.7213584, 6.256975, -1.2143259, 0.7213584, 2.1168585, -1.2143259, 0.7213584, 2.1168585, -1.0171969, 0.918584, 4.5808277, -0.6228421, 1.2142293, 2.1168585, -0.72145486, 1.6085842, 5.762965, -1.1157131, 1.3128422, 5.6652985, -1.6085842, 1.1157131, 5.762965, -1.6085842, 1.0171003, 2.1168585, -1.411455, 1.0171003, 2.1168585, -0.72145486, 1.4113586, 2.1168585, -1.0171969, 1.6085842, 4.3834667, -1.3128422, 1.3128422, 4.3834667, -1.6085842, 1.3128422, 2.1168585, -1.3128422)
+
+[node name="SM_Bld_Corp_Containment_02" type="MeshInstance3D" unique_id=2071319458]
+gi_mode = 2
+mesh = ExtResource("1_yfm84")
+surface_material_override/0 = ExtResource("2_yfm84")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=682865250]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1682320626]
+shape = SubResource("ConvexPolygonShape3D_say1b")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=1439348338]
+shape = SubResource("ConvexPolygonShape3D_5y6v5")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="MeshCollider" unique_id=1224556827]
+shape = SubResource("ConvexPolygonShape3D_o3qlj")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="MeshCollider" unique_id=41566691]
+transform = Transform3D(0.029177815, 0, 0.9995742, 0, 1, 0, -0.9995742, 0, 0.029177815, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_o3qlj")
+
+[node name="SM_Bld_Corp_Containment_02_Capsule_01" type="MeshInstance3D" parent="." unique_id=1594676576]
+gi_mode = 2
+mesh = ExtResource("3_wht44")
+surface_material_override/0 = ExtResource("2_yfm84")
+
+[node name="SM_Bld_Corp_Containment_02_Glass_01" type="MeshInstance3D" parent="SM_Bld_Corp_Containment_02_Capsule_01" unique_id=705354626]
+gi_mode = 2
+mesh = ExtResource("4_mfaws")
+surface_material_override/0 = ExtResource("5_5y6v5")

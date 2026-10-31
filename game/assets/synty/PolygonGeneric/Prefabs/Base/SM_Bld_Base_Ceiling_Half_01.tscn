@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://m82jo76oq6jj"]
+
+[ext_resource type="ArrayMesh" uid="uid://cd3u54ljgmfit" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Ceiling_Half_01.res" id="1_ldeut"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="2_jlx3d"]
+
+[node name="SM_Bld_Base_Ceiling_Half_01" type="MeshInstance3D" unique_id=117841886]
+mesh = ExtResource("1_ldeut")
+surface_material_override/0 = ExtResource("2_jlx3d")

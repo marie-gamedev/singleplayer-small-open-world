@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://da5bpxu85eyvu"]
+
+[ext_resource type="ArrayMesh" uid="uid://dnvxsqdo4km2e" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02.res" id="1_sev70"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_6j13k"]
+[ext_resource type="ArrayMesh" uid="uid://chb3e0huuallr" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Door_l.res" id="3_6j13k"]
+[ext_resource type="ArrayMesh" uid="uid://b381hgx6nhqfj" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Door_r.res" id="4_vh208"]
+[ext_resource type="ArrayMesh" uid="uid://btmkhxt4ngdvk" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Wheel_lf.res" id="5_d4pnk"]
+[ext_resource type="ArrayMesh" uid="uid://cuybh1r03qclt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Wheel_lm.res" id="6_fdjab"]
+[ext_resource type="ArrayMesh" uid="uid://biqfjxjid12dt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Wheel_lr.res" id="7_kp7ty"]
+[ext_resource type="ArrayMesh" uid="uid://bv760agodkydf" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Wheel_rf.res" id="8_hpuy2"]
+[ext_resource type="ArrayMesh" uid="uid://ns1hgwg8brba" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Wheel_rm.res" id="9_axrur"]
+[ext_resource type="ArrayMesh" uid="uid://62vddaskhk48" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_02_Wheel_rr.res" id="10_dix5g"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oo608"]
+points = PackedVector3Array(2.9600358, 1.158844, -5.749042, -2.0489035, 0.3570714, -5.749042, 1.6450968, 3.1118896, -5.952461, 1.9789505, 4.2015786, -4.541693, 2.1575365, 4.364365, -2.7420368, 2.7592688, 3.1617062, 3.4658198, 2.3583035, 1.7597811, 5.4688945, 2.5585017, 0.7579577, -2.3423793, -2.8502655, 0.9584008, -5.749042, 1.7770457, 0.5371172, 2.2477012, -1.7298374, 0.4888696, 2.3051372, -2.0489035, 4.364365, -4.94853, -0.846576, 3.1617062, 6.2717996, -2.2496705, 1.7597811, 5.4688945, -2.7183166, 3.072664, -3.1452844, -2.6853294, 2.92596, 3.2647939)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8sf0n"]
+radius = 1.1935468
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4jerc"]
+radius = 1.1935468
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dnf42"]
+radius = 1.1935465
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1rlwu"]
+radius = 1.1935468
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_je5vg"]
+radius = 1.1935468
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_senij"]
+radius = 1.1935465
+
+[node name="SM_Veh_Apc_02" type="MeshInstance3D" unique_id=1764412513]
+gi_mode = 2
+mesh = ExtResource("1_sev70")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1944960595]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1281679087]
+shape = SubResource("ConvexPolygonShape3D_oo608")
+
+[node name="SM_Veh_Apc_02_Door_l" type="MeshInstance3D" parent="." unique_id=594172264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7487316, 0.5693124, -1.4404919)
+gi_mode = 2
+mesh = ExtResource("3_6j13k")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SM_Veh_Apc_02_Door_r" type="MeshInstance3D" parent="." unique_id=44923247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7487315, 0.5693124, -1.4404919)
+gi_mode = 2
+mesh = ExtResource("4_vh208")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SM_Veh_Apc_02_Wheel_lf" type="MeshInstance3D" parent="." unique_id=1087176401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.305416, 1.1651616, 3.6525576)
+gi_mode = 2
+mesh = ExtResource("5_d4pnk")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_02_Wheel_lf" unique_id=906835388]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_02_Wheel_lf/SphereCollider" unique_id=1650633459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12516215, 0, 4.172325e-07)
+shape = SubResource("SphereShape3D_8sf0n")
+
+[node name="SM_Veh_Apc_02_Wheel_lm" type="MeshInstance3D" parent="." unique_id=1594902531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.305416, 1.1651616, 0.97054684)
+gi_mode = 2
+mesh = ExtResource("6_fdjab")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_02_Wheel_lm" unique_id=140083578]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_02_Wheel_lm/SphereCollider" unique_id=55724241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12516215, 0, 6.556511e-07)
+shape = SubResource("SphereShape3D_4jerc")
+
+[node name="SM_Veh_Apc_02_Wheel_lr" type="MeshInstance3D" parent="." unique_id=1148210520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.305416, 1.1651616, -4.047847)
+gi_mode = 2
+mesh = ExtResource("7_kp7ty")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_02_Wheel_lr" unique_id=415287484]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_02_Wheel_lr/SphereCollider" unique_id=500165548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12516215, 0, 4.7683716e-07)
+shape = SubResource("SphereShape3D_dnf42")
+
+[node name="SM_Veh_Apc_02_Wheel_rf" type="MeshInstance3D" parent="." unique_id=1517258670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.305416, 1.1651616, 3.6525576)
+gi_mode = 2
+mesh = ExtResource("8_hpuy2")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_02_Wheel_rf" unique_id=1891283952]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_02_Wheel_rf/SphereCollider" unique_id=1411262890]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12516215, 0, 4.172325e-07)
+shape = SubResource("SphereShape3D_1rlwu")
+
+[node name="SM_Veh_Apc_02_Wheel_rm" type="MeshInstance3D" parent="." unique_id=1104497906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.305416, 1.1651616, 0.97054684)
+gi_mode = 2
+mesh = ExtResource("9_axrur")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_02_Wheel_rm" unique_id=1338509192]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_02_Wheel_rm/SphereCollider" unique_id=267962333]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12516215, 0, 6.556511e-07)
+shape = SubResource("SphereShape3D_je5vg")
+
+[node name="SM_Veh_Apc_02_Wheel_rr" type="MeshInstance3D" parent="." unique_id=2136984406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.305416, 1.1651616, -4.047847)
+gi_mode = 2
+mesh = ExtResource("10_dix5g")
+surface_material_override/0 = ExtResource("2_6j13k")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_02_Wheel_rr" unique_id=2096678526]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_02_Wheel_rr/SphereCollider" unique_id=519169930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12516215, 0, 4.7683716e-07)
+shape = SubResource("SphereShape3D_senij")

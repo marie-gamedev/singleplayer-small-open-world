@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://4dve8a2j3xio"]
+
+[ext_resource type="ArrayMesh" uid="uid://b4m3bh01wylqi" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Bld_Pipe_Valve_01.res" id="1_i3pkb"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_rwfv4"]
+[ext_resource type="ArrayMesh" uid="uid://lx6pgf4yeq7q" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Bld_Pipe_Valve_01_Wheel_01.res" id="3_rwfv4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vjv4q"]
+size = Vector3(0.1137062, 0.13129638, 0.07646167)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3rxqx"]
+size = Vector3(0.3610384, 0.3585202, 0.07278943)
+
+[node name="SM_Gen_Bld_Pipe_Valve_01" type="MeshInstance3D" unique_id=794669360]
+gi_mode = 2
+mesh = ExtResource("1_i3pkb")
+surface_material_override/0 = ExtResource("2_rwfv4")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1144702883]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=92322781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.313226e-09, 0, 0.01603239)
+shape = SubResource("BoxShape3D_vjv4q")
+
+[node name="SM_Gen_Bld_Pipe_Valve_01_Wheel_01" type="MeshInstance3D" parent="." unique_id=757868641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005537646, 2.4355291e-05, 0)
+gi_mode = 2
+mesh = ExtResource("3_rwfv4")
+surface_material_override/0 = ExtResource("2_rwfv4")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Gen_Bld_Pipe_Valve_01_Wheel_01" unique_id=1961805072]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Gen_Bld_Pipe_Valve_01_Wheel_01/BoxCollider" unique_id=335516632]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0039589405, -0.0002585426, 0.15610337)
+shape = SubResource("BoxShape3D_3rxqx")

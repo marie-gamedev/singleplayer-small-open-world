@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dcp4lat8ypnpf"]
+
+[ext_resource type="ArrayMesh" uid="uid://iuua1tqgl3oa" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Crate_Building_Balcony_01.res" id="1_14heg"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_uvd04"]
+[ext_resource type="Shape3D" uid="uid://bwt37jpqwevd" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Crate_Building_Balcony_01_Collision.res" id="3_rmaiq"]
+[ext_resource type="ArrayMesh" uid="uid://bn2ftfi011lq6" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Crate_Building_Balcony_01_Glass_01.res" id="3_uvd04"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_slhxy"]
+
+[node name="SM_Bld_Crate_Building_Balcony_01" type="MeshInstance3D" unique_id=727797353]
+gi_mode = 2
+mesh = ExtResource("1_14heg")
+surface_material_override/0 = ExtResource("2_uvd04")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1815122324]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1409764033]
+shape = ExtResource("3_rmaiq")
+
+[node name="SM_Bld_Crate_Building_Balcony_01_Glass_01" type="MeshInstance3D" parent="." unique_id=1793550130]
+gi_mode = 2
+mesh = ExtResource("3_uvd04")
+surface_material_override/0 = ExtResource("4_slhxy")

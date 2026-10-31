@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dtq40ixtj62uq"]
+
+[ext_resource type="ArrayMesh" uid="uid://bd2sfygmt4nt5" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Lever_02.res" id="1_4rgka"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_3cl4r"]
+[ext_resource type="ArrayMesh" uid="uid://bq0uw8my5ldan" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Lever_02_Stick_01.res" id="3_3cl4r"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mcdm2"]
+points = PackedVector3Array(0.10583597, -0.059472032, 0.13208891, 0.102398746, 0.019092321, 0.12777553, -0.10569783, -0.039436128, 0.13336213, -0.10470394, -0.059472032, 0.13208891, 0.10583597, -0.059472032, -0.13209204, 0.06287075, 0.10349517, 0.036155388, 0.062270276, 0.074813195, 0.07562533, -0.10244697, 0.019044466, 0.12928261, 0.102398746, 0.019092321, -0.12780465, -0.10244697, 0.019044466, -0.12931174, -0.10470394, -0.059472032, -0.13209204, -0.061738726, 0.103479214, 0.036155388, 0.06287075, 0.103479214, -0.036184512, -0.061738726, 0.10349517, -0.036184512, 0.01036001, 0.034837097, -0.113903135, 0.062270276, 0.074813195, -0.07565445)
+
+[node name="SM_Gen_Prop_Lever_02" type="MeshInstance3D" unique_id=314178898]
+gi_mode = 2
+mesh = ExtResource("1_4rgka")
+surface_material_override/0 = ExtResource("2_3cl4r")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1277187248]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=26890828]
+shape = SubResource("ConvexPolygonShape3D_mcdm2")
+
+[node name="SM_Gen_Prop_Lever_02_Stick_01" type="MeshInstance3D" parent="." unique_id=1163108202]
+gi_mode = 2
+mesh = ExtResource("3_3cl4r")
+surface_material_override/0 = ExtResource("2_3cl4r")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ehn4kc6n4jn1"]
+
+[ext_resource type="ArrayMesh" uid="uid://dhctl1d382oby" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Pinecone_01.res" id="1_7ukv7"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ahsep"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qwg6k"]
+points = PackedVector3Array(-1.9532628, 4.0609097, -0.09281802, -1.0832797, 0.19002774, -0.72383475, -1.1816684, 0.106340416, 0.12557101, -1.726212, 4.1747794, 0.92978096, -0.13382888, 6.9028487, 0.36086535, -1.726212, 4.287963, -1.0026, -0.7025912, 4.1747794, -1.7985299, 0.6260345, 0.037744246, -1.057456, -0.12550366, 0.107026376, 1.1812909, 0.95904255, -0.10493579, 0.45539713, -0.92964196, 4.287963, 1.7260559, 1.9126558, 4.0609097, -0.3198322, -0.12701738, 6.810244, -0.19390488, 1.0025606, 4.287963, 1.7260559, 1.9126558, 4.0609097, 0.24735832, 1.0025606, 4.1747794, -1.6850227)
+
+[node name="SM_Env_Plant_Pinecone_01" type="MeshInstance3D" unique_id=1035481315]
+gi_mode = 2
+mesh = ExtResource("1_7ukv7")
+surface_material_override/0 = ExtResource("2_ahsep")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1709136814]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=208028541]
+shape = SubResource("ConvexPolygonShape3D_qwg6k")

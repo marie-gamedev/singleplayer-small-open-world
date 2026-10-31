@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dk8s0xyf1h6v0"]
+
+[ext_resource type="ArrayMesh" uid="uid://c7aimx3r0go17" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Crate_Building_01.res" id="1_s7ks6"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_geofl"]
+[ext_resource type="Shape3D" uid="uid://cvnphqnoohar3" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Crate_Building_01_Collision.res" id="3_a65mp"]
+[ext_resource type="ArrayMesh" uid="uid://dfqkoldfvswuo" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Crate_Building_01_Shutter_01.res" id="3_geofl"]
+
+[node name="SM_Bld_Crate_Building_01" type="MeshInstance3D" unique_id=107603248]
+gi_mode = 2
+mesh = ExtResource("1_s7ks6")
+surface_material_override/0 = ExtResource("2_geofl")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2060166093]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=544200523]
+shape = ExtResource("3_a65mp")
+
+[node name="SM_Bld_Crate_Building_01_Shutter_01" type="MeshInstance3D" parent="." unique_id=699714564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9904003, 4.8223057)
+gi_mode = 2
+mesh = ExtResource("3_geofl")
+surface_material_override/0 = ExtResource("2_geofl")

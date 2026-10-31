@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cdtblqv1resa2"]
+
+[ext_resource type="ArrayMesh" uid="uid://b6c16viophrlw" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Junky_Female_01.res" id="1_cvr3e"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ybmyc"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ybmyc"]
+points = PackedVector3Array(-0.5198187, 0.012466289, 0.029467147, -0.5218462, 0.010569708, 0.076108426, 0.43354437, -0.022876114, 0.28605226, -0.39412844, 0.23683181, 0.545792, 0.056842864, 0.04135171, -0.33100617, -0.2084089, 0.96240276, 0.045002002, 0.46605232, 0.025831819, 0.5133698, -0.20825517, 0.5884888, -0.2817506, 0.4133045, 0.43305412, -0.18782319, -0.378674, -0.0017991764, 0.51087546, -0.053385746, 0.82102215, 0.20490626, -0.36361057, 0.23081997, -0.28142384, 0.0098248245, -0.03719732, -0.26850277, 0.07092893, 0.64916915, -0.26334417, -0.26812914, 0.8952538, -0.031404395, 0.24451967, 0.057066284, -0.23691167, -0.4590459, 0.20429206, 0.5133698, -0.020877767, 0.9347079, -0.07086341, 0.3848809, 0.5288761, -0.13579832, 0.3523729, -0.022876114, 0.52958083, -0.54031587, 0.025831819, 0.026493698, 0.07116477, 0.40223917, -0.32604986, -0.06954122, 0.9347079, 0.091519184, -0.26688614, 0.846959, -0.10729186, -0.29680154, 0.009561956, 0.5620936, -0.16247728, 0.9340412, -0.0963616, 0.08756111, 0.12111747, -0.3447947, -0.20112307, 0.8964522, 0.13668121, -0.39261478, 0.031194344, -0.124598056, -0.114424534, 0.5566642, -0.31005177, -0.377973, 0.20429206, 0.5620936, 0.43354437, 0.44773012, -0.15200943)
+
+[node name="SM_Prop_Junky_Female_01" type="MeshInstance3D" unique_id=1141975338]
+gi_mode = 2
+mesh = ExtResource("1_cvr3e")
+surface_material_override/0 = ExtResource("2_ybmyc")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=898510349]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1362606799]
+shape = SubResource("ConvexPolygonShape3D_ybmyc")

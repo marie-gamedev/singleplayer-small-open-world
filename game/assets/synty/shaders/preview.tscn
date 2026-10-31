@@ -1,0 +1,98 @@
+[gd_scene load_steps=17 format=3 uid="uid://5xa8c2mhg2mv"]
+
+[ext_resource type="Material" uid="uid://dy2cs1cbnfms6" path="res://assets/synty/PolygonNatureBiomes/PNB_Tropical_Jungle/Materials/Plants/Palm_Mat_01.material" id="1_2nti4"]
+[ext_resource type="ArrayMesh" uid="uid://bu3t5u1esmkqi" path="res://assets/synty/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/extracted/SM_Env_Tree_Palm_01.SM_Env_Tree_Palm_01_LOD0.mesh" id="2_luhm3"]
+[ext_resource type="Material" uid="uid://bw5yrkbn1sdcb" path="res://assets/synty/PolygonNatureBiomes/PNB_Tropical_Jungle/Materials/Triplanar/Rock_Grass_Triplanar_01.material" id="3_455yj"]
+[ext_resource type="ArrayMesh" uid="uid://cg5jbtv5rcxcx" path="res://assets/synty/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/extracted/SM_Env_Rock_01.SM_Env_Rock_01.mesh" id="4_tcrt1"]
+[ext_resource type="Material" path="res://assets/synty/shaders/materials/water_demo.tres" id="5_water"]
+[ext_resource type="Material" path="res://assets/synty/shaders/materials/clouds_demo.tres" id="6_cloud"]
+[ext_resource type="Material" path="res://assets/synty/shaders/materials/crystal_demo.tres" id="7_crystal"]
+[ext_resource type="Material" path="res://assets/synty/shaders/materials/particles_demo.tres" id="8_particles"]
+[ext_resource type="Material" path="res://assets/synty/PolygonPirateRealm/Materials/Sails/ShipSails_01.material" id="9_fabric"]
+[ext_resource type="Material" path="res://assets/synty/PolygonPirateRealm/Materials/Sails/Static/ShipSails_Static_01.material" id="10_alpha"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_water"]
+size = Vector2(8, 6)
+subdivide_width = 48
+subdivide_depth = 36
+
+[sub_resource type="SphereMesh" id="SphereMesh_cloud"]
+radius = 1.4
+height = 2.2
+radial_segments = 32
+rings = 16
+
+[sub_resource type="PrismMesh" id="PrismMesh_crystal"]
+size = Vector3(1.8, 4, 1.8)
+
+[sub_resource type="QuadMesh" id="QuadMesh_particle"]
+orientation = 1
+size = Vector2(3, 3)
+
+[sub_resource type="QuadMesh" id="QuadMesh_sail"]
+size = Vector2(3.2, 4.2)
+
+[sub_resource type="Environment" id="Environment_dcmxb"]
+background_mode = 1
+background_color = Color(0.14, 0.19, 0.24, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.65
+tonemap_mode = 2
+
+[node name="SyntyShaderPreview" type="Node3D"]
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dcmxb")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.81915206, 0.4055798, -0.4055798, 0, 0.70710677, 0.70710677, 0.57357645, -0.579228, 0.579228, 0, 0, 0)
+light_energy = 1.5
+
+[node name="Palm" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_2nti4")
+mesh = ExtResource("2_luhm3")
+
+[node name="GrassRock" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.7724158, 0, 0, 0, 1.7724158, 0, 0, 0, 1.7724158, 5.0000052, 0.092050955, -0.0022340582)
+material_override = ExtResource("3_455yj")
+mesh = ExtResource("4_tcrt1")
+
+[node name="Water" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, -0.25, 1.5)
+material_override = ExtResource("5_water")
+mesh = SubResource("PlaneMesh_water")
+
+[node name="Cloud" type="MeshInstance3D" parent="."]
+position = Vector3(-4.3, 4.6, -1.5)
+scale = Vector3(1.8, 0.7, 0.9)
+material_override = ExtResource("6_cloud")
+mesh = SubResource("SphereMesh_cloud")
+
+[node name="Crystal" type="MeshInstance3D" parent="."]
+position = Vector3(5.6, 2.0, 0)
+rotation = Vector3(0, 0, -0.12)
+material_override = ExtResource("7_crystal")
+mesh = SubResource("PrismMesh_crystal")
+
+[node name="SoftParticleCard" type="MeshInstance3D" parent="."]
+position = Vector3(1.8, 3.5, 1.5)
+material_override = ExtResource("8_particles")
+mesh = SubResource("QuadMesh_particle")
+
+[node name="FabricSail" type="MeshInstance3D" parent="."]
+position = Vector3(-1.6, 3.1, 0)
+material_override = ExtResource("9_fabric")
+mesh = SubResource("QuadMesh_sail")
+
+[node name="StaticDoubleSidedSail" type="MeshInstance3D" parent="."]
+position = Vector3(2.0, 3.1, 0)
+rotation = Vector3(0, 0.35, 0)
+material_override = ExtResource("10_alpha")
+mesh = SubResource("QuadMesh_sail")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9952285, 0.09757141, 0, -0.09757141, 0.9952285, 1.2, 5.8, 22.5)
+projection = 1
+current = true
+size = 15.0

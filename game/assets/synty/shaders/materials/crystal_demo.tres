@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://assets/synty/shaders/crystal.gdshader" id="1"]
+
+[resource]
+resource_name = "Synty Crystal Demo"
+render_priority = 1
+shader = ExtResource("1")
+shader_parameter/enable_triplanar = false
+shader_parameter/base_color = Color(0.18, 0.055, 0.48, 1)
+shader_parameter/metallic = 0.18
+shader_parameter/smoothness = 0.86
+shader_parameter/opacity = 0.72
+shader_parameter/enable_fresnel = true
+shader_parameter/fresnel_color = Color(0.38, 0.8, 1, 1)
+shader_parameter/fresnel_border = 2.2
+shader_parameter/fresnel_power = 1.75
+shader_parameter/enable_depth = true
+shader_parameter/depth_power_multiplier = 0.55
+shader_parameter/deep_color = Color(0.05, 0.01, 0.18, 1)
+shader_parameter/deep_power = 7.0
+shader_parameter/shallow_color = Color(0.3, 0.12, 0.78, 1)
+shader_parameter/shallow_power = 1.4
+shader_parameter/enable_refraction = false
+shader_parameter/inner_distortion = true
+shader_parameter/noise_tiling = 3.5
+shader_parameter/inner_distortion_power = 0.018
+

@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b8h23ghxrr2bg"]
+
+[ext_resource type="ArrayMesh" uid="uid://q06g86m5kq53" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Turret_Large_03.res" id="1_4uc0g"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_qerbo"]
+[ext_resource type="ArrayMesh" uid="uid://d2gtsohsbeln5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Turret_Large_03_Top_01.res" id="3_qerbo"]
+[ext_resource type="ArrayMesh" uid="uid://qpkopkeq6geg" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Turret_Large_03_Launcher_01.res" id="4_mswfx"]
+[ext_resource type="ArrayMesh" uid="uid://c7eb3w0j2m61c" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Turret_Large_03_Missiles_01.res" id="5_70d6x"]
+[ext_resource type="ArrayMesh" uid="uid://c02bhre5aky7i" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Turret_Large_03_Missiles_02.res" id="6_qrht3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_eveuy"]
+points = PackedVector3Array(1.8080323, 0.0007862498, -1.5818329, -1.581882, 0.0007862498, -1.8083906, 1.5627606, 0.45754102, -1.7871509, 1.5372779, 0.7929374, -1.4830679, 1.7864425, 0.457379, 1.5634258, 1.5815189, 0.0007862498, 1.8080373, -1.8076875, 0.0007862498, 1.5818336, -1.7871598, 0.45754102, -1.5634251, -1.4834902, 0.51846325, -1.7588311, 0.9993086, 1.4590315, -1.1110176, 0.99966264, 1.4588695, 1.1106644, -1.5634778, 0.457379, 1.7867975, -1.7868059, 0.457379, 1.5634258, -1.169203, 1.4911128, 0.935436, -0.9996719, 1.4590315, -1.1113715, -0.6998956, 1.6560565, 0.32266808)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8nnog"]
+points = PackedVector3Array(-0.6899259, 0.29434544, 0.7957454, -0.8527604, 0.015872408, 0.6678246, 0.8829417, 0.0497934, 0.6696012, 0.70606697, 0.3076388, 0.7824203, 0.10061729, 2.2131736, 0.17497444, -0.31665665, 2.2017138, -0.001627326, -0.74163574, 0.0163308, -0.7698624, 0.83910835, 0.022060696, -0.6565104, -0.8662871, 0.08302681, -0.644429, 0.3165313, 2.123558, -0.7124758, 0.3165313, 2.1950672, 0.036571264, 0.104213, 2.3573377, -0.65029204, -0.31665665, 2.2017138, -0.590951, 0.2235564, 0.0555233, -1.0193079, -0.11152977, 2.1593125, -0.81943166, -0.18566996, 0.10984272, -0.97506857)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5huuj"]
+points = PackedVector3Array(-1.875245, 0.86476576, -1.0523555, -1.9949222, -0.8758201, -0.9175583, -2.038295, 0.9177557, -0.77849376, -1.450351, 1.2893591, 0.05137515, 2.0050256, 1.089524, -0.49434024, 1.8749068, 0.86476576, -1.0523555, 1.9202876, -0.80621463, -1.0395535, -1.9302644, -1.004478, 1.3343334, -1.9712276, -0.8634708, 1.5118039, 1.92591, -0.9373424, -0.9150481, 1.9198861, -0.9984156, -0.78351414, -1.9712276, 0.85286546, 1.5118039, 1.603826, 1.2233462, 0.84183407, 2.0644624, -0.87829, 1.3368435, 1.9704878, 0.85286546, 1.5118039, 1.9070349, -0.9267893, 1.5118039)
+
+[node name="SM_Prop_Turret_Large_03" type="MeshInstance3D" unique_id=1913889771]
+gi_mode = 2
+mesh = ExtResource("1_4uc0g")
+surface_material_override/0 = ExtResource("2_qerbo")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=103789495]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=810686454]
+shape = SubResource("ConvexPolygonShape3D_eveuy")
+
+[node name="SM_Prop_Turret_Large_03_Top_01" type="MeshInstance3D" parent="." unique_id=1740436733]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4913499, 0)
+gi_mode = 2
+mesh = ExtResource("3_qerbo")
+surface_material_override/0 = ExtResource("2_qerbo")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Turret_Large_03_Top_01" unique_id=800715073]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Turret_Large_03_Top_01/MeshCollider" unique_id=3360645]
+shape = SubResource("ConvexPolygonShape3D_8nnog")
+
+[node name="SM_Prop_Turret_Large_03_Launcher_01" type="MeshInstance3D" parent="SM_Prop_Turret_Large_03_Top_01" unique_id=1783933526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.828439, -0.27642918)
+gi_mode = 2
+mesh = ExtResource("4_mswfx")
+surface_material_override/0 = ExtResource("2_qerbo")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Turret_Large_03_Top_01/SM_Prop_Turret_Large_03_Launcher_01" unique_id=325378037]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Turret_Large_03_Top_01/SM_Prop_Turret_Large_03_Launcher_01/MeshCollider" unique_id=262736401]
+shape = SubResource("ConvexPolygonShape3D_5huuj")
+
+[node name="SM_Prop_Turret_Large_03_Missiles_01" type="MeshInstance3D" parent="SM_Prop_Turret_Large_03_Top_01/SM_Prop_Turret_Large_03_Launcher_01" unique_id=871379778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3342074, 0.0069293976, 1.3411342)
+gi_mode = 2
+mesh = ExtResource("5_70d6x")
+surface_material_override/0 = ExtResource("2_qerbo")
+
+[node name="SM_Prop_Turret_Large_03_Missiles_02" type="MeshInstance3D" parent="SM_Prop_Turret_Large_03_Top_01/SM_Prop_Turret_Large_03_Launcher_01" unique_id=1500038398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3342074, 0.0069293976, 1.3411342)
+gi_mode = 2
+mesh = ExtResource("6_qrht3")
+surface_material_override/0 = ExtResource("2_qerbo")

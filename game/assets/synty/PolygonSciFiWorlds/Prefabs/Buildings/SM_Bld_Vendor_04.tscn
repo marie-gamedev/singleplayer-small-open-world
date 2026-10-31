@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cyhhlcck57pw4"]
+
+[ext_resource type="ArrayMesh" uid="uid://byjpwcpj0fcop" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_04.res" id="1_3s4s6"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_y46wh"]
+[ext_resource type="ArrayMesh" uid="uid://crbux0sbhrik5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_04_Glass_01.res" id="3_y46wh"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_8521p"]
+[ext_resource type="ArrayMesh" uid="uid://ci0ulh1uhs15m" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_04_Sign_01.res" id="5_vk43x"]
+
+[node name="SM_Bld_Vendor_04" type="MeshInstance3D" unique_id=1821096541]
+gi_mode = 2
+mesh = ExtResource("1_3s4s6")
+surface_material_override/0 = ExtResource("2_y46wh")
+
+[node name="SM_Bld_Vendor_04_Glass_01" type="MeshInstance3D" parent="." unique_id=375819961]
+gi_mode = 2
+mesh = ExtResource("3_y46wh")
+surface_material_override/0 = ExtResource("4_8521p")
+
+[node name="SM_Bld_Vendor_04_Sign_01" type="MeshInstance3D" parent="." unique_id=2110037458]
+gi_mode = 2
+mesh = ExtResource("5_vk43x")
+surface_material_override/0 = ExtResource("2_y46wh")

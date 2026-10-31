@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bar33q8lb6gfq"]
+
+[ext_resource type="ArrayMesh" uid="uid://ckp8tagb1a5ki" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Elevator_Hover_Double_02.res" id="1_feow6"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_slibi"]
+[ext_resource type="Shape3D" uid="uid://j3vaaolh3gtt" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Elevator_Hover_Double_02_Collision.res" id="3_g3yrf"]
+[ext_resource type="ArrayMesh" uid="uid://cn422q8r0hlab" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Elevator_Hover_Double_02_Gate_01.res" id="3_slibi"]
+[ext_resource type="ArrayMesh" uid="uid://ddmfll0h1osvm" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Elevator_Hover_Double_02_Gate_02.res" id="4_g3yrf"]
+
+[node name="SM_Bld_Elevator_Hover_Double_02" type="MeshInstance3D" unique_id=552968416]
+gi_mode = 2
+mesh = ExtResource("1_feow6")
+surface_material_override/0 = ExtResource("2_slibi")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=321700193]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1241486877]
+shape = ExtResource("3_g3yrf")
+
+[node name="SM_Bld_Elevator_Hover_Double_02_Gate_01" type="MeshInstance3D" parent="." unique_id=2075235160]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4553899, 0.6109807, 1.1738181)
+gi_mode = 2
+mesh = ExtResource("3_slibi")
+surface_material_override/0 = ExtResource("2_slibi")
+
+[node name="SM_Bld_Elevator_Hover_Double_02_Gate_02" type="MeshInstance3D" parent="." unique_id=781998236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4553899, 0.6109807, 1.1738181)
+gi_mode = 2
+mesh = ExtResource("4_g3yrf")
+surface_material_override/0 = ExtResource("2_slibi")

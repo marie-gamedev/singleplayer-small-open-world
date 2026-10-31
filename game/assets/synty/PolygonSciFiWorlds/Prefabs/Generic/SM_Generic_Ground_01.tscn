@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cy7p0ja17h34l"]
+
+[ext_resource type="ArrayMesh" uid="uid://c27lttff5aid7" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_Ground_01.res" id="1_clyw7"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_3afqj"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_clyw7"]
+points = PackedVector3Array(2.7630126, -5.7129923e-09, -1.1953326, 2.7478669, -5.7129923e-09, -0.1333704, 2.4985034, -5.7129923e-09, -1.9722154, 1.1018512, 0.15616925, -2.0188951, 1.5616319, 0.17968917, 0.9174776, 2.6851203, -5.7129923e-09, 0.7124207, 1.855892, -5.7129923e-09, -2.510143, 1.2543905, -5.7129923e-09, -2.794111, -0.083842516, 0.24719864, -1.9183116, -0.019473076, 0.25390422, -1.5287588, 1.2852228, 0.20847775, 1.1369832, 1.2814362, 0.19915044, 1.3581557, 2.2967408, -5.7129923e-09, 2.1455975, 0.42191648, -5.7129923e-09, -2.8385677, 0.19310784, 0.14401855, -2.3262029, -0.21744943, -5.7129923e-09, -2.8385677, -1.0488414, -5.7129923e-09, -2.724647, -2.147988, -5.7129923e-09, -2.076689, -0.44733977, 0.23489669, -1.7110317, -1.291173, 0.2575343, 0.48457932, -1.0721009, 0.25433278, 0.4862466, -1.0796738, 0.20545268, 1.5648799, 0.7129307, 0.08145001, 2.3156447, 1.5670412, -5.7129923e-09, 2.478468, -2.7630126, -5.7129923e-09, -0.44512367, -1.9343252, 0.04318287, -1.8627405, -1.5151132, 0.2236031, 0.48735785, -2.7630126, -5.7129923e-09, 1.0719652, -1.2987458, 0.17832789, 1.5626574, -2.147988, -5.7129923e-09, 2.1972785, -1.1072606, 0.16327816, 1.8232856, -1.0569552, -5.7129923e-09, 2.8385677, 0.74754953, -5.7129923e-09, 2.7929997)
+
+[node name="SM_Generic_Ground_01" type="MeshInstance3D" unique_id=1710304126]
+gi_mode = 2
+mesh = ExtResource("1_clyw7")
+surface_material_override/0 = ExtResource("2_3afqj")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=614815849]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1352160270]
+shape = SubResource("ConvexPolygonShape3D_clyw7")

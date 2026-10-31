@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d2o4wkjeawgbl"]
+
+[ext_resource type="ArrayMesh" uid="uid://csbentnr5boys" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Canopy_03.res" id="1_igi45"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ebhq7"]
+
+[node name="SM_Prop_Canopy_03" type="MeshInstance3D" unique_id=1128299030]
+gi_mode = 2
+mesh = ExtResource("1_igi45")
+surface_material_override/0 = ExtResource("2_ebhq7")

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dr3jnf40jjs3s"]
+
+[ext_resource type="ArrayMesh" uid="uid://devt13sbxg2pj" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Launcher_01.res" id="1_hl7rf"]
+[ext_resource type="Material" uid="uid://mu6jv754j2c3" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_03_C_mat.tres" id="2_cctdh"]
+[ext_resource type="ArrayMesh" uid="uid://tcxhin1xy6d8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Launcher_01_Trigger_01.res" id="3_cctdh"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="4_sup3d"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mq8ib"]
+points = PackedVector3Array(-0.024187133, -0.16135764, -0.12787372, -0.118606865, 0.26361442, -0.78908, -0.024187133, 0.051232398, -0.78908, 0.022990376, -0.16135764, -0.12787372, 0.022990376, -0.16135764, 0.34428978, -0.16588145, 0.16924551, 0.32062244, 0.046611488, 0.33440843, -0.8125994, -0.09498575, 0.52335423, 0.296955, 0.11741012, 0.1928204, -0.8125994, 0.16468471, 0.16924551, 0.46233058, 0.1410636, 0.21639529, 0.65122557, 0.0702326, 0.12195706, 0.69856024, -0.1422927, 0.21639529, 0.65122557, 0.046611488, 0.54699844, 0.27328765, 0.09382138, 0.52335423, 0.34428978, -0.047775887, 0.3579833, 0.6748929)
+
+[node name="SM_Wep_Launcher_01" type="MeshInstance3D" unique_id=501944975]
+gi_mode = 2
+mesh = ExtResource("1_hl7rf")
+surface_material_override/0 = ExtResource("2_cctdh")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1034745884]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=182752233]
+shape = SubResource("ConvexPolygonShape3D_mq8ib")
+
+[node name="SM_Wep_Launcher_01_Trigger_01" type="MeshInstance3D" parent="." unique_id=1776656998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.010389354, 0.058471087)
+gi_mode = 2
+mesh = ExtResource("3_cctdh")
+surface_material_override/0 = ExtResource("4_sup3d")

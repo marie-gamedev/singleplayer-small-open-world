@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dpqyluexiouyc"]
+
+[ext_resource type="ArrayMesh" uid="uid://c7jwa6yy2a28a" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_05.res" id="1_iksca"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ve6mi"]
+[ext_resource type="ArrayMesh" uid="uid://clmedmsm46ubf" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_05_Glass_01.res" id="3_ve6mi"]
+[ext_resource type="Material" uid="uid://bj4o20i8jwpnb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_02_mat.tres" id="4_6jben"]
+[ext_resource type="ArrayMesh" uid="uid://ini0bbwghtk4" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_05_Glass_02.res" id="5_1sji0"]
+[ext_resource type="Material" uid="uid://b8ga8rc6onj4j" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_10_mat.tres" id="6_n3pgc"]
+[ext_resource type="ArrayMesh" uid="uid://b5e38tduoqluq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_05_Glass_03.res" id="7_6jben"]
+[ext_resource type="Material" uid="uid://b8yvsk4bbmcc3" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_13_mat.tres" id="8_60nv8"]
+[ext_resource type="ArrayMesh" uid="uid://cmjb7h6c3gtun" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_05_Glass_04.res" id="9_3scwf"]
+[ext_resource type="Material" uid="uid://bxy8rwiwwlvvp" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_05_mat.tres" id="10_mx3x8"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wwkww"]
+points = PackedVector3Array(3.2934103, 1.4872235, -0.7437899, 3.208939, -1.6843591, -0.5019822, 2.0186, -1.275417, -2.7627232, 2.0186, 2.5502243, -2.5499325, 2.5492873, 2.5502243, 2.0173318, 2.7620783, -1.275417, 2.0173318, -0.95724654, -1.275417, -3.2934105, -0.5026479, -1.6868476, 3.2128289, -3.2096045, -1.6843591, 0.5007136, -2.018621, 2.5502243, -2.5499325, -2.0179763, 2.5502243, 2.5493085, 0.7425003, 1.4872235, 3.2934315, 0.9552913, -1.275417, 3.2934315, -2.762744, -1.275417, -2.0186002, -3.2341077, -1.2957397, 0.5052273, -3.294076, 1.4872235, -0.7437899)
+
+[node name="SM_Prop_Billboard_05" type="MeshInstance3D" unique_id=24014402]
+gi_mode = 2
+mesh = ExtResource("1_iksca")
+surface_material_override/0 = ExtResource("2_ve6mi")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=331909799]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2064633224]
+shape = SubResource("ConvexPolygonShape3D_wwkww")
+
+[node name="SM_Prop_Billboard_05_Glass_01" type="MeshInstance3D" parent="." unique_id=751915333]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2888183e-07, 0, -2.8472438)
+gi_mode = 2
+mesh = ExtResource("3_ve6mi")
+surface_material_override/0 = ExtResource("4_6jben")
+
+[node name="SM_Prop_Billboard_05_Glass_02" type="MeshInstance3D" parent="." unique_id=1357460058]
+transform = Transform3D(-1, -1.224647e-16, -8.742278e-08, -1.2246469e-16, 1, -1.2246469e-16, 8.742278e-08, -1.2246467e-16, -1, 2.2888183e-07, 0, 2.8472438)
+gi_mode = 2
+mesh = ExtResource("5_1sji0")
+surface_material_override/0 = ExtResource("6_n3pgc")
+
+[node name="SM_Prop_Billboard_05_Glass_03" type="MeshInstance3D" parent="." unique_id=852830312]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.8472438, 0, 2.2888183e-07)
+gi_mode = 2
+mesh = ExtResource("7_6jben")
+surface_material_override/0 = ExtResource("8_60nv8")
+
+[node name="SM_Prop_Billboard_05_Glass_04" type="MeshInstance3D" parent="." unique_id=1192288032]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.8472438, 0, -2.2888183e-07)
+gi_mode = 2
+mesh = ExtResource("9_3scwf")
+surface_material_override/0 = ExtResource("10_mx3x8")

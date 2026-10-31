@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bu7nkihid5u6j"]
+
+[ext_resource type="ArrayMesh" uid="uid://cam6fdseayu87" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Gerneric_Grass_Patch_02.res" id="1_gsovo"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_qoy0u"]
+
+[node name="SM_Generic_Grass_Patch_02" type="MeshInstance3D" unique_id=40205708]
+gi_mode = 2
+mesh = ExtResource("1_gsovo")
+surface_material_override/0 = ExtResource("2_qoy0u")

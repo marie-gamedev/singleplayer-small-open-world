@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://caf6htscuf8d8"]
+
+[ext_resource type="ArrayMesh" uid="uid://cac25ojbdwqnj" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02_Attach_Cargo_01.res" id="1_046ox"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_0jehi"]
+[ext_resource type="ArrayMesh" uid="uid://cftr1cadi6jfc" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02_Attach_Cargo_01_Lid_01.res" id="3_0jehi"]
+[ext_resource type="ArrayMesh" uid="uid://0kei22pk5fi2" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02_Attach_Cargo_01_Lid_02.res" id="4_ben42"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v3ub4"]
+points = PackedVector3Array(-0.39858818, 0.5756054, -1.4218569, -0.33853573, 0.5756054, -1.856877, -0.29810357, 0.36582398, -1.804761, -0.3396478, 0.36841387, -1.4138918, -0.31788278, 0.63276803, -1.332975, -0.33853573, 0.81554055, -1.3467953, -0.33853573, 0.8005561, -1.796796, -0.023419231, 1.2956883, -1.8718576, 0.33649832, 0.5756054, -1.856877, 0.29725766, 0.36582398, -1.804761, 0.35516542, 0.36610147, -1.4129424, 0.31759292, 0.63276803, -1.332975, 0.33649832, 0.81554055, -1.3467953, 0.021461248, 1.3107651, -1.8418435, 0.33649832, 0.78547925, -1.8267573, 0.41291428, 0.46812478, -1.4131534)
+
+[node name="SM_Veh_Hover_Bike_02_Attach_Cargo_01" type="MeshInstance3D" unique_id=1475466879]
+gi_mode = 2
+mesh = ExtResource("1_046ox")
+surface_material_override/0 = ExtResource("2_0jehi")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1084331476]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1790428000]
+shape = SubResource("ConvexPolygonShape3D_v3ub4")
+
+[node name="SM_Veh_Hover_Bike_02_Attach_Cargo_01_Lid_01" type="MeshInstance3D" parent="." unique_id=688329717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19101562, 0.81207275, -1.646225)
+gi_mode = 2
+mesh = ExtResource("3_0jehi")
+surface_material_override/0 = ExtResource("2_0jehi")
+
+[node name="SM_Veh_Hover_Bike_02_Attach_Cargo_01_Lid_02" type="MeshInstance3D" parent="." unique_id=1135285113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19101554, 0.81207275, -1.646225)
+gi_mode = 2
+mesh = ExtResource("4_ben42")
+surface_material_override/0 = ExtResource("2_0jehi")

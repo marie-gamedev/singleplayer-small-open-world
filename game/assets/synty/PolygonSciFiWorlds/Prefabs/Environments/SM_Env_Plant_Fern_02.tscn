@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cqmmrk1ucsqbm"]
+
+[ext_resource type="ArrayMesh" uid="uid://b8ah3gjhaaxsw" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Fern_02.res" id="1_beg6d"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_c2a70"]
+
+[node name="SM_Env_Plant_Fern_02" type="MeshInstance3D" unique_id=1159874166]
+gi_mode = 2
+mesh = ExtResource("1_beg6d")
+surface_material_override/0 = ExtResource("2_c2a70")

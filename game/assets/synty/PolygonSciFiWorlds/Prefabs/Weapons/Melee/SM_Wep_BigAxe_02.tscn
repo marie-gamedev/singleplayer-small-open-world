@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dcge6eguclulk"]
+
+[ext_resource type="ArrayMesh" uid="uid://btcm202e0deq1" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_BigAxe_02.res" id="1_vg5kt"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_7hitq"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2o1oi"]
+points = PackedVector3Array(0.027054526, 0.38003623, 0.23644863, 0.058738396, 0.45925134, 0.030538335, 0.027054526, 0.5069172, 0.18889411, -0.004064925, 0.44147432, 0.22409947, -0.020476718, 0.36421275, 0.23644863, 0.042891033, -0.44346908, 0.078024596, 0.058738396, 0.23752713, -0.016982049, 0.042891033, 0.490996, -0.112056926, -0.020476718, 0.5069172, 0.18889411, -0.052149735, -0.44346908, 0.078024596, -0.052149735, 0.45925134, 0.046367094, 0.04137142, -0.4875209, -0.02919475, 0.042891033, -0.3166858, -0.0803653, -0.03631323, 0.490996, -0.112056926, -0.052149735, -0.49093956, -0.04863956, -0.052149735, -0.3166858, -0.0803653)
+
+[node name="SM_Wep_BigAxe_02" type="MeshInstance3D" unique_id=802642101]
+gi_mode = 2
+mesh = ExtResource("1_vg5kt")
+surface_material_override/0 = ExtResource("2_7hitq")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1081242349]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2054446422]
+shape = SubResource("ConvexPolygonShape3D_2o1oi")

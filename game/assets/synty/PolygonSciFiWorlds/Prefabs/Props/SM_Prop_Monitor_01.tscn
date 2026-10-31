@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dbk5n8bicr5g2"]
+
+[ext_resource type="ArrayMesh" uid="uid://sy8oquxivqbl" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_01.res" id="1_fcrbx"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_fl66e"]
+[ext_resource type="ArrayMesh" uid="uid://tstyhn88bqhv" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_01_Swivel_01.res" id="3_fl66e"]
+[ext_resource type="ArrayMesh" uid="uid://bgff7jmsqecl1" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_01_Arm_01.res" id="4_xqsdq"]
+[ext_resource type="ArrayMesh" uid="uid://dqjexk4kdcpdt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_01_Arm_02.res" id="5_qnam7"]
+[ext_resource type="ArrayMesh" uid="uid://cktj6y4t4eggx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_01_Screen_01.res" id="6_1oije"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_w5okx"]
+points = PackedVector3Array(-0.13501184, -1.3877788e-17, -0.3086575, -0.3086688, -1.3877788e-17, -0.13504298, -0.13716562, 0.13609818, -0.2842039, 0.12725818, 0.13609818, -0.29396093, 0.13495028, -1.3877788e-17, -0.3086575, -0.3143302, 0.116619416, 0.13742265, -0.2939615, 0.13609818, -0.1273593, -0.3086688, -1.3877788e-17, 0.13498339, 0.29389992, 0.13609818, 0.1273607, 0.3143302, 0.116619416, -0.13748224, 0.30860725, -1.3877788e-17, -0.13504298, -0.13501184, -1.3877788e-17, 0.3085979, -0.13716562, 0.13609818, 0.2841443, 0.30860725, -1.3877788e-17, 0.13498339, 0.13747329, 0.116619416, 0.3143302, 0.13495028, -1.3877788e-17, 0.3085979)
+
+[node name="SM_Prop_Monitor_01" type="MeshInstance3D" unique_id=2074286164]
+gi_mode = 2
+mesh = ExtResource("1_fcrbx")
+surface_material_override/0 = ExtResource("2_fl66e")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1558913809]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=69927136]
+shape = SubResource("ConvexPolygonShape3D_w5okx")
+
+[node name="SM_Prop_Monitor_01_Swivel_01" type="MeshInstance3D" parent="." unique_id=1930685753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4986528e-08, 0.07253231, 1.8353204e-24)
+gi_mode = 2
+mesh = ExtResource("3_fl66e")
+surface_material_override/0 = ExtResource("2_fl66e")
+
+[node name="SM_Prop_Monitor_01_Arm_01" type="MeshInstance3D" parent="SM_Prop_Monitor_01_Swivel_01" unique_id=1005663620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4986528e-08, 0.35512978, -0.00040258002)
+gi_mode = 2
+mesh = ExtResource("4_xqsdq")
+surface_material_override/0 = ExtResource("2_fl66e")
+
+[node name="SM_Prop_Monitor_01_Arm_02" type="MeshInstance3D" parent="SM_Prop_Monitor_01_Swivel_01/SM_Prop_Monitor_01_Arm_01" unique_id=1581967893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5884835e-17, 0.60438687, -0.61964667)
+gi_mode = 2
+mesh = ExtResource("5_qnam7")
+surface_material_override/0 = ExtResource("2_fl66e")
+
+[node name="SM_Prop_Monitor_01_Screen_01" type="MeshInstance3D" parent="SM_Prop_Monitor_01_Swivel_01/SM_Prop_Monitor_01_Arm_01/SM_Prop_Monitor_01_Arm_02" unique_id=1024036104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5589072e-17, 0.4833771, 0.12729448)
+gi_mode = 2
+mesh = ExtResource("6_1oije")
+surface_material_override/0 = ExtResource("2_fl66e")

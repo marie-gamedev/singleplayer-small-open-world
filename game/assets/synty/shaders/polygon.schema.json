@@ -1,0 +1,436 @@
+{
+  "_AO_Intensity": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_AO_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_AO_Texture": {
+    "type": "texture"
+  },
+  "_AO_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Base_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Base_Texture": {
+    "type": "texture"
+  },
+  "_Base_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Color_Tint": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Enable_Ambient_Occlusion": {
+    "type": "bool",
+    "default": false
+  },
+  "_Enable_Base_Texture": {
+    "type": "bool",
+    "default": false
+  },
+  "_Enable_Normal_Texture": {
+    "type": "bool",
+    "default": false
+  },
+  "_Generate_From_Base_Normals": {
+    "type": "bool",
+    "default": false
+  },
+  "_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Metallic_Smoothness_Texture": {
+    "type": "texture"
+  },
+  "_Normal_Intensity": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Normal_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Normal_Texture": {
+    "type": "texture"
+  },
+  "_Normal_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Smoothness": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_UVPan": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Emission_Color_Tint": {
+    "type": "color",
+    "default": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "_Emission_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Emission_Texture": {
+    "type": "texture"
+  },
+  "_Emission_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Enable_Emission_Texture": {
+    "type": "bool",
+    "default": false
+  },
+  "_Enable_Triplanar_Emission": {
+    "type": "bool",
+    "default": false
+  },
+  "_Triplanar_Emission_Blend": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Triplanar_Emission_Color_Tint": {
+    "type": "color",
+    "default": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "_Triplanar_Emission_Intensity": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Triplanar_Emission_Texture": {
+    "type": "texture"
+  },
+  "_Triplanar_Emission_Tiling": {
+    "type": "float",
+    "default": 0.25
+  },
+  "_Enable_Overlay_Texture": {
+    "type": "bool",
+    "default": false
+  },
+  "_OVERLAY_UV_CHANNEL": {
+    "type": "float",
+    "default": 0
+  },
+  "_Overlay_Intensity": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Overlay_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Overlay_Texture": {
+    "type": "texture"
+  },
+  "_Overlay_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Enable_Snow": {
+    "type": "bool",
+    "default": false
+  },
+  "_Snow_Color": {
+    "type": "color",
+    "default": {
+      "r": 0.8500000238418579,
+      "g": 0.8500000238418579,
+      "b": 0.8500000238418579,
+      "a": 0.0
+    }
+  },
+  "_Snow_Level": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Snow_Metallic": {
+    "type": "float",
+    "default": 0.10000000149011612
+  },
+  "_Snow_Smoothness": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Snow_Transition": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Snow_Use_World_Up": {
+    "type": "bool",
+    "default": true
+  },
+  "_Bottom_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Bottom_Smoothness": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Enable_Triplanar_Normals": {
+    "type": "bool",
+    "default": false
+  },
+  "_Enable_Triplanar_Texture": {
+    "type": "bool",
+    "default": false
+  },
+  "_Side_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Side_Smoothness": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Top_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Top_Smoothness": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Triplanar_Fade": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Triplanar_Intensity": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Triplanar_Normal_Fade": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Triplanar_Normal_Intensity_Bottom": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Triplanar_Normal_Intensity_Side": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Triplanar_Normal_Intensity_Top": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Triplanar_Normal_Offset_Bottom": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Normal_Offset_Side": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Normal_Offset_Top": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Normal_Texture_Bottom": {
+    "type": "texture"
+  },
+  "_Triplanar_Normal_Texture_Side": {
+    "type": "texture"
+  },
+  "_Triplanar_Normal_Texture_Top": {
+    "type": "texture"
+  },
+  "_Triplanar_Normal_Tiling_Bottom": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Normal_Tiling_Side": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Normal_Tiling_Top": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Normal_Top_To_Side_Difference": {
+    "type": "float",
+    "default": 0.20000000298023224
+  },
+  "_Triplanar_Offset_Bottom": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Offset_Side": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Offset_Top": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Texture_Bottom": {
+    "type": "texture"
+  },
+  "_Triplanar_Texture_Side": {
+    "type": "texture"
+  },
+  "_Triplanar_Texture_Top": {
+    "type": "texture"
+  },
+  "_Triplanar_Tiling_Bottom": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Tiling_Side": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Tiling_Top": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Triplanar_Top_To_Side_Difference": {
+    "type": "float",
+    "default": 0.20000000298023224
+  }
+}

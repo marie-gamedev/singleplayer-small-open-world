@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ccerctgsnvf12"]
+
+[ext_resource type="ArrayMesh" uid="uid://b5qoxs3lbbf4n" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Medkit_01.res" id="1_gvm6v"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_hlyyd"]
+[ext_resource type="ArrayMesh" uid="uid://b3vivn0ogjqjk" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Medkit_01_Lid_01.res" id="3_hlyyd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lt060"]
+size = Vector3(0.47511908, 0.10931275, 0.49071074)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4dqh1"]
+size = Vector3(0.48940802, 0.0894126, 0.39760545)
+
+[node name="SM_Gen_Prop_Medkit_01" type="MeshInstance3D" unique_id=749109710]
+gi_mode = 2
+mesh = ExtResource("1_gvm6v")
+surface_material_override/0 = ExtResource("2_hlyyd")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=511209738]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=326445828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4703484e-08, 0.054656375, -0.0117054805)
+shape = SubResource("BoxShape3D_lt060")
+
+[node name="SM_Gen_Prop_Medkit_01_Lid_01" type="MeshInstance3D" parent="." unique_id=246392397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10161185, 0.2397415)
+gi_mode = 2
+mesh = ExtResource("3_hlyyd")
+surface_material_override/0 = ExtResource("2_hlyyd")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Gen_Prop_Medkit_01_Lid_01" unique_id=40439635]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Gen_Prop_Medkit_01_Lid_01/BoxCollider" unique_id=107476897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7252903e-08, 0.030002719, -0.18148293)
+shape = SubResource("BoxShape3D_4dqh1")

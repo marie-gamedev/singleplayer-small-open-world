@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cvdgt6g8sqt2r"]
+
+[ext_resource type="ArrayMesh" uid="uid://db1tpt5newyol" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_VR_02.res" id="1_oqvmo"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_rumgx"]
+
+[node name="SM_Chr_Attach_VR_02" type="MeshInstance3D" unique_id=1698503985]
+gi_mode = 2
+mesh = ExtResource("1_oqvmo")
+surface_material_override/0 = ExtResource("2_rumgx")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://5kv60d067k7n"]
+
+[ext_resource type="ArrayMesh" uid="uid://dlhfibpnlt7wk" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Sack_Stack_01.res" id="1_ced8u"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_inhqf"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ced8u"]
+points = PackedVector3Array(0.42661104, 0.46978143, 0.4284248, -0.09018059, 0.10883097, -0.4794296, 0.015295353, 0.10105916, -0.48957992, 0.15242818, 0.92703104, 0.0018497991, -0.49249431, 0.054148823, 0.12476849, -0.28769654, 0.86328787, 0.22881559, 0.4136911, 0.040660754, -0.3505596, 0.15359557, 0.039510354, 0.46260354, 0.42470434, 0.66682655, -0.16501479, -0.22949617, 0.6073511, 0.43021673, -0.20604296, 0.70536256, -0.16008969, 0.3769797, 0.72606146, 0.3938193, 0.46113002, 0.1006935, 0.30924368, -0.41197994, 0.011854689, -0.120231, -0.16918303, 0.10056152, 0.4785158, -0.33402222, 0.8033927, 0.04939158, 0.4014245, 0.021977693, 0.40314388, 0.14313371, -0.007955551, -0.34818527, -0.121902786, 0.92714566, 0.27619445, 0.25843596, 0.65211326, 0.45791054, 0.48995224, 0.27071607, -0.05934104, 0.26782706, 0.6632156, -0.22130598, -0.47419944, 0.05669319, -0.074620284, -0.42727682, 0.011855194, 0.16953146, 0.23062555, 0.9155946, 0.1862202, 0.46093228, 0.63864183, 0.124677606, 0.2732956, 0.1357866, -0.4385459, 0.23075607, 0.10037886, 0.49416795, -0.1336212, 0.9154505, 0.031436607, -0.13764751, 0.6225959, 0.46065432, -0.107399955, 0.024717288, -0.4584626, 0.47867608, 0.26894382, 0.3878148)
+
+[node name="SM_Gen_Prop_Sack_Stack_01" type="MeshInstance3D" unique_id=588691791]
+gi_mode = 2
+mesh = ExtResource("1_ced8u")
+surface_material_override/0 = ExtResource("2_inhqf")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=170363661]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1333163460]
+shape = SubResource("ConvexPolygonShape3D_ced8u")

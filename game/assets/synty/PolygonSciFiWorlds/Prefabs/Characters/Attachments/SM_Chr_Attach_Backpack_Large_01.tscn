@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dh5csvdkvynkr"]
+
+[ext_resource type="ArrayMesh" uid="uid://b16lpnuixwnka" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Backpack_Large_01.res" id="1_ax5by"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_bdfmj"]
+[ext_resource type="Material" uid="uid://cuvjd7v2ydnpu" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_02_A_mat.tres" id="3_6dqvo"]
+[ext_resource type="Material" uid="uid://b6d78llggyu43" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_03_A_mat.tres" id="4_s0qdj"]
+[ext_resource type="Material" uid="uid://bg2lgny8l2s30" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_04_A_mat.tres" id="5_xk8gv"]
+
+[node name="SM_Chr_Attach_Backpack_Large_01" type="MeshInstance3D" unique_id=1714229719]
+gi_mode = 2
+mesh = ExtResource("1_ax5by")
+surface_material_override/0 = ExtResource("2_bdfmj")
+surface_material_override/1 = ExtResource("3_6dqvo")
+surface_material_override/2 = ExtResource("4_s0qdj")
+surface_material_override/3 = ExtResource("5_xk8gv")

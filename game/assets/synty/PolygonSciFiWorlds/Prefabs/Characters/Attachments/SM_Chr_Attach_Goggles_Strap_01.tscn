@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bp5c7aj6snd2r"]
+
+[ext_resource type="ArrayMesh" uid="uid://02cq65qydlkv" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Goggles_Strap_01.res" id="1_evxv0"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_71b4t"]
+[ext_resource type="ArrayMesh" uid="uid://c1i5k1tqr84mg" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Goggles_Strap_01_Glass.res" id="3_71b4t"]
+
+[node name="SM_Chr_Attach_Goggles_Strap_01" type="MeshInstance3D" unique_id=1177969746]
+gi_mode = 2
+mesh = ExtResource("1_evxv0")
+surface_material_override/0 = ExtResource("2_71b4t")
+
+[node name="SM_Chr_Attach_Goggles_Strap_01_Glass" type="MeshInstance3D" parent="." unique_id=265824577]
+gi_mode = 2
+mesh = ExtResource("3_71b4t")
+surface_material_override/0 = ExtResource("2_71b4t")

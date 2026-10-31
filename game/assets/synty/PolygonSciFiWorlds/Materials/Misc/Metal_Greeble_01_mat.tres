@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ch7yo5j32152s"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_5a7dd"]
+[ext_resource type="Texture2D" uid="uid://e56re8lqs1td" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Metal_Greeble_01.png" id="2_fas8d"]
+
+[resource]
+resource_name = "Metal_Greeble_01_mat"
+render_priority = 0
+shader = ExtResource("1_5a7dd")
+shader_parameter/Albedo_Map = ExtResource("2_fas8d")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.5
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Alpha_Clip_Threshold = 0.0

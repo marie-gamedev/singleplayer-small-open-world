@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dfvklbh34h53r"]
+
+[ext_resource type="ArrayMesh" uid="uid://c8a3dh5nkqy56" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Wall_Door_Double_Large_01.res" id="1_n4l10"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="2_2f2mn"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="3_hcefa"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="4_ahrr6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0hq7j"]
+size = Vector3(0.11450577, 3.0057435, 0.28803015)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4tq2n"]
+size = Vector3(2.4999926, 0.51347923, 0.28803015)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_owv40"]
+size = Vector3(0.10931587, 3.0057435, 0.28803015)
+
+[node name="SM_Bld_Base_Wall_Door_Double_Large_01" type="MeshInstance3D" unique_id=129042786]
+gi_mode = 2
+mesh = ExtResource("1_n4l10")
+surface_material_override/0 = ExtResource("2_2f2mn")
+surface_material_override/1 = ExtResource("3_hcefa")
+surface_material_override/2 = ExtResource("4_ahrr6")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=326868187]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1785021377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4427395, 1.502871, 0)
+shape = SubResource("BoxShape3D_0hq7j")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="BoxCollider" unique_id=1345043464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2499963, 2.7490034, 0)
+shape = SubResource("BoxShape3D_4tq2n")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="BoxCollider" unique_id=931723859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.054657936, 1.502871, 0)
+shape = SubResource("BoxShape3D_owv40")

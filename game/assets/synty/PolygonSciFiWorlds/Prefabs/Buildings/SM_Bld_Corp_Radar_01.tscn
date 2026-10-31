@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bvu0i8bslntbq"]
+
+[ext_resource type="ArrayMesh" uid="uid://xax12bjf6ycd" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Radar_01.res" id="1_l6rub"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_0675i"]
+[ext_resource type="ArrayMesh" uid="uid://g2ugxtrlm1l2" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Radar_01_Arm_01.res" id="3_0675i"]
+[ext_resource type="Shape3D" uid="uid://bw6etp237owlw" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Radar_01_Collision.res" id="3_bcwqy"]
+[ext_resource type="ArrayMesh" uid="uid://4r88jcc2vg65" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Radar_01_Top_01.res" id="4_tbx8b"]
+[ext_resource type="Shape3D" uid="uid://duvtoen2i1wrj" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Radar_01_Arm_01_Collision.res" id="5_2ia45"]
+[ext_resource type="ArrayMesh" uid="uid://bkbxq3l6shn7n" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Radar_01_Glass_01.res" id="5_bcwqy"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="6_oi6su"]
+[ext_resource type="Shape3D" uid="uid://drlrqnfw2c8jy" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Radar_01_Top_01_Collision.res" id="7_oi6su"]
+
+[node name="SM_Bld_Corp_Radar_01" type="MeshInstance3D" unique_id=1996571894]
+gi_mode = 2
+mesh = ExtResource("1_l6rub")
+surface_material_override/0 = ExtResource("2_0675i")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1716376223]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=962450649]
+shape = ExtResource("3_bcwqy")
+
+[node name="SM_Bld_Corp_Radar_01_Arm_01" type="MeshInstance3D" parent="." unique_id=162297280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6293944e-08, 4.3830976, 0)
+gi_mode = 2
+mesh = ExtResource("3_0675i")
+surface_material_override/0 = ExtResource("2_0675i")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Corp_Radar_01_Arm_01" unique_id=526152428]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Corp_Radar_01_Arm_01/MeshCollider" unique_id=1354358234]
+shape = ExtResource("5_2ia45")
+
+[node name="SM_Bld_Corp_Radar_01_Top_01" type="MeshInstance3D" parent="SM_Bld_Corp_Radar_01_Arm_01" unique_id=1558458368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6293944e-08, 9.027768, 0.5067811)
+gi_mode = 2
+mesh = ExtResource("4_tbx8b")
+surface_material_override/0 = ExtResource("2_0675i")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Corp_Radar_01_Arm_01/SM_Bld_Corp_Radar_01_Top_01" unique_id=1916328550]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Corp_Radar_01_Arm_01/SM_Bld_Corp_Radar_01_Top_01/MeshCollider" unique_id=1346660159]
+shape = ExtResource("7_oi6su")
+
+[node name="SM_Bld_Corp_Radar_01_Glass_01" type="MeshInstance3D" parent="." unique_id=1818172586]
+gi_mode = 2
+mesh = ExtResource("5_bcwqy")
+surface_material_override/0 = ExtResource("6_oi6su")

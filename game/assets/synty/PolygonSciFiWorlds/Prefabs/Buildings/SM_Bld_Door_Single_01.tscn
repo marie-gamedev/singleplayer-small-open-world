@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://5wdng8ycm282"]
+
+[ext_resource type="ArrayMesh" uid="uid://b5388wbbkfujg" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_01.res" id="1_o8lsd"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_hdp3g"]
+[ext_resource type="ArrayMesh" uid="uid://coerk5w1g6fg8" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_01_Door_01.res" id="3_hdp3g"]
+[ext_resource type="Shape3D" uid="uid://u2od5wytpm45" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Door_Single_01_Collision.res" id="3_pnx5r"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sjx5h"]
+points = PackedVector3Array(-0.11439331, 0.53729093, -0.15682104, 0.08390126, 0.50285816, -0.20363486, -0.07421385, -0.011156797, -0.08499341, -0.07421385, -0.011156797, 0.11279398, -0.08901681, 1.8383061, 0.17691612, -0.07421385, 2.4397655, -0.08499341, 0.08390126, 1.8863634, -0.20363486, 1.5472794, -0.011156797, -0.045381725, 0.83543605, -0.011156797, -0.08495469, 1.5472794, 2.4397655, -0.08495469, 1.5472794, -0.011156797, 0.073221, 0.123592705, 0.50285816, 0.19193989, 0.123592705, 1.8863634, 0.19193989, 0.0048437044, 2.5195308, 0.11279398, 1.4680591, 2.5195308, -0.08495469, 1.5472794, 2.4003782, 0.11279398)
+
+[node name="SM_Bld_Door_Single_01" type="MeshInstance3D" unique_id=2038390674]
+gi_mode = 2
+mesh = ExtResource("1_o8lsd")
+surface_material_override/0 = ExtResource("2_hdp3g")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1088475234]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=801064514]
+shape = ExtResource("3_pnx5r")
+
+[node name="SM_Bld_Door_Single_01_Door_01" type="MeshInstance3D" parent="." unique_id=755836092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7277987, 0, 0)
+gi_mode = 2
+mesh = ExtResource("3_hdp3g")
+surface_material_override/0 = ExtResource("2_hdp3g")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Door_Single_01_Door_01" unique_id=2114296203]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Door_Single_01_Door_01/MeshCollider" unique_id=553684865]
+shape = SubResource("ConvexPolygonShape3D_sjx5h")

@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cdw6k4keq5g1u"]
+
+[ext_resource type="Texture2D" uid="uid://80kvgvmgeueq" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/FX/Circle_01.png" id="1_bg63u"]
+
+[resource]
+resource_name = "FX_Circle_01_mat"
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.32941177, 0.94509804, 1, 1)
+albedo_texture = ExtResource("1_bg63u")
+uv1_scale = Vector3(1, 1, 0)
+billboard_mode = 2
+billboard_keep_scale = true

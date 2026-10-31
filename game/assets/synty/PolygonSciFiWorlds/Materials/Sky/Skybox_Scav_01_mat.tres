@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cyl2t5ilx33hn"]
+
+[ext_resource type="Shader" uid="uid://dt087qyaq06u2" path="res://Assets/Synty/PolygonGeneric/Shaders/Skydome.gdshader" id="1_sqt3k"]
+
+[resource]
+resource_name = "Skybox_Scav_01_mat"
+render_priority = 0
+shader = ExtResource("1_sqt3k")
+shader_parameter/tint_color = Color(1, 1, 1, 1)
+shader_parameter/enable_albedo_map = false
+shader_parameter/blend_top_bottom_color = false
+shader_parameter/albedo_rotation_degrees = 0.0
+shader_parameter/enable_unlit = true
+shader_parameter/top_color = Color(0.8862745, 0.25882354, 0.11372549, 1)
+shader_parameter/bottom_color = Color(0.99999994, 0.91663843, 0.61273885, 1)
+shader_parameter/offset = -200.0
+shader_parameter/enable_uv_based = false
+shader_parameter/falloff = 0.800000038
+shader_parameter/distance_ = 4387.30020834925

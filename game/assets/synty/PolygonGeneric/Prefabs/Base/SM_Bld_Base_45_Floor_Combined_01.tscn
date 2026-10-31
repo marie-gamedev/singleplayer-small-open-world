@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cfheiku3e1wne"]
+
+[ext_resource type="ArrayMesh" uid="uid://byfrdvsqiki2t" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_45_Floor_Combined_01.res" id="1_xrksr"]
+[ext_resource type="Material" uid="uid://b0w4ho5ad7w7b" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Concrete_mat.tres" id="2_wnedv"]
+[ext_resource type="Material" uid="uid://dvwr81ng2boj2" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Wood_mat.tres" id="3_of8wk"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rqc6h"]
+points = PackedVector3Array(2.4999914, -0.046260424, 2.5001986, 2.4999914, -0.09251659, 2.499954, 2.4999914, 0.008080974, 2.499954, 0, 0.008080974, 2.499954, 0, -0.09251659, 2.499954, 0, -0.09251659, 0, 0, 0.008080974, 0)
+
+[node name="SM_Bld_Base_45_Floor_Combined_01" type="MeshInstance3D" unique_id=90211960]
+gi_mode = 2
+mesh = ExtResource("1_xrksr")
+surface_material_override/0 = ExtResource("2_wnedv")
+surface_material_override/1 = ExtResource("3_of8wk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2146039327]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=760073695]
+shape = SubResource("ConvexPolygonShape3D_rqc6h")

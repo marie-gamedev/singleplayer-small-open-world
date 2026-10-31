@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://svnv5tbx52my"]
+
+[ext_resource type="ArrayMesh" uid="uid://bb5hi8kd3bwht" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_Tree_01.res" id="1_wopoc"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_2ql6y"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pd5im"]
+points = PackedVector3Array(0.7665866, 2.7516432, 0.35378295, 0.12632293, 2.4566395, 0.8908761, 0.71523947, 1.8194941, 0.20590883, 0.6481417, 2.6474576, -0.46695086, 0.025518775, 3.1199727, 0.29615086, -0.40415877, 2.4560733, 0.77722615, -0.8297412, 1.933447, 0.48680514, 0.29674488, 1.6739742, 0.1634515, 0.51804143, 1.7719312, -0.28339964, 0.07481831, 2.3602395, -0.758179, 0.073085725, 2.4559317, -0.7481701, -0.40573385, 3.0333405, -0.47001812, -0.6341182, 2.8323302, 0.2000972, -0.69349813, 2.8883865, -0.3250498, -0.8424992, 1.8765414, 0.010895729, -0.7009009, 1.9222641, -0.2809781)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wopoc"]
+radius = 0.1381836
+height = 3.295694
+
+[node name="SM_Generic_Tree_01" type="MeshInstance3D" unique_id=59850711]
+gi_mode = 2
+mesh = ExtResource("1_wopoc")
+surface_material_override/0 = ExtResource("2_2ql6y")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1040741228]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1249162599]
+shape = SubResource("ConvexPolygonShape3D_pd5im")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=1726776518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020439565, 1.5168879, 0.048305392)
+shape = SubResource("CapsuleShape3D_wopoc")

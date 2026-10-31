@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://br70se07jl6ld"]
+
+[ext_resource type="ArrayMesh" uid="uid://dcojj4pcm7f7y" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Bld_Pipe_Corner_01.res" id="1_b1ftb"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_0if34"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8kaev"]
+radius = 0.21975163
+
+[node name="SM_Gen_Bld_Pipe_Corner_01" type="MeshInstance3D" unique_id=1400515708]
+gi_mode = 2
+mesh = ExtResource("1_b1ftb")
+surface_material_override/0 = ExtResource("2_0if34")
+
+[node name="SphereCollider" type="StaticBody3D" parent="." unique_id=1359309823]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SphereCollider" unique_id=1894510127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1860241, 0.030248545, 0)
+shape = SubResource("SphereShape3D_8kaev")

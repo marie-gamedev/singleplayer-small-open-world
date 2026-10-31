@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://doyryuup8qiy0"]
+
+[ext_resource type="ArrayMesh" uid="uid://p75mukar7qoh" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Roof_Half_01.res" id="1_gq7f1"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_ke6v7"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="3_3wwdf"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="4_aipt1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_117li"]
+points = PackedVector3Array(2.5000002, 0.10515642, -4.425586e-07, 2.5000002, -1.3948501, 1.2498778, 2.5000002, -0.28558433, -4.425586e-07, -2.6829857e-06, 0.10515642, -4.425586e-07, 2.5000002, -1.5823509, 1.2500001, -2.6829857e-06, -1.3948501, 1.2498778, 2.5000002, -1.6425701, 1.1313137, -2.6829857e-06, -0.28558433, -4.425586e-07, 2.5000002, -1.6425701, 1.1831931, -2.6829857e-06, -1.5823509, 1.2500001, -2.6829857e-06, -1.6425701, 1.1863744, -2.6829857e-06, -1.6425701, 1.1358409)
+
+[node name="SM_Bld_Base_Roof_Half_01" type="MeshInstance3D" unique_id=1227894354]
+gi_mode = 2
+mesh = ExtResource("1_gq7f1")
+surface_material_override/0 = ExtResource("2_ke6v7")
+surface_material_override/1 = ExtResource("3_3wwdf")
+surface_material_override/2 = ExtResource("4_aipt1")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1469700609]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1059743528]
+shape = SubResource("ConvexPolygonShape3D_117li")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dkh788djx6m0u"]
+
+[ext_resource type="ArrayMesh" uid="uid://c67ur4yvsbtv5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Backpack_Tanks_01.res" id="1_cfstu"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_jry5r"]
+
+[node name="SM_Chr_Attach_Backpack_Tanks_01" type="MeshInstance3D" unique_id=474164290]
+gi_mode = 2
+mesh = ExtResource("1_cfstu")
+surface_material_override/0 = ExtResource("2_jry5r")

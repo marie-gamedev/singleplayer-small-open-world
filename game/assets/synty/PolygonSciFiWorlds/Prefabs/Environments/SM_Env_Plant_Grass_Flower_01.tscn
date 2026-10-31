@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8nmjj81x4rdd"]
+
+[ext_resource type="ArrayMesh" uid="uid://de7kgacrdxf0r" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Grass_Flower_01.res" id="1_b60df"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_savyb"]
+
+[node name="SM_Env_Plant_Grass_Flower_01" type="MeshInstance3D" unique_id=1309338994]
+gi_mode = 2
+mesh = ExtResource("1_b60df")
+surface_material_override/0 = ExtResource("2_savyb")

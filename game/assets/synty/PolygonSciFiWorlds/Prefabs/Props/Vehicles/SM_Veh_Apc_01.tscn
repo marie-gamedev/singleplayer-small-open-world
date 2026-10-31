@@ -1,0 +1,222 @@
+[gd_scene format=3 uid="uid://cjqcmv56dapjv"]
+
+[ext_resource type="ArrayMesh" uid="uid://b1mog2fl31vb8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01.res" id="1_fukmk"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_hjjpc"]
+[ext_resource type="ArrayMesh" uid="uid://3rk6tud2s54o" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_Door_01.res" id="3_hjjpc"]
+[ext_resource type="ArrayMesh" uid="uid://dpyots31inrn4" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_SuspensionArm_lf.res" id="4_vi2an"]
+[ext_resource type="ArrayMesh" uid="uid://b0da3nnulch1e" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_WheelBase_lf.res" id="5_yw4fo"]
+[ext_resource type="ArrayMesh" uid="uid://dlpa2pcifkraf" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_Wheel_lf.res" id="6_bny8t"]
+[ext_resource type="ArrayMesh" uid="uid://vi4754r56v35" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_SuspensionArm_lm.res" id="7_1nl4u"]
+[ext_resource type="ArrayMesh" uid="uid://upkrmgl041eu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_WheelBase_lm.res" id="8_c04yq"]
+[ext_resource type="ArrayMesh" uid="uid://5c0ir8v2n3bp" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_Wheel_lm.res" id="9_w702n"]
+[ext_resource type="ArrayMesh" uid="uid://ddqpa62x3uq62" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_SuspensionArm_lr.res" id="10_48604"]
+[ext_resource type="ArrayMesh" uid="uid://dtgnepewlelh6" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_WheelBase_lr.res" id="11_jsbil"]
+[ext_resource type="ArrayMesh" uid="uid://b0q5coe1lvcod" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_Wheel_lr.res" id="12_r2dr4"]
+[ext_resource type="ArrayMesh" uid="uid://dq8tjg1r3my16" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_SuspensionArm_rf.res" id="13_xx6jp"]
+[ext_resource type="ArrayMesh" uid="uid://b7o5d76rg46gn" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_WheelBase_rf.res" id="14_c1obc"]
+[ext_resource type="ArrayMesh" uid="uid://fvytayqqtt6k" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_Wheel_rf.res" id="15_lb4p0"]
+[ext_resource type="ArrayMesh" uid="uid://brvfwmhep1tql" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_SuspensionArm_rm.res" id="16_lbk2v"]
+[ext_resource type="ArrayMesh" uid="uid://cfxvolpa8h3rn" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_WheelBase_rm.res" id="17_dlwv7"]
+[ext_resource type="ArrayMesh" uid="uid://b2e06r274tuna" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_Wheel_rm.res" id="18_gkylu"]
+[ext_resource type="ArrayMesh" uid="uid://s7av5in2jnnl" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_SuspensionArm_rr.res" id="19_1cvs3"]
+[ext_resource type="ArrayMesh" uid="uid://b15sr85gqs1et" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_WheelBase_rr.res" id="20_m4tv6"]
+[ext_resource type="ArrayMesh" uid="uid://cbfa7wtuxj5v8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Apc_01_Wheel_rr.res" id="21_x18k5"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rxmmu"]
+points = PackedVector3Array(0.95334244, 4.8280144, -0.5395384, -1.3521343, 4.7977285, -0.6493273, -1.2088622, 4.622677, 0.76360846, 0.91610575, 4.6069283, 0.5977316, 0.8930545, 3.9793062, 0.5595441, 0.95334244, 3.9677978, -5.3320637, 0.95334244, 4.643473, -4.409598, -1.3521343, 4.7977285, -2.9590716, -2.607894, 4.248244, -0.37366152, -1.558886, 3.796683, 0.76360846, -2.4174554, 3.9168167, 0.253448, -1.9851563, 3.8192964, -5.270009, -1.0382831, 3.9211576, -5.31476, -1.4929241, 4.335972, -5.242562, -2.607894, 4.248244, -3.2257872, -2.6696002, 3.8234355, -3.2562177)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_14l2m"]
+points = PackedVector3Array(1.0109718, 2.1302047, -3.807977, -0.8906187, 2.1235194, -3.6727374, -0.86921275, 2.2710977, -3.5620477, 0.91995, 2.5342243, -3.0607138, 0.91995, 2.5342243, 0.5821402, 0.8049165, 1.8226749, 0.5920465, 0.7637799, 1.5618433, -0.61305, 0.7637799, 1.5618433, -3.1029224, -0.7625554, 1.5603466, -3.1080906, -0.8582306, 1.9716502, 0.5842936, -0.8571138, 2.5342243, 0.5817096, -0.8571138, 2.5342243, -3.0607138, -0.11107087, 1.574815, 0.5007384, 0.14561403, 1.5148457, -3.0098913, -0.7625554, 1.5603466, -0.6100352)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4607o"]
+points = PackedVector3Array(1.7546405, 1.9100921, 0.022144318, 2.7048213, 1.9701198, -0.017036438, 1.6540813, 2.3364575, 0.76360846, 0.95786357, 2.221451, 0.645473, 0.96504635, 1.9877915, -3.1093395, 2.5633886, 1.9148607, -3.7296996, 2.5999868, 3.8666043, 0.12543869, 2.6786554, 4.216673, -3.2452843, 1.1136618, 4.6553802, 0.76360846, 0.95769256, 4.606853, 0.64487934, 0.96213907, 4.3569245, -5.24231, 1.225337, 2.4093883, -4.534684, 2.5368807, 1.9375814, -3.796188, 2.0287838, 3.7830143, -5.301081, 2.349102, 4.362254, -0.33344984, 1.4295336, 4.7757163, -2.973988)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s6g7k"]
+points = PackedVector3Array(2.026522, 2.8519802, 0.5889632, 1.9058497, 4.8014297, 0.84939796, 2.4717605, 3.499889, 0.79665756, 2.5383384, 1.9004631, 3.569961, -0.11852884, 1.5873177, 0.7294486, -2.4877594, 4.0177712, 0.78125554, -1.8781571, 4.8351283, 0.84566414, 1.4132788, 4.8274984, 2.9352098, 2.6595304, 4.225051, 3.1475713, 1.4756954, 2.2953124, 5.1951113, -0.8430817, 1.7523152, 4.6546392, -2.539253, 1.8991915, 1.7879899, -2.6542037, 2.052744, 3.5396237, -1.7715287, 4.2492127, 4.4096065, 1.5407126, 4.225051, 4.779256, -0.44725633, 3.0500407, 5.357066)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_61rcr"]
+radius = 1.0449817
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_i1152"]
+radius = 1.0449811
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4w4nc"]
+radius = 1.0449811
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_n7rg4"]
+radius = 1.0449817
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_toas5"]
+radius = 1.0449811
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_q7unu"]
+radius = 1.0449811
+
+[node name="SM_Veh_Apc_01" type="MeshInstance3D" unique_id=1697202682]
+gi_mode = 2
+mesh = ExtResource("1_fukmk")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=296584187]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1556863490]
+shape = SubResource("ConvexPolygonShape3D_rxmmu")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=975725835]
+shape = SubResource("ConvexPolygonShape3D_14l2m")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="MeshCollider" unique_id=535116407]
+shape = SubResource("ConvexPolygonShape3D_4607o")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="MeshCollider" unique_id=1234978039]
+shape = SubResource("ConvexPolygonShape3D_s6g7k")
+
+[node name="SM_Veh_Apc_01_Door_01" type="MeshInstance3D" parent="." unique_id=1115935394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1068866, -3.6832314)
+gi_mode = 2
+mesh = ExtResource("3_hjjpc")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_SuspensionArm_lf" type="MeshInstance3D" parent="." unique_id=2101440228]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645836, 1.6596419, 2.6455007)
+gi_mode = 2
+mesh = ExtResource("4_vi2an")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_WheelBase_lf" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_lf" unique_id=1962185443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.839762, -0.6049465, 0.0076830387)
+gi_mode = 2
+mesh = ExtResource("5_yw4fo")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_Wheel_lf" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_lf/SM_Veh_Apc_01_WheelBase_lf" unique_id=1743691964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.74636805, -0.013432145, 0.0015993118)
+gi_mode = 2
+mesh = ExtResource("6_bny8t")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_01_SuspensionArm_lf/SM_Veh_Apc_01_WheelBase_lf/SM_Veh_Apc_01_Wheel_lf" unique_id=553466605]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_01_SuspensionArm_lf/SM_Veh_Apc_01_WheelBase_lf/SM_Veh_Apc_01_Wheel_lf/SphereCollider" unique_id=77788316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023977876, 0, 7.748604e-07)
+shape = SubResource("SphereShape3D_61rcr")
+
+[node name="SM_Veh_Apc_01_SuspensionArm_lm" type="MeshInstance3D" parent="." unique_id=757735235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645836, 1.6596419, -0.80402243)
+gi_mode = 2
+mesh = ExtResource("7_1nl4u")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_WheelBase_lm" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_lm" unique_id=128222119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.839762, -0.6049465, 0.0076830983)
+gi_mode = 2
+mesh = ExtResource("8_c04yq")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_Wheel_lm" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_lm/SM_Veh_Apc_01_WheelBase_lm" unique_id=498303070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.74636805, -0.013432145, -0.0035831332)
+gi_mode = 2
+mesh = ExtResource("9_w702n")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_01_SuspensionArm_lm/SM_Veh_Apc_01_WheelBase_lm/SM_Veh_Apc_01_Wheel_lm" unique_id=1801089536]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_01_SuspensionArm_lm/SM_Veh_Apc_01_WheelBase_lm/SM_Veh_Apc_01_Wheel_lm/SphereCollider" unique_id=980473409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023977876, 0, 5.9604645e-07)
+shape = SubResource("SphereShape3D_i1152")
+
+[node name="SM_Veh_Apc_01_SuspensionArm_lr" type="MeshInstance3D" parent="." unique_id=1390419238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645836, 1.6596419, -2.973549)
+gi_mode = 2
+mesh = ExtResource("10_48604")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_WheelBase_lr" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_lr" unique_id=38792806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.839762, -0.6049465, 0.0076830387)
+gi_mode = 2
+mesh = ExtResource("11_jsbil")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_Wheel_lr" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_lr/SM_Veh_Apc_01_WheelBase_lr" unique_id=1784719121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.74636805, -0.013432145, 0.010489702)
+gi_mode = 2
+mesh = ExtResource("12_r2dr4")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_01_SuspensionArm_lr/SM_Veh_Apc_01_WheelBase_lr/SM_Veh_Apc_01_Wheel_lr" unique_id=1028746301]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_01_SuspensionArm_lr/SM_Veh_Apc_01_WheelBase_lr/SM_Veh_Apc_01_Wheel_lr/SphereCollider" unique_id=1850826022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023977876, 0, 2.3841858e-07)
+shape = SubResource("SphereShape3D_4w4nc")
+
+[node name="SM_Veh_Apc_01_SuspensionArm_rf" type="MeshInstance3D" parent="." unique_id=574198124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.645836, 1.6596419, 2.6455007)
+gi_mode = 2
+mesh = ExtResource("13_xx6jp")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_WheelBase_rf" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_rf" unique_id=1810648906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.839762, -0.6049465, 0.0076830387)
+gi_mode = 2
+mesh = ExtResource("14_c1obc")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_Wheel_rf" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_rf/SM_Veh_Apc_01_WheelBase_rf" unique_id=297999080]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.74636805, -0.013432145, 0.0015993118)
+gi_mode = 2
+mesh = ExtResource("15_lb4p0")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_01_SuspensionArm_rf/SM_Veh_Apc_01_WheelBase_rf/SM_Veh_Apc_01_Wheel_rf" unique_id=1610640991]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_01_SuspensionArm_rf/SM_Veh_Apc_01_WheelBase_rf/SM_Veh_Apc_01_Wheel_rf/SphereCollider" unique_id=1541153302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023977876, 0, 7.748604e-07)
+shape = SubResource("SphereShape3D_n7rg4")
+
+[node name="SM_Veh_Apc_01_SuspensionArm_rm" type="MeshInstance3D" parent="." unique_id=2018734223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.645836, 1.6596419, -0.80402243)
+gi_mode = 2
+mesh = ExtResource("16_lbk2v")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_WheelBase_rm" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_rm" unique_id=1775581265]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.839762, -0.6049465, 0.0076830983)
+gi_mode = 2
+mesh = ExtResource("17_dlwv7")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_Wheel_rm" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_rm/SM_Veh_Apc_01_WheelBase_rm" unique_id=2063661497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.74636805, -0.013432145, -0.0035831332)
+gi_mode = 2
+mesh = ExtResource("18_gkylu")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_01_SuspensionArm_rm/SM_Veh_Apc_01_WheelBase_rm/SM_Veh_Apc_01_Wheel_rm" unique_id=924285858]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_01_SuspensionArm_rm/SM_Veh_Apc_01_WheelBase_rm/SM_Veh_Apc_01_Wheel_rm/SphereCollider" unique_id=1272971664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023977876, 0, 5.9604645e-07)
+shape = SubResource("SphereShape3D_toas5")
+
+[node name="SM_Veh_Apc_01_SuspensionArm_rr" type="MeshInstance3D" parent="." unique_id=95797365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.645836, 1.6596419, -2.973549)
+gi_mode = 2
+mesh = ExtResource("19_1cvs3")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_WheelBase_rr" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_rr" unique_id=1315821052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.839762, -0.6049465, 0.0076830387)
+gi_mode = 2
+mesh = ExtResource("20_m4tv6")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SM_Veh_Apc_01_Wheel_rr" type="MeshInstance3D" parent="SM_Veh_Apc_01_SuspensionArm_rr/SM_Veh_Apc_01_WheelBase_rr" unique_id=1545673443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.74636805, -0.013432145, 0.010489702)
+gi_mode = 2
+mesh = ExtResource("21_x18k5")
+surface_material_override/0 = ExtResource("2_hjjpc")
+
+[node name="SphereCollider" type="StaticBody3D" parent="SM_Veh_Apc_01_SuspensionArm_rr/SM_Veh_Apc_01_WheelBase_rr/SM_Veh_Apc_01_Wheel_rr" unique_id=2071387295]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Apc_01_SuspensionArm_rr/SM_Veh_Apc_01_WheelBase_rr/SM_Veh_Apc_01_Wheel_rr/SphereCollider" unique_id=532548055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023977876, 0, 2.3841858e-07)
+shape = SubResource("SphereShape3D_q7unu")

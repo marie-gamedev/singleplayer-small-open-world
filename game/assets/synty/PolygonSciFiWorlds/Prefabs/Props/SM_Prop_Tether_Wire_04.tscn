@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://efh4psx4hfnc"]
+
+[ext_resource type="ArrayMesh" uid="uid://bjfh4e74yuvvu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Tether_Wire_04.res" id="1_h2yaq"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_dljhq"]
+
+[node name="SM_Prop_Tether_Wire_04" type="MeshInstance3D" unique_id=828327655]
+gi_mode = 2
+mesh = ExtResource("1_h2yaq")
+surface_material_override/0 = ExtResource("2_dljhq")

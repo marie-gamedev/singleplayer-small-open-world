@@ -1,7 +1,7 @@
 class_name MainGame
 extends Node
 
-const LEVEL_PROTOTYPE = "uid://wxw3v1fy8mr5"
+@export var level = "uid://wxw3v1fy8mr5"
 const PLAYER_SCENE_UID = "uid://cr2ersq7g6q6f"
 
 var player : Player = null
@@ -23,7 +23,7 @@ var is_level_ready := false
 
 func _ready():
 	_init_player()
-	load_level(LEVEL_PROTOTYPE)
+	load_level(level)
 
 func _process(_delta):
 	pass

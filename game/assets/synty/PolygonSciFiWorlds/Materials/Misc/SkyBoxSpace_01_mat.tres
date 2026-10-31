@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://df41hb3bx031d"]
+
+[ext_resource type="Texture2D" uid="uid://d2nnqe3h5lor4" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Skybox/PolygonSciFiWorlds_Skybox_01_Back.png" id="1_75gnf"]
+[ext_resource type="Shader" uid="uid://dflvvkq03ln1i" path="res://Assets/Synty/PolygonSciFiWorlds/Shaders/SyntyStudios_Skybox_cubemapped.gdshader" id="1_y05a7"]
+[ext_resource type="Texture2D" uid="uid://qe8buej8jfac" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Skybox/PolygonSciFiWorlds_Skybox_01_Down.png" id="3_pk7lj"]
+[ext_resource type="Texture2D" uid="uid://csir725lf4of4" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Skybox/PolygonSciFiWorlds_Skybox_01_Front.png" id="4_o82xo"]
+[ext_resource type="Texture2D" uid="uid://b2lieyg75swux" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Skybox/PolygonSciFiWorlds_Skybox_01_Left.png" id="5_6op5y"]
+[ext_resource type="Texture2D" uid="uid://4qeiussg5ymn" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Skybox/PolygonSciFiWorlds_Skybox_01_Right.png" id="6_0sqcw"]
+[ext_resource type="Texture2D" uid="uid://be0inlk8w5r7u" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Skybox/PolygonSciFiWorlds_Skybox_01_Up.png" id="7_324wj"]
+
+[resource]
+resource_name = "SkyBoxSpace_01_mat"
+shader = ExtResource("1_y05a7")
+shader_parameter/back = ExtResource("4_o82xo")
+shader_parameter/front = ExtResource("1_75gnf")
+shader_parameter/left = ExtResource("6_0sqcw")
+shader_parameter/right = ExtResource("5_6op5y")
+shader_parameter/top = ExtResource("7_324wj")
+shader_parameter/bottom = ExtResource("3_pk7lj")

@@ -1,0 +1,24 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c1akq1ae8j0d4"]
+
+[ext_resource type="Shader" uid="uid://dnkbrl3j5q3yt" path="res://Assets/Synty/PolygonSciFiWorlds/Shaders/SyntyStudios_Triplanar_Worlds.gdshader" id="1_04x5a"]
+[ext_resource type="Texture2D" uid="uid://chc5rrvtj8v38" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Alts/PolygonScifiWorlds_01_A.png" id="2_vk0lk"]
+[ext_resource type="Texture2D" uid="uid://ltvqjtq6sei3" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Dirt_01.png" id="3_hfyoy"]
+[ext_resource type="Texture2D" uid="uid://cv77ka3aboaer" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Emissive/PolygonScifiWorlds_01_Emissive.png" id="4_ukdae"]
+[ext_resource type="Texture2D" uid="uid://itvrnyr1ulj0" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/PolygonScifiWorlds_A_01_Normals_8k.png" id="5_tsi7i"]
+
+[resource]
+resource_name = "PolygonScifiWorlds_Mat_01_A_Triplanar_01_mat"
+render_priority = 0
+shader = ExtResource("1_04x5a")
+shader_parameter/albedo_texture = ExtResource("2_vk0lk")
+shader_parameter/dirt_overlay_texture = ExtResource("3_hfyoy")
+shader_parameter/invert_dirt_overlay = false
+shader_parameter/dirt_amount = 0.50800002413
+shader_parameter/metallic = 0.0
+shader_parameter/smoothness = 0.2000000095
+shader_parameter/emission_texture = ExtResource("4_ukdae")
+shader_parameter/emission_color = Color(1, 1, 1, 1)
+shader_parameter/normal_texture = ExtResource("5_tsi7i")
+shader_parameter/triplanar_scale = Vector3(0.17, 0.17, 0.17)
+shader_parameter/triplanar_offset = Vector3(-0.52, 0, 1.635)
+shader_parameter/triplanar_sharpness = 0.5

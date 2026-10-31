@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dk4eo7cnqyges"]
+
+[ext_resource type="ArrayMesh" uid="uid://cgibg21q78eo7" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_WindMill_01.res" id="1_tq42q"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_nenks"]
+[ext_resource type="ArrayMesh" uid="uid://cpapx1oot6bwt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_WindMill_Top_01.res" id="3_nenks"]
+[ext_resource type="ArrayMesh" uid="uid://bctawxfrgjmon" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_WindMill_Blade_01.res" id="4_1rmbw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sr5kl"]
+points = PackedVector3Array(-1.144845, 8.218756, -0.97790253, 0.2018491, 5.826994, -1.091213, -1.1172116, 5.826994, -0.2117225, -1.1098659, 11.149769, 0.9735874, -0.8971932, 13.5221615, -0.8714145, -0.12800348, 10.930504, -1.5002576, 2.4286165, 7.399033, -0.19155204, 2.4212708, 7.4083304, 0.20681417, -0.23783779, 5.826994, 1.107365, 1.3005416, 8.025835, -1.311308, 0.8608546, 13.7422, 0.88756645, -0.7660217, 13.588793, 0.40733206, 0.055986404, 8.278415, 1.5297576, 0.8608546, 13.7422, -0.8714145, 2.4002836, 10.443939, -0.6513194, 2.4002836, 10.443939, 0.6674715)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pekuv"]
+points = PackedVector3Array(0.640748, 5.826412, 0.66786695, 0.640748, 5.826412, -0.6510651, -1.1180921, 5.826412, 0.22792149, -0.8985598, 0.55068374, 1.5474563, 0.8609259, -0.10936332, 1.5474563, 3.2796538, 0.77031213, 0.22792149, 1.3012817, 5.6056213, -0.21111977, 3.2796538, 0.77031213, -0.21111977, 0.8609259, -0.10936332, -1.5309558, -0.8985598, 0.77031213, -1.5309558, -0.4575584, 5.826412, -0.6513665, -3.3159964, 0.77031213, -0.21111977, -1.3382698, 5.385993, 0.22792149, -3.3159964, 0.77031213, 0.22792149, -3.3159964, -0.10936332, -0.21111977, 3.2796538, -0.10936332, -0.21111977)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gxn1b"]
+points = PackedVector3Array(-3.3504395, 0.31753922, 3.3763504, -3.0075629, 1.8415616, 4.26071, -3.0075629, 1.8415616, 2.9793859, -3.2625732, -1.1045656, 2.9793859, -3.0062416, -1.8725022, 4.26071, -0.18791437, 3.5077946, 4.26071, -0.05974841, 4.6620703, 4.004219, 0.19526196, 4.6620703, 3.2356255, 3.0149107, 1.8415616, 2.9793859, -1.852749, -3.0251973, 2.9793859, -1.852749, -3.0251973, 4.26071, 3.0149107, 1.8415616, 4.26071, 3.3716607, -0.29554582, 3.4976346, 3.3987474, -0.59102774, 2.9793859, 0.5797596, -3.4091656, 2.9793859, 1.8600965, -3.0251973, 4.26071)
+
+[node name="SM_Bld_WindMill_01" type="MeshInstance3D" unique_id=734499944]
+gi_mode = 2
+mesh = ExtResource("1_tq42q")
+surface_material_override/0 = ExtResource("2_nenks")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=486136623]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1634441868]
+shape = SubResource("ConvexPolygonShape3D_sr5kl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=621205356]
+shape = SubResource("ConvexPolygonShape3D_pekuv")
+
+[node name="SM_Bld_WindMill_Top_01" type="MeshInstance3D" parent="." unique_id=1878340106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3624477e-08, 12.245765, 1.5995238e-07)
+gi_mode = 2
+mesh = ExtResource("3_nenks")
+surface_material_override/0 = ExtResource("2_nenks")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_WindMill_Top_01" unique_id=494094371]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_WindMill_Top_01/MeshCollider" unique_id=558798864]
+shape = SubResource("ConvexPolygonShape3D_gxn1b")
+
+[node name="SM_Bld_WindMill_Blade_01" type="MeshInstance3D" parent="SM_Bld_WindMill_Top_01" unique_id=931224552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.534658e-07, -9.536743e-07, -4.9089294e-08)
+gi_mode = 2
+mesh = ExtResource("4_1rmbw")
+surface_material_override/0 = ExtResource("2_nenks")

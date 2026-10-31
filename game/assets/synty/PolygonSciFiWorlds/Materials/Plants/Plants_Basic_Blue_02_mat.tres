@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cea46tkw1mbmw"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_24hi6"]
+[ext_resource type="Texture2D" uid="uid://chc5rrvtj8v38" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Alts/PolygonScifiWorlds_01_A.png" id="2_1p4jo"]
+[ext_resource type="Texture2D" uid="uid://chyvflxgjm5x" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Emissive/PolygonScifiWorlds_01_Emissive_Mask.png" id="3_aksvj"]
+[ext_resource type="Texture2D" uid="uid://itvrnyr1ulj0" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/PolygonScifiWorlds_A_01_Normals_8k.png" id="4_jh3y5"]
+
+[resource]
+resource_name = "Plants_Basic_Blue_02_mat"
+render_priority = 0
+shader = ExtResource("1_24hi6")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("2_1p4jo")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = true
+shader_parameter/Emission_Map = ExtResource("3_aksvj")
+shader_parameter/Emission_Color = Color(0.75686276, 0.89411765, 0.8862745, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Map = ExtResource("4_jh3y5")
+shader_parameter/Normal_Strength = 1.0
+shader_parameter/Alpha_Clip_Threshold = 0.0

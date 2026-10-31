@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bxsv3taa2etyg"]
+
+[ext_resource type="ArrayMesh" uid="uid://bh1ocdl0o5327" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Chef_Tool_04.res" id="1_2upam"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_2xrgs"]
+
+[node name="SM_Chr_Attach_Chef_Tool_04" type="MeshInstance3D" unique_id=2110002536]
+gi_mode = 2
+mesh = ExtResource("1_2upam")
+surface_material_override/0 = ExtResource("2_2xrgs")
+surface_material_override/1 = ExtResource("2_2xrgs")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c6otsy8g8oy58"]
+
+[ext_resource type="ArrayMesh" uid="uid://vuf3jcp0sv2q" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Chain_03.res" id="1_cbmpp"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_labe2"]
+
+[node name="SM_Gen_Prop_Chain_03" type="MeshInstance3D" unique_id=1417787078]
+gi_mode = 2
+mesh = ExtResource("1_cbmpp")
+surface_material_override/0 = ExtResource("2_labe2")

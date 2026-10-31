@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://4lkr0m5f4rfa"]
+
+[ext_resource type="ArrayMesh" uid="uid://colfw4ckm54um" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Vendor_Tug_01.res" id="1_0nyk5"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_dfsvh"]
+[ext_resource type="ArrayMesh" uid="uid://diormybirnk7l" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Vendor_Tug_01_Door_01.res" id="3_dfsvh"]
+[ext_resource type="Shape3D" uid="uid://bkxv14rt1f3g" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Veh_Vendor_Tug_01_Collision.res" id="3_igqds"]
+[ext_resource type="ArrayMesh" uid="uid://cgr155wdikuy4" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Vendor_Tug_01_Glass_01.res" id="4_igqds"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="5_hnjw1"]
+[ext_resource type="ArrayMesh" uid="uid://ccjf8n7sn31aw" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Vendor_Tug_01_Wheel_01.res" id="6_mscv3"]
+
+[node name="SM_Veh_Vendor_Tug_01" type="MeshInstance3D" unique_id=42286753]
+gi_mode = 2
+mesh = ExtResource("1_0nyk5")
+surface_material_override/0 = ExtResource("2_dfsvh")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1004337543]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1116255996]
+shape = ExtResource("3_igqds")
+
+[node name="SM_Veh_Vendor_Tug_01_Door_01" type="MeshInstance3D" parent="." unique_id=1569869624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50739866, 1.6293337, 0.8641552)
+gi_mode = 2
+mesh = ExtResource("3_dfsvh")
+surface_material_override/0 = ExtResource("2_dfsvh")
+
+[node name="SM_Veh_Vendor_Tug_01_Glass_01" type="MeshInstance3D" parent="." unique_id=1829897381]
+gi_mode = 2
+mesh = ExtResource("4_igqds")
+surface_material_override/0 = ExtResource("5_hnjw1")
+
+[node name="SM_Veh_Vendor_Tug_01_Wheel_01" type="MeshInstance3D" parent="." unique_id=477774583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9700541, 2.6522958)
+gi_mode = 2
+mesh = ExtResource("6_mscv3")
+surface_material_override/0 = ExtResource("2_dfsvh")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dhv11bmahlu6c"]
+
+[ext_resource type="ArrayMesh" uid="uid://bkr3dh66buaqx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_VR_02_Hair_02.res" id="1_bmno7"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_8oe63"]
+
+[node name="SM_Chr_Attach_VR_02_Hair_02" type="MeshInstance3D" unique_id=1269589972]
+gi_mode = 2
+mesh = ExtResource("1_bmno7")
+surface_material_override/0 = ExtResource("2_8oe63")

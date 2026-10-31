@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bdx8p0ktnmayu"]
+
+[ext_resource type="ArrayMesh" uid="uid://cme4duaptvm5" path="res://Assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Wall_Angle_01.res" id="1_4ysy4"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="2_vrfyv"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="3_2wqap"]
+[ext_resource type="Shape3D" uid="uid://m71r5ejx6edi" path="res://Assets/Synty/PolygonGeneric/Models/Base/Collision/extracted/SM_Bld_Base_Wall_Angle_01_Collision.res" id="4_vrfyv"]
+
+[node name="SM_Bld_Base_Wall_Angle_01" type="MeshInstance3D" unique_id=193178999]
+gi_mode = 2
+mesh = ExtResource("1_4ysy4")
+surface_material_override/0 = ExtResource("2_vrfyv")
+surface_material_override/1 = ExtResource("3_2wqap")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=365599379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=647682959]
+shape = ExtResource("4_vrfyv")

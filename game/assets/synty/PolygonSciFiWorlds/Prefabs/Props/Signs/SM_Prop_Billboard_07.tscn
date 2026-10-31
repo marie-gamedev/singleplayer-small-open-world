@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://11vph0h01t1i"]
+
+[ext_resource type="ArrayMesh" uid="uid://eciudyxqujff" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_07.res" id="1_kft5d"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_1cu5e"]
+[ext_resource type="ArrayMesh" uid="uid://hyg08bcxo70l" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_07_Glass_01.res" id="3_1cu5e"]
+[ext_resource type="Material" uid="uid://cw1ongrilkkas" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_09_mat.tres" id="4_k0wk8"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mbgd4"]
+points = PackedVector3Array(-0.026938677, -0.4329065, -0.046533898, 0.2437607, -0.73032314, -0.0735985, 0.27078775, -0.8384438, 0.061671548, -0.026938677, -0.4329065, 0.03460694, -0.026938677, 0.43239796, -0.046533898, 1.3797543, -0.86555874, -0.0735985, 0.27078775, 0.75709903, -0.0735985, 1.2174491, -0.86555874, 0.061671548, 0.27078775, 0.83844376, 0.061671548, -0.026938677, 0.43239796, 0.03460694, 1.4339514, -0.83827436, -0.0735985, 1.3987733, -0.7981104, 0.058414258, 1.2446191, 0.86572814, -0.0735985, 1.2174491, 0.86572814, 0.061671548, 1.4339514, 0.83827424, -0.0735985, 1.3987733, 0.79811025, 0.058414258)
+
+[node name="SM_Prop_Billboard_07" type="MeshInstance3D" unique_id=536428669]
+gi_mode = 2
+mesh = ExtResource("1_kft5d")
+surface_material_override/0 = ExtResource("2_1cu5e")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2010723663]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1832339972]
+shape = SubResource("ConvexPolygonShape3D_mbgd4")
+
+[node name="SM_Prop_Billboard_07_Glass_01" type="MeshInstance3D" parent="." unique_id=1265411923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8406059, 0, 5.483627e-08)
+gi_mode = 2
+mesh = ExtResource("3_1cu5e")
+surface_material_override/0 = ExtResource("4_k0wk8")

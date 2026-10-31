@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://n85wdx0gdrwn"]
+
+[ext_resource type="ArrayMesh" uid="uid://c0kqj4guhatxm" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Bottle_01.res" id="1_nhjh6"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_jnsif"]
+
+[node name="SM_Chr_Attach_Bottle_01" type="MeshInstance3D" unique_id=1109835780]
+gi_mode = 2
+mesh = ExtResource("1_nhjh6")
+surface_material_override/0 = ExtResource("2_jnsif")

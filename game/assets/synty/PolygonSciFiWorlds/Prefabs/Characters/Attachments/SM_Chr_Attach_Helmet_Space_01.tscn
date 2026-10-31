@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dehjakqjn82iv"]
+
+[ext_resource type="ArrayMesh" uid="uid://cax2c1xgtbn85" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Helmet_Space_01.res" id="1_hmq2y"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_nd18s"]
+[ext_resource type="ArrayMesh" uid="uid://one0x8kq5cib" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Helmet_Space_01_Glass.res" id="3_nd18s"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_bdbbp"]
+
+[node name="SM_Chr_Attach_Helmet_Space_01" type="MeshInstance3D" unique_id=683031918]
+gi_mode = 2
+mesh = ExtResource("1_hmq2y")
+surface_material_override/0 = ExtResource("2_nd18s")
+
+[node name="SM_Chr_Attach_Helmet_Space_01_Glass" type="MeshInstance3D" parent="." unique_id=131949311]
+gi_mode = 2
+mesh = ExtResource("3_nd18s")
+surface_material_override/0 = ExtResource("4_bdbbp")

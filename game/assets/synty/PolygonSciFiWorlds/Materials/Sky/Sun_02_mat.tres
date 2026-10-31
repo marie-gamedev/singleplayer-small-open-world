@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bhxb6bn81vcjs"]
+
+[ext_resource type="Shader" uid="uid://c23vahohqy721" path="res://Assets/Synty/PolygonSciFiWorlds/Shaders/SyntyStudios_NoFogUnlit.gdshader" id="1_tq4g4"]
+
+[resource]
+resource_name = "Sun_02_mat"
+render_priority = 0
+shader = ExtResource("1_tq4g4")
+shader_parameter/Planet_Tint = Color(1, 0.81960785, 0.59607846, 1)
+shader_parameter/Planet_Light = 1.7200000816999998
+shader_parameter/Rim_Intensity = 0.810000038475
+shader_parameter/Glow_Tint = Color(0.7176471, 0.5529412, 0.25882354, 1)
+shader_parameter/Glow_Intensity = 7.38000035055

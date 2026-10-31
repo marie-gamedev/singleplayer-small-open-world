@@ -1,0 +1,190 @@
+{
+  "_Alpha_Clip_Threshold": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Color_Tint": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_ENABLE_NORMAL_MAP_WIND": {
+    "type": "float",
+    "default": 1
+  },
+  "_ENABLE_SSS": {
+    "type": "float",
+    "default": 0
+  },
+  "_Edge_Normal_Map": {
+    "type": "texture"
+  },
+  "_Edge_Thickness_Amount": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Enable_Back_Face_Lighting": {
+    "type": "bool",
+    "default": false
+  },
+  "_Main_Texture": {
+    "type": "texture"
+  },
+  "_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Normal_Map": {
+    "type": "texture"
+  },
+  "_Normal_Strength": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_SSSIntensity": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_SSSNormalInfluence": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_SSSPower": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_SSSTint": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Smoothness": {
+    "type": "float",
+    "default": 0.20000000298023224
+  },
+  "_Symbol_Color_Tint": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Symbol_Texture": {
+    "type": "texture"
+  },
+  "_Emissive_Amount": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Emissive_Color": {
+    "type": "color",
+    "default": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "_Emissive_Mask": {
+    "type": "texture"
+  },
+  "_Enable_Emission": {
+    "type": "bool",
+    "default": false
+  },
+  "_USE_SYMBOL_OVERLAY": {
+    "type": "float",
+    "default": 1
+  },
+  "_Breeze_Strength": {
+    "type": "float",
+    "default": 0.20000000298023224
+  },
+  "_Enable_Breeze": {
+    "type": "bool",
+    "default": true
+  },
+  "_Enable_Light_Wind": {
+    "type": "bool",
+    "default": true
+  },
+  "_Enable_Strong_Wind": {
+    "type": "bool",
+    "default": true
+  },
+  "_Enable_Wind_Twist": {
+    "type": "bool",
+    "default": true
+  },
+  "_GaleStrength": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Gale_Bend": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Light_Wind_Strength": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Light_Wind_Use_Leaf_Fade": {
+    "type": "bool",
+    "default": true
+  },
+  "_Light_Wind_Y_Offset": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Light_Wind_Y_Strength": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Strong_Wind_Frequency": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Strong_Wind_Strength": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Use_Synty_Weather_Controller": {
+    "type": "bool",
+    "default": false
+  },
+  "_Use_Vertex_Color_Wind": {
+    "type": "bool",
+    "default": true
+  },
+  "_WindDirection": {
+    "type": "vec3",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_WindIntensity": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Wind_Sine_Wave_Floor": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Wind_Twist_Strength": {
+    "type": "float",
+    "default": 0.15000000596046448
+  }
+}

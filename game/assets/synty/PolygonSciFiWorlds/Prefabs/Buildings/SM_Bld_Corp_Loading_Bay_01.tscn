@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://n5855iv7oyk1"]
+
+[ext_resource type="ArrayMesh" uid="uid://df0prwyimd2ql" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Loading_Bay_01.res" id="1_m2623"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_hniq0"]
+[ext_resource type="Shape3D" uid="uid://carbmte1lbbr" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Loading_Bay_01_Collision.res" id="3_cee0b"]
+[ext_resource type="ArrayMesh" uid="uid://bs3oxqg5xatgq" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Loading_Bay_01_Arm_01.res" id="3_hniq0"]
+[ext_resource type="ArrayMesh" uid="uid://drpoao3tn0lq" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Loading_Bay_01_Arm_01_Lifter_01.res" id="4_cee0b"]
+[ext_resource type="ArrayMesh" uid="uid://bdt1qamjkexwr" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Loading_Bay_01_Cargo_Door_01.res" id="5_64r8f"]
+[ext_resource type="Shape3D" uid="uid://c15uya4d7x07j" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Loading_Bay_01_Arm_01_Collision.res" id="5_cee0b"]
+[ext_resource type="ArrayMesh" uid="uid://b2lo83rgnpysb" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Loading_Bay_01_Glass_01.res" id="6_wg8mo"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="7_i2pn2"]
+[ext_resource type="ArrayMesh" uid="uid://b7ypqbqw8y2uq" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Loading_Bay_01_Lift_01.res" id="8_vc74p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bybaj"]
+size = Vector3(3.4206834, 1.8781434, 2.0136113)
+
+[node name="SM_Bld_Corp_Loading_Bay_01" type="MeshInstance3D" unique_id=1650996604]
+gi_mode = 2
+mesh = ExtResource("1_m2623")
+surface_material_override/0 = ExtResource("2_hniq0")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=38488974]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=741584394]
+shape = ExtResource("3_cee0b")
+
+[node name="SM_Bld_Corp_Loading_Bay_01_Arm_01" type="MeshInstance3D" parent="." unique_id=1778670854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4961867, -3.451299)
+gi_mode = 2
+mesh = ExtResource("3_hniq0")
+surface_material_override/0 = ExtResource("2_hniq0")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Corp_Loading_Bay_01_Arm_01" unique_id=1323279024]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Corp_Loading_Bay_01_Arm_01/MeshCollider" unique_id=1708794780]
+shape = ExtResource("5_cee0b")
+
+[node name="SM_Bld_Corp_Loading_Bay_01_Arm_01_Lifter_01" type="MeshInstance3D" parent="SM_Bld_Corp_Loading_Bay_01_Arm_01" unique_id=1976865490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.155273e-07, 0.66582775, 13.857186)
+gi_mode = 2
+mesh = ExtResource("4_cee0b")
+surface_material_override/0 = ExtResource("2_hniq0")
+
+[node name="SM_Bld_Corp_Loading_Bay_01_Cargo_Door_01" type="MeshInstance3D" parent="." unique_id=503689213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4234232, 2.7953713, 0.98398453)
+gi_mode = 2
+mesh = ExtResource("5_64r8f")
+surface_material_override/0 = ExtResource("2_hniq0")
+
+[node name="SM_Bld_Corp_Loading_Bay_01_Glass_01" type="MeshInstance3D" parent="." unique_id=160974455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2947198, 3.4343965, 0.9542798)
+gi_mode = 2
+mesh = ExtResource("6_wg8mo")
+surface_material_override/0 = ExtResource("7_i2pn2")
+
+[node name="SM_Bld_Corp_Loading_Bay_01_Lift_01" type="MeshInstance3D" parent="." unique_id=640342303]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.677884, 0.19219565, -0.23340975)
+gi_mode = 2
+mesh = ExtResource("8_vc74p")
+surface_material_override/0 = ExtResource("2_hniq0")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Bld_Corp_Loading_Bay_01_Lift_01" unique_id=762870785]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Corp_Loading_Bay_01_Lift_01/BoxCollider" unique_id=1114244761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03245777, -0.9390716, -0.087106526)
+shape = SubResource("BoxShape3D_bybaj")

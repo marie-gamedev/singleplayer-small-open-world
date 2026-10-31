@@ -1,0 +1,152 @@
+[gd_scene format=3 uid="uid://3js3ii2sxbmi"]
+
+[ext_resource type="ArrayMesh" uid="uid://cqdw666yoegm4" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Holosign_SynKyng_01.res" id="1_tmf4h"]
+[ext_resource type="Material" uid="uid://d0tk8p1ed5opk" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/FX/FX_Hologram_Sign_01_mat.tres" id="2_uct4b"]
+[ext_resource type="ArrayMesh" uid="uid://cs7m456m3jwum" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Holosign_SynKyng_01_Bottles_01.res" id="3_uct4b"]
+[ext_resource type="ArrayMesh" uid="uid://bq7caty0ke7og" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Holosign_SynKyng_01_Head_01.res" id="4_2h5nw"]
+[ext_resource type="ArrayMesh" uid="uid://cc78y6nq8tqgk" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Holosign_SynKyng_01_Stars_01.res" id="5_4qmxs"]
+
+[sub_resource type="Animation" id="Animation_4qmxs"]
+resource_name = "Rotate_Y"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SM_Prop_Holosign_SynKyng_01")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SM_Prop_Holosign_SynKyng_01:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.2831855, 0)]
+}
+tracks/2/type = "position_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SM_Prop_Holosign_SynKyng_01_Head_01")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array()
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SM_Prop_Holosign_SynKyng_01_Head_01:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.2831855, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bafkg"]
+resource_name = "Rotate_Y_Reverse"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SM_Prop_Holosign_SynKyng_01_Bottles_01")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SM_Prop_Holosign_SynKyng_01_Bottles_01:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -6.2831855, 0)]
+}
+tracks/2/type = "position_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SM_Prop_Holosign_SynKyng_01_Stars_01")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array()
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SM_Prop_Holosign_SynKyng_01_Stars_01:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -6.2831855, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mb76v"]
+_data = {
+&"Rotate_Y": SubResource("Animation_4qmxs"),
+&"Rotate_Y_Reverse": SubResource("Animation_bafkg")
+}
+
+[sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_tmf4h"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_uct4b"]
+animation = &"Rotate_Y_Reverse"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2h5nw"]
+animation = &"Rotate_Y"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_4qmxs"]
+graph_offset = Vector2(-98.36365, -21.909103)
+nodes/output/position = Vector2(980, 40)
+nodes/Animation/node = SubResource("AnimationNodeAnimation_2h5nw")
+nodes/Animation/position = Vector2(500, -20)
+"nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_uct4b")
+"nodes/Animation 2/position" = Vector2(500, 140)
+nodes/Add2/node = SubResource("AnimationNodeAdd2_tmf4h")
+nodes/Add2/position = Vector2(780, 20)
+node_connections = [&"output", 0, &"Add2", &"Add2", 0, &"Animation", &"Add2", 1, &"Animation 2"]
+
+[node name="SM_Prop_Holosign_SynKyng_01_Preset" type="Node3D" unique_id=1253307317]
+
+[node name="SM_Prop_Holosign_SynKyng_01" type="MeshInstance3D" parent="." unique_id=924701066]
+transform = Transform3D(0.9223122, 0, 0.38644564, 0, 1, 0, -0.38644564, 0, 0.9223122, 0, 0, 0)
+gi_mode = 2
+mesh = ExtResource("1_tmf4h")
+surface_material_override/0 = ExtResource("2_uct4b")
+
+[node name="SM_Prop_Holosign_SynKyng_01_Bottles_01" type="MeshInstance3D" parent="." unique_id=2024596459]
+transform = Transform3D(0.9223122, 0, -0.38644564, 0, 1, 0, 0.38644564, 0, 0.9223122, 0, 0, 0)
+gi_mode = 2
+mesh = ExtResource("3_uct4b")
+surface_material_override/0 = ExtResource("2_uct4b")
+
+[node name="SM_Prop_Holosign_SynKyng_01_Head_01" type="MeshInstance3D" parent="." unique_id=1465509037]
+transform = Transform3D(0.9223122, 0, 0.38644564, 0, 1, 0, -0.38644564, 0, 0.9223122, 0, 0, 0)
+gi_mode = 2
+mesh = ExtResource("4_2h5nw")
+surface_material_override/0 = ExtResource("2_uct4b")
+
+[node name="SM_Prop_Holosign_SynKyng_01_Stars_01" type="MeshInstance3D" parent="." unique_id=2055477222]
+transform = Transform3D(0.9223122, 0, -0.38644564, 0, 1, 0, 0.38644564, 0, 0.9223122, 0, 0, 0)
+gi_mode = 2
+mesh = ExtResource("5_4qmxs")
+surface_material_override/0 = ExtResource("2_uct4b")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1623320510]
+libraries/ = SubResource("AnimationLibrary_mb76v")
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=856449683]
+tree_root = SubResource("AnimationNodeBlendTree_4qmxs")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Add2/add_amount = 1.0

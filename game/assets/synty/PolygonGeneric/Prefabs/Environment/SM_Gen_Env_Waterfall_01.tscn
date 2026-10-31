@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b1wnibb7pikph"]
+
+[ext_resource type="ArrayMesh" uid="uid://d14x14amiutkk" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Waterfall_01.res" id="1_ffvbu"]
+[ext_resource type="Material" uid="uid://dg5pnbjcam4nh" path="res://Assets/Synty/PolygonGeneric/Materials/Waterflow_01_mat.tres" id="2_wlovm"]
+
+[node name="SM_Gen_Env_Waterfall_01" type="MeshInstance3D" unique_id=2050186744]
+mesh = ExtResource("1_ffvbu")
+surface_material_override/0 = ExtResource("2_wlovm")

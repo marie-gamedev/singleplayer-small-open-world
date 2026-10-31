@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bkkt0wlqsaiq0"]
+
+[ext_resource type="ArrayMesh" uid="uid://byscgnk1lm7cr" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_02.res" id="1_oce5i"]
+[ext_resource type="Material" uid="uid://cuvjd7v2ydnpu" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_02_A_mat.tres" id="2_88uym"]
+[ext_resource type="ArrayMesh" uid="uid://bryeqalecr2nc" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_02_Glass_01.res" id="3_88uym"]
+[ext_resource type="Shape3D" uid="uid://ck56eiqpdu66r" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Pod_Hab_Small_02_Collision.res" id="3_am2a4"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_vokxx"]
+[ext_resource type="ArrayMesh" uid="uid://73mnim4cnu0c" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_02_Glass_02.res" id="5_am2a4"]
+[ext_resource type="ArrayMesh" uid="uid://cv88k4d7xx1rh" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_02_SolarPanel_01.res" id="6_vokxx"]
+[ext_resource type="ArrayMesh" uid="uid://q0sluixquuw5" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_02_SolarPanel_02.res" id="7_do34t"]
+
+[node name="SM_Bld_Pod_Hab_Small_02" type="MeshInstance3D" unique_id=2036493648]
+gi_mode = 2
+mesh = ExtResource("1_oce5i")
+surface_material_override/0 = ExtResource("2_88uym")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=918978711]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1166825069]
+shape = ExtResource("3_am2a4")
+
+[node name="SM_Bld_Pod_Hab_Small_02_Glass_01" type="MeshInstance3D" parent="." unique_id=1916492230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.366117, 2.691112, 7.483536e-21)
+gi_mode = 2
+mesh = ExtResource("3_88uym")
+surface_material_override/0 = ExtResource("4_vokxx")
+
+[node name="SM_Bld_Pod_Hab_Small_02_Glass_02" type="MeshInstance3D" parent="." unique_id=715190545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3168564, 2.691112, 7.483536e-21)
+gi_mode = 2
+mesh = ExtResource("5_am2a4")
+surface_material_override/0 = ExtResource("4_vokxx")
+
+[node name="SM_Bld_Pod_Hab_Small_02_SolarPanel_01" type="MeshInstance3D" parent="." unique_id=1111052745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024630275, 5.0647774, -3.009813)
+gi_mode = 2
+mesh = ExtResource("6_vokxx")
+surface_material_override/0 = ExtResource("2_88uym")
+
+[node name="SM_Bld_Pod_Hab_Small_02_SolarPanel_02" type="MeshInstance3D" parent="." unique_id=1551300214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024630275, 5.0647774, 3.010219)
+gi_mode = 2
+mesh = ExtResource("7_do34t")
+surface_material_override/0 = ExtResource("2_88uym")

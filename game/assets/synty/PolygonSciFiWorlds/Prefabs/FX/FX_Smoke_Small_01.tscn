@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://bc81ysclau6j8"]
+
+[ext_resource type="Texture2D" uid="uid://5wuep1d6ps0r" path="res://Assets/Synty/PolygonGeneric/Textures/FX/Generic_Circle_01.png" id="1_563xg"]
+
+[sub_resource type="Gradient" id="Gradient_y2vah"]
+offsets = PackedFloat32Array(0, 0.23776224, 0.3216783, 0.3986014, 1)
+colors = PackedColorArray(0.27450982, 0.27450982, 0.27450982, 0, 0.8431838, 0.8431839, 0.84318364, 0.95686275, 1, 1, 1, 0.95686275, 0.8217887, 0.8217887, 0.8217885, 0.90588236, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cpxi2"]
+gradient = SubResource("Gradient_y2vah")
+
+[sub_resource type="Curve" id="Curve_lbn1i"]
+_data = [Vector2(0.011869438, 0.21999997), 0.0, 1.1630104, 0, 0, Vector2(0.2255193, 0.5263454), 1.8629584, 1.8629584, 0, 0, Vector2(0.5459941, 0.8542602), -0.5137567, -0.5137567, 0, 0, Vector2(0.75, 0.5806452), 0.0, 0.0, 0, 0, Vector2(0.9871795, 0.32064515), -0.48257512, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="CurveTexture_y2vah"]
+curve = SubResource("Curve_lbn1i")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ca3r8"]
+emission_shape_scale = Vector3(0.6, 0, 0.6)
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_min = -119.99999
+angle_max = 120.000015
+direction = Vector3(0, 0, 0)
+angular_velocity_min = -180.00002
+angular_velocity_max = 179.99998
+gravity = Vector3(2, 7, 0)
+scale_min = 2.0
+scale_max = 2.2
+scale_curve = SubResource("CurveTexture_y2vah")
+color = Color(1, 1, 1, 0.7254902)
+color_ramp = SubResource("GradientTexture1D_cpxi2")
+turbulence_enabled = true
+turbulence_noise_strength = 0.1
+turbulence_noise_scale = 0.0
+turbulence_noise_speed_random = 0.16
+turbulence_influence_min = 0.007
+turbulence_influence_max = 0.009000001
+turbulence_initial_displacement_min = 28.700003
+turbulence_initial_displacement_max = 55.100002
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_meces"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+diffuse_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(1.0009145, 1.0009145, 1.0009145, 0.8156863)
+albedo_texture = ExtResource("1_563xg")
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_fsx80"]
+material = SubResource("StandardMaterial3D_meces")
+
+[node name="FX_Smoke_Small_01" type="GPUParticles3D" unique_id=932457500]
+transform = Transform3D(0.99992836, 0.011972666, 0, -0.011972666, 0.99992836, 0, 0, 0, 1, 0, 0, 0)
+amount = 30
+lifetime = 3.1999999999999997
+speed_scale = 0.4
+explosiveness = 0.11
+randomness = 0.26
+fixed_fps = 0
+visibility_aabb = AABB(-1, 0, -1, 1.5, 5, 1.5)
+process_material = SubResource("ParticleProcessMaterial_ca3r8")
+draw_pass_1 = SubResource("QuadMesh_fsx80")

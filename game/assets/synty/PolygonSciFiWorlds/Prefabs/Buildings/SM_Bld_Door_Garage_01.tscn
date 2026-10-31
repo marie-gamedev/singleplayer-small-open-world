@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://p3nd66jbqs4b"]
+
+[ext_resource type="ArrayMesh" uid="uid://seano6ohyxtw" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Garage_01.res" id="1_fh6jk"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_lte50"]
+[ext_resource type="Shape3D" uid="uid://cgwli8wvkwtsw" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Door_Garage_01_Collision.res" id="3_l8m26"]
+[ext_resource type="ArrayMesh" uid="uid://8ma4b16axtvh" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Garage_01_Door_01.res" id="3_lte50"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kpx1j"]
+points = PackedVector3Array(3.2550943, 4.5936165, 0.105113685, 3.5496175, 4.590427, 0.23372784, 3.5496175, 4.590427, -0.2559935, -3.2558606, 4.5936165, 0.105113685, 3.9170043, 4.2236357, 0.23372784, -3.5511508, 4.590427, 0.23372784, 3.9170043, 4.2236357, -0.2559935, -3.5511508, 4.590427, -0.2559935, 3.9170043, -0.0612154, 0.23372784, -3.9177706, 4.2236357, 0.23372784, 3.9170043, -0.0612154, -0.2559935, -3.9177706, 4.2236357, -0.2559935, -3.9177706, -0.0612154, 0.23372784, -3.9177706, -0.0612154, -0.2559935)
+
+[node name="SM_Bld_Door_Garage_01" type="MeshInstance3D" unique_id=1227686564]
+gi_mode = 2
+mesh = ExtResource("1_fh6jk")
+surface_material_override/0 = ExtResource("2_lte50")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=846099424]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=617978092]
+shape = ExtResource("3_l8m26")
+
+[node name="SM_Bld_Door_Garage_01_Door_01" type="MeshInstance3D" parent="." unique_id=1396260774]
+gi_mode = 2
+mesh = ExtResource("3_lte50")
+surface_material_override/0 = ExtResource("2_lte50")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Door_Garage_01_Door_01" unique_id=1288090951]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Door_Garage_01_Door_01/MeshCollider" unique_id=1155619775]
+shape = SubResource("ConvexPolygonShape3D_kpx1j")

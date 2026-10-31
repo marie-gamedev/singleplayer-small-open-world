@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ce4dwls74ejqk"]
+
+[ext_resource type="ArrayMesh" uid="uid://dnl0vwiwosmtd" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Shrub_01.res" id="1_7dour"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_plvbf"]
+
+[node name="SM_Env_Plant_Shrub_01" type="MeshInstance3D" unique_id=672674095]
+gi_mode = 2
+mesh = ExtResource("1_7dour")
+surface_material_override/0 = ExtResource("2_plvbf")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b2mux6h3vdgrj"]
+
+[ext_resource type="ArrayMesh" uid="uid://fefxb6etual5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Hydroponic_Plant_02.res" id="1_oj7d3"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_266ud"]
+
+[node name="SM_Prop_Hydroponic_Plant_02" type="MeshInstance3D" unique_id=1010184290]
+gi_mode = 2
+mesh = ExtResource("1_oj7d3")
+surface_material_override/0 = ExtResource("2_266ud")

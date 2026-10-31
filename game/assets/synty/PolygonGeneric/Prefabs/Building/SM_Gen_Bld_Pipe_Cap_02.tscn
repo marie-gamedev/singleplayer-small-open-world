@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bsd4gwva7guhw"]
+
+[ext_resource type="ArrayMesh" uid="uid://irwpki35jjai" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Bld_Pipe_Cap_02.res" id="1_k2q1e"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_yadd2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sxcbh"]
+size = Vector3(0.30869198, 0.5421933, 0.4695538)
+
+[node name="SM_Gen_Bld_Pipe_Cap_02" type="MeshInstance3D" unique_id=1618839009]
+gi_mode = 2
+mesh = ExtResource("1_k2q1e")
+surface_material_override/0 = ExtResource("2_yadd2")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=504567907]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=667803323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2351742e-08, 1.4901161e-08, 0)
+shape = SubResource("BoxShape3D_sxcbh")

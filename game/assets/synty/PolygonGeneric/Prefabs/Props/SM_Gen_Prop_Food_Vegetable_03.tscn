@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dao28mu6k1syr"]
+
+[ext_resource type="ArrayMesh" uid="uid://c7saleuob44s" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Food_Vegetable_03.res" id="1_fa5ot"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_jw0h6"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_li17f"]
+points = PackedVector3Array(0.004180491, -9.536743e-09, -0.06694033, 0.003983915, 0.022498932, -0.0639655, 0.01463826, -9.536743e-09, -0.06275984, -0.048121475, -9.536743e-09, -0.048121586, 0.06395228, 0.022498932, -0.0039971247, 0.04810837, -9.536743e-09, -0.048121586, -0.045972258, 0.022498932, -0.04597237, -0.06694022, -9.536743e-09, 0.004180379, -0.06396539, 0.022498932, -0.0039971247, 0.06694022, -9.536743e-09, 0.004180379, 0.045959152, 0.022498932, 0.04595904, -0.048121475, -9.536743e-09, 0.048108257, -0.045972258, 0.022498932, 0.04595904, 0.05228886, -9.536743e-09, 0.039734177, -0.004193589, -9.536743e-09, 0.06694011, -0.003997013, 0.022498932, 0.06395217)
+
+[node name="SM_Gen_Prop_Food_Vegetable_03" type="MeshInstance3D" unique_id=105358610]
+gi_mode = 2
+mesh = ExtResource("1_fa5ot")
+surface_material_override/0 = ExtResource("2_jw0h6")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1684462553]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=745820379]
+shape = SubResource("ConvexPolygonShape3D_li17f")

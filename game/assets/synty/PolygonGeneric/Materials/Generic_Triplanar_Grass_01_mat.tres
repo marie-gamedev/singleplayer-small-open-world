@@ -1,0 +1,45 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dmds1uioeeejj"]
+
+[ext_resource type="Shader" uid="uid://0hyhpsrbf0xi" path="res://Assets/Synty/PolygonGeneric/Shaders/PolygonShader.gdshader" id="1_3b5it"]
+[ext_resource type="Texture2D" uid="uid://pci2uj3vc8x7" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Dirt.png" id="2_1scm5"]
+[ext_resource type="Texture2D" uid="uid://b6oglunrjn1fw" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Grass_Normals.png" id="3_4cqoq"]
+[ext_resource type="Texture2D" uid="uid://bwmf83iv51orj" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Grass.png" id="4_rkdg5"]
+
+[resource]
+resource_name = "Generic_Triplanar_Grass_01_mat"
+render_priority = 0
+shader = ExtResource("1_3b5it")
+shader_parameter/albedo_texture = ExtResource("2_1scm5")
+shader_parameter/albedo_tint = Color(1, 1, 1, 1)
+shader_parameter/normal_map_intensity = 1.0000000475
+shader_parameter/emission_tint = Color(0, 0, 0, 0)
+shader_parameter/emission_intensity = 0.25
+shader_parameter/metallic = 0.0
+shader_parameter/roughness = 1.0
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/use_triplanar = true
+shader_parameter/triplanar_world_space = false
+shader_parameter/triplanar_invert_normal_green = true
+shader_parameter/triplanar_sharpness = 16.0
+shader_parameter/top_albedo_texture = ExtResource("4_rkdg5")
+shader_parameter/top_normal_texture = ExtResource("3_4cqoq")
+shader_parameter/top_normal_intensity = 1.0000000475
+shader_parameter/top_roughness = 1.0
+shader_parameter/top_metallic = 0.0
+shader_parameter/top_uv_scale = Vector2(0, 0)
+shader_parameter/top_uv_offset = Vector2(0, 0)
+shader_parameter/bottom_albedo_texture = ExtResource("2_1scm5")
+shader_parameter/bottom_normal_texture = ExtResource("3_4cqoq")
+shader_parameter/bottom_normal_intensity = 0.6330000300675
+shader_parameter/bottom_roughness = 1.0
+shader_parameter/bottom_metallic = 0.0
+shader_parameter/bottom_uv_scale = Vector2(0, 0)
+shader_parameter/bottom_uv_offset = Vector2(0, 0)
+shader_parameter/side_albedo_texture = ExtResource("2_1scm5")
+shader_parameter/side_normal_texture = ExtResource("3_4cqoq")
+shader_parameter/side_normal_intensity = 1.0
+shader_parameter/side_roughness = 1.0
+shader_parameter/side_metallic = 0.0
+shader_parameter/side_uv_scale = Vector2(0, 0)
+shader_parameter/side_uv_offset = Vector2(0, 0)

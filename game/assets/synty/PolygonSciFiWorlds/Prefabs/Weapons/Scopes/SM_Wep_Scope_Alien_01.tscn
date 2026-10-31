@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crxt3ta7rjela"]
+
+[ext_resource type="ArrayMesh" uid="uid://ccpdafmqvuhau" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Scope_Alien_01.res" id="1_0syyf"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_t3eva"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7r8ud"]
+points = PackedVector3Array(-0.009554256, -0.0074543133, -0.19309866, 0.01600305, -0.0074543133, -0.19309866, 0.01600305, -0.0074543133, 0.020018294, -0.035124913, 0.018116336, 0.32686675, -0.06070892, 0.05223279, 0.28428543, -0.05218982, 0.06930771, -0.07371321, -0.035124913, 0.120415635, -0.099262014, 0.015989691, 0.094828285, -0.17596099, 0.05011951, 0.103357404, -0.05668068, 0.06717107, 0.06929102, 0.34395188, 0.033054598, 0.018116336, 0.32686675, -0.069241375, 0.08634925, 0.34395188, -0.035124913, 0.1630612, 0.20758644, 0.022158697, 0.15516633, 0.033265814, 0.041573703, 0.14598629, 0.31840307, -0.043657366, 0.13747385, 0.34395188)
+
+[node name="SM_Wep_Scope_Alien_01" type="MeshInstance3D" unique_id=807945413]
+gi_mode = 2
+mesh = ExtResource("1_0syyf")
+surface_material_override/0 = ExtResource("2_t3eva")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=349796207]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1085348108]
+shape = SubResource("ConvexPolygonShape3D_7r8ud")

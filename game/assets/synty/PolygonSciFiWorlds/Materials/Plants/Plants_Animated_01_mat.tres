@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bahi1cset6vl6"]
+
+[ext_resource type="Shader" uid="uid://y32vftlao7jh" path="res://Assets/Synty/PolygonSciFiWorlds/Shaders/SyntyStudios_SciFiPlant.gdshader" id="1_0cfc0"]
+[ext_resource type="Texture2D" uid="uid://chc5rrvtj8v38" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Alts/PolygonScifiWorlds_01_A.png" id="2_dbbki"]
+[ext_resource type="Texture2D" uid="uid://dtbjlp3pa5d8b" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Shaders/Masks/Plant_Mask.png" id="3_0cfc0"]
+[ext_resource type="Texture2D" uid="uid://bw8fy6ogcoc1l" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Shaders/Masks/Noise_Big.tga" id="4_xsdsr"]
+
+[resource]
+resource_name = "Plants_Animated_01_mat"
+render_priority = 0
+shader = ExtResource("1_0cfc0")
+shader_parameter/albedo_texture = ExtResource("2_dbbki")
+shader_parameter/plant_mask_texture = ExtResource("3_0cfc0")
+shader_parameter/wind_texture_scale = 0.05
+shader_parameter/wind_noise_texture = ExtResource("4_xsdsr")
+shader_parameter/roughness = 0.8
+shader_parameter/plant_color = Color(0.12662643, 0.0891554, 0.12950882, 1)
+shader_parameter/emissive_color = Color(3.1021328, 0.2946425, 3.4255767, 1)
+shader_parameter/wind_direction = Vector2(0.88, 0.4)
+shader_parameter/wind_pan_speed = 0.115
+shader_parameter/wind_strength = 0.3

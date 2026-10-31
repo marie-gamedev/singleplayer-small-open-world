@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://assets/synty/shaders/particles.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://assets/synty/PolygonGeneric/Textures/FX/Generic_Circle_Soft_01.png" id="2"]
+
+[resource]
+resource_name = "Synty Soft Particle Demo"
+render_priority = 2
+shader = ExtResource("1")
+shader_parameter/alpha_clip_treshold = 0.015
+shader_parameter/base_color = Color(0.28, 0.72, 1, 0.72)
+shader_parameter/albedo_map = ExtResource("2")
+shader_parameter/tiling = Vector2(1, 1)
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/enable_soft_particles = true
+shader_parameter/soft_power = 1.25
+shader_parameter/soft_distance = 1.0
+shader_parameter/use_view_edge_compensation = false
+shader_parameter/enable_camera_fade = false
+shader_parameter/enable_scene_fog = false
+

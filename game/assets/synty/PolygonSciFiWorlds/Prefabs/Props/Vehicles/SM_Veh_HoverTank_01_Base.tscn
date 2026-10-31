@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://ci6s1rrf3sg54"]
+
+[ext_resource type="ArrayMesh" uid="uid://bs3eadbxm52tp" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Base.res" id="1_qtnpd"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_sfnxj"]
+[ext_resource type="ArrayMesh" uid="uid://cya33uqu1unfo" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Base_HoverPad_fl.res" id="3_sfnxj"]
+[ext_resource type="ArrayMesh" uid="uid://dodd24kerwmnd" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Base_HoverPad_fr.res" id="4_1hdkj"]
+[ext_resource type="ArrayMesh" uid="uid://bxu4vqp7yyvmw" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Base_HoverPad_ml.res" id="5_s42ir"]
+[ext_resource type="ArrayMesh" uid="uid://ddsaumlyjh17c" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Base_HoverPad_mr.res" id="6_qe2mt"]
+[ext_resource type="ArrayMesh" uid="uid://xulic010jg0w" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Base_HoverPad_rl.res" id="7_axnvu"]
+[ext_resource type="ArrayMesh" uid="uid://c8pqkqvsk2xwd" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Base_HoverPad_rr.res" id="8_wwo0k"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qmbdl"]
+points = PackedVector3Array(2.613115, 0.5155029, -2.1764038, 2.594309, -0.26516724, -3.6640162, 1.7130463, 0.8980522, -2.9400449, 1.7490909, 0.720876, 3.8029718, 1.9549105, 0.146631, 4.205454, 2.312744, -0.9698746, 2.534369, 1.326482, -1.2516313, -2.9590533, -1.0043979, -0.52167314, -4.2375736, -0.9835025, 0.78274035, -3.7590582, -1.7728255, 0.720876, 3.802146, -2.3364785, -0.54713434, 3.662475, 1.4675257, -1.2516313, 2.6756926, -2.6180437, -0.9698746, -2.81773, -1.913347, -1.1106477, 2.6756926, -2.7235653, 0.37999034, -0.63011336, -2.701625, -0.49978912, -0.6251545)
+
+[node name="SM_Veh_HoverTank_01_Base" type="MeshInstance3D" unique_id=41658914]
+gi_mode = 2
+mesh = ExtResource("1_qtnpd")
+surface_material_override/0 = ExtResource("2_sfnxj")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1953900010]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1267053306]
+shape = SubResource("ConvexPolygonShape3D_qmbdl")
+
+[node name="SM_Veh_HoverTank_01_Base_HoverPad_fl" type="MeshInstance3D" parent="." unique_id=2119696898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5662934, -0.7299121, 2.011565)
+gi_mode = 2
+mesh = ExtResource("3_sfnxj")
+surface_material_override/0 = ExtResource("2_sfnxj")
+
+[node name="SM_Veh_HoverTank_01_Base_HoverPad_fr" type="MeshInstance3D" parent="." unique_id=571782960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5662934, -0.7299121, 2.011565)
+gi_mode = 2
+mesh = ExtResource("4_1hdkj")
+surface_material_override/0 = ExtResource("2_sfnxj")
+
+[node name="SM_Veh_HoverTank_01_Base_HoverPad_ml" type="MeshInstance3D" parent="." unique_id=207083741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8732367, -0.7299121, -0.8694067)
+gi_mode = 2
+mesh = ExtResource("5_s42ir")
+surface_material_override/0 = ExtResource("2_sfnxj")
+
+[node name="SM_Veh_HoverTank_01_Base_HoverPad_mr" type="MeshInstance3D" parent="." unique_id=1051023981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8741113, -0.7299121, -0.8694067)
+gi_mode = 2
+mesh = ExtResource("6_qe2mt")
+surface_material_override/0 = ExtResource("2_sfnxj")
+
+[node name="SM_Veh_HoverTank_01_Base_HoverPad_rl" type="MeshInstance3D" parent="." unique_id=1761041919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8732367, -0.7299121, -2.3369849)
+gi_mode = 2
+mesh = ExtResource("7_axnvu")
+surface_material_override/0 = ExtResource("2_sfnxj")
+
+[node name="SM_Veh_HoverTank_01_Base_HoverPad_rr" type="MeshInstance3D" parent="." unique_id=1581285251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8741113, -0.7299121, -2.3369849)
+gi_mode = 2
+mesh = ExtResource("8_wwo0k")
+surface_material_override/0 = ExtResource("2_sfnxj")

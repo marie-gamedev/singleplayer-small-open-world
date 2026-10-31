@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c44mn72p57r1a"]
+
+[ext_resource type="ArrayMesh" uid="uid://c568ubes12sly" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Background_Mountain_02.res" id="1_l5ioq"]
+[ext_resource type="Material" uid="uid://beacnuebuob3s" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Mountains_mat.tres" id="2_d3myf"]
+
+[node name="SM_Gen_Env_Background_Mountain_02" type="MeshInstance3D" unique_id=679005208]
+gi_mode = 2
+mesh = ExtResource("1_l5ioq")
+surface_material_override/0 = ExtResource("2_d3myf")

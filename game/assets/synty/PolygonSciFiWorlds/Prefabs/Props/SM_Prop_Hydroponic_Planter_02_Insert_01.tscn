@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://drl2roh1p5nam"]
+
+[ext_resource type="ArrayMesh" uid="uid://bc5ig8vwd2h0y" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Hydroponic_Planter_02_Insert_01.res" id="1_qn6e8"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_lsxla"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ox33m"]
+points = PackedVector3Array(0.37806362, 0.5679954, -0.9239583, -0.34081167, 0.7651357, -1.0163437, 0.358119, 2.0679827, -1.0163437, 0.39853072, 0.618336, -0.900862, 0.42187196, 0.6061568, 0.9540138, -0.38610062, 0.61167806, 0.9098122, -0.38113624, 0.5918666, -0.8966807, -0.46788204, 0.7651357, -0.8570585, -0.34072456, 2.0996485, -1.0163437, -0.24544354, 2.2269616, -0.8570585, 0.4216978, 2.1314769, -0.8254006, 0.38999552, 2.1314769, 0.9540138, -0.24544354, 2.0996485, 1.017728, -0.46788204, 2.0679827, 0.8584428, -0.46788204, 2.0996485, -0.8254006, 0.008523047, 2.2269616, 0.8584428)
+
+[node name="SM_Prop_Hydroponic_Planter_02_Insert_01" type="MeshInstance3D" unique_id=1905803462]
+gi_mode = 2
+mesh = ExtResource("1_qn6e8")
+surface_material_override/0 = ExtResource("2_lsxla")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1085562918]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1370160482]
+shape = SubResource("ConvexPolygonShape3D_ox33m")

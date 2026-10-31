@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cmkijaehku5gx"]
+
+[ext_resource type="ArrayMesh" uid="uid://c4q6m6fj38tve" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Comms_01.res" id="1_k1613"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_wu2fx"]
+[ext_resource type="Shape3D" uid="uid://g52jd7j7ttxi" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Comms_01_Collision.res" id="3_u526g"]
+[ext_resource type="ArrayMesh" uid="uid://dcjcqhs7fvovc" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Comms_01_Dish_01.res" id="3_wu2fx"]
+[ext_resource type="ArrayMesh" uid="uid://cd3jn0q63ejua" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Comms_01_Glass_01.res" id="4_u526g"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="5_w8qdf"]
+
+[node name="SM_Bld_Corp_Comms_01" type="MeshInstance3D" unique_id=1493975016]
+gi_mode = 2
+mesh = ExtResource("1_k1613")
+surface_material_override/0 = ExtResource("2_wu2fx")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1141113537]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=647202121]
+shape = ExtResource("3_u526g")
+
+[node name="SM_Bld_Corp_Comms_01_Dish_01" type="MeshInstance3D" parent="." unique_id=893128755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5614022, 9.184387, -1.2091346)
+gi_mode = 2
+mesh = ExtResource("3_wu2fx")
+surface_material_override/0 = ExtResource("2_wu2fx")
+
+[node name="SM_Bld_Corp_Comms_01_Glass_01" type="MeshInstance3D" parent="." unique_id=1953249401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1576235, 4.5776366e-07)
+gi_mode = 2
+mesh = ExtResource("4_u526g")
+surface_material_override/0 = ExtResource("5_w8qdf")

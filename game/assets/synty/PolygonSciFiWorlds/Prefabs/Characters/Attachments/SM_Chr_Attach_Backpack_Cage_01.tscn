@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dlcbnghbqbmsq"]
+
+[ext_resource type="ArrayMesh" uid="uid://bbuwjugqb716q" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Backpack_Cage_01.res" id="1_h3a8c"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_jum7l"]
+[ext_resource type="ArrayMesh" uid="uid://bg1fuicv5o4ff" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Backpack_Cage_Back_01.res" id="3_jum7l"]
+[ext_resource type="ArrayMesh" uid="uid://c52lhrtuto8ij" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Backpack_Cage_Top_01.res" id="4_h40my"]
+
+[node name="SM_Chr_Attach_Backpack_Cage_01" type="MeshInstance3D" unique_id=291727618]
+gi_mode = 2
+mesh = ExtResource("1_h3a8c")
+surface_material_override/0 = ExtResource("2_jum7l")
+
+[node name="SM_Chr_Attach_Backpack_Cage_Back_01" type="MeshInstance3D" parent="." unique_id=778942670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25819623, -0.36930016)
+gi_mode = 2
+mesh = ExtResource("3_jum7l")
+surface_material_override/0 = ExtResource("2_jum7l")
+
+[node name="SM_Chr_Attach_Backpack_Cage_Top_01" type="MeshInstance3D" parent="SM_Chr_Attach_Backpack_Cage_Back_01" unique_id=354802390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2847515, 0)
+gi_mode = 2
+mesh = ExtResource("4_h40my")
+surface_material_override/0 = ExtResource("2_jum7l")

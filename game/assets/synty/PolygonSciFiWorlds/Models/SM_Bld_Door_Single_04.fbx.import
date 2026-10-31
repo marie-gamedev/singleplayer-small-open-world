@@ -1,0 +1,136 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://0cgv3670fjwh"
+path="res://.godot/imported/SM_Bld_Door_Single_04.fbx-e792ccc7fea2f06eda1003cf6b9d5e30.scn"
+
+[deps]
+
+source_file="res://Assets/Synty/PolygonSciFiWorlds/Models/SM_Bld_Door_Single_04.fbx"
+dest_files=["res://.godot/imported/SM_Bld_Door_Single_04.fbx-e792ccc7fea2f06eda1003cf6b9d5e30.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_SM_Bld_Door_Single_01_Door_03_Glass": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_01_Door_03_Glass.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cvb4dfe4e5287"
+},
+"Root Scene_SM_Bld_Door_Single_04": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c4tai0jdh4tok"
+},
+"Root Scene_SM_Bld_Door_Single_04_Door_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://4dh5w7xo3e1"
+},
+"Root Scene_SM_Bld_Door_Single_04_Door_02": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://tnd05pjwvh5f"
+},
+"Root Scene_SM_Bld_Door_Single_04_Door_03": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_03.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://crb8w2crtb4or"
+},
+"SM_Bld_Door_Single_01_Door_03_Glass": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_01_Door_03_Glass.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cvb4dfe4e5287"
+},
+"SM_Bld_Door_Single_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c4tai0jdh4tok"
+},
+"SM_Bld_Door_Single_04_Door_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://4dh5w7xo3e1"
+},
+"SM_Bld_Door_Single_04_Door_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://tnd05pjwvh5f"
+},
+"SM_Bld_Door_Single_04_Door_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_03.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://crb8w2crtb4or"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

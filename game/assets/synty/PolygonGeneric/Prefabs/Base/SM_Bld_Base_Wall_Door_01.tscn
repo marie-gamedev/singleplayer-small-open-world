@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dqy2q07mdhsbl"]
+
+[ext_resource type="ArrayMesh" uid="uid://d12a68ic6ks4x" path="res://Assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Wall_Door_01.res" id="1_smu4k"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="2_32teq"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="3_qooo2"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="4_3bbx2"]
+[ext_resource type="Shape3D" uid="uid://dktiywecyw67m" path="res://Assets/Synty/PolygonGeneric/Models/Base/Collision/extracted/SM_Bld_Base_Wall_Door_01_Collision.res" id="5_32teq"]
+
+[node name="SM_Bld_Base_Wall_Door_01" type="MeshInstance3D" unique_id=1445313080]
+gi_mode = 2
+mesh = ExtResource("1_smu4k")
+surface_material_override/0 = ExtResource("2_32teq")
+surface_material_override/1 = ExtResource("3_qooo2")
+surface_material_override/2 = ExtResource("4_3bbx2")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1969004408]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2081565676]
+shape = ExtResource("5_32teq")

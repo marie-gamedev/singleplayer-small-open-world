@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dep0g4dp2rwn1"]
+
+[ext_resource type="ArrayMesh" uid="uid://btr4kwpe3xl8l" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Platform_Base_Small_Corner_01.res" id="1_jcqch"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_y6owq"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_puc64"]
+points = PackedVector3Array(2.518671, -1.1143836, 0.0219886, 2.518671, -1.3225589, 0.0219886, 2.435188, -0.36485118, -0.103266425, 2.10177, -0.031290412, 0.31320652, 0.061189517, -0.031290412, 2.3540807, 0.019576475, -1.1143836, 2.5208263, 2.143126, -1.3225589, -0.019763082, 2.3098352, -1.0309618, -0.1450181, 0.019576475, -1.3225589, 2.5208263, 2.3098352, -0.36485118, -0.1450181, 1.9769309, -0.031290412, 0.1884734, -0.022036575, -1.1143836, 2.5208263, -0.10551953, -0.031290412, 2.2705772, 2.143126, -1.1143836, -0.019763082, -0.022036575, -1.3225589, 2.1453223, -0.10551953, -1.0309618, 2.2705772)
+
+[node name="SM_Bld_Platform_Base_Small_Corner_01" type="MeshInstance3D" unique_id=1180007306]
+gi_mode = 2
+mesh = ExtResource("1_jcqch")
+surface_material_override/0 = ExtResource("2_y6owq")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1100882460]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=503935311]
+shape = SubResource("ConvexPolygonShape3D_puc64")

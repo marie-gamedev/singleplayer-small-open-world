@@ -1,0 +1,24 @@
+[gd_resource type="Environment" format=3 uid="uid://ikrbst036niv"]
+
+[ext_resource type="Material" uid="uid://df41hb3bx031d" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/SkyBoxSpace_01_mat.tres" id="1_a0fig"]
+
+[sub_resource type="Sky" id="Sky_wtrs3"]
+sky_material = ExtResource("1_a0fig")
+
+[resource]
+background_mode = 2
+background_energy_multiplier = 0.5
+sky = SubResource("Sky_wtrs3")
+ambient_light_color = Color(0.35554197, 0.59185445, 0.5253607, 1)
+ambient_light_sky_contribution = 0.0
+ambient_light_energy = 0.75
+ssao_enabled = true
+ssao_radius = 3.85
+ssao_intensity = 1.5
+ssao_power = 1.65
+ssao_detail = 1.24
+ssao_horizon = 0.08
+ssao_sharpness = 1.0
+fog_light_color = Color(0, 0.12712978, 0.16911763, 1)
+adjustment_enabled = true
+adjustment_brightness = 0.82

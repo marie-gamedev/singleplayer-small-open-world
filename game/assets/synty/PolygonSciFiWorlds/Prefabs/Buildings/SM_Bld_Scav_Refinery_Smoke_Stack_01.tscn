@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dfskt3ut34sns"]
+
+[ext_resource type="ArrayMesh" uid="uid://cuwls0hp53a7i" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Refinery_Smoke_Stack_01.res" id="1_ejec1"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_8qysv"]
+[ext_resource type="Shape3D" uid="uid://dowsxj41pxaxa" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Scav_Refinery_Smoke_Stack_01_Collision.res" id="3_8qysv"]
+
+[node name="SM_Bld_Scav_Refinery_Smoke_Stack_01" type="MeshInstance3D" unique_id=365995014]
+gi_mode = 2
+mesh = ExtResource("1_ejec1")
+surface_material_override/0 = ExtResource("2_8qysv")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=506072107]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1089991536]
+shape = ExtResource("3_8qysv")

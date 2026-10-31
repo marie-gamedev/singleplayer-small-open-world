@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b5kk2j7pb4id3"]
+
+[ext_resource type="ArrayMesh" uid="uid://twpwqhesst34" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Plinth_01.res" id="1_qtq0l"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_eqjan"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_c8i16"]
+points = PackedVector3Array(-0.033522844, -0.064972036, -0.53719, -0.5371706, -0.064972036, -0.03354007, -0.35013455, 0.26954937, -0.3499666, 0.033215463, 0.2690406, -0.48180223, 0.38599032, -0.064972036, -0.3859792, -0.38608682, -0.064972036, 0.38597518, -0.5385412, 0.15328258, 0.033430755, -0.3081727, 0.28152198, 0.34038025, 0.34033835, 0.28152198, -0.3079519, 0.53855014, 0.15328258, -0.03354007, 0.53717947, -0.064972036, -0.03354007, -0.4984771, 0.15273991, 0.11619651, -0.033522844, -0.064972036, 0.53718597, -0.033522844, 0.15328258, 0.53855485, 0.3349613, 0.27036336, 0.35175264, 0.38599032, -0.064972036, 0.38597518)
+
+[node name="SM_Gen_Prop_Plinth_01" type="MeshInstance3D" unique_id=744875518]
+gi_mode = 2
+mesh = ExtResource("1_qtq0l")
+surface_material_override/0 = ExtResource("2_eqjan")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=439884921]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=940713714]
+shape = SubResource("ConvexPolygonShape3D_c8i16")

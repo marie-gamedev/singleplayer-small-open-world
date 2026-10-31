@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bb2edk2rfnj2v"]
+
+[ext_resource type="ArrayMesh" uid="uid://c0j6qti4ipjyo" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08.res" id="1_1jb45"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_6wgnp"]
+[ext_resource type="ArrayMesh" uid="uid://b4x54mii6ym1o" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08_CrateSwivel_01.res" id="3_6wgnp"]
+[ext_resource type="ArrayMesh" uid="uid://cu78pn8ypncpu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08_CrateArm_01.res" id="4_mx4yc"]
+[ext_resource type="ArrayMesh" uid="uid://d08dn1dc5huht" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08_CrateArm_02.res" id="5_xw545"]
+[ext_resource type="ArrayMesh" uid="uid://jb6si0pbsnyh" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08_CrateArm_03.res" id="6_a8cfd"]
+[ext_resource type="ArrayMesh" uid="uid://6wcdh1m3meva" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08_CrateDish_01.res" id="7_bbqlm"]
+[ext_resource type="ArrayMesh" uid="uid://drwf68w6v24v5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08_Lid_01.res" id="8_g6d3d"]
+[ext_resource type="ArrayMesh" uid="uid://cficn0c5f8sxq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Satellite_08_Lid_02.res" id="9_pw8wb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6un01"]
+points = PackedVector3Array(-1.0060872, 0.01213904, -0.56436527, -1.166192, 0.0062912954, -0.42636144, -1.0814989, 0.86963874, -0.52874076, 1.0061293, 0.01213904, -0.56436527, 1.166234, 0.006206545, -0.42636144, -1.1731532, 0.0039182976, 0.41404796, -1.1975169, 0.8308233, 0.24370801, -1.158999, 0.86963874, 0.24370801, 1.0815408, 0.86963874, -0.52874076, 1.158577, 0.86963874, 0.12762696, 1.1729631, 0.0038335475, 0.41415757, -1.0165288, 0.007816794, 0.5553402, -1.0401965, 0.8153988, 0.5312252, -0.96501684, 0.83650154, 0.51083696, 1.0400064, 0.8153988, 0.53133476, 1.0161068, 0.007816794, 0.55544984)
+
+[node name="SM_Prop_Satellite_08" type="MeshInstance3D" unique_id=807406945]
+gi_mode = 2
+mesh = ExtResource("1_1jb45")
+surface_material_override/0 = ExtResource("2_6wgnp")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1965346331]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=399831397]
+shape = SubResource("ConvexPolygonShape3D_6un01")
+
+[node name="SM_Prop_Satellite_08_CrateSwivel_01" type="MeshInstance3D" parent="." unique_id=1517389381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13142136, 0)
+gi_mode = 2
+mesh = ExtResource("3_6wgnp")
+surface_material_override/0 = ExtResource("2_6wgnp")
+
+[node name="SM_Prop_Satellite_08_CrateArm_01" type="MeshInstance3D" parent="SM_Prop_Satellite_08_CrateSwivel_01" unique_id=1031912024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3494981, 0)
+gi_mode = 2
+mesh = ExtResource("4_mx4yc")
+surface_material_override/0 = ExtResource("2_6wgnp")
+
+[node name="SM_Prop_Satellite_08_CrateArm_02" type="MeshInstance3D" parent="SM_Prop_Satellite_08_CrateSwivel_01/SM_Prop_Satellite_08_CrateArm_01" unique_id=1239617253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7681458, -0.027289033, -0.00019217515)
+gi_mode = 2
+mesh = ExtResource("5_xw545")
+surface_material_override/0 = ExtResource("2_6wgnp")
+
+[node name="SM_Prop_Satellite_08_CrateArm_03" type="MeshInstance3D" parent="SM_Prop_Satellite_08_CrateSwivel_01/SM_Prop_Satellite_08_CrateArm_01/SM_Prop_Satellite_08_CrateArm_02" unique_id=1161855808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6061677, 0.056075722, 0.00019217515)
+gi_mode = 2
+mesh = ExtResource("6_a8cfd")
+surface_material_override/0 = ExtResource("2_6wgnp")
+
+[node name="SM_Prop_Satellite_08_CrateDish_01" type="MeshInstance3D" parent="SM_Prop_Satellite_08_CrateSwivel_01/SM_Prop_Satellite_08_CrateArm_01/SM_Prop_Satellite_08_CrateArm_02/SM_Prop_Satellite_08_CrateArm_03" unique_id=1261848110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5277334, 0.01772356, -0.0012393708)
+gi_mode = 2
+mesh = ExtResource("7_bbqlm")
+surface_material_override/0 = ExtResource("2_6wgnp")
+
+[node name="SM_Prop_Satellite_08_Lid_01" type="MeshInstance3D" parent="." unique_id=506305603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1501584, 0.7034496, -0.0019514846)
+gi_mode = 2
+mesh = ExtResource("8_g6d3d")
+surface_material_override/0 = ExtResource("2_6wgnp")
+
+[node name="SM_Prop_Satellite_08_Lid_02" type="MeshInstance3D" parent="." unique_id=1092259320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1501584, 0.7034496, -0.0019514846)
+gi_mode = 2
+mesh = ExtResource("9_pw8wb")
+surface_material_override/0 = ExtResource("2_6wgnp")

@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://dky168gbtq0pm"]
+
+[ext_resource type="ArrayMesh" uid="uid://ckmgkl527h7rk" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01.res" id="1_7pc7j"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_dxy06"]
+[ext_resource type="ArrayMesh" uid="uid://cq7eto0fscnll" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01_Booster_l.res" id="3_dxy06"]
+[ext_resource type="ArrayMesh" uid="uid://biemc4bxndhi7" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01_Booster_r.res" id="4_0um8f"]
+[ext_resource type="ArrayMesh" uid="uid://5eomdbne30ia" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01_Door_01.res" id="5_fyopr"]
+[ext_resource type="ArrayMesh" uid="uid://dq26v8owhxjcb" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01_Glass_01.res" id="6_f0hgh"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="7_iur54"]
+[ext_resource type="ArrayMesh" uid="uid://bljoy8nwiwqah" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01_Gun_l.res" id="8_5kt0x"]
+[ext_resource type="ArrayMesh" uid="uid://cw7fbre7vko0e" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01_Gun_r.res" id="9_iur54"]
+[ext_resource type="ArrayMesh" uid="uid://ddvo6eshqfg3a" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverCraft_01_SteeringWheel_01.res" id="10_h55in"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_81wwo"]
+points = PackedVector3Array(1.1142089, 2.8309538, -0.55082834, 2.0442145, 0.88932353, -0.55854565, -3.1656144, 1.7578533, -0.5553205, -1.0657957, 2.760279, -0.5011839, 0.3385799, 2.5256157, 0.3296392, 2.8288362, 1.8691112, -0.079149276, 3.1300948, 1.7763501, -0.5496765, 3.5737398, 0.1190763, -0.20723403, -3.513336, 0.10692903, -0.20573664, -2.0512567, 0.88932353, -0.55854565, -3.7284138, 0.34407684, 0.61817545, -1.4142666, 2.5777938, -0.13374656, -1.1459813, 2.7180395, -0.39867008, 0.9890592, 1.5571473, 0.58799726, 3.9274566, 0.10913762, 0.61610216, -3.4736178, 0.010579101, 0.46060354)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yrrkc"]
+points = PackedVector3Array(0.6346605, 1.653512, 0.4666442, 3.8898194, 0.22437327, 0.64091927, 3.9257057, 0.108297035, 0.62471604, -3.7120311, 0.043854702, 0.62579626, -1.6156907, 1.4333674, 0.61823475, 0.3378532, 2.0883977, 1.3369395, 3.5915172, 0.21356617, 2.0567243, 1.6319921, 1.3561167, 3.6205194, 3.4771307, 0.0870831, 2.0016334, -3.4817626, 0.08748336, 2.0019934, -3.7120311, 0.2920177, 0.69565034, -0.5779872, 1.9144834, 3.2136374, -1.6373718, 1.3561167, 3.6197991, 0.5942886, 1.6815305, 4.005077, 0.78044724, 0.99968255, 3.9092975, -0.32080436, 1.3174913, 4.145145)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v6pyd"]
+points = PackedVector3Array(2.0165, 2.2129889, -3.7183034, 1.3205876, 2.723103, -3.6015527, 3.2480235, 1.6328266, -1.3746786, 2.1163707, 2.0834, -3.6905513, -2.1182642, 2.082988, -3.6883183, 1.2219892, 2.922534, -1.5048268, -1.0724869, 2.8531039, -3.325626, 2.7772965, 1.9610219, -0.4856515, 2.3205643, 0.8190335, -0.46204615, 0.7137313, 0.8437563, -1.8011692, -1.2117968, 1.0695581, -2.4155455, -3.2505536, 1.5897676, -1.3753166, -1.1151068, 2.8310595, -0.5886855, 1.1106687, 2.8329136, -0.5858145, -2.3294554, 0.81779736, -0.4594941, -2.6436975, 1.741401, -0.5947461)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_grvra"]
+points = PackedVector3Array(0.54766095, -0.003934473, -0.41197824, 0.341497, 0.20206809, 1.4943604, 0.28990304, -0.1584591, 1.6489983, 0.39287907, -0.46768993, -0.41197824, 0.444579, -0.05541244, -1.5457736, 0.444579, 0.15059012, -1.3398051, -0.019237041, 0.459821, -1.3398051, 0.08373904, 0.3566835, 1.4943604, -0.17370111, 0.30520552, 1.6489983, -0.22529507, -0.055321634, 1.5456913, 0.08373904, -0.26150578, 1.5456913, 0.28990304, -0.46768993, -1.3911358, -0.37997103, -0.05541244, -1.6490808, -0.27699497, 0.459821, -1.3398051, -0.534647, 0.20215887, -0.41197824, -0.534647, 0.047543466, -0.41197824)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sc7ht"]
+points = PackedVector3Array(0.54765683, 0.09911221, -0.41199005, 0.28989893, 0.459821, -0.41199005, 0.238199, 0.20206809, 1.648998, 0.28989893, -0.003934473, 1.5456197, -0.070729166, -0.26150578, 1.5456197, -0.2769991, -0.46768993, -1.3912648, 0.54765683, 0.09911221, -1.3912648, -0.070729166, 0.3566835, 1.4942439, 0.032246888, 0.459821, -1.3398889, -0.3284871, -0.10689038, 1.648998, -0.37997514, -0.46768993, -0.41199005, -0.5346511, -0.26150578, -0.41199005, -0.43167505, -0.003934473, -1.5460191, 0.3215757, 0.09293848, -1.5513446, -0.3284871, 0.20206809, 1.4942439, -0.5346511, 0.047543466, -0.41199005)
+
+[node name="SM_Veh_HoverCraft_01" type="MeshInstance3D" unique_id=595927928]
+gi_mode = 2
+mesh = ExtResource("1_7pc7j")
+surface_material_override/0 = ExtResource("2_dxy06")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1021809787]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1100926963]
+shape = SubResource("ConvexPolygonShape3D_81wwo")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=1879483067]
+shape = SubResource("ConvexPolygonShape3D_yrrkc")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="MeshCollider" unique_id=565512741]
+shape = SubResource("ConvexPolygonShape3D_v6pyd")
+
+[node name="SM_Veh_HoverCraft_01_Booster_l" type="MeshInstance3D" parent="." unique_id=978733465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.13273, 1.6507967, -2.65956)
+gi_mode = 2
+mesh = ExtResource("3_dxy06")
+surface_material_override/0 = ExtResource("2_dxy06")
+
+[node name="SM_Veh_HoverCraft_01_Booster_r" type="MeshInstance3D" parent="." unique_id=13746324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.13273, 1.6507967, -2.65956)
+gi_mode = 2
+mesh = ExtResource("4_0um8f")
+surface_material_override/0 = ExtResource("2_dxy06")
+
+[node name="SM_Veh_HoverCraft_01_Door_01" type="MeshInstance3D" parent="." unique_id=1318781170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53687, -0.05764507)
+gi_mode = 2
+mesh = ExtResource("5_fyopr")
+surface_material_override/0 = ExtResource("2_dxy06")
+
+[node name="SM_Veh_HoverCraft_01_Glass_01" type="MeshInstance3D" parent="SM_Veh_HoverCraft_01_Door_01" unique_id=796872588]
+gi_mode = 2
+mesh = ExtResource("6_f0hgh")
+surface_material_override/0 = ExtResource("7_iur54")
+
+[node name="SM_Veh_HoverCraft_01_Gun_l" type="MeshInstance3D" parent="." unique_id=1835403727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8096023, 0.72762746, 1.9895272)
+gi_mode = 2
+mesh = ExtResource("8_5kt0x")
+surface_material_override/0 = ExtResource("2_dxy06")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_HoverCraft_01_Gun_l" unique_id=630165140]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_HoverCraft_01_Gun_l/MeshCollider" unique_id=272456809]
+shape = SubResource("ConvexPolygonShape3D_grvra")
+
+[node name="SM_Veh_HoverCraft_01_Gun_r" type="MeshInstance3D" parent="." unique_id=1710572672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8096023, 0.72762746, 1.9895272)
+gi_mode = 2
+mesh = ExtResource("9_iur54")
+surface_material_override/0 = ExtResource("2_dxy06")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_HoverCraft_01_Gun_r" unique_id=247747886]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_HoverCraft_01_Gun_r/MeshCollider" unique_id=1783914908]
+shape = SubResource("ConvexPolygonShape3D_sc7ht")
+
+[node name="SM_Veh_HoverCraft_01_SteeringWheel_01" type="MeshInstance3D" parent="." unique_id=845587461]
+transform = Transform3D(1, 0, 0, 0, 0.96497816, -0.2623302, 0, 0.2623302, 0.96497816, 0.3031372, 1.8488337, 2.1745555)
+gi_mode = 2
+mesh = ExtResource("10_h55in")
+surface_material_override/0 = ExtResource("2_dxy06")

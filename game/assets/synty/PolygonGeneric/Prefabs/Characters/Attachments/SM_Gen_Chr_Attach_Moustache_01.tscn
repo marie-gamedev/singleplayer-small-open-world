@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dv0vehg4scwfa"]
+
+[ext_resource type="ArrayMesh" uid="uid://cyslv0tveu2bi" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Chr_Attach_Moustache_01.res" id="1_vqrqj"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_y4rt6"]
+
+[node name="SM_Gen_Chr_Attach_Moustache_01" type="MeshInstance3D" unique_id=1936013866]
+mesh = ExtResource("1_vqrqj")
+surface_material_override/0 = ExtResource("2_y4rt6")

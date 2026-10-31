@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cojsalodyu28p"]
+
+[ext_resource type="Shader" uid="uid://gp6f1xdnogoy" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic_Transparent.gdshader" id="1_eo16e"]
+[ext_resource type="Texture2D" uid="uid://cw7rjkv7gru5v" path="res://Assets/Synty/PolygonGeneric/Textures/Decals/Generic_Decal_Letter_T.png" id="1_usypx"]
+
+[resource]
+resource_name = "Generic_Decal_Letter_T_mat"
+render_priority = 0
+shader = ExtResource("1_eo16e")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("1_usypx")
+shader_parameter/Alpha_Transparency = 1.0
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Strength = 1.0

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b21sahsjuvose"]
+
+[ext_resource type="ArrayMesh" uid="uid://cs2com2j33bsm" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Railing_Pillar_01.res" id="1_uud2a"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_8gls1"]
+
+[node name="SM_Bld_Railing_Pillar_01" type="MeshInstance3D" unique_id=798644451]
+gi_mode = 2
+mesh = ExtResource("1_uud2a")
+surface_material_override/0 = ExtResource("2_8gls1")

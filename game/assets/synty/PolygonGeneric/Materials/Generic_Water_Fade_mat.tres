@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cg5kiwso5tb60"]
+
+[resource]
+resource_name = "Generic_Water_Fade_mat"
+depth_draw_mode = 1
+shading_mode = 0
+albedo_color = Color(0.21568628, 0.33333334, 0.38431373, 1)
+uv1_scale = Vector3(1, 1, 0)

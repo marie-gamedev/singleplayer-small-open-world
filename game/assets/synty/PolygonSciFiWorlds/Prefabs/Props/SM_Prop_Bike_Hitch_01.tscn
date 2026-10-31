@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b8dacfu6n0vnk"]
+
+[ext_resource type="ArrayMesh" uid="uid://c8fxx3rj2ric5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Bike_Hitch_01.res" id="1_ruys7"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_wfmb5"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yjm1r"]
+points = PackedVector3Array(1.6278658, 1.5409348, -0.062113747, 1.686147, 1.4826895, 0.17034355, 1.7440639, 1.424598, -0.17839932, -1.7440639, 1.424598, -0.17839932, -1.6278658, 1.5409348, 0.054057986, 1.7440639, 1.0757413, 0.22851479, -1.6857827, 1.4826895, 0.17034355, 1.802345, 0.3780278, -0.29479873, 1.8606262, 0.26169097, 0.28668606, 1.8606262, -0.029074192, -0.29479873, -1.802345, 0.3780278, -0.29479873, -1.8606262, -0.029074192, -0.29479873, -1.8606262, 0.2037531, 0.28668606, -1.802345, 0.43611935, 0.28668606, 1.718566, 0.030707866, 0.26448762, -1.7167445, 0.031629954, 0.2641461)
+
+[node name="SM_Prop_Bike_Hitch_01" type="MeshInstance3D" unique_id=906064824]
+gi_mode = 2
+mesh = ExtResource("1_ruys7")
+surface_material_override/0 = ExtResource("2_wfmb5")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=793765080]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1111702441]
+shape = SubResource("ConvexPolygonShape3D_yjm1r")

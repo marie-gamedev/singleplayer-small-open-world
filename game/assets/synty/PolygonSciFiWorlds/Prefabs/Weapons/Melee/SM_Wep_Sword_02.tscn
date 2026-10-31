@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b16e0u00xplcq"]
+
+[ext_resource type="ArrayMesh" uid="uid://cbr85p04hfjoc" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Sword_02.res" id="1_ntgpt"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_tfqhd"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_88uah"]
+points = PackedVector3Array(0.018376455, 0.10897055, 0.096097276, 0.010884881, 0.703455, 0.050917953, -0.019225094, 0.10897055, 0.096097276, 0.04100444, -0.18454573, 0.020798393, 0.048534326, 0.0713605, 0.028328285, 0.010884881, 0.7109946, -0.04693229, -0.011685625, 0.7109946, 0.043388054, -0.04933507, 0.0713605, 0.028328285, -0.04181476, -0.18454573, 0.020798393, 0.017792068, -0.18437038, -0.02361454, 0.025925502, 0.10143101, -0.09209246, 0.048534326, 0.048654184, -0.024342626, -0.04181476, -0.18454573, -0.016812734, -0.0041557364, 0.7109946, -0.05446218, -0.04933507, 0.048654184, -0.024342626, -0.019225094, 0.08635193, -0.099622354)
+
+[node name="SM_Wep_Sword_02" type="MeshInstance3D" unique_id=2074883335]
+gi_mode = 2
+mesh = ExtResource("1_ntgpt")
+surface_material_override/0 = ExtResource("2_tfqhd")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=161379381]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=396416535]
+shape = SubResource("ConvexPolygonShape3D_88uah")

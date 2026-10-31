@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dvwr81ng2boj2"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_a62tw"]
+[ext_resource type="Texture2D" uid="uid://3acqpthr0w0g" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Wood.png" id="2_1h83v"]
+
+[resource]
+resource_name = "Generic_Wood_mat"
+render_priority = 0
+shader = ExtResource("1_a62tw")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("2_1h83v")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Strength = 1.0
+shader_parameter/Alpha_Clip_Threshold = 0.5

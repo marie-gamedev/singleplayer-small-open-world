@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dxp1dherrq3y8"]
+
+[ext_resource type="Shader" uid="uid://cvidk6xvqe0qx" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Standard_Transparent.gdshader" id="1_a5mc2"]
+[ext_resource type="Texture2D" uid="uid://chc5rrvtj8v38" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Alts/PolygonScifiWorlds_01_A.png" id="2_wwcd2"]
+[ext_resource type="Texture2D" uid="uid://c86er5rhkucnd" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/PolygonScifiWorlds_A_01_Normals.png" id="3_xqyqr"]
+
+[resource]
+resource_name = "Glass_02_mat"
+render_priority = 0
+shader = ExtResource("1_a5mc2")
+shader_parameter/Albedo_Map = ExtResource("2_wwcd2")
+shader_parameter/BaseColor = Color(1, 0.7882353, 0.6156863, 0.5058824)
+shader_parameter/SkinColor = Color(1, 0.8, 0.682353, 1)
+shader_parameter/Hair_Color = Color(0.309804, 0.254902, 0.176471, 1)
+shader_parameter/Alpha_Transparency = 1.0
+shader_parameter/USE_METALLIC_SMOOTHNESS_MAP = false
+shader_parameter/Smoothness = 0.885
+shader_parameter/Metallic = 0.615
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0.627451, 0.3647059, 0, 1)
+shader_parameter/Normal_Map = ExtResource("3_xqyqr")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dpw01bn8501nh"]
+
+[ext_resource type="ArrayMesh" uid="uid://ww6vubcx24ks" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Ground_Slope_02.res" id="1_1r3pu"]
+[ext_resource type="Material" uid="uid://cunaqn40v5rh7" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Exp_01_mat.tres" id="2_ugbss"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1r3pu"]
+points = PackedVector3Array(-2.782074, -1.3300939, -34.140812, -15.862452, -1.3300939, -30.742783, -0.632164, 15.856489, 1.0472145, 7.584816, -1.3300939, -32.803436, -27.71828, -1.3300939, -22.37053, 11.168007, -1.3300939, 34.304234, 26.502659, -1.3300939, 24.062382, 34.698765, -1.3300939, 7.2905807, 34.53178, -1.3300939, -5.359913, 28.79868, -1.3300939, -17.696533, 18.570942, -1.3300939, -27.979324, -34.084526, -1.3300939, -11.64422, -36.38055, -1.3300939, -1.2249603, -34.133232, -1.3300939, 11.725761, -23.481073, -1.3300939, 27.01007, -6.2052383, -1.3300939, 35.559727)
+
+[node name="SM_Env_Ground_Slope_02" type="MeshInstance3D" unique_id=2114697315]
+gi_mode = 2
+mesh = ExtResource("1_1r3pu")
+surface_material_override/0 = ExtResource("2_ugbss")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1349324499]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=320908615]
+shape = SubResource("ConvexPolygonShape3D_1r3pu")

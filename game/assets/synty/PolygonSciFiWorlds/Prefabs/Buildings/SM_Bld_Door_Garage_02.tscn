@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://l68lle6g2jvv"]
+
+[ext_resource type="ArrayMesh" uid="uid://cswghmw55f8e2" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Garage_02.res" id="1_juxro"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_2uhmo"]
+[ext_resource type="ArrayMesh" uid="uid://bkwe6ymrg6a0t" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Garage_02_Door_01.res" id="3_2uhmo"]
+[ext_resource type="Shape3D" uid="uid://cl7bwihb80rbu" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Door_Garage_02_Collision.res" id="3_amsm3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6yok2"]
+points = PackedVector3Array(3.6715672, 4.468263, 0.23053691, 3.9177701, 4.2226357, 0.23053691, 3.6715672, 4.468263, -0.25918436, -3.6723342, 4.468263, 0.23053691, 3.9177701, 4.2226357, -0.25918436, 3.9177701, -0.061214924, 0.23053691, -3.6723342, 4.468263, -0.25918436, -3.9177701, 4.2226357, 0.23053691, 3.9177701, -0.061214924, -0.25918436, -3.9177701, -0.061214924, 0.23053691, -3.9177701, 4.2226357, -0.25918436, -3.9177701, -0.061214924, -0.25918436)
+
+[node name="SM_Bld_Door_Garage_02" type="MeshInstance3D" unique_id=311633679]
+gi_mode = 2
+mesh = ExtResource("1_juxro")
+surface_material_override/0 = ExtResource("2_2uhmo")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1215216936]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1305658068]
+shape = ExtResource("3_amsm3")
+
+[node name="SM_Bld_Door_Garage_02_Door_01" type="MeshInstance3D" parent="." unique_id=108747074]
+gi_mode = 2
+mesh = ExtResource("3_2uhmo")
+surface_material_override/0 = ExtResource("2_2uhmo")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Door_Garage_02_Door_01" unique_id=1396303144]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Door_Garage_02_Door_01/MeshCollider" unique_id=825899056]
+shape = SubResource("ConvexPolygonShape3D_6yok2")

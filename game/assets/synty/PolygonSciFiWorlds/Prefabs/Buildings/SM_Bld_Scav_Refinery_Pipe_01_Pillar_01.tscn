@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d1oksh0t4kanj"]
+
+[ext_resource type="ArrayMesh" uid="uid://cuqgf1xyghnsl" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Refinery_Pipe_01_Pillar_01.res" id="1_gsrmq"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_3fnl1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_smajn"]
+points = PackedVector3Array(2.6190588, -2.0121388, 0.7694838, 1.5022771, 0.06313443, 2.8954604, -1.1083149, -0.6568389, 2.8631284, -2.599571, -2.0121388, 0.7694838, 2.6190588, -2.0121388, -0.76997733, 2.319173, 0.60652256, -0.7245989, 1.9344809, 1.0440228, 0.6265421, -1.0270852, 0.69338846, 2.8863847, -2.599571, -1.4982345, 0.7694838, -2.599571, -2.0121388, -0.76997733, 1.1206505, -0.6549368, -2.8454702, 1.1063459, 0.6651728, -2.7195454, -1.6580207, 1.1533978, 0.7694838, -1.7397615, 1.2266316, -0.71779203, -1.3898093, 0.42359662, -2.8908486, -1.3944072, -0.38894928, -2.899357)
+
+[node name="SM_Bld_Scav_Refinery_Pipe_01_Pillar_01" type="MeshInstance3D" unique_id=1118508444]
+gi_mode = 2
+mesh = ExtResource("1_gsrmq")
+surface_material_override/0 = ExtResource("2_3fnl1")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=346869221]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1935638833]
+shape = SubResource("ConvexPolygonShape3D_smajn")

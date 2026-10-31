@@ -1,0 +1,402 @@
+{
+  "_Alpha_Clip_Threshold": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Color_Noise_Large_Freq": {
+    "type": "float",
+    "default": 0.6800000071525574
+  },
+  "_Color_Noise_Small_Freq": {
+    "type": "float",
+    "default": 0.7799999713897705
+  },
+  "_Enable_Back_Face_Lighting": {
+    "type": "bool",
+    "default": false
+  },
+  "_Use_Color_Noise": {
+    "type": "bool",
+    "default": true
+  },
+  "_Emissive_2_Color": {
+    "type": "color",
+    "default": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "_Emissive_2_Mask": {
+    "type": "texture"
+  },
+  "_Emissive_Amount": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Emissive_Color": {
+    "type": "color",
+    "default": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "_Emissive_Mask": {
+    "type": "texture"
+  },
+  "_Emissive_Mask_2_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Emissive_Mask_2_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Emissive_Mask_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Emissive_Mask_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Emissive_Pulse_Map": {
+    "type": "texture"
+  },
+  "_Enable_Emission": {
+    "type": "bool",
+    "default": false
+  },
+  "_Enable_Pulse": {
+    "type": "bool",
+    "default": false
+  },
+  "_Pulse_Speed": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Pulse_Tiling": {
+    "type": "float",
+    "default": 0.029999999329447746
+  },
+  "_Trunk_Emissive_Color": {
+    "type": "color",
+    "default": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "_Trunk_Emissive_Mask": {
+    "type": "texture"
+  },
+  "_Enable_Frosting": {
+    "type": "bool",
+    "default": false
+  },
+  "_Frosting_Color": {
+    "type": "color",
+    "default": {
+      "r": 0.45490196347236633,
+      "g": 0.6039215922355652,
+      "b": 0.0784313753247261,
+      "a": 0.0
+    }
+  },
+  "_Frosting_Falloff": {
+    "type": "float",
+    "default": 1.0199999809265137
+  },
+  "_Frosting_Height": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Frosting_Use_World_Normals": {
+    "type": "bool",
+    "default": false
+  },
+  "_Enable_Leaf_Normal": {
+    "type": "bool",
+    "default": false
+  },
+  "_Leaf_Ambient_Occlusion": {
+    "type": "texture"
+  },
+  "_Leaf_Ambient_Occlusion_Intensity": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Leaf_Base_Color": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Leaf_Flat_Color": {
+    "type": "bool",
+    "default": false
+  },
+  "_Leaf_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Leaf_Noise_Color": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Leaf_Noise_Large_Color": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Leaf_Normal": {
+    "type": "texture"
+  },
+  "_Leaf_Normal_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Leaf_Normal_Strength": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Leaf_Normal_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Leaf_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Leaf_Smoothness": {
+    "type": "float",
+    "default": 0.20000000298023224
+  },
+  "_Leaf_Texture": {
+    "type": "texture"
+  },
+  "_Leaf_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Enable_Trunk_Normal": {
+    "type": "bool",
+    "default": false
+  },
+  "_Trunk_Ambient_Occlusion": {
+    "type": "texture"
+  },
+  "_Trunk_Ambient_Occlusion_Intensity": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Trunk_Base_Color": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Trunk_Flat_Color_Switch": {
+    "type": "bool",
+    "default": false
+  },
+  "_Trunk_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Trunk_Noise_Color": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Trunk_Normal": {
+    "type": "texture"
+  },
+  "_Trunk_Normal_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Trunk_Normal_Strength": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Trunk_Normal_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Trunk_Offset": {
+    "type": "vec2",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Trunk_Smoothness": {
+    "type": "float",
+    "default": 0.20000000298023224
+  },
+  "_Trunk_Texture": {
+    "type": "texture"
+  },
+  "_Trunk_Tiling": {
+    "type": "vec2",
+    "default": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_Breeze_Strength": {
+    "type": "float",
+    "default": 0.20000000298023224
+  },
+  "_Enable_Breeze": {
+    "type": "bool",
+    "default": true
+  },
+  "_Enable_Light_Wind": {
+    "type": "bool",
+    "default": true
+  },
+  "_Enable_Strong_Wind": {
+    "type": "bool",
+    "default": true
+  },
+  "_Enable_Wind_Twist": {
+    "type": "bool",
+    "default": true
+  },
+  "_GaleStrength": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Gale_Bend": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Light_Wind_Strength": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Light_Wind_Use_Leaf_Fade": {
+    "type": "bool",
+    "default": true
+  },
+  "_Light_Wind_Y_Offset": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Light_Wind_Y_Strength": {
+    "type": "float",
+    "default": 1.0
+  },
+  "_Strong_Wind_Frequency": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Strong_Wind_Strength": {
+    "type": "float",
+    "default": 0.5
+  },
+  "_Use_Global_Weather_Controller": {
+    "type": "bool",
+    "default": false
+  },
+  "_Use_Vertex_Color_Wind": {
+    "type": "bool",
+    "default": true
+  },
+  "_WindDirection": {
+    "type": "vec3",
+    "default": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    }
+  },
+  "_WindIntensity": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Wind_Twist_Strength": {
+    "type": "float",
+    "default": 0.15000000596046448
+  }
+}

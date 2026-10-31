@@ -1,0 +1,296 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dkjs2k17000s7"
+path="res://.godot/imported/SM_Veh_Buggy_01.fbx-689108405a119b045cdcaa6779d75fb1.scn"
+
+[deps]
+
+source_file="res://Assets/Synty/PolygonSciFiWorlds/Models/SM_Veh_Buggy_01.fbx"
+dest_files=["res://.godot/imported/SM_Veh_Buggy_01.fbx-689108405a119b045cdcaa6779d75fb1.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path="res://addons/unidot_importer-main/post_import_model.gd"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_SM_Veh_Buggy_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://de46pd0xm8hn4"
+},
+"Root Scene_SM_Veh_Buggy_01_Glass_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Glass_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://yrfe3j0icn8a"
+},
+"Root Scene_SM_Veh_Buggy_01_SteeringWheel_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SteeringWheel_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dwhmqr2ocgopy"
+},
+"Root Scene_SM_Veh_Buggy_01_SuspensionArm_lf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cpfbljw45xchd"
+},
+"Root Scene_SM_Veh_Buggy_01_SuspensionArm_lr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dl7o2ayhhhafk"
+},
+"Root Scene_SM_Veh_Buggy_01_SuspensionArm_rf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bt5jn38cs5nbi"
+},
+"Root Scene_SM_Veh_Buggy_01_SuspensionArm_rr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dx0m6tpeody1t"
+},
+"Root Scene_SM_Veh_Buggy_01_WheelBase_lf_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_lf_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://qdnq0hbaojpl"
+},
+"Root Scene_SM_Veh_Buggy_01_WheelBase_lr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://jyb35tn5180g"
+},
+"Root Scene_SM_Veh_Buggy_01_WheelBase_rf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c82yhw2l40prl"
+},
+"Root Scene_SM_Veh_Buggy_01_WheelBase_rr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://chgykoe2b7lm5"
+},
+"Root Scene_SM_Veh_Buggy_01_Wheel_lf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dpcrrrolqqhkn"
+},
+"Root Scene_SM_Veh_Buggy_01_Wheel_lr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bsweuwtkagc2u"
+},
+"Root Scene_SM_Veh_Buggy_01_Wheel_rf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dumktnob8qk4e"
+},
+"Root Scene_SM_Veh_Buggy_01_Wheel_rr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c0m3f54755ncw"
+},
+"SM_Veh_Buggy_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://de46pd0xm8hn4"
+},
+"SM_Veh_Buggy_01_Glass_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Glass_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://yrfe3j0icn8a"
+},
+"SM_Veh_Buggy_01_SteeringWheel_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SteeringWheel_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dwhmqr2ocgopy"
+},
+"SM_Veh_Buggy_01_SuspensionArm_lf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cpfbljw45xchd"
+},
+"SM_Veh_Buggy_01_SuspensionArm_lr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dl7o2ayhhhafk"
+},
+"SM_Veh_Buggy_01_SuspensionArm_rf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bt5jn38cs5nbi"
+},
+"SM_Veh_Buggy_01_SuspensionArm_rr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_SuspensionArm_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dx0m6tpeody1t"
+},
+"SM_Veh_Buggy_01_WheelBase_lf_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_lf_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://qdnq0hbaojpl"
+},
+"SM_Veh_Buggy_01_WheelBase_lr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://jyb35tn5180g"
+},
+"SM_Veh_Buggy_01_WheelBase_rf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c82yhw2l40prl"
+},
+"SM_Veh_Buggy_01_WheelBase_rr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_WheelBase_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://chgykoe2b7lm5"
+},
+"SM_Veh_Buggy_01_Wheel_lf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dpcrrrolqqhkn"
+},
+"SM_Veh_Buggy_01_Wheel_lr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bsweuwtkagc2u"
+},
+"SM_Veh_Buggy_01_Wheel_rf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dumktnob8qk4e"
+},
+"SM_Veh_Buggy_01_Wheel_rr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Buggy_01_Wheel_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c0m3f54755ncw"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

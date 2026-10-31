@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://2j0h5obmqsoi"]
+
+[ext_resource type="Shader" uid="uid://dt087qyaq06u2" path="res://Assets/Synty/PolygonGeneric/Shaders/Skydome.gdshader" id="1_mbl0a"]
+
+[resource]
+resource_name = "Skybox_Corp_01_mat"
+render_priority = 0
+shader = ExtResource("1_mbl0a")
+shader_parameter/tint_color = Color(0.75398433, 0.75398374, 0.7539837, 1)
+shader_parameter/enable_albedo_map = false
+shader_parameter/blend_top_bottom_color = false
+shader_parameter/albedo_rotation_degrees = 0.0
+shader_parameter/enable_unlit = true
+shader_parameter/top_color = Color(0.9262258, 0.53859353, 0.56049603, 1)
+shader_parameter/bottom_color = Color(0.8156863, 0.8862745, 1, 1)
+shader_parameter/offset = 32.0
+shader_parameter/enable_uv_based = false
+shader_parameter/falloff = 0.5790000275025
+shader_parameter/distance_ = 891.9030423178925

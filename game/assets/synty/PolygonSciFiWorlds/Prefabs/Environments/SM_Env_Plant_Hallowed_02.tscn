@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ctgxbns5jdl1k"]
+
+[ext_resource type="ArrayMesh" uid="uid://nc4403kro03q" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Hallowed_02.res" id="1_wrp7e"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_dsrsa"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rfw1o"]
+points = PackedVector3Array(-2.7576652, -0.32982183, -2.7351947, -2.4069004, -1.207066, -1.8577445, -3.108962, -1.0315073, -1.5070219, -3.6348429, 0.37158895, -1.6825978, -2.7576652, 0.19630492, -2.7351947, 1.8028078, -0.32982183, -1.1562994, 1.6271596, -1.0315073, -0.10456109, -1.1789579, -1.0315073, 1.2991877, -1.3540742, 0.02102089, 1.4747634, -2.9333136, 1.5996759, -1.6825978, -2.4069004, 1.4241171, -2.2088962, 1.100214, 1.5996759, -0.8051475, 1.8028078, 0.37158895, -0.10456109, -0.8281932, 0.19630492, 1.6503396, -0.8281932, 1.5996759, 0.77246, 1.100214, 1.5996759, -0.10456109)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qjhma"]
+points = PackedVector3Array(-2.7577362, 1.6005344, -1.5074565, -2.7577362, 1.9514886, -2.033751, 1.8032193, 2.65259, -0.45443857, 0.75048494, 2.65259, 1.6498802, -2.055467, 3.0035443, 1.1235859, -1.8800112, 8.264629, 0.947582, 0.92594075, 3.8797193, -2.2088962, 1.6210666, 2.9043088, -0.91119003, -1.3540906, 9.667639, -0.10414815, 0.224118, 8.790657, -1.8577471, 0.92594075, 3.8797193, 2.1766038, 1.627317, 8.264629, -1.1554489, 1.8032193, 7.739408, 0.5968623, -1.177742, 4.230674, 2.0010295, 0.7500386, 9.140804, 1.4738765, 0.92594075, 9.841906, -0.2792933)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_57yjv"]
+points = PackedVector3Array(1.4522564, 0.19625342, 4.28166, 0.5753901, 0.19625342, 4.28166, 1.4522564, -0.32961577, 4.28166, 1.8032193, 0.19625342, 3.9303708, 0.7507943, 4.932682, 2.352351, 0.3998314, 4.932682, 2.352351, 0.3998314, -0.50510585, 4.105706, 1.4522564, -0.85608596, 3.7550354, 0.9261985, 4.581101, 2.1768093, 1.8032193, 0.19625342, 3.5794938, 0.3998314, 4.932682, 2.1768093, 0.22442722, -0.32961577, 3.5794938, 0.22442722, -0.85608596, 2.8785636, 0.926353, -1.207066, 2.8785636, 1.2766978, -0.85608596, 2.703022, 0.5753901, 3.1777816, 2.1768093)
+
+[node name="SM_Env_Plant_Hallowed_02" type="MeshInstance3D" unique_id=1842328331]
+gi_mode = 2
+mesh = ExtResource("1_wrp7e")
+surface_material_override/0 = ExtResource("2_dsrsa")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2062676354]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=743959263]
+shape = SubResource("ConvexPolygonShape3D_rfw1o")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=1907857561]
+shape = SubResource("ConvexPolygonShape3D_qjhma")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="MeshCollider" unique_id=673980865]
+shape = SubResource("ConvexPolygonShape3D_57yjv")

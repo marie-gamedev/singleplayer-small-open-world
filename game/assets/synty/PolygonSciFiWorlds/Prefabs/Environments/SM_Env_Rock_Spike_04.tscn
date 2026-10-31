@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dwrohelf7iwpf"]
+
+[ext_resource type="ArrayMesh" uid="uid://bbietb8523wnv" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Rock_Spike_04.res" id="1_j2q2g"]
+[ext_resource type="Material" uid="uid://mds51wljtc5f" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Corp_01_mat.tres" id="2_3ov5f"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j2q2g"]
+points = PackedVector3Array(2.3174665, -1.2494569, -2.1941829, -4.302713, -1.0229757, -1.1270605, -4.269939, -0.97458905, -0.7257227, 0.05988656, 11.685361, 0.26871917, 2.3174665, -0.22300625, 3.3480902, -2.6078556, -1.043652, 3.1435921, -0.9655189, -0.6333294, -3.8368611, 4.165728, -1.043652, 0.06347735, 0.67512983, 11.273752, 0.06347735, -4.0451107, -0.6333294, -2.3994246, -0.14519453, -0.22300625, 3.7600613, 3.3445597, -1.043652, 2.7323647, 0.8810549, -1.4552612, -3.4256337, 0.05988656, 11.479557, 0.67920285, -4.456117, -0.42752457, -0.5515045, 3.959803, -0.42752457, -0.96198815, 0.67512983, 11.069233, 0.67920285, -1.1369603, -1.2344879, 3.0366719, -3.0188615, -1.2494569, -3.01515, -1.9926122, 0.18731642, 3.3480902, -2.8137805, -0.42752457, 2.7323647, 0.8810549, -1.043652, -3.4256337, 3.3445597, -0.6333294, 2.7323647, -3.9015338, -1.213373, -0.33492863, -0.14519453, -0.83913374, -3.8368611, 4.165728, -0.6333294, -0.14102085, 0.47004873, 10.863429, 0.88444465, -4.456117, -0.6333294, -1.3724718, 3.2186058, -1.2181224, 0.6533028, 2.9335537, -0.42752457, 3.1435921, 0.26496765, -0.22300625, 3.7600613, -4.456117, -0.6333294, -0.3462627)
+
+[node name="SM_Env_Rock_Spike_04" type="MeshInstance3D" unique_id=1395108692]
+gi_mode = 2
+mesh = ExtResource("1_j2q2g")
+surface_material_override/0 = ExtResource("2_3ov5f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1273697608]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1699165036]
+shape = SubResource("ConvexPolygonShape3D_j2q2g")

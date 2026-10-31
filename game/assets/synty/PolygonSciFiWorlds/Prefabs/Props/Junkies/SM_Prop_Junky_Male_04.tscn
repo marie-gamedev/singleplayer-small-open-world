@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dkuvsev2rvwnd"]
+
+[ext_resource type="ArrayMesh" uid="uid://i1qxo3p5tn61" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Junky_Male_04.res" id="1_08rca"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_wlrbb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bloe4"]
+points = PackedVector3Array(0.12015435, 0.14448172, -0.271176, -0.2927323, 0.006971821, -0.13616295, -0.26229146, 0.1896582, -0.15500018, -0.062072307, 0.31630218, -0.0821116, 0.50939965, 0.41570115, -0.057277188, 0.5516612, 0.076395854, -0.043283805, 0.12350178, 0.07950039, -0.25764394, -0.33562148, 0.092775, 0.21597818, 0.11178574, -0.10618347, -0.13185729, -0.2858282, -0.08129359, 0.14139807, -0.037175655, 0.11755782, 0.4645529, 0.48450303, 0.44064456, 0.09188303, 0.73305094, 0.24168608, 0.3650615, 0.68336225, -0.056457233, 0.340304, 0.5342963, -0.056457233, 0.41480723, 0.45971102, 0.16728407, 0.5142987)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s1uro"]
+points = PackedVector3Array(-0.7830114, -0.006721273, -0.18154024, -0.75814813, -0.031594124, -0.1567136, -0.83273786, -0.006765064, 0.066988766, -0.83273786, 0.11748971, 0.066988766, -0.75814813, 0.11748971, -0.18154024, -0.33566767, 0.018107787, -0.18154024, -0.5096617, -0.031594124, -0.1567136, -0.5594855, -0.031616017, 0.26577693, -0.33576497, -0.031616017, 0.21599232, -0.58420277, 0.09266065, 0.26577693, -0.5097103, 0.11748971, 0.24090652, -0.36057955, 0.14236255, 0.1911657, -0.33566767, 0.19206446, -0.10701656, -0.58420277, 0.16719161, -0.1567136, -0.33566767, 0.14231877, -0.18154024, -0.33566767, -0.006721273, -0.1567136)
+
+[node name="SM_Prop_Junky_Male_04" type="MeshInstance3D" unique_id=1638782386]
+gi_mode = 2
+mesh = ExtResource("1_08rca")
+surface_material_override/0 = ExtResource("2_wlrbb")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1211086981]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=461057685]
+shape = SubResource("ConvexPolygonShape3D_bloe4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=1786804114]
+shape = SubResource("ConvexPolygonShape3D_s1uro")

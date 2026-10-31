@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://csf0ewbttq67a"]
+
+[ext_resource type="ArrayMesh" uid="uid://hn3k3ck4y5fs" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Corridor_Square_01.res" id="1_el3r1"]
+[ext_resource type="Material" uid="uid://cuvjd7v2ydnpu" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_02_A_mat.tres" id="2_os2be"]
+[ext_resource type="Shape3D" uid="uid://ci1hb5iugat8a" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Pod_Corridor_Square_01_Collision.res" id="3_os2be"]
+
+[node name="SM_Bld_Pod_Corridor_Square_01" type="MeshInstance3D" unique_id=2061818042]
+gi_mode = 2
+mesh = ExtResource("1_el3r1")
+surface_material_override/0 = ExtResource("2_os2be")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=374640688]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=213904716]
+shape = ExtResource("3_os2be")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://davsxfu4qruou"]
+
+[ext_resource type="ArrayMesh" uid="uid://sk0xl2j7wd2m" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Rope_04.res" id="1_2x6e6"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_kiwnb"]
+
+[node name="SM_Gen_Prop_Rope_04" type="MeshInstance3D" unique_id=1640485536]
+mesh = ExtResource("1_2x6e6")
+surface_material_override/0 = ExtResource("2_kiwnb")

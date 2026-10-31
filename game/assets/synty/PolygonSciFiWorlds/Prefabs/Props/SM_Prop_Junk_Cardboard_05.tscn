@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://rem4s266nru4"]
+
+[ext_resource type="ArrayMesh" uid="uid://cxstpowh7g423" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Junk_Cardboard_05.res" id="1_amawh"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_sd803"]
+
+[node name="SM_Prop_Junk_Cardboard_05" type="MeshInstance3D" unique_id=1988766813]
+gi_mode = 2
+mesh = ExtResource("1_amawh")
+surface_material_override/0 = ExtResource("2_sd803")

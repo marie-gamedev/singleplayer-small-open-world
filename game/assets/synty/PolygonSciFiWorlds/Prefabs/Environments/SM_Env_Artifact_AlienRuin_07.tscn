@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://drex7t3v6u5ci"]
+
+[ext_resource type="ArrayMesh" uid="uid://dhbmuk5qi44c8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Artifact_AlienRuin_07.res" id="1_ccgyl"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_dea47"]
+[ext_resource type="ArrayMesh" uid="uid://c5egync5adxgr" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Artifact_AlienRuin_07_Door_l_01.res" id="3_dea47"]
+[ext_resource type="ArrayMesh" uid="uid://brrkkkf6gl5pp" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Artifact_AlienRuin_07_Door_r_01.res" id="4_04hxp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ccgyl"]
+size = Vector3(7.9087524, 2.360443, 2.5022583)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dea47"]
+size = Vector3(3.184082, 17.15094, 2.6811523)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_04hxp"]
+size = Vector3(3.010437, 17.26538, 2.725525)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5d1qp"]
+size = Vector3(3.9630604, 14.757687, 1.9357318)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y8w4g"]
+size = Vector3(4.098901, 14.757675, 1.9358371)
+
+[node name="SM_Env_Artifact_AlienRuin_07" type="MeshInstance3D" unique_id=1907281236]
+gi_mode = 2
+mesh = ExtResource("1_ccgyl")
+surface_material_override/0 = ExtResource("2_dea47")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2767176]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1483815650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08016968, 15.986557, 0.054718018)
+shape = SubResource("BoxShape3D_ccgyl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=636828729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1555176, 8.494965, -0.017333984)
+shape = SubResource("BoxShape3D_dea47")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="MeshCollider" unique_id=1929438672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.134552, 8.652954, 0.011138916)
+shape = SubResource("BoxShape3D_04hxp")
+
+[node name="SM_Env_Artifact_AlienRuin_07_Door_l_01" type="MeshInstance3D" parent="." unique_id=105909676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.431264e-06, 0.09999851)
+gi_mode = 2
+mesh = ExtResource("3_dea47")
+surface_material_override/0 = ExtResource("2_dea47")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Env_Artifact_AlienRuin_07_Door_l_01" unique_id=1818824631]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Env_Artifact_AlienRuin_07_Door_l_01/BoxCollider" unique_id=2095357809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9815054, 7.3788366, 0)
+shape = SubResource("BoxShape3D_5d1qp")
+
+[node name="SM_Env_Artifact_AlienRuin_07_Door_r_01" type="MeshInstance3D" parent="." unique_id=347591886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.100052334)
+gi_mode = 2
+mesh = ExtResource("4_04hxp")
+surface_material_override/0 = ExtResource("2_dea47")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Env_Artifact_AlienRuin_07_Door_r_01" unique_id=1970748968]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Env_Artifact_AlienRuin_07_Door_r_01/BoxCollider" unique_id=818734811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9945445, 7.3788366, 0)
+shape = SubResource("BoxShape3D_y8w4g")

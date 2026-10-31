@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dtt62a0xro0vy"]
+
+[ext_resource type="ArrayMesh" uid="uid://x4ppjr0tq5b4" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Junky_Female_03.res" id="1_4ltej"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ue7ix"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4ltej"]
+points = PackedVector3Array(0.057215195, 0.7216881, 0.2638673, -0.10041083, 0.1069355, -0.3510724, -0.1325101, 0.042295184, -0.32163262, 0.49430716, 0.160429, 0.5054492, -0.53570056, 0.1936592, 0.522135, 0.29488367, 0.30992505, -0.2751702, -0.24147043, 0.61052823, -0.09775071, -0.56900716, 0.0275082, 0.040377658, 0.3944913, -0.0057219863, 0.43898395, -0.38613296, -0.022376925, 0.522135, -0.005690952, -0.03790507, -0.27488, 0.16511708, 0.63958186, -0.11171663, 0.4443472, 0.2268894, 0.5719145, 0.35802522, 0.058824, -0.11498497, -0.100362316, 0.42237183, -0.3192358, -0.115640424, 0.67248076, 0.30986664, -0.35454234, 0.24832088, -0.22667095, -0.46919137, 0.2268894, 0.55532134, 0.3280862, 0.010853261, 0.55532134, -0.08720589, -0.05560714, -0.10914604, 0.49430716, 0.21023445, 0.48885608, -0.084723905, 0.7382287, 0.18526304, -0.02203777, 0.6972474, 0.32133105, 0.21333319, 0.3122905, -0.3322943, 0.10386906, 0.72030365, 0.21612778, 0.056881253, 0.626094, -0.17613882, 0.05812416, 0.056838132, -0.33936432, 0.2945809, -0.0043152487, -0.08323366, 0.19951378, 0.39090934, -0.31988886, -0.20865871, 0.57723516, -0.17397447, 0.19546469, 0.6075731, -0.09542562, -0.54646176, 0.009423908, 0.10640038)
+
+[node name="SM_Prop_Junky_Female_03" type="MeshInstance3D" unique_id=1784159563]
+gi_mode = 2
+mesh = ExtResource("1_4ltej")
+surface_material_override/0 = ExtResource("2_ue7ix")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=194919600]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=320502162]
+shape = SubResource("ConvexPolygonShape3D_4ltej")

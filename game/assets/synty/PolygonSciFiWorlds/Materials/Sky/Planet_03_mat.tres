@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bnw4n6h8iyvni"]
+
+[ext_resource type="Texture2D" uid="uid://4a7i5nhuuvqe" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Planet_04_Glow.png" id="1_bph6f"]
+[ext_resource type="Shader" uid="uid://c23vahohqy721" path="res://Assets/Synty/PolygonSciFiWorlds/Shaders/SyntyStudios_NoFogUnlit.gdshader" id="1_c5kxv"]
+[ext_resource type="Texture2D" uid="uid://dlgs8nfidooy7" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Planet_04.png" id="3_db7im"]
+[ext_resource type="Texture2D" uid="uid://cr6sm0pvfteml" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Planet_04_Rim.png" id="4_85r5g"]
+
+[resource]
+resource_name = "Planet_03_mat"
+render_priority = 0
+shader = ExtResource("1_c5kxv")
+shader_parameter/Planet_Texture = ExtResource("3_db7im")
+shader_parameter/Rim_Texture = ExtResource("4_85r5g")
+shader_parameter/Glow_Texture = ExtResource("1_bph6f")
+shader_parameter/Planet_Tint = Color(0.4342848, 0.37689137, 0.11893194, 1)
+shader_parameter/Planet_Light = 10.0
+shader_parameter/Rim_Intensity = 2.1200001007
+shader_parameter/Glow_Tint = Color(1, 0.9843137, 0.95686275, 1)
+shader_parameter/Glow_Intensity = 3.170000150575
+shader_parameter/Opacity = 1.0
+shader_parameter/Soft_Fade = true
+shader_parameter/gradient_position = 0.45600002166

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ca43inn4d4uel"]
+
+[ext_resource type="ArrayMesh" uid="uid://dweygfrw04te7" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_GasMask_Thin_01.res" id="1_2i1m8"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_3wg2p"]
+
+[node name="SM_Chr_Attach_GasMask_Thin_01" type="MeshInstance3D" unique_id=1530678266]
+gi_mode = 2
+mesh = ExtResource("1_2i1m8")
+surface_material_override/0 = ExtResource("2_3wg2p")

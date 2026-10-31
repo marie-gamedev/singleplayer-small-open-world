@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bunkkbamlnfi1"]
+
+[ext_resource type="ArrayMesh" uid="uid://vjper42qkku4" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Bush_Large_01.res" id="1_cicta"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_wu1f4"]
+
+[node name="SM_Gen_Env_Bush_Large_01" type="MeshInstance3D" unique_id=1996191119]
+gi_mode = 2
+mesh = ExtResource("1_cicta")
+surface_material_override/0 = ExtResource("2_wu1f4")

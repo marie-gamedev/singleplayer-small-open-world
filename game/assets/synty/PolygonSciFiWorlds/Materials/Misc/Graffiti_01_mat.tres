@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cr10wgomongwb"]
+
+[ext_resource type="Shader" uid="uid://gp6f1xdnogoy" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic_Transparent.gdshader" id="1_gc20l"]
+[ext_resource type="Texture2D" uid="uid://dvr8ph0jkycsa" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/SciFi_Graffiti_01.png" id="2_1gb0i"]
+
+[resource]
+resource_name = "Graffiti_01_mat"
+render_priority = 0
+shader = ExtResource("1_gc20l")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("2_1gb0i")
+shader_parameter/Alpha_Transparency = 1.0
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.5
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Strength = 1.0

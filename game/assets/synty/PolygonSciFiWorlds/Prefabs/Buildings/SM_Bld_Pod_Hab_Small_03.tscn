@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bs1w4m6nqhygu"]
+
+[ext_resource type="ArrayMesh" uid="uid://dgpaoqvscrh2n" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_03.res" id="1_50hh4"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_50hh4"]
+[ext_resource type="Shape3D" uid="uid://bnlmsx73mclqc" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Pod_Hab_Small_03_Collision.res" id="3_4pam6"]
+[ext_resource type="ArrayMesh" uid="uid://dyjj6hfp2btfr" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_03_Glass_01.res" id="3_5de60"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_pcc7j"]
+[ext_resource type="ArrayMesh" uid="uid://b5gdr2bfqpsxa" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_03_Glass_02.res" id="5_4pam6"]
+[ext_resource type="ArrayMesh" uid="uid://7wn7jesbmriq" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_03_Glass_03.res" id="6_pcc7j"]
+
+[node name="SM_Bld_Pod_Hab_Small_03" type="MeshInstance3D" unique_id=1820117714]
+gi_mode = 2
+mesh = ExtResource("1_50hh4")
+surface_material_override/0 = ExtResource("2_50hh4")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=578595967]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1384812096]
+shape = ExtResource("3_4pam6")
+
+[node name="SM_Bld_Pod_Hab_Small_03_Glass_01" type="MeshInstance3D" parent="." unique_id=654813646]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5658894, 2.1251242, -0.00042111825)
+gi_mode = 2
+mesh = ExtResource("3_5de60")
+surface_material_override/0 = ExtResource("4_pcc7j")
+
+[node name="SM_Bld_Pod_Hab_Small_03_Glass_02" type="MeshInstance3D" parent="." unique_id=846188966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5070333, 2.1251242, -0.00042111825)
+gi_mode = 2
+mesh = ExtResource("5_4pam6")
+surface_material_override/0 = ExtResource("4_pcc7j")
+
+[node name="SM_Bld_Pod_Hab_Small_03_Glass_03" type="MeshInstance3D" parent="." unique_id=371822236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.006495056, 1.712899, -3.6841362)
+gi_mode = 2
+mesh = ExtResource("6_pcc7j")
+surface_material_override/0 = ExtResource("4_pcc7j")

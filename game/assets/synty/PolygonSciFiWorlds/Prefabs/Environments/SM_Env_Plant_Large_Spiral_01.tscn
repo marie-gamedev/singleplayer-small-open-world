@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://o67r40c0j8y3"]
+
+[ext_resource type="ArrayMesh" uid="uid://bsrme4ahxhgrl" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Large_Spiral_01.res" id="1_klb67"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_3yqh3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_222ij"]
+points = PackedVector3Array(2.0587785, 27.609304, 2.910812, -2.37185, 22.684996, 2.910812, 1.7493393, 14.809667, 2.8613129, 3.044204, 26.625631, 1.4333634, 1.0331428, 29.912468, -0.5146377, -2.37185, 29.0863, 1.9252195, -2.9091432, 13.528811, 1.2416334, -0.8945854, -0.44766808, 0.44839787, 1.5669396, -0.44766808, -0.534688, 2.8740418, 14.016191, -0.043458223, 2.5511997, 28.099655, -2.5052454, -2.8642716, 28.592978, -2.0127628, -2.266373, 13.243517, -1.6136386, -0.8945854, -0.44766808, -0.534688, 0.08967495, 14.019162, -2.8229156, -0.8945854, 26.132309, -3.490211)
+
+[node name="SM_Env_Plant_Large_Spiral_01" type="MeshInstance3D" unique_id=335486134]
+gi_mode = 2
+mesh = ExtResource("1_klb67")
+surface_material_override/0 = ExtResource("2_3yqh3")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=836896815]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1439580841]
+shape = SubResource("ConvexPolygonShape3D_222ij")

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://djwikw244xhh3"]
+
+[ext_resource type="ArrayMesh" uid="uid://yck6kkm5ytte" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Chest_02.res" id="1_rmy3h"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_jw8kv"]
+[ext_resource type="ArrayMesh" uid="uid://bx5fss3xwegf" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Chest_02_Lid_01.res" id="3_jw8kv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tus8u"]
+size = Vector3(1.2009735, 0.46150225, 0.79798734)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dt1pj"]
+size = Vector3(1.2009819, 0.1935664, 0.7979874)
+
+[node name="SM_Gen_Prop_Chest_02" type="MeshInstance3D" unique_id=1484933337]
+gi_mode = 2
+mesh = ExtResource("1_rmy3h")
+surface_material_override/0 = ExtResource("2_jw8kv")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1403203467]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1722779455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0064964294, 0.23075113, -0.010668933)
+shape = SubResource("BoxShape3D_tus8u")
+
+[node name="SM_Gen_Prop_Chest_02_Lid_01" type="MeshInstance3D" parent="." unique_id=1660831988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3810314e-08, 0.4384438, -0.38832435)
+gi_mode = 2
+mesh = ExtResource("3_jw8kv")
+surface_material_override/0 = ExtResource("2_jw8kv")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Gen_Prop_Chest_02_Lid_01" unique_id=462296496]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Gen_Prop_Chest_02_Lid_01/BoxCollider" unique_id=535109283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.006500751, 0.046783216, 0.39899406)
+shape = SubResource("BoxShape3D_dt1pj")

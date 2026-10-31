@@ -1,0 +1,37 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cunaqn40v5rh7"]
+
+[ext_resource type="Shader" uid="uid://iucnm2xch184" path="res://Assets/Synty/PolygonSciFiWorlds/Shaders/SyntyStudios_EnvTriplanar.gdshader" id="1_tad8o"]
+[ext_resource type="Texture2D" uid="uid://c86er5rhkucnd" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/PolygonScifiWorlds_A_01_Normals.png" id="2_1erwi"]
+[ext_resource type="Texture2D" uid="uid://c6dmm47wp8f3o" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Shaders/Masks/PolygonScifiWorlds_Ground_Colour_Mask.png" id="2_br7o7"]
+[ext_resource type="Texture2D" uid="uid://cv77ka3aboaer" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Emissive/PolygonScifiWorlds_01_Emissive.png" id="2_k4yhe"]
+[ext_resource type="Texture2D" uid="uid://brttak1pwlesc" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/FX/Plain_White_01.png" id="4_ahi4f"]
+[ext_resource type="Texture2D" uid="uid://d0e1oymtrwhbq" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Alts/PolygonScifiWorlds_02_A.png" id="4_kf1ug"]
+[ext_resource type="Texture2D" uid="uid://bey2jk3b53g1v" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Shaders/Masks/pebbles_Layer_normals.png" id="5_kf1ug"]
+[ext_resource type="Texture2D" uid="uid://bhe7jhbpvptdo" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/BaseGrass_01_Normals.png" id="6_d1xa5"]
+[ext_resource type="Texture2D" uid="uid://b0g8bfg8jcg0y" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Shaders/Masks/pebbles_Layer_baseTexBaked.png" id="7_fi5vq"]
+
+[resource]
+resource_name = "PolygonSciFiWorlds_Env_Triplanar_Exp_01_mat"
+render_priority = 0
+shader = ExtResource("1_tad8o")
+shader_parameter/Main_Texture = ExtResource("4_kf1ug")
+shader_parameter/normal_main = ExtResource("2_1erwi")
+shader_parameter/Rock_Mask_Triplanar = ExtResource("7_fi5vq")
+shader_parameter/Ground_Mask_Triplanar = ExtResource("2_br7o7")
+shader_parameter/Noise = ExtResource("4_ahi4f")
+shader_parameter/normal_rock = ExtResource("5_kf1ug")
+shader_parameter/normal_triplanar = ExtResource("6_d1xa5")
+shader_parameter/Emissive = ExtResource("2_k4yhe")
+shader_parameter/Ground_Color = Color(0.5092889, 0.12613481, 0.18285325, 1)
+shader_parameter/Rock_Color = Color(0.053337857, 0.0013558418, 0.06592729, 1)
+shader_parameter/Road_Color = Color(0.05490196, 0, 0.06666667, 1)
+shader_parameter/Smoothness = 0.02000000095
+shader_parameter/Metallic = 0.0590000028025
+shader_parameter/ground_detail_scale = 0.5
+shader_parameter/ground_detail_power = 0.3330000158175
+shader_parameter/triplanar_sharpness = 0.5
+shader_parameter/ground_pebble_scale = 0.0
+shader_parameter/ground_falloff = 0.3570000169575
+shader_parameter/noise_use_triplanar = false
+shader_parameter/noise_scale = 0.05
+shader_parameter/noise_edge = 0.1

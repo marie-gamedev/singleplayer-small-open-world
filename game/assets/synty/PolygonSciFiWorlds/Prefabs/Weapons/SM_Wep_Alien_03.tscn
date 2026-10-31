@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cgmw7mnlpvcnq"]
+
+[ext_resource type="ArrayMesh" uid="uid://davo16jamo5cm" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Alien_03.res" id="1_ujiqp"]
+[ext_resource type="Material" uid="uid://bg2lgny8l2s30" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_04_A_mat.tres" id="2_kpyr6"]
+[ext_resource type="ArrayMesh" uid="uid://dh0djttvkgcib" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Alien_03_Trigger_01.res" id="3_kpyr6"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mockq"]
+points = PackedVector3Array(0.04434967, -0.1563721, 0.05634287, -0.05029952, -0.13742399, 0.037358522, 0.025426507, 0.05194579, -0.28466347, 0.0633062, 0.14664924, -0.18986039, 0.08226274, -0.0048243552, 0.73788095, 0.04434967, -0.09949071, 0.7000309, -0.031359673, -0.11851297, 0.6621809, -0.05029952, 0.16559735, -0.24669477, -0.088212594, 0.05194579, 0.6810465, 0.025426507, 0.16559735, -0.28466347, 0.04434967, 0.20349354, 0.45370898, 0.08226274, 0.16559735, 0.45370898, 0.04434967, 0.03307186, 0.9083841, -0.031359673, 0.05194579, 0.92748713, -0.06923937, 0.16559735, 0.45370898, -0.031359673, 0.22244164, 0.037358522)
+
+[node name="SM_Wep_Alien_03" type="MeshInstance3D" unique_id=1211220302]
+gi_mode = 2
+mesh = ExtResource("1_ujiqp")
+surface_material_override/0 = ExtResource("2_kpyr6")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2085241795]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=846798827]
+shape = SubResource("ConvexPolygonShape3D_mockq")
+
+[node name="SM_Wep_Alien_03_Trigger_01" type="MeshInstance3D" parent="." unique_id=600877413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0033216e-05, 0.0073816874, 0.05846834)
+gi_mode = 2
+mesh = ExtResource("3_kpyr6")
+surface_material_override/0 = ExtResource("2_kpyr6")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bsw62lw8gqpi7"]
+
+[ext_resource type="ArrayMesh" uid="uid://b345aayofchkg" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_SkyDome_02.res" id="1_ervpp"]
+[ext_resource type="Material" uid="uid://b8gr2jvixyhl2" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/PolygonScifiWorlds_Sky_01_mat.tres" id="2_2fghe"]
+
+[node name="SM_Generic_SkyDome_02" type="MeshInstance3D" unique_id=935138506]
+gi_mode = 2
+mesh = ExtResource("1_ervpp")
+surface_material_override/0 = ExtResource("2_2fghe")

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://prl7kjbxl4tt"]
+
+[ext_resource type="ArrayMesh" uid="uid://c7r4tve2cnna1" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Pistol_04.res" id="1_gxmbq"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_777cu"]
+[ext_resource type="ArrayMesh" uid="uid://dhmm66l68jaea" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Pistol_04_Mag_01.res" id="3_777cu"]
+[ext_resource type="ArrayMesh" uid="uid://cfbgfrvo5dthh" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Pistol_04_Trigger_01.res" id="4_h8n6v"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g45tg"]
+points = PackedVector3Array(-0.024992818, -0.112111226, 0.029234894, -0.024992818, -0.10019238, -0.07218961, 0.022726946, -0.112111226, 0.029234894, -0.025002163, -0.016605698, 0.27985576, -0.04887139, 0.06691907, 0.2857728, -0.013058204, 0.16830663, -0.060210332, 0.022726946, -0.094155565, -0.07814294, -0.04887139, 0.15638779, 0.10089271, 0.04660552, 0.06094417, 0.2857728, 0.026960604, 0.02072969, 0.29270625, -0.019030184, 0.20415603, 0.29176244, 0.01079233, 0.16830663, -0.060210332, -0.019030184, 0.19815017, 0.11283569, 0.04660552, 0.15638779, 0.10089271, 0.043614857, 0.14948414, 0.27495515, 0.016754963, 0.20415603, 0.29176244)
+
+[node name="SM_Wep_Pistol_04" type="MeshInstance3D" unique_id=46488196]
+gi_mode = 2
+mesh = ExtResource("1_gxmbq")
+surface_material_override/0 = ExtResource("2_777cu")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=620228048]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=833573383]
+shape = SubResource("ConvexPolygonShape3D_g45tg")
+
+[node name="SM_Wep_Pistol_04_Mag_01" type="MeshInstance3D" parent="." unique_id=1126232548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0058420138, 0.21260548)
+gi_mode = 2
+mesh = ExtResource("3_777cu")
+surface_material_override/0 = ExtResource("2_777cu")
+
+[node name="SM_Wep_Pistol_04_Trigger_01" type="MeshInstance3D" parent="." unique_id=1272155633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.050684407, 0.081941396)
+gi_mode = 2
+mesh = ExtResource("4_h8n6v")
+surface_material_override/0 = ExtResource("2_777cu")

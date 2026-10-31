@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://e5hagrc1dxv1"]
+
+[ext_resource type="ArrayMesh" uid="uid://cd50ai2w8ruw3" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Clock_01.res" id="1_wexaf"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_ed8ir"]
+[ext_resource type="ArrayMesh" uid="uid://dd8o8isrpct0j" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Clock_01_Hand_01.res" id="3_ed8ir"]
+[ext_resource type="ArrayMesh" uid="uid://du7hhhrm2g5om" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Clock_01_Hand_02.res" id="4_hkb0x"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e02ro"]
+points = PackedVector3Array(0.06356554, 0.17664489, 0.045293223, 0.14277779, 0.102713734, 0.05900479, 0.15089847, 0.09804767, 4.3981672e-11, -0.061485834, 0.17073455, 4.3981672e-11, -0.063622855, 0.17661035, 0.045293223, -0.14283511, 0.102713734, 0.05900479, 0.08693032, -0.14565904, 0.05900479, 0.18498398, -0.01414521, 0.045287445, 0.14527099, -0.108710736, 4.3981672e-11, -0.17887954, 0.008632094, 4.3981672e-11, -0.08064779, 0.164444, 0.04522969, -0.14283511, -0.10221282, 0.05900479, -0.055858344, -0.16435786, 0.05900479, 0.06370801, -0.17645505, 0.0453221, -0.061485834, -0.1702682, 4.3981672e-11, -0.14532831, -0.108710736, 4.3981672e-11)
+
+[node name="SM_Gen_Prop_Clock_01" type="MeshInstance3D" unique_id=1273312608]
+gi_mode = 2
+mesh = ExtResource("1_wexaf")
+surface_material_override/0 = ExtResource("2_ed8ir")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2107064885]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1333319616]
+shape = SubResource("ConvexPolygonShape3D_e02ro")
+
+[node name="SM_Gen_Prop_Clock_01_Hand_01" type="MeshInstance3D" parent="." unique_id=1530188686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.042700466)
+gi_mode = 2
+mesh = ExtResource("3_ed8ir")
+surface_material_override/0 = ExtResource("2_ed8ir")
+
+[node name="SM_Gen_Prop_Clock_01_Hand_02" type="MeshInstance3D" parent="." unique_id=222657495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.042700466)
+gi_mode = 2
+mesh = ExtResource("4_hkb0x")
+surface_material_override/0 = ExtResource("2_ed8ir")

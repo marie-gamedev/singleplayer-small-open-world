@@ -1,0 +1,231 @@
+[gd_scene format=3 uid="uid://xsk67ccchxy3"]
+
+[ext_resource type="ArrayMesh" uid="uid://bquatwyrb0ly1" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01.res" id="1_mh376"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_la47f"]
+[ext_resource type="ArrayMesh" uid="uid://dqb6p28urskwq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_01.res" id="3_la47f"]
+[ext_resource type="ArrayMesh" uid="uid://bun6s4gsj7vdn" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_01_Leg_01.res" id="4_i7iy7"]
+[ext_resource type="ArrayMesh" uid="uid://c7t68iqd1x041" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_01_Leg_01_Foot_01.res" id="5_074am"]
+[ext_resource type="ArrayMesh" uid="uid://bnu4ma8wvlkeb" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_02.res" id="6_47ohm"]
+[ext_resource type="ArrayMesh" uid="uid://ovyv4gydqbf5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_02_Leg_01.res" id="7_ja43t"]
+[ext_resource type="ArrayMesh" uid="uid://ng4ib2p7lr2q" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_02_Leg_01_Foot_01.res" id="8_mduuo"]
+[ext_resource type="ArrayMesh" uid="uid://ct34mw6ouqcxe" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_03.res" id="9_b5fo2"]
+[ext_resource type="ArrayMesh" uid="uid://b8darqxp2qui1" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_03_Leg_01.res" id="10_3nrf2"]
+[ext_resource type="ArrayMesh" uid="uid://chwk74vqjxdfe" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_03_Leg_01_Foot_01.res" id="11_7mup0"]
+[ext_resource type="ArrayMesh" uid="uid://c5kpivk18b3v2" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_04.res" id="12_mvkjk"]
+[ext_resource type="ArrayMesh" uid="uid://huycxv467sjq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_04_Leg_01.res" id="13_73xij"]
+[ext_resource type="ArrayMesh" uid="uid://b4atvpl42dmlq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Hinge_04_Leg_01_Foot_01.res" id="14_ylwc6"]
+[ext_resource type="ArrayMesh" uid="uid://bop62yamvxc32" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Motor_01.res" id="15_l2gc5"]
+[ext_resource type="ArrayMesh" uid="uid://3sdyn6adi37g" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Extension_01.res" id="16_os1xl"]
+[ext_resource type="ArrayMesh" uid="uid://dx2h3hq57k6su" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Drill_Head_01.res" id="17_386km"]
+[ext_resource type="ArrayMesh" uid="uid://b7ekmtf7bpf7u" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Drill_Head_01_Cone_01.res" id="18_1dg5r"]
+[ext_resource type="ArrayMesh" uid="uid://btsyjwldpgjh4" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Drill_Head_01_Cone_02.res" id="19_l05wr"]
+[ext_resource type="ArrayMesh" uid="uid://c7v0dwxppk7tb" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_01_Drill_Head_01_Cone_03.res" id="20_jeeqr"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yxbmp"]
+points = PackedVector3Array(-3.8359814, 9.961786, -0.6440146, -0.8952999, 6.882917, -2.7449322, -2.7150397, 6.882917, 0.89530134, -3.8359814, 11.080669, 0.75508976, -0.43621874, 13.938399, -1.6217289, -0.75508785, 11.080669, -3.86512, 0.47214365, 6.0255203, -1.5214698, 0.61537075, 11.024803, -3.6932473, 2.7441802, 6.8836927, -0.9244385, 0.9244399, 6.882917, 2.715795, -0.75508785, 11.080669, 3.8359833, -0.5628619, 13.925209, 1.5873151, 1.4981031, 13.952366, 0.82368803, 3.7271714, 11.036442, -0.6221535, 3.8651218, 11.080669, 0.75508976, 0.6221552, 11.037993, 3.7040634)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_k1r37"]
+points = PackedVector3Array(0.9413465, -5.9116187, 2.483411, -0.95003366, -5.9116187, 2.483411, 0.70480824, -7.3292594, 2.246873, 1.1778847, -5.9116187, 0.3558631, 1.1778847, 5.1999288, -0.58964175, 0.9413465, 6.382252, 1.0641817, -1.1863405, -5.9116187, 0.82829154, -0.95003366, -7.3292594, 1.30072, -0.95003366, 6.382252, 1.0641817, 0.42082345, -6.590307, 0.82829154, 0.9413465, -4.492543, -0.826504, 0.9413465, 6.382252, -0.826504, -0.4771886, 7.3292594, -0.58964175, -1.1863405, 5.1999288, -0.58964175, -0.95003366, -4.492543, -0.826504, -0.95003366, 6.382252, -0.826504)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6sc1o"]
+points = PackedVector3Array(1.7588407, -0.7709316, 1.057998, 0.8785862, 0.219468, 1.2031612, 1.1960052, -0.7709316, 2.6647022, 0.8806144, -1.1139004, 2.021129, 1.6523584, -1.0511115, -0.96388304, 1.5174807, 0.11256862, -1.754106, -0.8217522, 0.21889329, 1.2759905, 1.0344223, 0.35395432, -2.3966887, -1.2138779, -0.7709316, 2.6647022, -1.1581013, -1.0605944, 2.468509, -1.69457, -1.0605944, 1.0892105, -1.0817045, -1.0605944, -1.8982785, 1.0631555, -1.0605944, -1.8982785, 1.2933606, -0.06473482, -2.1286569, -1.0529711, 0.35395432, -2.3966887, -1.5356914, 0.11256862, -1.9146279)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q72j4"]
+points = PackedVector3Array(-2.4837348, -7.093054, 0.47672594, -2.4837348, -6.38298, -0.9418092, -1.3010439, -7.3292594, -0.9418092, -1.3010439, -7.3292594, 0.949571, -2.4837348, -5.910569, 0.949571, -0.119972944, -5.675822, -1.178116, -1.0645056, 6.382317, -0.9418092, -0.119972944, 5.1998324, -1.178116, 0.826504, -4.4918785, 0.949571, -0.8286154, -5.910569, 1.1861092, -1.0645056, 6.382317, 0.949571, 0.826504, 6.382317, -0.9418092, 0.68490505, -4.32566, -0.644632, -0.5927253, 7.56626, -0.4689641, 0.826504, 6.382317, 0.949571, 0.5896416, 5.1998324, 1.1861092)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3too0"]
+points = PackedVector3Array(-1.0581152, -0.77094716, -1.7588409, -2.4692605, -1.0605028, -1.1403208, -2.6649776, -0.77094716, -1.1964576, -1.2092386, 0.22270882, -0.88330853, 1.7532744, 0.11270678, -1.5177228, 0.963469, -1.0511905, -1.6526543, -2.0723758, -1.132528, 0.8454367, -2.6649776, -0.77094716, 1.2137083, -1.2186528, 0.2734902, 0.9729284, 2.3964157, 0.35395467, -1.0351486, 1.8969655, -1.0605028, -1.0635552, 1.8969655, -1.0605028, 1.081144, 0.059206486, -1.0605028, 1.6939152, -0.81681335, -0.4495259, 1.6959444, 1.9143076, 0.11270678, 1.5353116, 2.3964157, 0.35395467, 1.0523993)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0sn8g"]
+points = PackedVector3Array(0.9415778, 6.382318, 0.7928364, 0.23219454, 7.5648036, 0.555974, -0.9498022, 6.382318, 0.7928364, 0.9415778, -4.4918785, 0.7928364, 1.178116, 5.1998334, -0.1533165, 0.9415778, 6.382318, -1.0981731, -0.47695726, 7.5648036, -0.62606883, -0.9498022, 6.382318, -1.0981731, -1.1863405, 5.1998334, -0.1533165, -0.9498022, -4.4918785, 0.7928364, -0.9498022, -7.3292594, -1.3347114, 1.178116, -5.909111, -0.38953066, 0.9415778, -5.909111, -2.5174024, -0.9498022, -6.38298, -2.5174024, -1.1863405, -5.909111, -0.38953066, 0.4453566, -7.19366, -1.9860015)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sr5ec"]
+points = PackedVector3Array(1.6778613, -0.44951707, -0.81680536, 1.6765405, -1.06061, -1.0901687, 0.79379, -0.5298067, -2.423649, 0.8829566, 0.22272837, -1.2092295, 1.5173613, 0.112509966, 1.9944568, 1.6521021, -1.0511134, 0.9633908, 0.88328683, -1.116007, -2.0274148, -1.1579707, -1.06061, -2.468892, -0.9730323, 0.27352083, -1.2187544, 1.0342098, 0.35395432, 2.3959298, 1.0632716, -1.06061, 1.8977795, -1.0816836, -1.06061, 1.8977795, -1.6946223, -1.06061, -1.0901687, -1.6959432, -0.44966096, 0.79003835, -1.052952, 0.35395432, 2.3959298, -1.6173444, -0.81139576, 0.9295776)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_07aro"]
+points = PackedVector3Array(-0.7928364, -4.492151, -0.94157773, 0.38953054, -5.9114146, -1.178116, 1.3347113, -7.3292594, 0.9498023, -0.7928364, -4.492151, 0.9498023, -0.7928364, 6.3822494, -0.94157773, 0.15331638, 5.200002, -1.178116, 2.5174024, -7.093662, -0.46873277, 2.5174024, -5.9114146, -0.94157773, 2.5174024, -7.093662, 0.4769572, 2.5174024, -5.9114146, 0.9498023, 0.862283, -5.9114146, 1.1863405, -0.5559742, 5.200002, 1.1863405, -0.7928364, 6.3822494, 0.9498023, -0.25754726, 7.1699405, 0.45196092, 1.0981731, 6.3822494, -0.94157773, 1.0981731, 6.3822494, 0.9498023)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0r7hw"]
+points = PackedVector3Array(0.816998, -0.44945532, -1.6782073, -1.914841, 0.112469554, -1.5177071, 1.2034388, 0.21942723, -0.878679, 2.6649776, -0.77090573, -1.1963767, 1.0894883, -1.0606009, -1.6768863, -2.3964057, 0.35395432, -1.0352161, -1.8212035, -1.0606009, -1.1402347, 1.1974936, 0.21610737, 0.89144576, 2.6649776, -0.77090573, 1.2137669, -2.3964057, 0.35395432, 1.0519458, 2.4687848, -1.0606009, 1.157955, 0.093660116, -1.1206473, -1.3390435, -1.8979962, -1.0606009, 1.0810076, 0.816998, -0.44945532, 1.6955973, 1.0894883, -1.0606009, 1.6942765, -2.0387003, -0.06665933, 1.3798813)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qj2in"]
+points = PackedVector3Array(-1.4136384, -0.8875942, 0.7461295, -0.96866035, -9.116571, -0.58811855, -0.96866035, -9.116571, 0.52353716, -0.7458883, -0.8875942, 1.4136455, -1.1908662, 4.6747494, 0.7461295, -1.4136384, 3.3386898, -0.58811855, 1.0331745, -9.338791, -0.14293373, -0.96866035, -0.8875942, -1.2553732, 0.3657074, -9.116571, -1.0333034, 0.5881965, -9.116571, 0.96846056, 0.8106854, -0.8875942, 1.4136455, -0.30091035, 4.4511585, 1.4136455, 1.2556634, 4.6747494, 0.7461295, 0.8106854, 4.4511585, -1.2553732, 1.4781525, -0.8875942, -0.58811855, 1.4781525, -0.8875942, 0.52353716)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1hk37"]
+points = PackedVector3Array(-0.7348717, -3.2668567, -0.351319, 0.15597653, -3.3944411, -0.73317516, -0.48041305, -3.2668567, 0.6667149, -0.7348717, -2.376158, 0.28470922, -0.48041305, 4.751824, 0.15762317, -0.22579241, 4.751824, -0.47840503, -0.35294074, -2.376158, -0.73317516, 0.15597653, 4.751824, -0.47840503, 0.53790754, -2.376158, -0.6057901, 0.91983837, -3.1392722, -0.22393394, 0.91983837, -3.1392722, 0.28470922, 0.02899021, -2.376158, 0.79424953, -0.35294074, 4.751824, 0.41224384, 0.7925281, 4.751824, -0.096548855, 0.7925281, 4.751824, 0.15762317, 0.41059715, 4.751824, 0.41224384)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u2fh6"]
+points = PackedVector3Array(0.22040033, -1.4752002, -1.2425215, 0.22978795, -1.6555144, -1.1351185, -0.34240878, -1.6172955, -1.0971016, -0.24987382, -0.63781714, -1.0779893, 0.21704757, -1.1410309, -1.2261099, 1.1457496, -1.4262017, 0.12442553, 0.9928658, -1.6937331, 0.6587398, -1.0674891, -1.6937331, 0.50584126, -1.1054866, -0.66329634, 0.27711642, -0.17209083, -0.055879235, -0.45787728, 0.41843402, -0.051469445, -0.2503423, 1.1779356, -1.2576472, 0.4807043, 0.8381939, -0.67129946, 0.7659352, -0.83995163, -1.2553606, 0.87977815, -0.83749294, -0.6709728, 0.76718163, -0.2507679, -0.025173664, 0.39449108)
+
+[node name="SM_Prop_Drill_01" type="MeshInstance3D" unique_id=323208551]
+gi_mode = 2
+mesh = ExtResource("1_mh376")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=573758484]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=955031543]
+shape = SubResource("ConvexPolygonShape3D_yxbmp")
+
+[node name="SM_Prop_Drill_01_Hinge_01" type="MeshInstance3D" parent="." unique_id=1257789729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04832794, 10.5911045, 3.1422765)
+gi_mode = 2
+mesh = ExtResource("3_la47f")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="SM_Prop_Drill_01_Hinge_01_Leg_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_01" unique_id=1970319471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.578382e-06, -2.851097, 2.7092798)
+gi_mode = 2
+mesh = ExtResource("4_i7iy7")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_01/SM_Prop_Drill_01_Hinge_01_Leg_01" unique_id=639122065]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_01/SM_Prop_Drill_01_Hinge_01_Leg_01/MeshCollider" unique_id=391347057]
+shape = SubResource("ConvexPolygonShape3D_k1r37")
+
+[node name="SM_Prop_Drill_01_Hinge_01_Leg_01_Foot_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_01/SM_Prop_Drill_01_Hinge_01_Leg_01" unique_id=412903815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004384462, -6.679527, 1.5684557)
+gi_mode = 2
+mesh = ExtResource("5_074am")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_01/SM_Prop_Drill_01_Hinge_01_Leg_01/SM_Prop_Drill_01_Hinge_01_Leg_01_Foot_01" unique_id=1068005287]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_01/SM_Prop_Drill_01_Hinge_01_Leg_01/SM_Prop_Drill_01_Hinge_01_Leg_01_Foot_01/MeshCollider" unique_id=1610095777]
+shape = SubResource("ConvexPolygonShape3D_6sc1o")
+
+[node name="SM_Prop_Drill_01_Hinge_02" type="MeshInstance3D" parent="." unique_id=1059114842]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1422784, 10.5911045, -0.048327025)
+gi_mode = 2
+mesh = ExtResource("6_47ohm")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="SM_Prop_Drill_01_Hinge_02_Leg_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_02" unique_id=382699461]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7092812, -2.851097, -5.494803e-06)
+gi_mode = 2
+mesh = ExtResource("7_ja43t")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_02/SM_Prop_Drill_01_Hinge_02_Leg_01" unique_id=410734970]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_02/SM_Prop_Drill_01_Hinge_02_Leg_01/MeshCollider" unique_id=1896833163]
+shape = SubResource("ConvexPolygonShape3D_q72j4")
+
+[node name="SM_Prop_Drill_01_Hinge_02_Leg_01_Foot_02" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_02/SM_Prop_Drill_01_Hinge_02_Leg_01" unique_id=1370856820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5684557, -6.679527, 0.004383944)
+gi_mode = 2
+mesh = ExtResource("8_mduuo")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_02/SM_Prop_Drill_01_Hinge_02_Leg_01/SM_Prop_Drill_01_Hinge_02_Leg_01_Foot_02" unique_id=1674659392]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_02/SM_Prop_Drill_01_Hinge_02_Leg_01/SM_Prop_Drill_01_Hinge_02_Leg_01_Foot_02/MeshCollider" unique_id=1932455800]
+shape = SubResource("ConvexPolygonShape3D_3too0")
+
+[node name="SM_Prop_Drill_01_Hinge_03" type="MeshInstance3D" parent="." unique_id=705652158]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04832611, 10.5911045, -3.1422765)
+gi_mode = 2
+mesh = ExtResource("9_b5fo2")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="SM_Prop_Drill_01_Hinge_03_Leg_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_03" unique_id=691418347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4074993e-06, -2.851099, -2.7092798)
+gi_mode = 2
+mesh = ExtResource("10_3nrf2")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_03/SM_Prop_Drill_01_Hinge_03_Leg_01" unique_id=2029825173]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_03/SM_Prop_Drill_01_Hinge_03_Leg_01/MeshCollider" unique_id=688892886]
+shape = SubResource("ConvexPolygonShape3D_0sn8g")
+
+[node name="SM_Prop_Drill_01_Hinge_03_Leg_01_Foot_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_03/SM_Prop_Drill_01_Hinge_03_Leg_01" unique_id=1709181340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004384462, -6.679527, -1.5684557)
+gi_mode = 2
+mesh = ExtResource("11_7mup0")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_03/SM_Prop_Drill_01_Hinge_03_Leg_01/SM_Prop_Drill_01_Hinge_03_Leg_01_Foot_01" unique_id=1945849415]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_03/SM_Prop_Drill_01_Hinge_03_Leg_01/SM_Prop_Drill_01_Hinge_03_Leg_01_Foot_01/MeshCollider" unique_id=728865357]
+shape = SubResource("ConvexPolygonShape3D_sr5ec")
+
+[node name="SM_Prop_Drill_01_Hinge_04" type="MeshInstance3D" parent="." unique_id=1980800388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1422784, 10.5911045, 0.048327025)
+gi_mode = 2
+mesh = ExtResource("12_mvkjk")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="SM_Prop_Drill_01_Hinge_04_Leg_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_04" unique_id=109667317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7092798, -2.851097, 5.494803e-06)
+gi_mode = 2
+mesh = ExtResource("13_73xij")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_04/SM_Prop_Drill_01_Hinge_04_Leg_01" unique_id=1961988795]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_04/SM_Prop_Drill_01_Hinge_04_Leg_01/MeshCollider" unique_id=1041162641]
+shape = SubResource("ConvexPolygonShape3D_07aro")
+
+[node name="SM_Prop_Drill_01_Hinge_04_Leg_01_Foot_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Hinge_04/SM_Prop_Drill_01_Hinge_04_Leg_01" unique_id=231695598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5684557, -6.679527, -0.004383944)
+gi_mode = 2
+mesh = ExtResource("14_ylwc6")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Hinge_04/SM_Prop_Drill_01_Hinge_04_Leg_01/SM_Prop_Drill_01_Hinge_04_Leg_01_Foot_01" unique_id=1916115836]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Hinge_04/SM_Prop_Drill_01_Hinge_04_Leg_01/SM_Prop_Drill_01_Hinge_04_Leg_01_Foot_01/MeshCollider" unique_id=675780688]
+shape = SubResource("ConvexPolygonShape3D_0r7hw")
+
+[node name="SM_Prop_Drill_01_Motor_01" type="MeshInstance3D" parent="." unique_id=2062542046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0986328e-05, 12.9221945, -1.8310546e-06)
+gi_mode = 2
+mesh = ExtResource("15_l2gc5")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Motor_01" unique_id=883502895]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Motor_01/MeshCollider" unique_id=964453666]
+shape = SubResource("ConvexPolygonShape3D_qj2in")
+
+[node name="SM_Prop_Drill_01_Extension_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Motor_01" unique_id=874621735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0986328e-05, -7.537917, 1.8310546e-06)
+gi_mode = 2
+mesh = ExtResource("16_os1xl")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01" unique_id=852408383]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01/MeshCollider" unique_id=2050554121]
+shape = SubResource("ConvexPolygonShape3D_1hk37")
+
+[node name="SM_Prop_Drill_01_Drill_Head_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01" unique_id=704726642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.408691e-06, -3.3222013, -1.8310548e-06)
+gi_mode = 2
+mesh = ExtResource("17_386km")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01/SM_Prop_Drill_01_Drill_Head_01" unique_id=2010260309]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01/SM_Prop_Drill_01_Drill_Head_01/MeshCollider" unique_id=1597119180]
+shape = SubResource("ConvexPolygonShape3D_u2fh6")
+
+[node name="SM_Prop_Drill_01_Drill_Head_01_Cone_01" type="MeshInstance3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01/SM_Prop_Drill_01_Drill_Head_01" unique_id=660206485]
+transform = Transform3D(1, 0, 0, 0, 0.8239482, -0.5666651, 0, 0.5666651, 0.8239482, -0.0026651083, -1.3237191, -0.9009646)
+gi_mode = 2
+mesh = ExtResource("18_1dg5r")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="SM_Prop_Drill_01_Drill_Head_01_Cone_02" type="MeshInstance3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01/SM_Prop_Drill_01_Drill_Head_01" unique_id=964684002]
+transform = Transform3D(-0.50000006, 0.49074644, 0.71356, 1.4901159e-08, 0.82394814, -0.5666652, -0.8660254, -0.2833326, -0.41197413, -0.7594959, -1.323731, 0.4303859)
+gi_mode = 2
+mesh = ExtResource("19_l05wr")
+surface_material_override/0 = ExtResource("2_la47f")
+
+[node name="SM_Prop_Drill_01_Drill_Head_01_Cone_03" type="MeshInstance3D" parent="SM_Prop_Drill_01_Motor_01/SM_Prop_Drill_01_Extension_01/SM_Prop_Drill_01_Drill_Head_01" unique_id=535414314]
+transform = Transform3D(-0.50000006, -0.49074644, -0.71356, -1.4901159e-08, 0.82394814, -0.5666652, 0.8660254, -0.2833326, -0.41197413, 0.7718997, -1.3237108, 0.4201602)
+gi_mode = 2
+mesh = ExtResource("20_jeeqr")
+surface_material_override/0 = ExtResource("2_la47f")

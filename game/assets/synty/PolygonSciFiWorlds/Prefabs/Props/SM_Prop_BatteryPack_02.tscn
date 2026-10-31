@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://btcs7i24s4jsk"]
+
+[ext_resource type="ArrayMesh" uid="uid://cnwya43cceqa6" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_BatteryPack_02.res" id="1_7dnu1"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_r45xw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ulvdi"]
+points = PackedVector3Array(-0.22229028, 0.64325964, 0.16763508, -0.20101115, 0.6331447, -0.214849, -0.22150216, 0.02246365, -0.19171982, -0.22211514, 0.021500321, 0.18936515, -0.16773513, 0.6431908, 0.22228816, -0.17846227, 0.6647969, 0.2002083, -0.069921196, 0.7108302, -0.12771013, 0.20320478, 0.6540626, -0.19237566, 0.18083104, 0.02246365, -0.2243805, -0.19067807, 0.008288967, -0.21550484, 0.1937474, 0.007876113, 0.2128441, -0.18936455, 0.02156913, 0.22206953, 0.17189905, 0.6894994, 0.18000853, 0.19168952, 0.63135564, 0.22145742, 0.22500932, 0.63218135, 0.17847824, 0.22435257, 0.02239484, -0.18087664)
+
+[node name="SM_Prop_BatteryPack_02" type="MeshInstance3D" unique_id=419291810]
+gi_mode = 2
+mesh = ExtResource("1_7dnu1")
+surface_material_override/0 = ExtResource("2_r45xw")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1636022971]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=857457791]
+shape = SubResource("ConvexPolygonShape3D_ulvdi")

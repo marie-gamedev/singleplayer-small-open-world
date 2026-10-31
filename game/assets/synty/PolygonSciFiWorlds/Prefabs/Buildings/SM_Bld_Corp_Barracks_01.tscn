@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://basqj6qo4buw0"]
+
+[ext_resource type="ArrayMesh" uid="uid://ded875uq6xiy" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Barracks_01.res" id="1_ufalo"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ay8q5"]
+[ext_resource type="Shape3D" uid="uid://1rjxiaoblbn2" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Barracks_01_Collision.res" id="3_ay8q5"]
+
+[node name="SM_Bld_Corp_Barracks_01" type="MeshInstance3D" unique_id=1094331028]
+gi_mode = 2
+mesh = ExtResource("1_ufalo")
+surface_material_override/0 = ExtResource("2_ay8q5")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1348699504]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1408811856]
+shape = ExtResource("3_ay8q5")

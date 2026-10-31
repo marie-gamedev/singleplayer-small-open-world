@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://digrgarhfdwv1"]
+
+[ext_resource type="ArrayMesh" uid="uid://ca8j6pkohlq6x" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01.res" id="1_1ckts"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_a55kk"]
+[ext_resource type="Shape3D" uid="uid://cer7td8oqb4o2" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Veh_DropShip_01_Collision.res" id="3_4xmr5"]
+[ext_resource type="ArrayMesh" uid="uid://ch18cncyxr5vl" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_CargoDoor_01.res" id="3_a55kk"]
+[ext_resource type="ArrayMesh" uid="uid://byst2y8eie4dp" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Cockpit_01.res" id="4_4xmr5"]
+[ext_resource type="ArrayMesh" uid="uid://6sgjmdkq0ocw" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_01.res" id="5_ercpu"]
+[ext_resource type="ArrayMesh" uid="uid://dtdb8wn6mwod7" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_02.res" id="6_2286m"]
+[ext_resource type="ArrayMesh" uid="uid://dr8138frs08gn" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Glass_01.res" id="7_gtgkt"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5tdup"]
+points = PackedVector3Array(-5.057419, 5.5114803, -1.4397776, -4.9972653, 4.6090093, -1.5199194, -4.817792, 0.24419941, -0.37850654, -4.817792, 0.50434625, -0.05811298, -4.4193993, 4.84475, -1.2173929, -2.7143984, 4.95014, -1.159455, 2.7132049, 4.95014, -1.159455, 5.01678, 5.488184, -1.4942462, -4.958807, 5.3583875, -1.6897435, 4.996072, 5.069952, -1.640132, 4.97635, 0.7045873, -0.4987191, -4.5022335, -0.15517323, -0.14311182, 4.4103165, -0.0719706, -0.27113044, -2.7143984, 0.1842935, 0.082395315, 2.7132049, 0.1842935, 0.082395315, 4.875765, 0.6446814, -0.09818387)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lqysd"]
+points = PackedVector3Array(-4.8677993, -3.6765156, -4.6992106, 0.60886, -3.6765156, -4.6992106, -3.6106765, -2.876909, 4.3521504, -4.096907, -2.3748138, 4.333751, -4.8677993, 3.682746, -4.6992106, -4.792211, -3.574944, -5.080482, 0.51933336, -3.5569348, -5.05595, 0.60886, 3.682746, -4.6992106, -0.16524887, 2.3767219, 4.326596, -0.5083442, -2.3488805, 4.7702203, -3.594594, 2.525838, 4.7886195, -4.096907, 2.380324, 4.333751, -4.7895308, 3.5768523, -5.0753713, -0.64987135, 2.8788176, 4.3460174, -3.7645335, -2.36761, -5.6529, -0.66059303, 2.5330415, -5.645745)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4hvcc"]
+points = PackedVector3Array(4.8983717, -3.6765156, -4.6998277, -0.5021785, -3.5756643, -5.080777, 4.8088627, -3.5569348, -5.0561996, 4.8983717, 3.682746, -4.6998277, 4.1206627, -2.3668897, 4.316997, 3.6200554, -2.5124037, 4.7727017, 0.67912483, -2.8776293, 4.3518147, -0.49949858, 3.5775728, -5.0766807, 0.68555665, -2.5361757, -5.666538, 0.18816572, -2.3798563, 4.3425984, -0.5772159, 3.682746, -4.6998277, 3.7878177, 2.3637552, -5.634792, 3.6377432, 2.875936, 4.34055, 4.1206627, 2.3723998, 4.316997, 0.69359636, 2.5287194, 4.7952313, 0.18816572, 2.3853664, 4.3425984)
+
+[node name="SM_Veh_DropShip_01" type="MeshInstance3D" unique_id=1303975371]
+gi_mode = 2
+mesh = ExtResource("1_1ckts")
+surface_material_override/0 = ExtResource("2_a55kk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1493746807]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=372053386]
+shape = ExtResource("3_4xmr5")
+
+[node name="SM_Veh_DropShip_01_CargoDoor_01" type="MeshInstance3D" parent="." unique_id=1254026590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.803349, -11.17647)
+gi_mode = 2
+mesh = ExtResource("3_a55kk")
+surface_material_override/0 = ExtResource("2_a55kk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_DropShip_01_CargoDoor_01" unique_id=593216090]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_DropShip_01_CargoDoor_01/MeshCollider" unique_id=488093254]
+shape = SubResource("ConvexPolygonShape3D_5tdup")
+
+[node name="SM_Veh_DropShip_01_Cockpit_01" type="MeshInstance3D" parent="." unique_id=1216429742]
+gi_mode = 2
+mesh = ExtResource("4_4xmr5")
+surface_material_override/0 = ExtResource("2_a55kk")
+
+[node name="SM_Veh_DropShip_01_Engine_01" type="MeshInstance3D" parent="." unique_id=547892297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.651812, 1.8949407, -1.4243951)
+gi_mode = 2
+mesh = ExtResource("5_ercpu")
+surface_material_override/0 = ExtResource("2_a55kk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_DropShip_01_Engine_01" unique_id=1869199460]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_DropShip_01_Engine_01/MeshCollider" unique_id=1312585291]
+shape = SubResource("ConvexPolygonShape3D_lqysd")
+
+[node name="SM_Veh_DropShip_01_Engine_02" type="MeshInstance3D" parent="." unique_id=1256569888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.651812, 1.8949407, -1.4243951)
+gi_mode = 2
+mesh = ExtResource("6_2286m")
+surface_material_override/0 = ExtResource("2_a55kk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_DropShip_01_Engine_02" unique_id=502646870]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_DropShip_01_Engine_02/MeshCollider" unique_id=1020795672]
+shape = SubResource("ConvexPolygonShape3D_4hvcc")
+
+[node name="SM_Veh_DropShip_01_Glass_01" type="MeshInstance3D" parent="." unique_id=575643450]
+gi_mode = 2
+mesh = ExtResource("7_gtgkt")
+surface_material_override/0 = ExtResource("2_a55kk")

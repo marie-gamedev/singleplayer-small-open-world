@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dn2puvkkwflsb"]
+
+[ext_resource type="ArrayMesh" uid="uid://dne6myyrvic0h" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_Wall_01.res" id="1_8yno2"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_1lv6n"]
+[ext_resource type="Shape3D" uid="uid://v8wjxtxyrohw" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Corp_Wall_01_Collision.res" id="3_1lv6n"]
+
+[node name="SM_Bld_Corp_Wall_01" type="MeshInstance3D" unique_id=1067952776]
+gi_mode = 2
+mesh = ExtResource("1_8yno2")
+surface_material_override/0 = ExtResource("2_1lv6n")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=429779688]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2012135570]
+shape = ExtResource("3_1lv6n")

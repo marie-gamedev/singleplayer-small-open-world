@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cd4qimdhlp7wq"]
+
+[ext_resource type="ArrayMesh" uid="uid://d2l4n1tsl1xua" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Mushroom_01.res" id="1_7v145"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_o2tl1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7v145"]
+points = PackedVector3Array(-3.4745474, 6.102722, 1.3328078, -3.4745474, 6.102722, 2.5163171, 1.7907557, -0.3882508, 1.1651568, -1.9948608, -0.40420485, -1.7711968, 1.849771, 8.025245, 2.9602923, -2.734704, 8.025245, -1.3278586, 0.9616753, -0.2559619, 2.2207584, 1.9973141, 7.877002, -2.510731, -3.0304995, -0.108645916, -0.58832455, -2.6381304, 8.754341, 1.5943576, -2.290656, 6.102722, 3.6998265, 3.1804962, 5.2151194, -1.4756379, 3.772087, 8.025245, 0.8894696, 0.0749982, 8.025245, -2.6591473, 1.7015187, -0.2559619, 2.2207584, 3.2053826, 8.730262, 0.026235461, 2.1455665, -0.2559619, 0.8894696, -0.36904967, 5.9544797, 3.6998265, -1.6990653, 8.172561, 3.255851, -3.0304995, 0.039597034, -1.3278586, -2.734704, -0.2559619, -0.14434934, -1.7655653, 8.578407, -1.2497792, -3.326295, 8.025245, 0.0034300685, -1.2550174, 7.877002, -2.3629515, 3.1804962, 8.319877, 1.9251994, -2.734704, 6.102722, 3.552047, 2.8847003, 5.2151194, -1.7711968, 2.2175121, 8.746001, -0.9743319, 3.4762917, 5.363362, -0.7361039, 3.4762917, 8.172561, -1.1800792, 1.9281297, 8.593027, 1.8753978, 2.1455665, -0.108645916, 1.6296406)
+
+[node name="SM_Env_Plant_Mushroom_01" type="MeshInstance3D" unique_id=235714014]
+gi_mode = 2
+mesh = ExtResource("1_7v145")
+surface_material_override/0 = ExtResource("2_o2tl1")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1900208711]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=233593817]
+shape = SubResource("ConvexPolygonShape3D_7v145")

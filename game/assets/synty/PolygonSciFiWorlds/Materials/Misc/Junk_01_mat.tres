@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://drpxx3h14pfxg"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_or4jr"]
+[ext_resource type="Texture2D" uid="uid://by465m0o7lqh" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/Junk_01.png" id="2_faekv"]
+[ext_resource type="Texture2D" uid="uid://bhe7jhbpvptdo" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/BaseGrass_01_Normals.png" id="3_b0h5n"]
+
+[resource]
+resource_name = "Junk_01_mat"
+render_priority = 0
+shader = ExtResource("1_or4jr")
+shader_parameter/Albedo_Map = ExtResource("2_faekv")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.0
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Normal_Map = ExtResource("3_b0h5n")
+shader_parameter/Alpha_Clip_Threshold = 0.0

@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://cdnaabxs5l7ec"]
+
+[ext_resource type="Texture2D" uid="uid://dkptenm36m17c" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/FX/Particle.png" id="2_uxnuh"]
+
+[sub_resource type="Curve" id="Curve_gi76h"]
+_data = [Vector2(0, 0.75436056), 0.0, 0.0, 0, 0, Vector2(0.5464684, 1), 0.0, 0.0, 0, 0, Vector2(0.99628264, 0.75436056), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_2dtvt"]
+curve = SubResource("Curve_gi76h")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uxnuh"]
+particle_flag_rotate_y = true
+emission_shape_scale = Vector3(0, 0, 0)
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = 89.999985
+angular_velocity_max = 89.999985
+gravity = Vector3(0, 0, 0)
+scale_min = 12.0
+scale_max = 12.0
+scale_curve = SubResource("CurveTexture_2dtvt")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dtvt"]
+resource_name = "lambert23"
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9021974, 0.9492455, 7.70092e-07, 0.18039216)
+point_size = 122.3
+fov_override = 37.1
+
+[sub_resource type="SphereMesh" id="SphereMesh_uxnuh"]
+material = SubResource("StandardMaterial3D_2dtvt")
+radius = 0.6
+height = 1.2
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_entpi"]
+particle_flag_rotate_y = true
+emission_shape_scale = Vector3(0, 0, 0)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+spread = 0.0
+angular_velocity_min = 89.999985
+angular_velocity_max = 89.999985
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_entpi"]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(0.7176471, 0.89411765, 0, 1)
+albedo_texture = ExtResource("2_uxnuh")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_entpi"]
+material = SubResource("StandardMaterial3D_entpi")
+top_radius = 4.0
+bottom_radius = 4.0
+height = 6.0
+radial_segments = 21
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vokh3"]
+particle_flag_rotate_y = true
+emission_shape_scale = Vector3(0, 0, 0)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+spread = 0.0
+angular_velocity_min = 89.999985
+angular_velocity_max = 89.999985
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_x1ea0"]
+material = SubResource("StandardMaterial3D_entpi")
+top_radius = 4.0
+bottom_radius = 4.0
+height = 6.0
+radial_segments = 21
+cap_top = false
+cap_bottom = false
+
+[node name="FX_Core_01" type="GPUParticles3D" unique_id=1248369987]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+amount = 1
+lifetime = 10.0
+speed_scale = 1.3
+fixed_fps = 0
+visibility_aabb = AABB(-10, -10, -10, 20, 20, 20)
+process_material = SubResource("ParticleProcessMaterial_uxnuh")
+draw_passes = 2
+draw_pass_1 = SubResource("SphereMesh_uxnuh")
+draw_pass_2 = null
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1862849882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.015949, 0)
+amount = 1
+lifetime = 16.0
+preprocess = 5.0
+speed_scale = 1.3
+fixed_fps = 0
+process_material = SubResource("ParticleProcessMaterial_entpi")
+draw_pass_1 = SubResource("CylinderMesh_entpi")
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="." unique_id=258808099]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.203788, 0)
+amount = 1
+lifetime = 16.0
+preprocess = 5.0
+speed_scale = 1.3
+fixed_fps = 0
+process_material = SubResource("ParticleProcessMaterial_vokh3")
+draw_pass_1 = SubResource("CylinderMesh_x1ea0")

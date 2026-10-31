@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://xenm2e5bvoc5"]
+
+[ext_resource type="ArrayMesh" uid="uid://0ibi1kbvt6ic" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_45_Wall_01.res" id="1_vsm0v"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="2_x3rfs"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="3_q38j7"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_527xn"]
+points = PackedVector3Array(2.499928, 2.9998584, 2.6124992, 2.6124914, 2.9998584, 2.4999359, 2.499928, 3.0057428, 2.4999359, -0.017808154, 2.9998584, 0.09822333, 2.499928, -6.245e-16, 2.6124992, 2.6124914, -6.245e-16, 2.4999359, 2.5175328, 2.9998584, 2.4015093, -0.0002034679, 3.0057428, -0.00020314008, -0.1125, 2.9998584, -0.00020314008, -0.017808154, -6.245e-16, 0.09822333, 2.5175328, -6.245e-16, 2.4015093, -0.0002034679, 2.9998584, -0.1125, -0.1125, -6.245e-16, -0.00020314008, -0.0002034679, -6.245e-16, -0.1125)
+
+[node name="SM_Bld_Base_45_Wall_01" type="MeshInstance3D" unique_id=1713925967]
+gi_mode = 2
+mesh = ExtResource("1_vsm0v")
+surface_material_override/0 = ExtResource("2_x3rfs")
+surface_material_override/1 = ExtResource("3_q38j7")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=26023462]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2001035355]
+shape = SubResource("ConvexPolygonShape3D_527xn")

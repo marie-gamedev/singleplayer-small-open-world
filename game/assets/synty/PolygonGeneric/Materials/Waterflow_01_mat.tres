@@ -1,0 +1,45 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dg5pnbjcam4nh"]
+
+[ext_resource type="Shader" uid="uid://0hyhpsrbf0xi" path="res://Assets/Synty/PolygonGeneric/Shaders/PolygonShader.gdshader" id="1_0k8ch"]
+[ext_resource type="Texture2D" uid="uid://dgvluvygif5fu" path="res://Assets/Synty/PolygonGeneric/Textures/WaterFallMask.png" id="2_o6bt2"]
+[ext_resource type="Texture2D" uid="uid://2qyr2ulosen2" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Water.png" id="3_vips7"]
+
+[resource]
+resource_name = "Waterflow_01_mat"
+render_priority = 0
+shader = ExtResource("1_0k8ch")
+shader_parameter/albedo_tint = Color(0.45882353, 0.5411765, 0.59607846, 1)
+shader_parameter/normal_texture = ExtResource("3_vips7")
+shader_parameter/normal_map_intensity = 1.0000000475
+shader_parameter/emission_tint = Color(0, 0, 0, 0)
+shader_parameter/emission_intensity = 0.25
+shader_parameter/metallic = 0.1
+shader_parameter/roughness = 0.486
+shader_parameter/enable_overlay = true
+shader_parameter/overlay_texture = ExtResource("2_o6bt2")
+shader_parameter/overlay_tiling = Vector2(2, 1)
+shader_parameter/overlay_offset = Vector2(0, 0)
+shader_parameter/overlay_intensity = 0.2910000138225
+shader_parameter/overlay_uv_set = 0
+shader_parameter/uv_scale = Vector2(1.125, 1)
+shader_parameter/uv_offset = Vector2(-0.005, 0)
+shader_parameter/uv_pan_speed = Vector2(0, -0.1)
+shader_parameter/use_triplanar = false
+shader_parameter/triplanar_world_space = true
+shader_parameter/triplanar_invert_normal_green = true
+shader_parameter/triplanar_sharpness = 4.0
+shader_parameter/top_normal_intensity = 1.0
+shader_parameter/top_roughness = 0.5
+shader_parameter/top_metallic = 0.0
+shader_parameter/top_uv_scale = Vector2(1, 1)
+shader_parameter/top_uv_offset = Vector2(0, 0)
+shader_parameter/bottom_normal_intensity = 1.0
+shader_parameter/bottom_roughness = 0.5
+shader_parameter/bottom_metallic = 0.0
+shader_parameter/bottom_uv_scale = Vector2(1, 1)
+shader_parameter/bottom_uv_offset = Vector2(0, 0)
+shader_parameter/side_normal_intensity = 1.0
+shader_parameter/side_roughness = 0.5
+shader_parameter/side_metallic = 0.0
+shader_parameter/side_uv_scale = Vector2(1, 1)
+shader_parameter/side_uv_offset = Vector2(0, 0)

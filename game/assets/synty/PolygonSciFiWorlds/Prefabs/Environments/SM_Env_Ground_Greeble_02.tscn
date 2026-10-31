@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bbt80m7wk748a"]
+
+[ext_resource type="ArrayMesh" uid="uid://syggtfytbqxa" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Ground_Greeble_02.res" id="1_ckhed"]
+[ext_resource type="Material" uid="uid://dxcwn7myoprsp" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Core_01_mat.tres" id="2_ys7ix"]
+[ext_resource type="ArrayMesh" uid="uid://d062nt3u1e2bf" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Ground_Greeble_02_Metal_01.res" id="3_ys7ix"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="4_vy8ar"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ckhed"]
+points = PackedVector3Array(0.03583163, -0.08142929, -0.90496033, 0.14578515, 0.13853505, -0.2881052, 0.66623217, -0.08142929, -0.6807768, -0.7295526, -0.08142929, -0.60546505, -0.0684008, 0.13853505, -0.27864748, 0.33798057, 0.14956945, -0.10157746, 0.9272602, -0.08142929, 0.04624355, -0.88903004, -0.08142929, -0.3290888, -0.2815141, 0.13853505, -0.093696, 0.33011395, 0.13853505, 0.14012045, -0.26524454, 0.13853505, 0.1585105, -0.1456365, 0.13853505, 0.25063592, 0.112888515, 0.13853505, 0.2730543, 0.73756796, -0.08142929, 0.31841642, -0.8992209, -0.08142929, 0.102639735, 0.32010192, -0.08142929, 0.8843048, -0.68324697, -0.08142929, 0.60390025, -0.4282977, -0.08142929, 0.7674841)
+
+[node name="SM_Env_Ground_Greeble_02" type="MeshInstance3D" unique_id=1975522107]
+gi_mode = 2
+mesh = ExtResource("1_ckhed")
+surface_material_override/0 = ExtResource("2_ys7ix")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1921796793]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1197930663]
+shape = SubResource("ConvexPolygonShape3D_ckhed")
+
+[node name="SM_Env_Ground_Greeble_02_Metal_01" type="MeshInstance3D" parent="." unique_id=1582997508]
+gi_mode = 2
+mesh = ExtResource("3_ys7ix")
+surface_material_override/0 = ExtResource("4_vy8ar")

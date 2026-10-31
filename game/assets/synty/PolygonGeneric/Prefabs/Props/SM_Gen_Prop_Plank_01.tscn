@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d1uvyxgx5hwo3"]
+
+[ext_resource type="ArrayMesh" uid="uid://c8retw7pxsvex" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Plank_01.res" id="1_tjnke"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_75f7j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5o0k3"]
+size = Vector3(1.6990997, 0.11811271, 0.27971604)
+
+[node name="SM_Gen_Prop_Plank_01" type="MeshInstance3D" unique_id=277203726]
+gi_mode = 2
+mesh = ExtResource("1_tjnke")
+surface_material_override/0 = ExtResource("2_75f7j")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=461109502]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=398640940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015557408, -0.00067992695, 0.0014588535)
+shape = SubResource("BoxShape3D_5o0k3")

@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://espwsvimiiyy"]
+
+[ext_resource type="ArrayMesh" uid="uid://ukpstm2k2ke1" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_03.res" id="1_csjvr"]
+[ext_resource type="Material" uid="uid://cunhkn7riujgy" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_04_B_mat.tres" id="2_r5lwa"]
+[ext_resource type="ArrayMesh" uid="uid://bv2h8k43gkhya" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_03_Mag_01.res" id="3_r5lwa"]
+[ext_resource type="ArrayMesh" uid="uid://d0ghpbhfcsi2r" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Heavy_03_Trigger_01.res" id="4_gq2rc"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="5_redqk"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xa6q4"]
+points = PackedVector3Array(-0.053553075, -0.3024082, 0.028524905, -0.053553075, -0.1526105, -0.23769037, 0.029597268, -0.10261278, -0.3542353, 0.046246886, -0.3024082, 0.11174241, -0.1534182, -0.119278684, 0.67750037, -0.17006782, -0.085995734, 0.6108455, -0.036903456, 0.11355531, -0.3375716, 0.046246886, 0.11355531, -0.23769037, 0.1627942, -0.052761674, 0.6108455, 0.1627942, -0.102661654, 0.67750037, 0.12167519, -0.13110611, 0.64831364, -0.07020269, 0.113653064, 0.67750037, -0.020253837, 0.19688484, -0.021466225, 0.079546124, 0.09698713, 0.67750037, -0.020253837, 0.18021894, 0.62750924, 0.011383697, 0.15905666, 0.5867084)
+
+[node name="SM_Wep_Heavy_03" type="MeshInstance3D" unique_id=520505630]
+gi_mode = 2
+mesh = ExtResource("1_csjvr")
+surface_material_override/0 = ExtResource("2_r5lwa")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=30133655]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=953656991]
+shape = SubResource("ConvexPolygonShape3D_xa6q4")
+
+[node name="SM_Wep_Heavy_03_Mag_01" type="MeshInstance3D" parent="." unique_id=1328795136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.779886e-09, -0.085740425, 0.23056197)
+gi_mode = 2
+mesh = ExtResource("3_r5lwa")
+surface_material_override/0 = ExtResource("2_r5lwa")
+
+[node name="SM_Wep_Heavy_03_Trigger_01" type="MeshInstance3D" parent="." unique_id=78947896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.008874093, -0.011353882)
+gi_mode = 2
+mesh = ExtResource("4_gq2rc")
+surface_material_override/0 = ExtResource("5_redqk")

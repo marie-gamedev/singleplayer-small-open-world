@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dswo7v8tpamk1"]
+
+[ext_resource type="ArrayMesh" uid="uid://bw2l4pmkpiaml" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Helmet_03.res" id="1_5pbp6"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_cc31q"]
+
+[node name="SM_Chr_Attach_Helmet_03" type="MeshInstance3D" unique_id=1016506723]
+gi_mode = 2
+mesh = ExtResource("1_5pbp6")
+surface_material_override/0 = ExtResource("2_cc31q")

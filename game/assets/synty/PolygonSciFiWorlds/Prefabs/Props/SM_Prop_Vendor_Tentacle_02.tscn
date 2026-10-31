@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crvhab177xnht"]
+
+[ext_resource type="ArrayMesh" uid="uid://m22e4ln6rexh" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vendor_Tentacle_02.res" id="1_mofml"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_uolen"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ayw55"]
+points = PackedVector3Array(0.052045792, 0.032137986, -0.11867014, 0.06519626, 0.013029201, -0.09514639, -0.120028414, -0.0077093057, -0.052009687, -0.17249607, 0.06733249, -0.044482872, 0.038716406, 0.085620195, -0.09888032, 0.17907743, 0.031627923, -0.09933232, 0.24626108, 0.00433321, 0.02683518, -0.09748477, -0.0077093057, 0.07553347, -0.1866753, 0.009135289, 0.028820045, -0.17249607, 0.06733249, 0.06804595, -0.034192592, 0.11938402, 0.024732389, 0.14450155, 0.099603444, -0.04143677, 0.26272148, 0.05235399, 0.02302263, 0.27028078, 0.022322342, 0.05303163, -0.01715067, 0.06673534, 0.08209733, -0.14534529, 0.025830597, 0.07356825)
+
+[node name="SM_Prop_Vendor_Tentacle_02" type="MeshInstance3D" unique_id=1034174015]
+gi_mode = 2
+mesh = ExtResource("1_mofml")
+surface_material_override/0 = ExtResource("2_uolen")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1429304788]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1040188942]
+shape = SubResource("ConvexPolygonShape3D_ayw55")

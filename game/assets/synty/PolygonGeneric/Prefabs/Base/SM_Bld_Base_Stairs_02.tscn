@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dui6khcm18pjm"]
+
+[ext_resource type="ArrayMesh" uid="uid://dsi2v6gm4sljh" path="res://Assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Stairs_02.res" id="1_m5om1"]
+[ext_resource type="Material" uid="uid://b0w4ho5ad7w7b" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Concrete_mat.tres" id="2_jv6ss"]
+[ext_resource type="Shape3D" uid="uid://b1052axekx7ai" path="res://Assets/Synty/PolygonGeneric/Models/Base/Collision/extracted/SM_Bld_Base_Stairs_02_Collision.res" id="3_jv6ss"]
+
+[node name="SM_Bld_Base_Stairs_02" type="MeshInstance3D" unique_id=417306452]
+gi_mode = 2
+mesh = ExtResource("1_m5om1")
+surface_material_override/0 = ExtResource("2_jv6ss")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1430708765]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2044975846]
+shape = ExtResource("3_jv6ss")

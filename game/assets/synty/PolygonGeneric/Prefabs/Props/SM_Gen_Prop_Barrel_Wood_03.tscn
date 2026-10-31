@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cyb5yq0tgrtu6"]
+
+[ext_resource type="ArrayMesh" uid="uid://bebidi07ojrum" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Barrel_Wood_03.res" id="1_56wvq"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_6caoc"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ftshu"]
+points = PackedVector3Array(-0.36396936, 0.16457911, -0.0043595135, -0.19261435, 0.16178916, -0.3244697, -0.28009415, 0.030302143, 0.14113271, -0.30546466, 0.7233765, 0.23683155, -0.31003967, 0.91984206, 0.05382374, -0.29555213, 0.81769437, -0.2088535, -0.047253728, 0.043081854, -0.31157798, -0.06090945, 0.9129122, -0.29179704, 0.21137312, 0.79663485, -0.29063746, 0.1834378, 0.021842334, 0.2399692, -0.2218667, 0.16142917, 0.28676134, -0.017932057, 0.7716154, 0.37229687, 0.22627655, 0.9412616, 0.22530401, 0.25386527, 0.16745904, -0.27590406, 0.3441871, 0.8149044, 0.067943245, 0.34002802, 0.16709904, 0.12435302)
+
+[node name="SM_Gen_Prop_Barrel_Wood_03" type="MeshInstance3D" unique_id=1781805964]
+gi_mode = 2
+mesh = ExtResource("1_56wvq")
+surface_material_override/0 = ExtResource("2_6caoc")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=604165339]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=566851291]
+shape = SubResource("ConvexPolygonShape3D_ftshu")

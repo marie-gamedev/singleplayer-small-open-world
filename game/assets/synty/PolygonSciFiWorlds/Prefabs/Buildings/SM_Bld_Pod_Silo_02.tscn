@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d3xbcmxl3chwe"]
+
+[ext_resource type="ArrayMesh" uid="uid://csk8m354jep21" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Silo_02.res" id="1_y41cy"]
+[ext_resource type="Material" uid="uid://cuvjd7v2ydnpu" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_02_A_mat.tres" id="2_7h57a"]
+[ext_resource type="ArrayMesh" uid="uid://mq4hyvluy23" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Silo_02_Base_01.res" id="3_7h57a"]
+[ext_resource type="Shape3D" uid="uid://co0enq5hec2xi" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Pod_Silo_02_Collision.res" id="3_i60sa"]
+[ext_resource type="Shape3D" uid="uid://bimrsvu8hxcy6" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Pod_Silo_02_Base_01_Collision.res" id="5_rixkn"]
+
+[node name="SM_Bld_Pod_Silo_02" type="MeshInstance3D" unique_id=806344337]
+gi_mode = 2
+mesh = ExtResource("1_y41cy")
+surface_material_override/0 = ExtResource("2_7h57a")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=293373188]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1653652522]
+shape = ExtResource("3_i60sa")
+
+[node name="SM_Bld_Pod_Silo_02_Base_01" type="MeshInstance3D" parent="." unique_id=177490710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019324219, 1.5999999, 0.08606281)
+gi_mode = 2
+mesh = ExtResource("3_7h57a")
+surface_material_override/0 = ExtResource("2_7h57a")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Pod_Silo_02_Base_01" unique_id=878801173]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Pod_Silo_02_Base_01/MeshCollider" unique_id=1055496843]
+shape = ExtResource("5_rixkn")

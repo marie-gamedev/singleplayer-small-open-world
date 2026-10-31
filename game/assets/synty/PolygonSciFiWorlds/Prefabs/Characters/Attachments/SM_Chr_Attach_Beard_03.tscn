@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://br4fstmw7e8cb"]
+
+[ext_resource type="ArrayMesh" uid="uid://rbfg5fa24lu6" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Beard_03.res" id="1_esnhi"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_wnihb"]
+
+[node name="SM_Chr_Attach_Beard_03" type="MeshInstance3D" unique_id=1177537769]
+gi_mode = 2
+mesh = ExtResource("1_esnhi")
+surface_material_override/0 = ExtResource("2_wnihb")

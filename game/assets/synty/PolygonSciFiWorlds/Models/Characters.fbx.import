@@ -1,0 +1,302 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c6n757xx60nd1"
+path="res://.godot/imported/Characters.fbx-eada4a30ed68d82a6faf9e31641df8f9.scn"
+
+[deps]
+
+source_file="res://Assets/Synty/PolygonSciFiWorlds/Models/Characters.fbx"
+dest_files=["res://.godot/imported/Characters.fbx-eada4a30ed68d82a6faf9e31641df8f9.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {
+"standardSurface1": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/standardSurface1.material",
+"use_external/path": "uid://c2rxe56afu734"
+}
+},
+"meshes": {
+"Root Scene_SM_Chr_ScifiWorlds_Female_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dwbuqsi1s3phk"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Male_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d0y13yo0dbxn6"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Scavenger_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Scavenger_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dsgmtwyk658ix"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Scavenger_02": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Scavenger_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c14dvt1jmctbk"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Scavenger_03": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Scavenger_03.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://3jqadmn12dea"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Soldier_Female_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Soldier_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://usx1icp3ud1k"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Soldier_Male_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Soldier_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://7ysq8ogtw7ii"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Soldier_Male_02": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Soldier_Male_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cipfretp0wlbq"
+},
+"Root Scene_SM_Chr_ScifiWorlds_SpaceSuit_Alien_Female_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Alien_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://obk6l5nvcjpc"
+},
+"Root Scene_SM_Chr_ScifiWorlds_SpaceSuit_Alien_Male_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Alien_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ba1256wlyavlq"
+},
+"Root Scene_SM_Chr_ScifiWorlds_SpaceSuit_Female_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://s8078yh0gcf6"
+},
+"Root Scene_SM_Chr_ScifiWorlds_SpaceSuit_Female_02": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Female_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://csmoj6mbv0i23"
+},
+"Root Scene_SM_Chr_ScifiWorlds_SpaceSuit_Male_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://con0bomnioc13"
+},
+"Root Scene_SM_Chr_ScifiWorlds_SpaceSuit_Male_02": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Male_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bgeoqlrwqyu3e"
+},
+"Root Scene_SM_Chr_ScifiWorlds_Strider_Male_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Strider_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dtb6336ms7lri"
+},
+"SM_Chr_ScifiWorlds_Female_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dwbuqsi1s3phk"
+},
+"SM_Chr_ScifiWorlds_Male_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d0y13yo0dbxn6"
+},
+"SM_Chr_ScifiWorlds_Scavenger_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Scavenger_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dsgmtwyk658ix"
+},
+"SM_Chr_ScifiWorlds_Scavenger_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Scavenger_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c14dvt1jmctbk"
+},
+"SM_Chr_ScifiWorlds_Scavenger_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Scavenger_03.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://3jqadmn12dea"
+},
+"SM_Chr_ScifiWorlds_Soldier_Female_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Soldier_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://usx1icp3ud1k"
+},
+"SM_Chr_ScifiWorlds_Soldier_Male_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Soldier_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://7ysq8ogtw7ii"
+},
+"SM_Chr_ScifiWorlds_Soldier_Male_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Soldier_Male_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cipfretp0wlbq"
+},
+"SM_Chr_ScifiWorlds_SpaceSuit_Alien_Female_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Alien_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://obk6l5nvcjpc"
+},
+"SM_Chr_ScifiWorlds_SpaceSuit_Alien_Male_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Alien_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ba1256wlyavlq"
+},
+"SM_Chr_ScifiWorlds_SpaceSuit_Female_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Female_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://s8078yh0gcf6"
+},
+"SM_Chr_ScifiWorlds_SpaceSuit_Female_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Female_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://csmoj6mbv0i23"
+},
+"SM_Chr_ScifiWorlds_SpaceSuit_Male_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://con0bomnioc13"
+},
+"SM_Chr_ScifiWorlds_SpaceSuit_Male_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_SpaceSuit_Male_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bgeoqlrwqyu3e"
+},
+"SM_Chr_ScifiWorlds_Strider_Male_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_ScifiWorlds_Strider_Male_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dtb6336ms7lri"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

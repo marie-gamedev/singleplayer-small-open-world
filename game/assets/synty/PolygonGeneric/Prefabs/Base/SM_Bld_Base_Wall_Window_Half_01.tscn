@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://77k5mf7vofda"]
+
+[ext_resource type="ArrayMesh" uid="uid://bknaxmcrycthb" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Wall_Window_Half_01.res" id="1_ry6ke"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_bjf1i"]
+[ext_resource type="Material" uid="uid://d2ri0373g4gkm" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Brick_mat.tres" id="3_nqlkc"]
+[ext_resource type="Material" uid="uid://72kx2c5sl6hg" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Plaster_mat.tres" id="4_no01b"]
+[ext_resource type="ArrayMesh" uid="uid://duaqafjp0s73i" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Wall_Window_Half_01_Glass.res" id="5_bjf1i"]
+[ext_resource type="Material" uid="uid://dkerecwsrwoeh" path="res://Assets/Synty/PolygonGeneric/Materials/Generic_Glass_mat.tres" id="6_q0cnr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qonas"]
+size = Vector3(2.4999924, 1.5057446, 0.2556079)
+
+[node name="SM_Bld_Base_Wall_Window_Half_01" type="MeshInstance3D" unique_id=102196196]
+gi_mode = 2
+mesh = ExtResource("1_ry6ke")
+surface_material_override/0 = ExtResource("2_bjf1i")
+surface_material_override/1 = ExtResource("3_nqlkc")
+surface_material_override/2 = ExtResource("4_no01b")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=347927290]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=180890631]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2499962, 0.7528723, 0)
+shape = SubResource("BoxShape3D_qonas")
+
+[node name="SM_Bld_Base_Wall_Window_Half_01_Glass" type="MeshInstance3D" parent="." unique_id=1972860063]
+gi_mode = 2
+mesh = ExtResource("5_bjf1i")
+surface_material_override/0 = ExtResource("6_q0cnr")

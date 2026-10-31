@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bknr2fixip0ia"]
+
+[ext_resource type="ArrayMesh" uid="uid://cklcd87bn4x8u" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Button_01.res" id="1_1lysu"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_db6gw"]
+[ext_resource type="ArrayMesh" uid="uid://8vt2cqv5uu1f" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Button_01_Button_01.res" id="3_db6gw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ejp4k"]
+points = PackedVector3Array(-0.04659707, -0.0007280791, -0.047274537, -0.04659707, -0.0007280791, 0.04591959, -0.041424688, 0.010619531, 0.040738083, -0.041415565, 0.010619531, -0.042102154, 0.046597056, -0.0007280791, -0.047274537, 0.046597056, -0.0007280791, 0.04591959, 0.04141555, 0.010619531, 0.040738083, 0.04141555, 0.010619531, -0.042102154)
+
+[node name="SM_Gen_Prop_Button_01" type="MeshInstance3D" unique_id=1341345456]
+gi_mode = 2
+mesh = ExtResource("1_1lysu")
+surface_material_override/0 = ExtResource("2_db6gw")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=602717529]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=954337135]
+shape = SubResource("ConvexPolygonShape3D_ejp4k")
+
+[node name="SM_Gen_Prop_Button_01_Button_01" type="MeshInstance3D" parent="." unique_id=2003874135]
+gi_mode = 2
+mesh = ExtResource("3_db6gw")
+surface_material_override/0 = ExtResource("2_db6gw")

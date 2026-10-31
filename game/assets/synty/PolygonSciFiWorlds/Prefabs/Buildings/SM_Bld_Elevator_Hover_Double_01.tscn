@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c6s2ld8kwshoc"]
+
+[ext_resource type="ArrayMesh" uid="uid://bqi58kdlfjs2a" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Elevator_Hover_Double_01.res" id="1_1ixd5"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_bmdjp"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5omw6"]
+points = PackedVector3Array(-2.2167315, 0.09762707, -1.3648839, -2.1431181, -0.19798341, -1.2907425, -2.364884, 0.09762707, -1.2168689, 2.2167315, 0.09762707, -1.3648839, -2.2912707, -0.19798341, -1.1427275, 2.1431184, -0.19798341, -1.2907425, -2.364884, 0.09762707, 1.221498, 2.364884, 0.09762707, -1.2168689, -2.2912707, -0.19798341, 1.147089, 2.2908077, -0.19798341, -1.1427275, -2.2167315, 0.09762707, 1.369513, 2.364884, 0.09762707, 1.221498, -2.1431181, -0.19798341, 1.295104, 2.2908077, -0.19798341, 1.147089, 2.2167315, 0.09762707, 1.369513, 2.1431184, -0.19798341, 1.295104)
+
+[node name="SM_Bld_Elevator_Hover_Double_01" type="MeshInstance3D" unique_id=2139667828]
+gi_mode = 2
+mesh = ExtResource("1_1ixd5")
+surface_material_override/0 = ExtResource("2_bmdjp")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=456116497]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=650228257]
+shape = SubResource("ConvexPolygonShape3D_5omw6")

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c32etlsyfuxk6"]
+
+[ext_resource type="ArrayMesh" uid="uid://ds6icu3m8byw6" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vendor_Product_14.res" id="1_4y62l"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_culbt"]
+[ext_resource type="ArrayMesh" uid="uid://2gfddy5gyc23" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vendor_Product_14_Glass_01.res" id="3_culbt"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_s06ci"]
+[ext_resource type="ArrayMesh" uid="uid://cuvxympahgt0s" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vendor_Product_14_Plant_01.res" id="5_tx4i1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0c1f2"]
+points = PackedVector3Array(-0.15769461, 0.11437395, 0.02039197, -0.11621286, 0.033827327, -0.05932162, -0.029594585, 0.041210342, 0.14852329, -0.054051153, 0.5220291, 0.12336154, -0.12431429, 0.5238748, -0.05020979, -0.053624764, 0.5114673, -0.12670743, -0.019604862, 0.05223359, -0.14650927, 0.12609902, 0.04890098, -0.04916759, 0.13797703, 0.065717846, -0.02260632, 0.15344894, 0.11437395, 0.02039197, 0.025318474, 0.11437395, 0.15769465, 0.050170973, 0.5238748, 0.12428464, 0.04124722, 0.5576111, -0.10211146, 0.06186627, 0.45296717, -0.13516416, 0.13514459, 0.45296717, -0.06191223, 0.12667769, 0.5114673, 0.053593546)
+
+[node name="SM_Prop_Vendor_Product_14" type="MeshInstance3D" unique_id=1217730103]
+gi_mode = 2
+mesh = ExtResource("1_4y62l")
+surface_material_override/0 = ExtResource("2_culbt")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=729987739]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1167972165]
+shape = SubResource("ConvexPolygonShape3D_0c1f2")
+
+[node name="SM_Prop_Vendor_Product_14_Glass_01" type="MeshInstance3D" parent="." unique_id=20382342]
+gi_mode = 2
+mesh = ExtResource("3_culbt")
+surface_material_override/0 = ExtResource("4_s06ci")
+
+[node name="SM_Prop_Vendor_Product_14_Plant_01" type="MeshInstance3D" parent="." unique_id=563252422]
+gi_mode = 2
+mesh = ExtResource("5_tx4i1")
+surface_material_override/0 = ExtResource("2_culbt")

@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://4a57bygttmat"]
+
+[ext_resource type="ArrayMesh" uid="uid://hrtp7437n882" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_AlienSpikes_Tail_01.res" id="2_g1gmy"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_syw6t"]
+
+[sub_resource type="Skin" id="Skin_6byue"]
+resource_name = "Skin"
+bind_count = 6
+bind/0/name = &"Tail_Base"
+bind/0/bone = 0
+bind/0/pose = Transform3D(3.0457114e-17, -0.49740243, -0.8675199, 2.3015667e-16, 0.8675199, -0.49740243, 1, -1.8451606e-16, 1.4090265e-16, 0, 0, 0)
+bind/1/name = &"Tail_01"
+bind/1/bone = 1
+bind/1/pose = Transform3D(-1.3301537e-16, -0.8271469, -0.56198573, 1.5160654e-16, 0.56198573, -0.8271469, 1, -1.9522397e-16, 5.064814e-17, -0.23334114, -0.11369955, -1.3800363e-17)
+bind/2/name = &"Tail_02"
+bind/2/bone = 2
+bind/2/pose = Transform3D(-1.343722e-16, -0.8355842, -0.5493623, 1.4957654e-16, 0.5493623, -0.8355842, 1, -1.9445101e-16, 5.1164777e-17, -0.5043115, -0.12137054, -4.9611256e-17)
+bind/3/name = &"Tail_03"
+bind/3/bone = 3
+bind/3/pose = Transform3D(2.3995962e-17, -0.3918838, -0.92001474, 2.2694228e-16, 0.92001474, -0.3918838, 1, -1.9938662e-16, 1.1101164e-16, -0.7384, 0.34495878, -6.056712e-17)
+bind/4/name = &"Tail_04"
+bind/4/bone = 4
+bind/4/pose = Transform3D(2.1629283e-16, 0.184636, -0.982807, 6.4599296e-16, 0.982807, 0.184636, 1, -6.7482183e-16, 9.330055e-17, -0.6396579, 0.8414803, -4.0523692e-16)
+bind/5/name = &"Tail_05"
+bind/5/bone = 5
+bind/5/pose = Transform3D(1, -2.7069622e-16, -6.5352986e-19, 2.7069622e-16, 1, -3.330669e-16, 6.5352986e-19, 3.330669e-16, 1, -1.7955361e-16, 0.66079175, 1.0401524)
+
+[node name="BR_Tail" type="Node3D" unique_id=1235817314]
+
+[node name="Skeleton3D" type="Skeleton3D" parent="." unique_id=72351395]
+bones/0/name = "Tail_Base"
+bones/0/parent = -1
+bones/0/rest = Transform3D(5.9604645e-08, 0, 0.99999994, -0.4974024, 0.86752, 0, -0.8675199, -0.4974024, 5.9604645e-08, 0, 0, 0)
+bones/0/enabled = true
+bones/0/position = Vector3(0, 0, 0)
+bones/0/rotation = Quaternion(-0.18198906, 0.6832862, -0.18198906, 0.6832862)
+bones/0/scale = Vector3(1, 1, 1)
+bones/1/name = "Tail_01"
+bones/1/parent = 0
+bones/1/rest = Transform3D(0.89895874, 0.43803334, 0, -0.43803334, 0.89895874, 0, 0, 0, 1, 0.25956824, -5.3290704e-17, 7.888609e-33)
+bones/1/enabled = true
+bones/1/position = Vector3(0.25956824, -5.3290704e-17, 7.888609e-33)
+bones/1/rotation = Quaternion(0, 0, -0.22476797, 0.9744123)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/name = "Tail_02"
+bones/2/parent = 1
+bones/2/rest = Transform3D(0.9998847, 0.015183087, 0, -0.015183087, 0.9998847, 0, 0, 0, 1, 0.272755, 1.7763568e-17, 3.979343e-17)
+bones/2/enabled = true
+bones/2/position = Vector3(0.272755, 1.7763568e-17, 3.979343e-17)
+bones/2/rotation = Quaternion(0, 0, -0.007591762, 0.9999712)
+bones/2/scale = Vector3(1, 1, 1)
+bones/3/name = "Tail_03"
+bones/3/parent = 2
+bones/3/rest = Transform3D(0.83287334, -0.55346364, 0, 0.55346364, 0.83287334, 0, 0, 0, 1, 0.30160427, -1.0480505e-15, 4.5368408e-17)
+bones/3/enabled = true
+bones/3/position = Vector3(0.30160427, -1.0480505e-15, 4.5368408e-17)
+bones/3/rotation = Quaternion(0, 0, 0.28907323, 0.957307)
+bones/3/scale = Vector3(1, 1, 1)
+bones/4/name = "Tail_04"
+bones/4/parent = 3
+bones/4/rest = Transform3D(0.83184105, -0.55501395, 0, 0.55501395, 0.83184105, 0, 0, 0, 1, 0.26072705, 8.8817837e-17, -1.0216724e-17)
+bones/4/enabled = true
+bones/4/position = Vector3(0.26072705, 8.8817837e-17, -1.0216724e-17)
+bones/4/rotation = Quaternion(0, 0, 0.28996462, 0.9570374)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/name = "Tail_05"
+bones/5/parent = 4
+bones/5/rest = Transform3D(0, 0.184636, -0.982807, 0, 0.982807, 0.184636, 1, 0, 0, 0.26060516, 0, -5.633478e-17)
+bones/5/enabled = true
+bones/5/position = Vector3(0.26060516, 0, -5.633478e-17)
+bones/5/rotation = Quaternion(-0.065561086, -0.7040609, -0.065561086, 0.7040609)
+bones/5/scale = Vector3(1, 1, 1)
+
+[node name="SM_Chr_AlienSpikes_Tail_01" type="MeshInstance3D" parent="Skeleton3D" unique_id=1364293389]
+lod_bias = 128.0
+mesh = ExtResource("2_g1gmy")
+skin = SubResource("Skin_6byue")
+skeleton = NodePath("..")
+surface_material_override/0 = ExtResource("2_syw6t")

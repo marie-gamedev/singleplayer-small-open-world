@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b84trtbalve43"]
+
+[ext_resource type="ArrayMesh" uid="uid://l5qdwmq1t17t" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_05.res" id="1_tqa40"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_3drj7"]
+[ext_resource type="Shape3D" uid="uid://jj4grqrxx7dq" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Vendor_05_Collision.res" id="3_1qwvk"]
+[ext_resource type="ArrayMesh" uid="uid://dvi248p20xago" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_05_Door_01.res" id="3_3drj7"]
+[ext_resource type="ArrayMesh" uid="uid://s5vuwxirtk38" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_05_Window_01.res" id="4_1qwvk"]
+[ext_resource type="ArrayMesh" uid="uid://b1lo8ldu7tl8c" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_05_Window_02.res" id="5_sfhjx"]
+
+[node name="SM_Bld_Vendor_05" type="MeshInstance3D" unique_id=699914438]
+gi_mode = 2
+mesh = ExtResource("1_tqa40")
+surface_material_override/0 = ExtResource("2_3drj7")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=518588223]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=619918986]
+shape = ExtResource("3_1qwvk")
+
+[node name="SM_Bld_Vendor_05_Door_01" type="MeshInstance3D" parent="." unique_id=1460226877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38729212, 1.1159462, 1.117204)
+gi_mode = 2
+mesh = ExtResource("3_3drj7")
+surface_material_override/0 = ExtResource("2_3drj7")
+
+[node name="SM_Bld_Vendor_05_Window_01" type="MeshInstance3D" parent="." unique_id=1510319727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8875662, 0.67509526, 0.96212727)
+gi_mode = 2
+mesh = ExtResource("4_1qwvk")
+surface_material_override/0 = ExtResource("2_3drj7")
+
+[node name="SM_Bld_Vendor_05_Window_02" type="MeshInstance3D" parent="." unique_id=1950302128]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.88770473, 1.9495938, 0.89082474)
+gi_mode = 2
+mesh = ExtResource("5_sfhjx")
+surface_material_override/0 = ExtResource("2_3drj7")

@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://j3otau6he5f8"]
+
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_51ygk"]
+[ext_resource type="Texture2D" uid="uid://be6bllibhm41v" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Rock.png" id="2_gvowg"]
+[ext_resource type="Texture2D" uid="uid://ud1d1mlcum1o" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_Rock_Normals.png" id="3_poxv6"]
+
+[resource]
+resource_name = "Generic_Rock_mat"
+render_priority = 0
+shader = ExtResource("1_51ygk")
+shader_parameter/Albedo_Tiling = Vector2(1, 1)
+shader_parameter/Albedo_Offset = Vector2(0, 0)
+shader_parameter/Albedo_Map = ExtResource("2_gvowg")
+shader_parameter/BaseColor = Color(1, 1, 1, 1)
+shader_parameter/Metallic = 0.0
+shader_parameter/Smoothness = 0.2
+shader_parameter/Enable_Emission = false
+shader_parameter/Emission_Color = Color(0, 0, 0, 1)
+shader_parameter/Normal_Tiling = Vector2(1, 1)
+shader_parameter/Normal_Offset = Vector2(0, 0)
+shader_parameter/Normal_Map = ExtResource("3_poxv6")
+shader_parameter/Normal_Strength = 1.0
+shader_parameter/Alpha_Clip_Threshold = 0.5

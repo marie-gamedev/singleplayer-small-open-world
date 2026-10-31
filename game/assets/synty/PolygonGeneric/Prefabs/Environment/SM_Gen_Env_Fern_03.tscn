@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://drfxxpiuokkc5"]
+
+[ext_resource type="ArrayMesh" uid="uid://co1sjwwqax30k" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Fern_03.res" id="1_dt3a1"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_o37eg"]
+
+[node name="SM_Gen_Env_Fern_03" type="MeshInstance3D" unique_id=89555620]
+gi_mode = 2
+mesh = ExtResource("1_dt3a1")
+surface_material_override/0 = ExtResource("2_o37eg")

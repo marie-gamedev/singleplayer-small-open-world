@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cfbqjfwf8efp2"]
+
+[ext_resource type="ArrayMesh" uid="uid://cwxtb8sgxxcg8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_18.res" id="1_idlcv"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_pb5g5"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6falj"]
+points = PackedVector3Array(-0.44670427, 0.044008955, -0.13904068, 0.13886207, 0.043846734, 0.44673064, -0.31748247, 0.048713375, 0.34277806, -0.36218953, 1.0332352, 0.11292842, -0.3394423, 1.1093171, -0.11176297, -0.14162886, 0.040764526, -0.44643947, 0.44638717, 0.040602304, 0.14151755, 0.26003486, 1.0825505, 0.2619941, -0.11310732, 1.0332352, 0.3620998, -0.123693526, 1.6495144, 0.17815009, -0.17819941, 1.6495144, -0.12172982, 0.3178653, 0.04222452, -0.34353608, 0.4470871, 0.039628975, -0.13982755, 0.1353625, 1.0822262, -0.33418122, 0.33405083, 1.0822262, -0.13554353, 0.14288658, 1.6968832, 0.040100425)
+
+[node name="SM_Bld_Greeble_18" type="MeshInstance3D" unique_id=350307529]
+gi_mode = 2
+mesh = ExtResource("1_idlcv")
+surface_material_override/0 = ExtResource("2_pb5g5")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1769836239]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=397696383]
+shape = SubResource("ConvexPolygonShape3D_6falj")

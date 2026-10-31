@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://di7i2kx8078p5"]
+
+[ext_resource type="ArrayMesh" uid="uid://brhlvxo7cctkj" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Cliff_01.res" id="1_ak84a"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_pn7ex"]
+
+[node name="SM_Gen_Env_Cliff_01" type="MeshInstance3D" unique_id=1983150162]
+mesh = ExtResource("1_ak84a")
+surface_material_override/0 = ExtResource("2_pn7ex")

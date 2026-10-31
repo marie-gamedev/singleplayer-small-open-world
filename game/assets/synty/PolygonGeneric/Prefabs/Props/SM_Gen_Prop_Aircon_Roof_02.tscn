@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dv4o84su0okbg"]
+
+[ext_resource type="ArrayMesh" uid="uid://tty7qlswqhx8" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Aircon_Roof_02.res" id="1_uodgg"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_ck55b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ahr12"]
+size = Vector3(0.7921066, 1.0838894, 0.7950344)
+
+[node name="SM_Gen_Prop_Aircon_Roof_02" type="MeshInstance3D" unique_id=745661144]
+gi_mode = 2
+mesh = ExtResource("1_uodgg")
+surface_material_override/0 = ExtResource("2_ck55b")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1476721781]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=635283907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033382416, 0.531491, -0.001578331)
+shape = SubResource("BoxShape3D_ahr12")

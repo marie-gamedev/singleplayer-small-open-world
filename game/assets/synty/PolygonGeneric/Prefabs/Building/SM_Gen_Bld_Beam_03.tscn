@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cxl2045w10om6"]
+
+[ext_resource type="ArrayMesh" uid="uid://q1gxfbq51blf" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Bld_Beam_03.res" id="1_gabt4"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_22854"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ijyet"]
+size = Vector3(0.368506, 0.3600464, 4.99992)
+
+[node name="SM_Gen_Bld_Beam_03" type="MeshInstance3D" unique_id=1888240409]
+gi_mode = 2
+mesh = ExtResource("1_gabt4")
+surface_material_override/0 = ExtResource("2_22854")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=971197433]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1825147587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.954636e-06, 7.450581e-09, 2.4999795)
+shape = SubResource("BoxShape3D_ijyet")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c2flihnmb4j7v"]
+
+[ext_resource type="ArrayMesh" uid="uid://m435dnwobymx" path="res://assets/Synty/PolygonGeneric/Models/Base/extracted/SM_Bld_Base_Roof_Cap_Angle_01.res" id="1_mv72u"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_dydcl"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_i60r0"]
+points = PackedVector3Array(0.08902639, -2.8267596, 2.4999917, -0.08905218, -2.8267596, 2.499747, -0.13177246, -2.8831928, 2.499747, -0.13177246, -3.011648, 2.499747, 0.13177246, -3.011648, 2.499747, 0.13177246, -2.8831928, 2.499747, 0.08902639, 0.17354369, -2.6822091e-09, -0.08905218, 0.17354369, -2.6822091e-09, -0.13177246, 0.11679888, -2.6822091e-09, -0.13177246, -0.011656284, -2.6822091e-09, 0.13174668, -0.011656284, -2.6822091e-09, 0.13174668, 0.11679888, -2.6822091e-09)
+
+[node name="SM_Bld_Base_Roof_Cap_Angle_01" type="MeshInstance3D" unique_id=588081624]
+gi_mode = 2
+mesh = ExtResource("1_mv72u")
+surface_material_override/0 = ExtResource("2_dydcl")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1818030717]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=291785571]
+shape = SubResource("ConvexPolygonShape3D_i60r0")

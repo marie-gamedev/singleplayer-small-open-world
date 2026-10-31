@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dvqyl5gqxo06r"]
+
+[ext_resource type="ArrayMesh" uid="uid://2r5unqgdanq3" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Poster_06.res" id="1_i1a8c"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_jnees"]
+[ext_resource type="Material" uid="uid://ctijylpr34dw5" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_16_mat.tres" id="3_44hcg"]
+
+[node name="SM_Prop_Poster_06" type="MeshInstance3D" unique_id=1503975464]
+gi_mode = 2
+mesh = ExtResource("1_i1a8c")
+surface_material_override/0 = ExtResource("2_jnees")
+surface_material_override/1 = ExtResource("3_44hcg")

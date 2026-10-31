@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bhuh0r4xeuqjk"]
+
+[ext_resource type="ArrayMesh" uid="uid://btwys3vsmjnc5" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Light_Roof_03.res" id="1_myt8a"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_ffvuo"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nfcod"]
+points = PackedVector3Array(-0.010641694, -0.06282433, -0.17093436, -0.12284666, -0.06282433, -0.122846514, -0.098652154, 7.450581e-09, -0.12980704, 0.11939962, 7.450581e-09, -0.11943319, 0.12284641, -0.06282433, -0.122846514, 0.005186796, -0.08867325, -0.09430168, -0.17093451, -0.06282433, 0.01064159, -0.16621608, 7.450581e-09, 0.0103738755, -0.068199866, -0.08873405, 0.0681663, 0.15574159, 7.450581e-09, -0.036341935, 0.1709008, -0.06282433, 0.01064159, 0.06816615, -0.08873405, 0.0681663, -0.12284666, -0.06282433, 0.12277962, -0.114246406, 7.450581e-09, 0.1193663, 0.010674909, -0.06282433, 0.17090096, 0.11939962, 7.450581e-09, 0.1193663)
+
+[node name="SM_Gen_Prop_Light_Roof_03" type="MeshInstance3D" unique_id=244997019]
+gi_mode = 2
+mesh = ExtResource("1_myt8a")
+surface_material_override/0 = ExtResource("2_ffvuo")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1606448796]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=411278150]
+shape = SubResource("ConvexPolygonShape3D_nfcod")

@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://bxy7akp2yaote"]
+
+[ext_resource type="ArrayMesh" uid="uid://di1np50guo6ao" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02.res" id="1_xgle4"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_m3bgk"]
+[ext_resource type="ArrayMesh" uid="uid://cdseqt7abq3gn" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Leg_01.res" id="3_bmdxk"]
+[ext_resource type="ArrayMesh" uid="uid://ctewm6n10lekh" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Leg_01_Foot_01.res" id="4_q00dd"]
+[ext_resource type="ArrayMesh" uid="uid://d1y85y85i4hue" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Leg_03.res" id="5_dedxw"]
+[ext_resource type="ArrayMesh" uid="uid://gmheqixjfayx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Leg_03_Foot_01.res" id="6_rftlg"]
+[ext_resource type="ArrayMesh" uid="uid://d23hfuey3sb5c" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Leg_02.res" id="7_6vh4n"]
+[ext_resource type="ArrayMesh" uid="uid://dxo85jkrpgwmm" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Leg_02_Foot_01.res" id="8_1aw4b"]
+[ext_resource type="ArrayMesh" uid="uid://d0hw5p6esqocu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Motor_01.res" id="9_kwwt0"]
+[ext_resource type="ArrayMesh" uid="uid://ca0o6lm60g7gk" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Extension_01.res" id="10_iihao"]
+[ext_resource type="ArrayMesh" uid="uid://cuddxp1cdrs0x" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Extension_02.res" id="11_41npc"]
+[ext_resource type="ArrayMesh" uid="uid://dpx5a186ce3ag" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Extension_03.res" id="12_mo2mv"]
+[ext_resource type="ArrayMesh" uid="uid://bwo7o5towldex" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Drill_Head_01.res" id="13_hk6kx"]
+[ext_resource type="ArrayMesh" uid="uid://beo4lt373jvgt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Drill_Head_01_Cone_01.res" id="14_lme0a"]
+[ext_resource type="ArrayMesh" uid="uid://bb5cba4v5qpgv" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Drill_Head_01_Cone_02.res" id="15_qxh7d"]
+[ext_resource type="ArrayMesh" uid="uid://ct3ko25ojar7v" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Drill_02_Drill_Head_01_Cone_03.res" id="16_rn20r"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rk4c7"]
+points = PackedVector3Array(-0.4648403, 0.896032, -1.0651234, -1.0683104, 0.7206497, 0.11418426, -0.91099465, 0.9788333, -0.5541508, -0.34802586, 2.3049579, -0.41116762, 0.17273629, 2.3352752, -0.4784062, 0.25842857, 0.98845, -1.0323143, 0.261626, 0.94916826, -1.0444658, 0.46264064, 0.6849539, -0.9541393, 0.6069534, 0.682346, 0.86515, -0.21330559, 0.8282262, 1.0038801, -0.8562112, 0.89782494, 0.7922406, -0.6328143, 2.1721172, 0.28774893, -0.17557538, 2.3474996, 0.46333873, 0.5555806, 2.1646194, 0.42283356, 1.0249699, 0.97426945, -0.34635937, 1.1093832, 0.895869, 0.36531627)
+
+[node name="SM_Prop_Drill_02" type="MeshInstance3D" unique_id=1967931365]
+gi_mode = 2
+mesh = ExtResource("1_xgle4")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=420722654]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=17712360]
+shape = SubResource("ConvexPolygonShape3D_rk4c7")
+
+[node name="SM_Prop_Drill_02_Leg_01" type="MeshInstance3D" parent="." unique_id=578752011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.79617834, -1.0143442)
+gi_mode = 2
+mesh = ExtResource("3_bmdxk")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Leg_01_Foot_01" type="MeshInstance3D" parent="SM_Prop_Drill_02_Leg_01" unique_id=2106600180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32008743, -0.60105664, -0.632406)
+gi_mode = 2
+mesh = ExtResource("4_q00dd")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Leg_03" type="MeshInstance3D" parent="." unique_id=363555369]
+transform = Transform3D(-0.50000006, -1.640716e-17, 0.8660254, -6.123234e-17, 1, -1.6407156e-17, -0.8660254, -6.123234e-17, -0.50000006, -0.87844783, 0.79617834, 0.5071721)
+gi_mode = 2
+mesh = ExtResource("5_dedxw")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Leg_03_Foot_01" type="MeshInstance3D" parent="SM_Prop_Drill_02_Leg_03" unique_id=306011757]
+transform = Transform3D(1, 0, 0, 0, 1, 3.3087225e-24, 0, 0, 1, 0.32008746, -0.60105664, -0.632406)
+gi_mode = 2
+mesh = ExtResource("6_rftlg")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Leg_02" type="MeshInstance3D" parent="." unique_id=601788048]
+transform = Transform3D(-0.50000006, -2.285222e-16, -0.8660254, -6.1232336e-17, 1, -2.285222e-16, 0.8660254, -6.1232356e-17, -0.50000006, 0.87844783, 0.79617834, 0.5071721)
+gi_mode = 2
+mesh = ExtResource("7_6vh4n")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Leg_02_Foot_01" type="MeshInstance3D" parent="SM_Prop_Drill_02_Leg_02" unique_id=1922447699]
+transform = Transform3D(1, 0, 0, 6.617445e-24, 1, 3.3087225e-24, 0, 3.3087225e-24, 1, 0.3200875, -0.60105664, -0.632406)
+gi_mode = 2
+mesh = ExtResource("8_1aw4b")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Motor_01" type="MeshInstance3D" parent="." unique_id=1523845480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3770244, 0)
+gi_mode = 2
+mesh = ExtResource("9_kwwt0")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Extension_01" type="MeshInstance3D" parent="SM_Prop_Drill_02_Motor_01" unique_id=1790442491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.9029024, 0)
+gi_mode = 2
+mesh = ExtResource("10_iihao")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Extension_02" type="MeshInstance3D" parent="SM_Prop_Drill_02_Motor_01/SM_Prop_Drill_02_Extension_01" unique_id=1913782899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.42784762, -2.842171e-16)
+gi_mode = 2
+mesh = ExtResource("11_41npc")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Extension_03" type="MeshInstance3D" parent="SM_Prop_Drill_02_Motor_01/SM_Prop_Drill_02_Extension_01/SM_Prop_Drill_02_Extension_02" unique_id=1292505543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.055526316, 0)
+gi_mode = 2
+mesh = ExtResource("12_mo2mv")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Drill_Head_01" type="MeshInstance3D" parent="SM_Prop_Drill_02_Motor_01/SM_Prop_Drill_02_Extension_01/SM_Prop_Drill_02_Extension_02/SM_Prop_Drill_02_Extension_03" unique_id=474545123]
+transform = Transform3D(0.9006477, 0, 0.43455002, 0, 1, 0, -0.43455002, 0, 0.9006477, 9.094947e-15, -0.15381151, -6.338041e-14)
+gi_mode = 2
+mesh = ExtResource("13_hk6kx")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Drill_Head_01_Cone_01" type="MeshInstance3D" parent="SM_Prop_Drill_02_Motor_01/SM_Prop_Drill_02_Extension_01/SM_Prop_Drill_02_Extension_02/SM_Prop_Drill_02_Extension_03/SM_Prop_Drill_02_Drill_Head_01" unique_id=742354605]
+transform = Transform3D(0.9999919, 0.002289638, 0.003309369, 0, 0.8223632, -0.56896293, -0.0040242076, 0.56895834, 0.8223565, -0.0007983744, -0.3965364, -0.26989508)
+gi_mode = 2
+mesh = ExtResource("14_lme0a")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Drill_Head_01_Cone_02" type="MeshInstance3D" parent="SM_Prop_Drill_02_Motor_01/SM_Prop_Drill_02_Extension_01/SM_Prop_Drill_02_Extension_02/SM_Prop_Drill_02_Extension_03/SM_Prop_Drill_02_Drill_Head_01" unique_id=1600447822]
+transform = Transform3D(-0.4965109, -0.4938771, -0.7138363, 0, 0.8223632, -0.5689629, 0.8680304, -0.28249627, -0.40831226, 0.23123178, -0.3965364, 0.12586269)
+gi_mode = 2
+mesh = ExtResource("15_qxh7d")
+surface_material_override/0 = ExtResource("2_m3bgk")
+
+[node name="SM_Prop_Drill_02_Drill_Head_01_Cone_03" type="MeshInstance3D" parent="SM_Prop_Drill_02_Motor_01/SM_Prop_Drill_02_Extension_01/SM_Prop_Drill_02_Extension_02/SM_Prop_Drill_02_Extension_03/SM_Prop_Drill_02_Drill_Head_01" unique_id=1522319734]
+transform = Transform3D(-0.50348103, 0.49158746, 0.71052694, 0, 0.8223632, -0.5689629, -0.8640062, -0.28646207, -0.41404432, -0.2275196, -0.3965364, 0.12892778)
+gi_mode = 2
+mesh = ExtResource("16_rn20r")
+surface_material_override/0 = ExtResource("2_m3bgk")

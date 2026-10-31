@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c6nyssjrtwk48"]
+
+[ext_resource type="ArrayMesh" uid="uid://db8amcrtyujyy" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Flowers_08.res" id="1_nk4r6"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_jd8u1"]
+
+[node name="SM_Gen_Env_Flowers_08" type="MeshInstance3D" unique_id=1632633500]
+gi_mode = 2
+mesh = ExtResource("1_nk4r6")
+surface_material_override/0 = ExtResource("2_jd8u1")

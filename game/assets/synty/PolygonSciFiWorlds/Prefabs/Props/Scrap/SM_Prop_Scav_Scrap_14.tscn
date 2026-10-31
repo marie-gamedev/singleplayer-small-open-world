@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dcmrfm00oh7bw"]
+
+[ext_resource type="ArrayMesh" uid="uid://c56n0xe4djk28" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Scav_Scrap_14.res" id="1_36s60"]
+[ext_resource type="Material" uid="uid://b6d78llggyu43" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_03_A_mat.tres" id="2_qi47j"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ncsgx"]
+points = PackedVector3Array(0.1946367, 2.0215187, 0.8693252, -0.34446666, 2.0215187, 0.8693252, 0.8011875, 1.8191483, 0.8693252, 0.8011875, 1.8863368, 0.46478087, -0.0075467825, 1.1452513, -0.47834173, -0.685028, 1.2313492, -0.19138229, -0.8162811, -1.0108168, -0.073960185, -0.61393917, -1.8194933, 0.5997918, 0.1944784, -2.0218635, 0.5997918, 0.7337402, -1.9542726, 0.5320421, 0.7337402, -2.0886497, 0.12782341, 0.41645288, 0.24202824, -0.79429024, -0.7249264, 0.29875612, -0.54462576, -0.0075467825, -1.0108168, -0.613027, -0.63262177, -1.6875302, 0.1805901, -0.06406957, 0.16960931, -0.68566257)
+
+[node name="SM_Prop_Scav_Scrap_14" type="MeshInstance3D" unique_id=1805944943]
+gi_mode = 2
+mesh = ExtResource("1_36s60")
+surface_material_override/0 = ExtResource("2_qi47j")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=114463350]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1730503854]
+shape = SubResource("ConvexPolygonShape3D_ncsgx")

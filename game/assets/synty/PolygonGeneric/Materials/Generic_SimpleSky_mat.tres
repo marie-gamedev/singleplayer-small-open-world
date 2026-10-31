@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://g0t4t343cw2s"]
+
+[ext_resource type="Shader" uid="uid://dt087qyaq06u2" path="res://Assets/Synty/PolygonGeneric/Shaders/Skydome.gdshader" id="1_xfxjy"]
+[ext_resource type="Texture2D" uid="uid://dtvgmk3h5jjf4" path="res://Assets/Synty/PolygonGeneric/Textures/Generic_SimpleSky_01.png" id="2_g58hc"]
+
+[resource]
+resource_name = "Generic_SimpleSky_mat"
+render_priority = 0
+shader = ExtResource("1_xfxjy")
+shader_parameter/Albedo_Map = ExtResource("2_g58hc")
+shader_parameter/tint_color = Color(0.92099476, 0.9209946, 0.9209946, 1)
+shader_parameter/enable_albedo_map = true
+shader_parameter/blend_top_bottom_color = false
+shader_parameter/albedo_rotation_degrees = 0.0
+shader_parameter/enable_unlit = true
+shader_parameter/top_color = Color(0.1, 0.6, 0.9, 1)
+shader_parameter/bottom_color = Color(0.05, 0.3, 0.45, 1)
+shader_parameter/offset = 32.0
+shader_parameter/enable_uv_based = false
+shader_parameter/falloff = 1.0
+shader_parameter/distance_ = 1000.0

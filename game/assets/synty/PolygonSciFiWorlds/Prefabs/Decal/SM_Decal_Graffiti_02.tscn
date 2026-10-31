@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c5f3rsmuahee1"]
+
+[ext_resource type="ArrayMesh" uid="uid://bkf6sqtpfiwer" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Decal_Graffiti_02.res" id="1_k4bo7"]
+[ext_resource type="Material" uid="uid://cr10wgomongwb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Graffiti_01_mat.tres" id="2_vs70g"]
+
+[node name="SM_Decal_Graffiti_02" type="MeshInstance3D" unique_id=1890689241]
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("1_k4bo7")
+surface_material_override/0 = ExtResource("2_vs70g")

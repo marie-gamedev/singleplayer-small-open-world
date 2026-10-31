@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dqlodphqgxd7w"]
+
+[ext_resource type="ArrayMesh" uid="uid://dj5c5rkmk3wii" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_26.res" id="1_hn6gp"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_6sswj"]
+[ext_resource type="ArrayMesh" uid="uid://bqnkwobrex7y2" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_26_Terminal_01.res" id="3_6sswj"]
+[ext_resource type="ArrayMesh" uid="uid://ckyyuj1pbahhp" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_34_Screen_01.res" id="4_glgrw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fdfia"]
+points = PackedVector3Array(0.6829756, 0.059076987, -0.21353012, 0.43214113, -2.7755576e-17, -0.57641107, 0.5032733, 0.27012315, -0.52439904, 0.5503382, 0.27137163, 0.44430858, 0.6586409, -2.7755576e-17, 0.2057752, 0.20577514, -2.7755576e-17, -0.6587746, -0.52439904, 0.27012315, -0.503407, -0.21339646, 0.059076987, -0.6829756, -0.503407, 0.27012315, 0.52426547, 0.21339643, 0.059076987, 0.68284196, 0.51450473, -2.7755576e-17, 0.53509575, -0.5146384, -2.7755576e-17, -0.5352293, -0.6587746, -2.7755576e-17, -0.2059088, -0.6829756, 0.059076987, 0.2132628, -0.20590886, -2.7755576e-17, 0.65864104, -0.5352293, -2.7755576e-17, 0.51450485)
+
+[node name="SM_Bld_Greeble_26" type="MeshInstance3D" unique_id=1826126445]
+gi_mode = 2
+mesh = ExtResource("1_hn6gp")
+surface_material_override/0 = ExtResource("2_6sswj")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=147003103]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1846220167]
+shape = SubResource("ConvexPolygonShape3D_fdfia")
+
+[node name="SM_Bld_Greeble_26_Terminal_01" type="MeshInstance3D" parent="." unique_id=1503983523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.032244954, 0)
+gi_mode = 2
+mesh = ExtResource("3_6sswj")
+surface_material_override/0 = ExtResource("2_6sswj")
+
+[node name="SM_Bld_Greeble_26_Screen_01" type="MeshInstance3D" parent="SM_Bld_Greeble_26_Terminal_01" unique_id=396322454]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4245635, 0.41916975)
+gi_mode = 2
+mesh = ExtResource("4_glgrw")
+surface_material_override/0 = ExtResource("2_6sswj")

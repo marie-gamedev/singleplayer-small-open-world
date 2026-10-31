@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dj702thtfn6gt"]
+
+[ext_resource type="ArrayMesh" uid="uid://sc46vry1e31k" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Watertank_01.res" id="1_xqge1"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_3eudi"]
+
+[node name="SM_Bld_Watertank_01" type="MeshInstance3D" unique_id=182178055]
+gi_mode = 2
+mesh = ExtResource("1_xqge1")
+surface_material_override/0 = ExtResource("2_3eudi")

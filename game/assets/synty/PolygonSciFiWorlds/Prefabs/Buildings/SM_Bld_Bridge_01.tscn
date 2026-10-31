@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://vik14evt0hva"]
+
+[ext_resource type="ArrayMesh" uid="uid://dh8hvlu7ld7ju" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Bridge_01.res" id="1_w0mhp"]
+[ext_resource type="Material" uid="uid://mds51wljtc5f" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Corp_01_mat.tres" id="2_bh6n2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nyy5r"]
+size = Vector3(10.049138, 0.9257514, 10.000002)
+
+[node name="SM_Bld_Bridge_01" type="MeshInstance3D" unique_id=1608902635]
+gi_mode = 2
+mesh = ExtResource("1_w0mhp")
+surface_material_override/0 = ExtResource("2_bh6n2")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1979785621]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1892344774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4628757, 5.000001)
+shape = SubResource("BoxShape3D_nyy5r")

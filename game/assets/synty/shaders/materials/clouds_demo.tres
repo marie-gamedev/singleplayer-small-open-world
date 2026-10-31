@@ -1,0 +1,24 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://assets/synty/shaders/clouds.gdshader" id="1"]
+
+[resource]
+resource_name = "Synty Clouds Demo"
+shader = ExtResource("1")
+shader_parameter/top_color = Color(0.95, 0.98, 1, 1)
+shader_parameter/base_color = Color(0.33, 0.48, 0.67, 1)
+shader_parameter/use_environment_override = true
+shader_parameter/light_direction_override = Vector3(0.4, -0.8, -0.25)
+shader_parameter/light_intensity = 0.05
+shader_parameter/enable_fresnel = true
+shader_parameter/fresnel_power = 0.45
+shader_parameter/fresnel_color = Color(0.12, 0.2, 0.38, 1)
+shader_parameter/enable_fog = false
+shader_parameter/fog_density = 0.4
+shader_parameter/enable_scattering = true
+shader_parameter/scattering_multiplier = 0.18
+shader_parameter/scattering_edge_dist = 2.5
+shader_parameter/scattering_color = Color(1, 0.68, 0.38, 1)
+shader_parameter/cloud_speed = 0.65
+shader_parameter/cloud_strength = 0.12
+

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cpks30m0o2smy"]
+
+[ext_resource type="ArrayMesh" uid="uid://c65wnd6ohsmgt" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Bld_Pipe_Straight_02.res" id="1_mncc2"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_g3cv2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rx2db"]
+radius = 0.14
+height = 2.42
+
+[node name="SM_Gen_Bld_Pipe_Straight_02" type="MeshInstance3D" unique_id=176566977]
+gi_mode = 2
+mesh = ExtResource("1_mncc2")
+surface_material_override/0 = ExtResource("2_g3cv2")
+
+[node name="CapsuleCollider" type="StaticBody3D" parent="." unique_id=1953912242]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CapsuleCollider" unique_id=1980721331]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 1.2360243, 0.01, -3.7252903e-08)
+shape = SubResource("CapsuleShape3D_rx2db")

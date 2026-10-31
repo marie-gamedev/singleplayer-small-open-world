@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://qkcfeeki1apj"]
+
+[ext_resource type="ArrayMesh" uid="uid://b8nuats0do4ed" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Artifact_AlienRuin_05.res" id="1_2t0i6"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_4oh71"]
+[ext_resource type="ArrayMesh" uid="uid://i5ieqjadwosa" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Artifact_AlienRuin_05_Cables_01.res" id="3_4oh71"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_urie0"]
+points = PackedVector3Array(-0.14035368, 10.538998, 1.5973191, 1.0346603, 4.070056, -1.3422016, 1.0346603, 4.070056, 1.5973191, 1.0346603, 7.598268, 2.1855454, 1.0346603, 21.116997, 2.1855454, 1.0346603, 35.82065, 1.5973191, 1.0346603, 35.82065, -1.3422016, 1.4984045, 9.168207, -1.6810361, 5.789505, 3.090919, -1.4296298, 5.789505, 3.090919, 1.6847472, 8.089636, 13.47641, 2.1855454, 9.854603, 34.054882, 1.5973191, 9.265629, 36.99893, -0.75437796, 9.854603, 29.939188, -1.3422016, 8.089636, 15.245495, -1.930428, 9.854603, 29.939188, 1.5973191)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5bfa2"]
+points = PackedVector3Array(-10.137268, 34.054882, -1.3422016, -10.137268, 34.054882, 1.5973191, -8.962139, 36.99893, -0.75437796, -1.317441, 35.82065, -1.3422016, -8.374085, 13.47641, -1.930428, -1.317441, 35.82065, 1.5973191, -8.374085, 13.47641, 2.1855454, -7.7860317, 15.245495, 2.1855454, -0.73134327, 21.116997, 2.1855454, -0.14133263, 10.538998, -1.3422016, -1.2831945, 9.217993, -1.6729782, -6.07275, 3.090919, -1.4296298, -6.07275, 3.090919, 1.6847472, -0.73134327, 8.185751, 2.1855454, -1.317441, 4.070056, 1.5973191, -1.4710588, 4.7272396, -1.2833788)
+
+[node name="SM_Env_Artifact_AlienRuin_05" type="MeshInstance3D" unique_id=196609411]
+gi_mode = 2
+mesh = ExtResource("1_2t0i6")
+surface_material_override/0 = ExtResource("2_4oh71")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1036738379]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=307149966]
+shape = SubResource("ConvexPolygonShape3D_urie0")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=1080897572]
+shape = SubResource("ConvexPolygonShape3D_5bfa2")
+
+[node name="SM_Env_Artifact_AlienRuin_05_Cables_01" type="MeshInstance3D" parent="." unique_id=1030092506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016992188, 18.260542, 0.02383091)
+gi_mode = 2
+mesh = ExtResource("3_4oh71")
+surface_material_override/0 = ExtResource("2_4oh71")

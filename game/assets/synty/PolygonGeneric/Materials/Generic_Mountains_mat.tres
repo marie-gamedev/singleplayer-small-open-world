@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://beacnuebuob3s"]
+
+[resource]
+resource_name = "Generic_Mountains_mat"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+depth_draw_mode = 1
+shading_mode = 0
+albedo_color = Color(0.23754005, 0.29691142, 0.3207547, 1)
+uv1_scale = Vector3(1, 1, 0)

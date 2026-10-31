@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://df3gce7kags5b"]
+
+[ext_resource type="ArrayMesh" uid="uid://bawwhga3hy5ge" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Chef_Tank_01.res" id="1_6oxkv"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_15vqc"]
+
+[node name="SM_Chr_Attach_Chef_Tank_01" type="MeshInstance3D" unique_id=1627558611]
+gi_mode = 2
+mesh = ExtResource("1_6oxkv")
+surface_material_override/0 = ExtResource("2_15vqc")

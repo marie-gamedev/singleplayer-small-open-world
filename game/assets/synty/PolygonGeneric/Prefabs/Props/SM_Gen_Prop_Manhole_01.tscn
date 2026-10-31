@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d3fh1crvjlbvs"]
+
+[ext_resource type="ArrayMesh" uid="uid://b7jdo0nvjyp3y" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Manhole_01.res" id="1_qkno1"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_hhhw0"]
+
+[node name="SM_Gen_Prop_Manhole_01" type="MeshInstance3D" unique_id=1796869291]
+mesh = ExtResource("1_qkno1")
+surface_material_override/0 = ExtResource("2_hhhw0")

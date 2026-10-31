@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://icx5d3l20l6y"]
+
+[ext_resource type="ArrayMesh" uid="uid://dod71tahog4b6" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Crate_13.res" id="1_1m5qu"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_nqh43"]
+[ext_resource type="ArrayMesh" uid="uid://j7au7cd0m08d" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Crate_13_Lid_01.res" id="3_nqh43"]
+[ext_resource type="ArrayMesh" uid="uid://b6kt8hhxs3mu7" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Crate_13_Lid_02.res" id="4_2rnih"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xbink"]
+points = PackedVector3Array(0.2317127, 0.07183131, -0.484109, 0.082461834, 1.169687, -0.5951571, 0.24812132, 1.2215959, -0.48004344, 0.5215606, 0.24534881, -0.20195863, 0.55999714, 0.13398683, 0.12886238, -0.41676438, 0.076673135, 0.3876648, -0.5680382, 0.1286946, -0.26027048, -0.4376685, 0.1474989, -0.4458927, -0.5645542, 1.1661963, -0.27711356, -0.39855757, 1.2221589, 0.40648252, 0.5626945, 1.1665342, 0.12944317, 0.26689005, 1.1666468, 0.5358837, 0.08189988, 0.13173482, 0.59152395, -0.43710655, 1.1684484, 0.44516355, -0.58545834, 0.29669467, 0.18543184, -0.58545834, 1.0012366, 0.18543184)
+
+[node name="SM_Prop_Crate_13" type="MeshInstance3D" unique_id=984056355]
+gi_mode = 2
+mesh = ExtResource("1_1m5qu")
+surface_material_override/0 = ExtResource("2_nqh43")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=904957054]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1634737280]
+shape = SubResource("ConvexPolygonShape3D_xbink")
+
+[node name="SM_Prop_Crate_13_Lid_01" type="MeshInstance3D" parent="." unique_id=532721908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2005256, 0)
+gi_mode = 2
+mesh = ExtResource("3_nqh43")
+surface_material_override/0 = ExtResource("2_nqh43")
+
+[node name="SM_Prop_Crate_13_Lid_02" type="MeshInstance3D" parent="." unique_id=694320383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10354223, 0)
+gi_mode = 2
+mesh = ExtResource("4_2rnih")
+surface_material_override/0 = ExtResource("2_nqh43")

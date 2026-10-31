@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bn8qh15c8vrpq"]
+
+[ext_resource type="ArrayMesh" uid="uid://dm2q8xyriymw8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Refinery_Pump_01.res" id="1_bc8qu"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_aqptf"]
+[ext_resource type="ArrayMesh" uid="uid://dhh2h3vy43gi8" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Refinery_Pump_01_Generator_01.res" id="3_aqptf"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kkan0"]
+points = PackedVector3Array(-1.9099412, 5.599345, 0.91732955, -0.32888246, 3.8860793, 2.235756, 4.5455737, 0.59260064, 2.4987278, 0.19786549, 4.1499953, -1.7159557, -3.5961866, 5.4953117, -0.76497626, -3.1729944, 5.5905843, 0.49688053, -3.4673536, 5.493669, 0.8821647, -2.1447763, 3.2043867, 2.3539915, 4.574928, 0.0056332396, -2.446263, 4.5455737, 0.46119002, -2.6394148, 4.4452796, 0.0056332396, 2.567019, -2.53046, 3.829682, -2.1241736, -3.359721, 0.32977942, -2.3759334, -3.6182024, 0.028630096, -1.9162424, -3.754374, 0.32977942, 1.971765, -3.2406726, 0.02534483, 2.2938542)
+
+[node name="SM_Bld_Scav_Refinery_Pump_01" type="MeshInstance3D" unique_id=16006386]
+gi_mode = 2
+mesh = ExtResource("1_bc8qu")
+surface_material_override/0 = ExtResource("2_aqptf")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=97747739]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=178030543]
+shape = SubResource("ConvexPolygonShape3D_kkan0")
+
+[node name="SM_Bld_Scav_Refinery_Pump_01_Generator_01" type="MeshInstance3D" parent="." unique_id=1339194803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1406243, 1.5758072, 0.07267571)
+gi_mode = 2
+mesh = ExtResource("3_aqptf")
+surface_material_override/0 = ExtResource("2_aqptf")

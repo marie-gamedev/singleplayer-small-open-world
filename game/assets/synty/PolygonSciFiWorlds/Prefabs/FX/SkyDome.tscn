@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://dcy7lny5pmjkt"]
+
+[ext_resource type="ArrayMesh" uid="uid://bu2td5euafjc2" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_FX_Skydome_01.res" id="1_0dw38"]
+[ext_resource type="Material" uid="uid://t1jsy7y7dn4y" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Sky/Skybox_Exp_01_mat.tres" id="2_mdhn8"]
+[ext_resource type="ArrayMesh" uid="uid://drsmtqdvgxffd" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_FX_Skydome_Planet_01.res" id="3_03ixk"]
+[ext_resource type="Material" uid="uid://rlj4joludmst" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Sky/Planet_01_mat.tres" id="4_baa8v"]
+[ext_resource type="Material" uid="uid://bnw4n6h8iyvni" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Sky/Planet_03_mat.tres" id="5_8e4y8"]
+[ext_resource type="PackedScene" uid="uid://bunuovw0rs1d2" path="res://Assets/Synty/PolygonSciFiWorlds/Prefabs/FX/SM_FX_Skydome_Sun_01.tscn" id="6_kipt3"]
+[ext_resource type="ArrayMesh" uid="uid://dqyvyu8h7u43u" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_FX_Skydone_Sun_01.res" id="7_mdhn8"]
+[ext_resource type="Material" uid="uid://cywu8i1smvp08" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Sky/Sun_01_mat.tres" id="8_rytvm"]
+[ext_resource type="ArrayMesh" uid="uid://7h7k344y72f3" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_CloudRing_01.res" id="10_baa8v"]
+[ext_resource type="PackedScene" uid="uid://bwic5pqopwygp" path="res://Assets/Synty/PolygonSciFiWorlds/Prefabs/Generic/SM_Generic_CloudRing_03.tscn" id="10_btbw0"]
+[ext_resource type="Material" uid="uid://74kh2vwfidbg" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Sky/Cloud_01_mat.tres" id="11_8e4y8"]
+[ext_resource type="PackedScene" uid="uid://3u3o2vmh58ke" path="res://Assets/Synty/PolygonSciFiWorlds/Prefabs/Generic/SM_Generic_CloudRing_01.tscn" id="13_67n6v"]
+[ext_resource type="ArrayMesh" uid="uid://c23guhxx7vmf5" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_CloudRing_02.res" id="13_kipt3"]
+[ext_resource type="ArrayMesh" uid="uid://gcu1q5jrumkt" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_CloudRing_03.res" id="15_3li88"]
+[ext_resource type="PackedScene" uid="uid://jdyl1l8bmys7" path="res://Assets/Synty/PolygonSciFiWorlds/Prefabs/Generic/SM_Generic_CloudRing_02.tscn" id="15_ftgkq"]
+
+[node name="SkyDome" type="Node3D" unique_id=1394972558]
+
+[node name="SM_FX_Skydome_01" type="MeshInstance3D" parent="." unique_id=1855674396]
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("1_0dw38")
+surface_material_override/0 = ExtResource("2_mdhn8")
+
+[node name="GameObject_Planet_Pivot_01" type="Node3D" parent="." unique_id=1763536374]
+transform = Transform3D(0.58282393, 0.3956362, 0.7097804, -0.07525745, 0.89599633, -0.43763784, -0.809106, 0.20164952, 0.5519827, 0, 0, 0)
+
+[node name="SM_FX_Skydome_Planet_01" type="MeshInstance3D" parent="GameObject_Planet_Pivot_01" unique_id=1974209770]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, -1.4901161e-08, 0, -3.7252903e-08, 1, 6.1035156e-05, 1.5258789e-05, -1217)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("3_03ixk")
+surface_material_override/0 = ExtResource("4_baa8v")
+
+[node name="GameObject_Planet_Pivot_02" type="Node3D" parent="." unique_id=69745176]
+transform = Transform3D(0.99592376, 0.052254017, 0.073521465, -0.040583547, 0.9875282, -0.15212157, -0.08055348, 0.14851773, 0.9856235, 0, 0, 0)
+
+[node name="SM_FX_Skydome_Planet_02" type="MeshInstance3D" parent="GameObject_Planet_Pivot_02" unique_id=2143830713]
+transform = Transform3D(2.1058884, -5.5879354e-09, -1.4901161e-08, 1.8626451e-09, 2.1058888, -2.9802322e-08, 0, 0, 2.105889, 29, -52.999977, -1162)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("3_03ixk")
+surface_material_override/0 = ExtResource("5_8e4y8")
+
+[node name="GameObject_Sun_Pivot" type="Node3D" parent="." unique_id=1031162107]
+transform = Transform3D(0.93805254, 0.26112235, 0.22775576, -0.045307204, 0.74411064, -0.6665183, -0.34351826, 0.6149102, 0.7098456, 0, 0, 0)
+
+[node name="SM_FX_Skydone_Sun_01" parent="GameObject_Sun_Pivot" unique_id=28705843 instance=ExtResource("6_kipt3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.005, 0, -819.7)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("7_mdhn8")
+surface_material_override/0 = ExtResource("8_rytvm")
+
+[node name="GameObject_Planet_Pivot_03" type="Node3D" parent="." unique_id=1142453812]
+transform = Transform3D(-0.5201577, 0.73146564, 0.44090143, 0.5681896, 0.68179226, -0.46078184, -0.63764924, 0.010836363, -0.7702507, 0, 0, 0)
+
+[node name="SM_FX_Skydome_Planet_03" type="MeshInstance3D" parent="GameObject_Planet_Pivot_03" unique_id=967587409]
+transform = Transform3D(2.9398246, 1.4901161e-08, 0, -1.4714897e-07, 2.939826, 2.4214387e-08, -1.1920929e-07, 9.313226e-08, 2.9398258, 0, -1.1444092e-05, -1122)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("3_03ixk")
+surface_material_override/0 = ExtResource("5_8e4y8")
+
+[node name="SM_Generic_CloudRing_01" parent="." unique_id=1984635479 instance=ExtResource("13_67n6v")]
+transform = Transform3D(0.8743009, 0, 0, 0, 0.8743008, 0, 0, 0, 0.8743008, 0, 0, 0)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("10_baa8v")
+surface_material_override/0 = ExtResource("11_8e4y8")
+
+[node name="SM_Generic_CloudRing_02" parent="." unique_id=633079226 instance=ExtResource("15_ftgkq")]
+transform = Transform3D(0.8743009, 0, 0, 0, 0.8743008, 0, 0, 0, 0.8743008, 0, 0, 0)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("13_kipt3")
+surface_material_override/0 = ExtResource("11_8e4y8")
+
+[node name="SM_Generic_CloudRing_03" parent="." unique_id=561670139 instance=ExtResource("10_btbw0")]
+transform = Transform3D(0.8743009, 0, 0, 0, 0.8743008, 0, 0, 0, 0.8743008, 0, 0, 0)
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("15_3li88")
+surface_material_override/0 = ExtResource("11_8e4y8")
+
+[editable path="GameObject_Sun_Pivot/SM_FX_Skydone_Sun_01"]
+[editable path="SM_Generic_CloudRing_01"]
+[editable path="SM_Generic_CloudRing_02"]
+[editable path="SM_Generic_CloudRing_03"]

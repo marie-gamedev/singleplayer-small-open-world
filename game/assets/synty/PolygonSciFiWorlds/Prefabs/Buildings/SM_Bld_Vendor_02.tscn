@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dsxk2vnyqnm5a"]
+
+[ext_resource type="ArrayMesh" uid="uid://ccxcxu1mptpxp" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_02.res" id="1_n4spg"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_amt5b"]
+[ext_resource type="Shape3D" uid="uid://d3y82u5gipjln" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Vendor_02_Collision.res" id="3_4xngn"]
+[ext_resource type="ArrayMesh" uid="uid://djquyfm3gurod" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_02_Door_01.res" id="3_amt5b"]
+[ext_resource type="ArrayMesh" uid="uid://b2gyacl67cq1l" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_02_Door_02.res" id="4_4xngn"]
+
+[node name="SM_Bld_Vendor_02" type="MeshInstance3D" unique_id=1509752070]
+gi_mode = 2
+mesh = ExtResource("1_n4spg")
+surface_material_override/0 = ExtResource("2_amt5b")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=927074]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1440727751]
+shape = ExtResource("3_4xngn")
+
+[node name="SM_Bld_Vendor_02_Door_01" type="MeshInstance3D" parent="." unique_id=1527392924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19232658, 1.1188465, -0.4208629)
+gi_mode = 2
+mesh = ExtResource("3_amt5b")
+surface_material_override/0 = ExtResource("2_amt5b")
+
+[node name="SM_Bld_Vendor_02_Door_02" type="MeshInstance3D" parent="." unique_id=875581550]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5839275, 1.1188465, -0.42086226)
+gi_mode = 2
+mesh = ExtResource("4_4xngn")
+surface_material_override/0 = ExtResource("2_amt5b")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bklcc10qesevt"]
+
+[ext_resource type="ArrayMesh" uid="uid://cg5ep8np0d3yi" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Chr_Attach_Bun_01.res" id="1_b8o80"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_w18ti"]
+
+[node name="SM_Gen_Chr_Attach_Bun_01" type="MeshInstance3D" unique_id=1952210641]
+mesh = ExtResource("1_b8o80")
+surface_material_override/0 = ExtResource("2_w18ti")

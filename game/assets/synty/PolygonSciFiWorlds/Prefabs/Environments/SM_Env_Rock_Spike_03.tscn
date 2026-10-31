@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b51tt4402duh8"]
+
+[ext_resource type="ArrayMesh" uid="uid://fqud7majiu34" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Rock_Spike_03.res" id="1_hag6g"]
+[ext_resource type="Material" uid="uid://mds51wljtc5f" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Corp_01_mat.tres" id="2_m5s2s"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hag6g"]
+points = PackedVector3Array(-1.7392827, -1.0328736, -1.8740633, -0.73494625, -0.4183359, 3.6138177, 1.1870186, -0.4183359, 3.3997571, -0.3077663, 12.402041, -0.6595714, 2.6824937, -0.84536934, -2.7966216, -3.5126512, -1.2737417, 2.117527, 3.5375435, -1.0595555, -0.23216137, -0.52101123, -0.4183359, -3.437381, -2.6576014, -0.20414972, -1.7277409, -0.73494625, 11.973669, 0.19382633, 2.8964286, -0.20414972, 1.9041777, 2.0413785, -0.4183359, -3.6514416, -1.5893062, 9.41013, -0.018811941, -1.8032413, -0.84536934, 3.6138177, 0.11872358, 11.546636, -0.018811941, -3.5126512, -0.84536934, 0.40717578, -0.52101123, 11.973669, -0.8729209, 2.0413785, -0.6325221, 3.1864078, 3.5375435, -0.6325221, -0.8729209, -2.8715363, -1.2737417, 2.9723473, 2.4692485, -1.0595555, -3.0099711, -1.8032413, -0.20414972, -2.582561, 0.54590356, -0.84536934, -3.6514416, 3.5375435, -0.6325221, -0.23216137, -3.5126512, -0.84536934, 2.117527, -1.8032413, -0.4183359, 3.6138177, -2.8715363, -0.84536934, 2.9723473, 0.11872358, 11.546636, -0.4455108, 0.97377366, -0.84536934, 3.3997571, -3.5126512, -1.2737417, 0.8345858, 2.0413785, -0.4183359, 3.1864078, 2.6824937, -0.6325221, -2.7966216)
+
+[node name="SM_Env_Rock_Spike_03" type="MeshInstance3D" unique_id=359813346]
+gi_mode = 2
+mesh = ExtResource("1_hag6g")
+surface_material_override/0 = ExtResource("2_m5s2s")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2112944548]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=561293405]
+shape = SubResource("ConvexPolygonShape3D_hag6g")

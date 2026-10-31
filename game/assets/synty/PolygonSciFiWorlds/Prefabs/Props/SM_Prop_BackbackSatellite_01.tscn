@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bvdkvsgwry5ts"]
+
+[ext_resource type="ArrayMesh" uid="uid://d30ueyy786bp2" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_BackbackSatellite_01.res" id="1_vgljg"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_k23vk"]
+[ext_resource type="ArrayMesh" uid="uid://574nnb32b4o4" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_BackbackSatellite_01_Swivel_01.res" id="3_k23vk"]
+[ext_resource type="ArrayMesh" uid="uid://ciipuos6tt1jc" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_BackbackSatellite_01_Arm_01.res" id="4_uc8x1"]
+[ext_resource type="ArrayMesh" uid="uid://cymlr8xxbhnuc" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_BackbackSatellite_01_Arm_02.res" id="5_krsum"]
+[ext_resource type="ArrayMesh" uid="uid://cvwajdoggyyxg" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_BackbackSatellite_01_Dish_01.res" id="6_uuhwm"]
+[ext_resource type="ArrayMesh" uid="uid://dnc3te2kix4jm" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_BackbackSatellite_01_Lid_01.res" id="7_iwmna"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vtd2b"]
+points = PackedVector3Array(-0.17018554, -0.29697108, -0.22505125, -0.15569244, -0.29765698, -0.0020716488, -0.16598754, 0.04332578, -0.2223025, 0.1668871, 0.04322779, -0.22217055, 0.17018554, -0.2950114, -0.22430359, -0.12797233, -0.45374477, -0.21198913, -0.13663486, -0.48431563, -0.07334156, 0.1289052, -0.33224517, -0.0004003942, -0.1512279, 0.04322779, -0.005260214, 0.07319844, 0.5166843, -0.07334156, 0.08932409, 0.5166843, -0.12176376, 0.15172768, 0.04303181, -0.005700007, 0.16742018, -0.29021025, -0.019399852, 0.13776764, 0.5166843, -0.105645016, 0.13773435, -0.48431563, -0.07334156, 0.13050446, -0.47412536, -0.19778353)
+
+[node name="SM_Prop_BackbackSatellite_01" type="MeshInstance3D" unique_id=165216049]
+gi_mode = 2
+mesh = ExtResource("1_vgljg")
+surface_material_override/0 = ExtResource("2_k23vk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=886706388]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=391496151]
+shape = SubResource("ConvexPolygonShape3D_vtd2b")
+
+[node name="SM_Prop_BackbackSatellite_01_Swivel_01" type="MeshInstance3D" parent="." unique_id=1417056822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3841857e-09, -0.03320839, -0.06967521)
+gi_mode = 2
+mesh = ExtResource("3_k23vk")
+surface_material_override/0 = ExtResource("2_k23vk")
+
+[node name="SM_Prop_BackbackSatellite_01_Arm_01" type="MeshInstance3D" parent="SM_Prop_BackbackSatellite_01_Swivel_01" unique_id=764719811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841857e-09, 1.527369e-07, -0.062657)
+gi_mode = 2
+mesh = ExtResource("4_uc8x1")
+surface_material_override/0 = ExtResource("2_k23vk")
+
+[node name="SM_Prop_BackbackSatellite_01_Arm_02" type="MeshInstance3D" parent="SM_Prop_BackbackSatellite_01_Swivel_01/SM_Prop_BackbackSatellite_01_Arm_01" unique_id=177348813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2457702, -0.02722317)
+gi_mode = 2
+mesh = ExtResource("5_krsum")
+surface_material_override/0 = ExtResource("2_k23vk")
+
+[node name="SM_Prop_BackbackSatellite_01_Dish_01" type="MeshInstance3D" parent="SM_Prop_BackbackSatellite_01_Swivel_01/SM_Prop_BackbackSatellite_01_Arm_01/SM_Prop_BackbackSatellite_01_Arm_02" unique_id=186556556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-09, 0.22770728, -0.038732722)
+gi_mode = 2
+mesh = ExtResource("6_uuhwm")
+surface_material_override/0 = ExtResource("2_k23vk")
+
+[node name="SM_Prop_BackbackSatellite_01_Lid_01" type="MeshInstance3D" parent="." unique_id=1947309529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.032414474, -0.1530996)
+gi_mode = 2
+mesh = ExtResource("7_iwmna")
+surface_material_override/0 = ExtResource("2_k23vk")

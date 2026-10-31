@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c04qp0jtpku66"]
+
+[ext_resource type="ArrayMesh" uid="uid://db1njxgjh7fai" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Crate_Building_Ladder_01.res" id="1_51hpl"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_tpwpt"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2bkmw"]
+points = PackedVector3Array(-0.51938593, 3.701377, -0.36755592, 0.48364007, 3.5389643, -0.3515382, 0.31367064, -0.016023636, -0.36755592, -0.51938593, 3.701377, 0.36947525, -0.49002668, 4.0008755, 0.34833473, -0.46646073, 4.0595694, -0.3515382, -0.3744553, 4.090926, -0.3515382, -0.22117838, 4.0595694, -0.3515382, 0.4837383, 0.07523298, -0.3515382, 0.115029275, 3.805096, 0.35150945, 0.48089075, 3.530924, 0.35150945, 0.31367064, -0.016023636, 0.36954743, -0.28107518, 4.07967, 0.35150945, -0.46390775, 4.048715, 0.35150945, 0.31367064, 3.4766526, 0.36954743, 0.48089075, 0.086489305, 0.35150945)
+
+[node name="SM_Bld_Crate_Building_Ladder_01" type="MeshInstance3D" unique_id=488686825]
+gi_mode = 2
+mesh = ExtResource("1_51hpl")
+surface_material_override/0 = ExtResource("2_tpwpt")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1000528453]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=155660592]
+shape = SubResource("ConvexPolygonShape3D_2bkmw")

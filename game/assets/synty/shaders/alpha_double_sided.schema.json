@@ -1,0 +1,56 @@
+{
+  "_Albedo_Map": {
+    "type": "texture"
+  },
+  "_Alpha_Clip_Threshold": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_BaseColor": {
+    "type": "color",
+    "default": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 0.0
+    }
+  },
+  "_Metallic": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Metallic_Smoothness_Map": {
+    "type": "texture"
+  },
+  "_Normal_Amount": {
+    "type": "float",
+    "default": 0.0
+  },
+  "_Normal_Map": {
+    "type": "texture"
+  },
+  "_Smoothness": {
+    "type": "float",
+    "default": 0.20000000298023224
+  },
+  "_USE_METALLIC_SMOOTHNESS_MAP": {
+    "type": "float",
+    "default": 0
+  },
+  "_Emission_Color": {
+    "type": "color",
+    "default": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    }
+  },
+  "_Emission_Map": {
+    "type": "texture"
+  },
+  "_Enable_Emission": {
+    "type": "bool",
+    "default": false
+  }
+}

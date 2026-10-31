@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ydsv0vd3f6kd"]
+
+[ext_resource type="ArrayMesh" uid="uid://i74t4trl2av3" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_Attach_Bag_03.res" id="1_vwk1k"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ej40m"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yxslk"]
+points = PackedVector3Array(0.15422927, 0.12484963, -0.018160317, 0.15240966, 0.1138192, 0.024915248, 0.16101424, 0.009544924, 0.051414743, 0.14910968, -0.12556551, -0.04218653, 0.14152287, 0.112740666, -0.05078751, -0.15405528, 0.12470256, -0.042216815, -0.15346931, 0.12421231, -0.013274316, 0.14932556, 0.088155076, 0.047760338, -0.14936748, 0.08349779, 0.047760338, -0.14387782, -0.09039071, 0.04157207, 0.14482282, -0.11728044, 0.029134974, -0.1491516, -0.12556551, -0.04218653, -0.13928254, -0.120540544, -0.051716253, 0.14399011, -0.11571167, -0.051706158, -0.14153393, 0.112740666, -0.05078751, -0.15158802, -0.109412074, 0.034253165)
+
+[node name="SM_Veh_Hover_Bike_Attach_Bag_03" type="MeshInstance3D" unique_id=118216721]
+gi_mode = 2
+mesh = ExtResource("1_vwk1k")
+surface_material_override/0 = ExtResource("2_ej40m")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1943884424]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1795449576]
+shape = SubResource("ConvexPolygonShape3D_yxslk")

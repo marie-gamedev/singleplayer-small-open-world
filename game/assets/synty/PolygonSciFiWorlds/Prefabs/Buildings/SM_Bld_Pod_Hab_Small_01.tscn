@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://sfe7k7jmhnnx"]
+
+[ext_resource type="ArrayMesh" uid="uid://bssmubbyrf100" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_01.res" id="1_cnbat"]
+[ext_resource type="Material" uid="uid://cuvjd7v2ydnpu" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_02_A_mat.tres" id="2_lhmb7"]
+[ext_resource type="Shape3D" uid="uid://bar554hpch5em" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Pod_Hab_Small_01_Collision.res" id="3_4yr54"]
+[ext_resource type="ArrayMesh" uid="uid://cistvottw1lk3" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_01_Glass_01.res" id="3_lhmb7"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="4_kbul2"]
+[ext_resource type="ArrayMesh" uid="uid://qgvuih6pkeq8" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Pod_Hab_Small_01_Glass_02.res" id="5_4yr54"]
+
+[node name="SM_Bld_Pod_Hab_Small_01" type="MeshInstance3D" unique_id=205336071]
+gi_mode = 2
+mesh = ExtResource("1_cnbat")
+surface_material_override/0 = ExtResource("2_lhmb7")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1413323859]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1848176577]
+shape = ExtResource("3_4yr54")
+
+[node name="SM_Bld_Pod_Hab_Small_01_Glass_01" type="MeshInstance3D" parent="." unique_id=2103489973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3414865, 2.691112, 4.5776366e-07)
+gi_mode = 2
+mesh = ExtResource("3_lhmb7")
+surface_material_override/0 = ExtResource("4_kbul2")
+
+[node name="SM_Bld_Pod_Hab_Small_01_Glass_02" type="MeshInstance3D" parent="." unique_id=1044298404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3414865, 2.691112, 4.5776366e-07)
+gi_mode = 2
+mesh = ExtResource("5_4yr54")
+surface_material_override/0 = ExtResource("4_kbul2")

@@ -1,0 +1,248 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dpkoemnyouy2"
+path="res://.godot/imported/SM_Bld_Corp_MobileSite_01.fbx-0ca895663c414d8c3a9fddc2580382f6.scn"
+
+[deps]
+
+source_file="res://Assets/Synty/PolygonSciFiWorlds/Models/SM_Bld_Corp_MobileSite_01.fbx"
+dest_files=["res://.godot/imported/SM_Bld_Corp_MobileSite_01.fbx-0ca895663c414d8c3a9fddc2580382f6.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_SM_Bld_Corp_MobileSite_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bal2ii584hlgi"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_DoorGlass_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_DoorGlass_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cictogi8yip14"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Door_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Door_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d3fmofuk808qy"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Glass_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Glass_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c05r5aercnr3q"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Leg_lf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c2sxuw4amps62"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Leg_lr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://kos3tbclt4vx"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Leg_rf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dadu74tf3bwkt"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Leg_rr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://djo8vpfoix1wn"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Pad_lf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cg6xn10i0a6x7"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Pad_lr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://qjmq8dg5aeqw"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Pad_rf": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bpoumrxirofma"
+},
+"Root Scene_SM_Bld_Corp_MobileSite_01_Pad_rr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bddbshti3qi6o"
+},
+"SM_Bld_Corp_MobileSite_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bal2ii584hlgi"
+},
+"SM_Bld_Corp_MobileSite_01_DoorGlass_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_DoorGlass_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cictogi8yip14"
+},
+"SM_Bld_Corp_MobileSite_01_Door_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Door_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d3fmofuk808qy"
+},
+"SM_Bld_Corp_MobileSite_01_Glass_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Glass_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c05r5aercnr3q"
+},
+"SM_Bld_Corp_MobileSite_01_Leg_lf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c2sxuw4amps62"
+},
+"SM_Bld_Corp_MobileSite_01_Leg_lr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://kos3tbclt4vx"
+},
+"SM_Bld_Corp_MobileSite_01_Leg_rf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dadu74tf3bwkt"
+},
+"SM_Bld_Corp_MobileSite_01_Leg_rr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Leg_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://djo8vpfoix1wn"
+},
+"SM_Bld_Corp_MobileSite_01_Pad_lf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_lf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cg6xn10i0a6x7"
+},
+"SM_Bld_Corp_MobileSite_01_Pad_lr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_lr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://qjmq8dg5aeqw"
+},
+"SM_Bld_Corp_MobileSite_01_Pad_rf": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_rf.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bpoumrxirofma"
+},
+"SM_Bld_Corp_MobileSite_01_Pad_rr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Corp_MobileSite_01_Pad_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bddbshti3qi6o"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

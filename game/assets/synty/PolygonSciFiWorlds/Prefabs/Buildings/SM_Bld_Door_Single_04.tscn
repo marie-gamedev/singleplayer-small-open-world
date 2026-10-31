@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://51t4tf35cg5x"]
+
+[ext_resource type="ArrayMesh" uid="uid://bmu25cxwe0fbq" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04.res" id="1_iymuw"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_li64j"]
+[ext_resource type="ArrayMesh" uid="uid://ck6j6a8grbfsc" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_01.res" id="3_li64j"]
+[ext_resource type="Shape3D" uid="uid://c1wqhkl5eo5lp" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Door_Single_04_Collision.res" id="3_nckr6"]
+[ext_resource type="ArrayMesh" uid="uid://dijxrsibi06vx" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_02.res" id="4_nckr6"]
+[ext_resource type="ArrayMesh" uid="uid://xydqy6715aba" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_04_Door_03.res" id="5_spaqw"]
+[ext_resource type="ArrayMesh" uid="uid://bfqk4p6pval0h" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Door_Single_01_Door_03_Glass.res" id="6_fykxw"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="7_e4gwu"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cejys"]
+points = PackedVector3Array(0.038360894, -0.020347, -0.09560509, 0.038360894, -0.020347, 0.11044584, 0.038360894, 1.7924172, 0.11044584, 0.079554945, 2.0807352, -0.09560509, 0.98619515, -0.020347, -0.09560509, 0.98619515, -0.020347, 0.11044584, 0.12084177, 2.2043738, 0.11044584, 0.12084177, 2.2043738, -0.09560509, 0.98619515, 0.7622674, -0.09560509, 0.98619515, 0.7622674, 0.11044584, 0.28571075, 2.451651, 0.11044584, 0.28571075, 2.451651, -0.09560509, 0.7388453, 2.6165886, -0.09560509, 0.7388453, 2.6165886, 0.11044584, 0.6152631, 2.6165886, 0.11044584, 0.6152631, 2.6165886, -0.09560509)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1dtgs"]
+points = PackedVector3Array(-1.0038321, -0.020347, -0.09560509, -1.0038321, -0.020347, 0.11044584, -1.0038321, 0.7622674, -0.09560509, -0.056090593, -0.020347, -0.09560509, -0.056090593, -0.020347, 0.11044584, -0.9626421, 0.7622674, 0.11044584, -1.0038321, 0.7622674, 0.06919934, -0.75650644, 2.6165886, -0.09560509, -0.056090593, 1.9160558, -0.09560509, -0.056090593, 1.9160558, 0.11044584, -0.75650644, 2.6165886, 0.11044584, -0.63302916, 2.6165886, -0.09560509, -0.09746611, 2.163333, -0.09560509, -0.13865614, 2.2456727, 0.11044584, -0.34469903, 2.49295, 0.11044584, -0.34469903, 2.49295, -0.09560509)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_c2st7"]
+points = PackedVector3Array(-0.5462365, -0.7103473, -0.12864885, -0.5462365, -0.7103473, 0.12692717, -0.5113103, -0.25663114, -0.1204539, 0.25248826, -1.5403843, -0.16064668, -0.21315944, -1.9944744, -0.12104819, -0.44369394, -1.6809672, 0.08723484, -0.38640636, -0.16727126, 0.1588937, -0.060037702, -1.8062205, 0.14172184, 0.299447, -0.12520862, -0.121892706, 0.42871672, -1.6114235, -0.116012365, 0.17912185, -2.0350416, -0.09199053, -0.27641, -1.9746583, 0.09026885, 0.4123184, -0.16727126, 0.1588937, 0.37611437, -1.8224847, 0.115792036, 0.54158807, -0.24672306, 0.08986223, 0.478657, -0.77260005, -0.08113692)
+
+[node name="SM_Bld_Door_Single_04" type="MeshInstance3D" unique_id=414661957]
+gi_mode = 2
+mesh = ExtResource("1_iymuw")
+surface_material_override/0 = ExtResource("2_li64j")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1491102168]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=267716679]
+shape = ExtResource("3_nckr6")
+
+[node name="SM_Bld_Door_Single_04_Door_01" type="MeshInstance3D" parent="." unique_id=1161670973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96559006, 0, 0)
+gi_mode = 2
+mesh = ExtResource("3_li64j")
+surface_material_override/0 = ExtResource("2_li64j")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Door_Single_04_Door_01" unique_id=1903790621]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Door_Single_04_Door_01/MeshCollider" unique_id=147531534]
+shape = SubResource("ConvexPolygonShape3D_cejys")
+
+[node name="SM_Bld_Door_Single_04_Door_02" type="MeshInstance3D" parent="." unique_id=586215943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.96559006, 0, 0)
+gi_mode = 2
+mesh = ExtResource("4_nckr6")
+surface_material_override/0 = ExtResource("2_li64j")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Door_Single_04_Door_02" unique_id=189007378]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Door_Single_04_Door_02/MeshCollider" unique_id=2113040568]
+shape = SubResource("ConvexPolygonShape3D_1dtgs")
+
+[node name="SM_Bld_Door_Single_04_Door_03" type="MeshInstance3D" parent="." unique_id=1346372400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6992793, 0)
+gi_mode = 2
+mesh = ExtResource("5_spaqw")
+surface_material_override/0 = ExtResource("2_li64j")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Bld_Door_Single_04_Door_03" unique_id=1507121481]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bld_Door_Single_04_Door_03/MeshCollider" unique_id=1075745725]
+shape = SubResource("ConvexPolygonShape3D_c2st7")
+
+[node name="SM_Bld_Door_Single_01_Door_03_Glass" type="MeshInstance3D" parent="SM_Bld_Door_Single_04_Door_03" unique_id=1017660118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.50934905, 1.8769366e-09, -1.6308581, 0)
+gi_mode = 2
+mesh = ExtResource("6_fykxw")
+surface_material_override/0 = ExtResource("7_e4gwu")

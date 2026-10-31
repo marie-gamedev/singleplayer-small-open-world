@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cpsvtnwujh477"]
+
+[ext_resource type="ArrayMesh" uid="uid://cy0iyevjposgk" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Road_Half_02.res" id="1_g20cc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g20cc"]
+size = Vector3(10.000001, 0.001, 5)
+
+[node name="SM_Gen_Env_Road_Half_02" type="MeshInstance3D" unique_id=276400007]
+mesh = ExtResource("1_g20cc")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=638210037]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1517331016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0000005, 5e-06, 2.5)
+shape = SubResource("BoxShape3D_g20cc")

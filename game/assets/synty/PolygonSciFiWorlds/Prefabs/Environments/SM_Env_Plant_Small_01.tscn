@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dyosv145ngsk0"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5pqk064ta8cx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Small_01.res" id="1_xmvj5"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_7w8os"]
+
+[node name="SM_Env_Plant_Small_01" type="MeshInstance3D" unique_id=1014916677]
+gi_mode = 2
+mesh = ExtResource("1_xmvj5")
+surface_material_override/0 = ExtResource("2_7w8os")

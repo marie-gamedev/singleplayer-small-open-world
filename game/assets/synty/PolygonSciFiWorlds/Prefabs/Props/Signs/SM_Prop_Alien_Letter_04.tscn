@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bq5qola3ui2m6"]
+
+[ext_resource type="ArrayMesh" uid="uid://bsqhhuaox6t0n" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Alien_Letter_04.res" id="1_2i5yd"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_go2pr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_54dkp"]
+size = Vector3(0.26086152, 0.035, 0.3519709)
+
+[node name="SM_Prop_Alien_Letter_04" type="MeshInstance3D" unique_id=1829508048]
+gi_mode = 2
+mesh = ExtResource("1_2i5yd")
+surface_material_override/0 = ExtResource("2_go2pr")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1666349467]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1367331780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5646219e-07, 0, -2.2351742e-08)
+shape = SubResource("BoxShape3D_54dkp")

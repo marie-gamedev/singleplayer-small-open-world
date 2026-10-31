@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://d25rx21awauci"]
+
+[ext_resource type="ArrayMesh" uid="uid://2t3dfhdjb4ma" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_01.res" id="1_cum3b"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_xk85y"]
+[ext_resource type="Shape3D" uid="uid://cf6cg2ivg77og" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Vendor_01_Collision.res" id="3_cvs46"]
+[ext_resource type="ArrayMesh" uid="uid://6bej5eungncb" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_01_Door_01.res" id="3_xk85y"]
+[ext_resource type="ArrayMesh" uid="uid://dhxbj0e7r5ws4" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_01_Shutter_01.res" id="4_cvs46"]
+[ext_resource type="ArrayMesh" uid="uid://d0ferm7j7w850" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Vendor_01_Shutter_02.res" id="5_dims1"]
+
+[node name="SM_Bld_Vendor_01" type="MeshInstance3D" unique_id=1039572521]
+gi_mode = 2
+mesh = ExtResource("1_cum3b")
+surface_material_override/0 = ExtResource("2_xk85y")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1862898655]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1089366892]
+shape = ExtResource("3_cvs46")
+
+[node name="SM_Bld_Vendor_01_Door_01" type="MeshInstance3D" parent="." unique_id=1928799097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.6680382e-11, -1.2805097)
+gi_mode = 2
+mesh = ExtResource("3_xk85y")
+surface_material_override/0 = ExtResource("2_xk85y")
+
+[node name="SM_Bld_Vendor_01_Shutter_01" type="MeshInstance3D" parent="." unique_id=2017077638]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1789143, -0.2418447)
+gi_mode = 2
+mesh = ExtResource("4_cvs46")
+surface_material_override/0 = ExtResource("2_xk85y")
+
+[node name="SM_Bld_Vendor_01_Shutter_02" type="MeshInstance3D" parent="." unique_id=1933814184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0253633e-07, 1.6840183, 0.021630578)
+gi_mode = 2
+mesh = ExtResource("5_dims1")
+surface_material_override/0 = ExtResource("2_xk85y")

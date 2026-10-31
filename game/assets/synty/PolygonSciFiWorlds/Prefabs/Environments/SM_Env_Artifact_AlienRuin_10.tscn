@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://df0hfunql68b7"]
+
+[ext_resource type="ArrayMesh" uid="uid://cbwljm8m8dap4" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Artifact_AlienRuin_10.res" id="1_whsnf"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_tn08r"]
+
+[node name="SM_Env_Artifact_AlienRuin_10" type="MeshInstance3D" unique_id=121548684]
+gi_mode = 2
+mesh = ExtResource("1_whsnf")
+surface_material_override/0 = ExtResource("2_tn08r")

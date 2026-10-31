@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cg1rmaphmjs2b"]
+
+[ext_resource type="ArrayMesh" uid="uid://dbdf2hr8ivv6t" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Snow_Pile_02.res" id="1_7inw0"]
+[ext_resource type="Material" uid="uid://mds51wljtc5f" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Corp_01_mat.tres" id="2_uprn7"]
+
+[node name="SM_Env_Snow_Pile_02" type="MeshInstance3D" unique_id=1100846360]
+gi_mode = 2
+mesh = ExtResource("1_7inw0")
+surface_material_override/0 = ExtResource("2_uprn7")

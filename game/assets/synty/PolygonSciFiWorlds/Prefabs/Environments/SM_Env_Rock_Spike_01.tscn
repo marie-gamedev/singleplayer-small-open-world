@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c8cr04cd1qjam"]
+
+[ext_resource type="ArrayMesh" uid="uid://dilk67no4wt2y" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Rock_Spike_01.res" id="1_n23kl"]
+[ext_resource type="Material" uid="uid://mds51wljtc5f" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Corp_01_mat.tres" id="2_s8gdi"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n23kl"]
+points = PackedVector3Array(1.374906, -1.0778574, -2.529354, -0.50204855, -0.65138626, 3.70995, 2.9077525, -0.16294289, 2.0042148, -0.50204855, 14.211024, -0.6745908, -3.9139245, -0.65138626, -0.43113244, 1.6897688, -0.16294289, -4.0868244, -3.426316, 0.8108907, 2.7353532, -0.50204855, 0.079752445, -4.0868244, 3.1519024, 0.32397366, -2.6245477, -0.25997344, 13.479886, 0.2984796, -0.015823394, 13.479886, -1.1622708, 0.47109342, -1.3825245, 2.9788115, -3.9139245, -0.40716457, 2.4903684, 3.1519024, -1.1383028, -0.43113244, 3.1519024, 0.079752445, 1.5165348, -0.50204855, 13.479886, -1.1622708, -0.74619865, 12.991443, 0.541938, -3.9139245, 0.8108907, 0.05502118, -3.6697745, 0.32397366, -0.6745908, -1.4772655, 0.32397366, 3.464965, -2.3780663, -1.1049416, 2.8660502, -0.50204855, -0.40716457, -4.0868244, -0.74619865, 0.8108907, -3.8418396, 0.71524346, 0.8108907, -4.0868244, 2.4208357, 0.079752445, -3.5991445, 2.0807817, -0.8551107, -3.4712558, -0.74619865, 13.479886, 0.2984796, -0.015823394, 13.479886, -0.18843722, -0.25997344, 12.747221, 0.541938, -3.9139245, 0.8108907, 0.7861596, -2.3759089, -1.0968184, 1.923867, 3.1519024, -0.40716457, 1.7607564)
+
+[node name="SM_Env_Rock_Spike_01" type="MeshInstance3D" unique_id=1698253111]
+gi_mode = 2
+mesh = ExtResource("1_n23kl")
+surface_material_override/0 = ExtResource("2_s8gdi")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1010952697]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1927399470]
+shape = SubResource("ConvexPolygonShape3D_n23kl")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dp0msxmjuqlnb"]
+
+[ext_resource type="ArrayMesh" uid="uid://5xxhsf6h1n7n" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Papers_06.res" id="1_u7gfi"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_ovfna"]
+
+[node name="SM_Gen_Prop_Papers_06" type="MeshInstance3D" unique_id=588843471]
+gi_mode = 2
+mesh = ExtResource("1_u7gfi")
+surface_material_override/0 = ExtResource("2_ovfna")

@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://p25q4s6hfag1"]
+
+[ext_resource type="ArrayMesh" uid="uid://x1ooemn764yr" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01.res" id="1_vf6dw"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ecrcq"]
+[ext_resource type="Shape3D" uid="uid://c7iy7h3g6fumj" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Veh_Barge_01_Collision.res" id="3_6xy04"]
+[ext_resource type="ArrayMesh" uid="uid://kcfftgrn0upo" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_ControlRoom_01.res" id="3_ecrcq"]
+[ext_resource type="ArrayMesh" uid="uid://c6trmq56drexk" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_ControlRoom_01_Door_01.res" id="4_6xy04"]
+[ext_resource type="ArrayMesh" uid="uid://bsky1vjec31ys" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_ControlRoom_01_Glass_01.res" id="5_m38ar"]
+[ext_resource type="Shape3D" uid="uid://c7tv0t88s6i1v" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Veh_Barge_01_ControlRoom_01_Collision.res" id="5_rnk6g"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="6_xgm6t"]
+[ext_resource type="ArrayMesh" uid="uid://bc4quupafkkbg" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_FrontRamp_01.res" id="7_rnk6g"]
+[ext_resource type="ArrayMesh" uid="uid://dn0mx8incqgb6" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_SideRamp_l_01.res" id="8_xgm6t"]
+[ext_resource type="ArrayMesh" uid="uid://cspo5d50h6lht" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_SideRamp_r_02.res" id="9_pqm2k"]
+[ext_resource type="ArrayMesh" uid="uid://wdd0pcj1f0y1" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_Swivel_l_01.res" id="10_xlmoc"]
+[ext_resource type="ArrayMesh" uid="uid://c80yqy7ku67vq" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_Booster_l_01.res" id="11_7vssg"]
+[ext_resource type="ArrayMesh" uid="uid://ckej48sgs1qab" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_Swivel_r_01.res" id="12_pn6vs"]
+[ext_resource type="ArrayMesh" uid="uid://ctxuge2gkj8w" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Barge_01_Booster_r_01.res" id="13_3tua8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7vvpx"]
+size = Vector3(0.36771238, 2.4921207, 1.6781976)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hjv8o"]
+size = Vector3(10.581164, 3.2637305, 0.46322143)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_je557"]
+size = Vector3(0.1855606, 1.3221534, 8.634428)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a3b1f"]
+size = Vector3(0.1855606, 1.3221534, 8.634428)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hb8ty"]
+size = Vector3(1.1995889, 1.2014673, 1.6271985)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w00fj"]
+size = Vector3(1.1995889, 1.2014673, 1.6271985)
+
+[node name="SM_Veh_Barge_01" type="MeshInstance3D" unique_id=409952358]
+gi_mode = 2
+mesh = ExtResource("1_vf6dw")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1982467690]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1175401851]
+shape = ExtResource("3_6xy04")
+
+[node name="SM_Veh_Barge_01_ControlRoom_01" type="MeshInstance3D" parent="." unique_id=473736466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9409778, 1.3193765, -3.5975647)
+gi_mode = 2
+mesh = ExtResource("3_ecrcq")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_Barge_01_ControlRoom_01" unique_id=1428174950]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Barge_01_ControlRoom_01/MeshCollider" unique_id=756326834]
+shape = ExtResource("5_rnk6g")
+
+[node name="SM_Veh_Barge_01_ControlRoom_01_Door_01" type="MeshInstance3D" parent="SM_Veh_Barge_01_ControlRoom_01" unique_id=1214341526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1014447, 0, -1.4065742)
+gi_mode = 2
+mesh = ExtResource("4_6xy04")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Veh_Barge_01_ControlRoom_01/SM_Veh_Barge_01_ControlRoom_01_Door_01" unique_id=1537596331]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Barge_01_ControlRoom_01/SM_Veh_Barge_01_ControlRoom_01_Door_01/BoxCollider" unique_id=1300259371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2665987e-07, 1.2539392, 0.6887001)
+shape = SubResource("BoxShape3D_7vvpx")
+
+[node name="SM_Veh_Barge_01_ControlRoom_01_Glass_01" type="MeshInstance3D" parent="SM_Veh_Barge_01_ControlRoom_01" unique_id=794844379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010163546, 1.8693643, 0.9504144)
+gi_mode = 2
+mesh = ExtResource("5_m38ar")
+surface_material_override/0 = ExtResource("6_xgm6t")
+
+[node name="SM_Veh_Barge_01_FrontRamp_01" type="MeshInstance3D" parent="." unique_id=1606418377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1035155e-07, 1.3193765, 7.679912)
+gi_mode = 2
+mesh = ExtResource("7_rnk6g")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Veh_Barge_01_FrontRamp_01" unique_id=1775556213]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Barge_01_FrontRamp_01/BoxCollider" unique_id=98225719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.988631, 0.23121369)
+shape = SubResource("BoxShape3D_hjv8o")
+
+[node name="SM_Veh_Barge_01_SideRamp_l_01" type="MeshInstance3D" parent="." unique_id=349827441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7375665, 1.1308323, 0.35730955)
+gi_mode = 2
+mesh = ExtResource("8_xgm6t")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Veh_Barge_01_SideRamp_l_01" unique_id=220461023]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Barge_01_SideRamp_l_01/BoxCollider" unique_id=1883975206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.092452444, 0.6610767, 0)
+shape = SubResource("BoxShape3D_je557")
+
+[node name="SM_Veh_Barge_01_SideRamp_r_02" type="MeshInstance3D" parent="." unique_id=1562175649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7375665, 1.1308323, 0.35730955)
+gi_mode = 2
+mesh = ExtResource("9_pqm2k")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Veh_Barge_01_SideRamp_r_02" unique_id=1446390598]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Barge_01_SideRamp_r_02/BoxCollider" unique_id=480203078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.092452444, 0.6610767, 0)
+shape = SubResource("BoxShape3D_a3b1f")
+
+[node name="SM_Veh_Barge_01_Swivel_l_01" type="MeshInstance3D" parent="." unique_id=860372562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8697155, 2.1967328, -7.9056945)
+gi_mode = 2
+mesh = ExtResource("10_xlmoc")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="SM_Veh_Barge_01_Booster_l_01" type="MeshInstance3D" parent="SM_Veh_Barge_01_Swivel_l_01" unique_id=103008549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00010561943, 0.01947093, -0.835691)
+gi_mode = 2
+mesh = ExtResource("11_7vssg")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Veh_Barge_01_Swivel_l_01/SM_Veh_Barge_01_Booster_l_01" unique_id=1314556329]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Barge_01_Swivel_l_01/SM_Veh_Barge_01_Booster_l_01/BoxCollider" unique_id=1975821937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.9802322e-08, -0.5231421)
+shape = SubResource("BoxShape3D_hb8ty")
+
+[node name="SM_Veh_Barge_01_Swivel_r_01" type="MeshInstance3D" parent="." unique_id=722660137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8697155, 2.1967328, -7.9056945)
+gi_mode = 2
+mesh = ExtResource("12_pn6vs")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="SM_Veh_Barge_01_Booster_r_01" type="MeshInstance3D" parent="SM_Veh_Barge_01_Swivel_r_01" unique_id=16702268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00010561943, 0.01947093, -0.835691)
+gi_mode = 2
+mesh = ExtResource("13_3tua8")
+surface_material_override/0 = ExtResource("2_ecrcq")
+
+[node name="BoxCollider" type="StaticBody3D" parent="SM_Veh_Barge_01_Swivel_r_01/SM_Veh_Barge_01_Booster_r_01" unique_id=1277925549]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Barge_01_Swivel_r_01/SM_Veh_Barge_01_Booster_r_01/BoxCollider" unique_id=1757701299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.9802322e-08, -0.5231421)
+shape = SubResource("BoxShape3D_w00fj")

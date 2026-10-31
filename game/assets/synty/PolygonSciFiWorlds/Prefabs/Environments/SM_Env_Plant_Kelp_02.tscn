@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dkqb0ey7p2854"]
+
+[ext_resource type="ArrayMesh" uid="uid://bgpwnlvaxrdip" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Kelp_02.res" id="1_napm0"]
+[ext_resource type="Material" uid="uid://bahi1cset6vl6" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Plants/Plants_Animated_01_mat.tres" id="2_fwmgs"]
+
+[node name="SM_Env_Plant_Kelp_02" type="MeshInstance3D" unique_id=1738408287]
+gi_mode = 2
+mesh = ExtResource("1_napm0")
+surface_material_override/0 = ExtResource("2_fwmgs")

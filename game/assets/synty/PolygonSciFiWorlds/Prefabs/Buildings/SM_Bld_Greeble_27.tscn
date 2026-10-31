@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://smuc0wgjxhnk"]
+
+[ext_resource type="ArrayMesh" uid="uid://ds6j4tq2c1w4p" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_27.res" id="1_vc14j"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_de4ln"]
+[ext_resource type="ArrayMesh" uid="uid://crbl02r7bwfpa" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Greeble_27_Crusher_01.res" id="3_de4ln"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u2u2b"]
+points = PackedVector3Array(-0.69577205, 0.009593808, 0.00060765987, 0.690814, 0.00861378, 0, -0.691836, 0.014330608, 0.88748723, -0.6861354, 1.001055, 0.007697025, -0.5360215, 1.6001786, 0.0035446826, 0.532285, 1.6036087, 0.0012153197, 0.6819918, 1.0013818, 0.0063804286, 0.68226326, 0.36289376, 0.92698514, 0.6209147, 0.03148109, 0.93073237, -0.66143316, 0.3361063, 0.9539247, -0.5280136, 1.5889083, 0.933163, -0.35075426, 1.6710672, 0.96152043, 0.3472892, 1.6772741, 0.9648626, 0.5252272, 1.5936451, 0.9357962, 0.46713603, 1.3571317, 1.0346422, -0.47317994, 1.3571317, 1.0346422)
+
+[node name="SM_Bld_Greeble_27" type="MeshInstance3D" unique_id=208504258]
+gi_mode = 2
+mesh = ExtResource("1_vc14j")
+surface_material_override/0 = ExtResource("2_de4ln")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1093564963]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=408722309]
+shape = SubResource("ConvexPolygonShape3D_u2u2b")
+
+[node name="SM_Bld_Greeble_27_Crusher_01" type="MeshInstance3D" parent="." unique_id=1745886181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45444438, 0.567)
+gi_mode = 2
+mesh = ExtResource("3_de4ln")
+surface_material_override/0 = ExtResource("2_de4ln")

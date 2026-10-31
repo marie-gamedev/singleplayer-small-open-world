@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ca66qh3grn57l"]
+
+[ext_resource type="ArrayMesh" uid="uid://p6v5c8k37js" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Crate_07.res" id="1_jltiv"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_juudv"]
+[ext_resource type="ArrayMesh" uid="uid://s38opin054ca" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Crate_07_Lid_01.res" id="3_juudv"]
+[ext_resource type="ArrayMesh" uid="uid://lpsad01t7vwf" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Crate_07_Lid_02.res" id="4_blxs3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_et57v"]
+points = PackedVector3Array(-0.5226867, 1.6649327, 0.20207566, -0.16259208, 1.6271517, 0.52845484, 0.53320503, 1.6649327, 0.20207566, 0.40183872, 1.6202387, -0.3206877, -0.38852978, 1.6147724, -0.34377962, -0.50191206, 0.07282637, -0.11780894, -0.47018152, 0.13359748, 0.3202154, -0.26160777, 1.6152548, 0.46928185, 0.37930697, 1.6266694, 0.39897525, -0.16259208, 0.10417654, 0.52845484, 0.17124999, 0.11157197, 0.52309424, 0.53320503, 0.0678425, 0.20207566, 0.043397784, 1.517185, -0.52470046, 0.3522275, 0.107391946, -0.37346917, -0.13716632, 0.075881004, -0.48006302, 0.38137412, 0.022505328, 0.2715575)
+
+[node name="SM_Prop_Crate_07" type="MeshInstance3D" unique_id=137905810]
+gi_mode = 2
+mesh = ExtResource("1_jltiv")
+surface_material_override/0 = ExtResource("2_juudv")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=730958256]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1147355064]
+shape = SubResource("ConvexPolygonShape3D_et57v")
+
+[node name="SM_Prop_Crate_07_Lid_01" type="MeshInstance3D" parent="." unique_id=1099369160]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6751505e-07, 1.6421009, 0.022658776)
+gi_mode = 2
+mesh = ExtResource("3_juudv")
+surface_material_override/0 = ExtResource("2_juudv")
+
+[node name="SM_Prop_Crate_07_Lid_02" type="MeshInstance3D" parent="." unique_id=753553000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6751505e-07, 0.08357011, 0.022658776)
+gi_mode = 2
+mesh = ExtResource("4_blxs3")
+surface_material_override/0 = ExtResource("2_juudv")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dlqelld1ahyf1"]
+
+[ext_resource type="ArrayMesh" uid="uid://bqisx1mdss5iy" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_CloudRing_02.res" id="1_7sasn"]
+[ext_resource type="Material" uid="uid://54uvvxjv00ur" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Clouds_01_mat.tres" id="2_tjbw4"]
+
+[node name="SM_Env_CloudRing_02" type="MeshInstance3D" unique_id=1961982990]
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("1_7sasn")
+surface_material_override/0 = ExtResource("2_tjbw4")

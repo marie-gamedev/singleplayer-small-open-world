@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://b3q82g050hcrc"]
+
+[ext_resource type="ArrayMesh" uid="uid://seg8eeujyhb3" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_PowerGenerator_02.res" id="1_ej05n"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_e2x7i"]
+[ext_resource type="ArrayMesh" uid="uid://cgv3twxeq7vlt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_PowerGenerator_02_Chamber_01.res" id="3_e2x7i"]
+[ext_resource type="ArrayMesh" uid="uid://3bn6jumw4rq5" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_PowerGenerator_02_Glass_01.res" id="4_bdxf6"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="5_ovhom"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_63kh2"]
+points = PackedVector3Array(-1.3104875, -0.05755949, -3.3691201, 1.133832, 0.06935611, -3.3427248, 1.2413349, 0.06771849, -3.237269, -1.3104875, -0.05755949, -2.6722102, -0.8459491, 2.1496801, -2.6722102, -0.8459491, 2.033409, -3.3691201, -0.3811491, 1.2206033, -3.7177627, 0.43205464, 2.1496801, -3.7177627, 1.3616545, 0.4069789, -3.2529058, 1.2397656, 0.06935611, -2.8149447, 0.31565845, 1.1046053, -2.439782, -0.49728376, 1.2206033, -2.439782, 0.19978547, 2.6144915, -2.6722102, -0.3811491, 2.7307625, -3.136817, 0.78072, 2.4982204, -3.136817, 0.78072, 2.2659512, -2.6722102)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_luodc"]
+points = PackedVector3Array(-1.3104875, -0.05755949, -3.3691201, 1.133832, 0.06935611, -3.3427248, 1.2413349, 0.06771849, -3.237269, -1.3104875, -0.05755949, -2.6722102, -0.8459491, 2.1496801, -2.6722102, -0.8459491, 2.033409, -3.3691201, -0.3811491, 1.2206033, -3.7177627, 0.43205464, 2.1496801, -3.7177627, 1.3616545, 0.4069789, -3.2529058, 1.2397656, 0.06935611, -2.8149447, 0.31565845, 1.1046053, -2.439782, -0.49728376, 1.2206033, -2.439782, 0.19978547, 2.6144915, -2.6722102, -0.3811491, 2.7307625, -3.136817, 0.78072, 2.4982204, -3.136817, 0.78072, 2.2659512, -2.6722102)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s3248"]
+points = PackedVector3Array(1.0563905, 0.39980233, 2.221824, 0.3009404, 1.1302257, 2.3061898, 0.38465786, -0.86658984, 2.5708373, 1.0563905, -0.36650002, 2.221824, 1.0563905, -0.36650002, -2.222449, 0.9173045, 0.8660065, -2.1240222, -0.35639638, 1.2061915, -2.1240222, -0.866231, 0.8660065, 2.0385292, -1.0130687, 0.47643256, 2.221824, -1.1304502, -0.30116504, 2.3061898, -0.40002686, -1.0563936, 2.221824, 0.67279637, -0.9026902, -2.222449, 0.86237884, 0.41641295, -2.5589082, -1.2061946, 0.35617173, -2.1240222, -1.0896989, 0.32250762, 2.221824, -0.866231, -0.917529, -2.1240222)
+
+[node name="SM_Prop_PowerGenerator_02" type="MeshInstance3D" unique_id=2079703341]
+gi_mode = 2
+mesh = ExtResource("1_ej05n")
+surface_material_override/0 = ExtResource("2_e2x7i")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=497693382]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2009304868]
+shape = SubResource("ConvexPolygonShape3D_63kh2")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=1657219944]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_luodc")
+
+[node name="SM_Prop_PowerGenerator_02_Chamber_01" type="MeshInstance3D" parent="." unique_id=1157847754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7056677, -0.0055409186)
+gi_mode = 2
+mesh = ExtResource("3_e2x7i")
+surface_material_override/0 = ExtResource("2_e2x7i")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_PowerGenerator_02_Chamber_01" unique_id=1967026027]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_PowerGenerator_02_Chamber_01/MeshCollider" unique_id=1040746184]
+shape = SubResource("ConvexPolygonShape3D_s3248")
+
+[node name="SM_Prop_PowerGenerator_02_Glass_01" type="MeshInstance3D" parent="SM_Prop_PowerGenerator_02_Chamber_01" unique_id=615130105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5601922e-08, 0, 0.02754489)
+gi_mode = 2
+mesh = ExtResource("4_bdxf6")
+surface_material_override/0 = ExtResource("5_ovhom")

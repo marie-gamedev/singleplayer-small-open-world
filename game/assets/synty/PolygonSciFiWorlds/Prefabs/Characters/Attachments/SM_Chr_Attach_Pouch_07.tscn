@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cdwtyj2y23rno"]
+
+[ext_resource type="ArrayMesh" uid="uid://7t430cy58vbw" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Pouch_07.res" id="1_yv1ti"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_cbdbq"]
+
+[node name="SM_Chr_Attach_Pouch_07" type="MeshInstance3D" unique_id=907734924]
+gi_mode = 2
+mesh = ExtResource("1_yv1ti")
+surface_material_override/0 = ExtResource("2_cbdbq")

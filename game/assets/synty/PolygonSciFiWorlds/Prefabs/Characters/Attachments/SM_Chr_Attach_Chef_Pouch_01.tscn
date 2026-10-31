@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bg0xp83r1cv0t"]
+
+[ext_resource type="ArrayMesh" uid="uid://dkr27vtaaew7e" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Chef_Pouch_01.res" id="1_chod1"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_a8mwy"]
+
+[node name="SM_Chr_Attach_Chef_Pouch_01" type="MeshInstance3D" unique_id=1370935620]
+gi_mode = 2
+mesh = ExtResource("1_chod1")
+surface_material_override/0 = ExtResource("2_a8mwy")

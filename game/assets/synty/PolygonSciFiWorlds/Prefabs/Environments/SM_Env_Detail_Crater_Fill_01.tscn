@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b3kjb65fwy427"]
+
+[ext_resource type="ArrayMesh" uid="uid://b3gl8q64royhl" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Detail_Crater_Fill_01.res" id="1_ig1pl"]
+[ext_resource type="Material" uid="uid://uikbw3l1dvh1" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/PolygonScifiWorlds_Glow_01_mat.tres" id="2_dejp8"]
+
+[node name="SM_Env_Detail_Crater_Fill_01" type="MeshInstance3D" unique_id=185345152]
+gi_mode = 2
+mesh = ExtResource("1_ig1pl")
+surface_material_override/0 = ExtResource("2_dejp8")

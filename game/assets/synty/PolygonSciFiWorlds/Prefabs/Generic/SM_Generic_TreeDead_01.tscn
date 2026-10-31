@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://n4mrc0cdh20r"]
+
+[ext_resource type="ArrayMesh" uid="uid://cqwqprr8gxgam" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Generic_TreeDead_01.res" id="1_diijs"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_apm5b"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_diijs"]
+radius = 0.17919922
+height = 3.3671129
+
+[node name="SM_Generic_TreeDead_01" type="MeshInstance3D" unique_id=1559585823]
+gi_mode = 2
+mesh = ExtResource("1_diijs")
+surface_material_override/0 = ExtResource("2_apm5b")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=45813576]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=417601196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06605685, 1.596074, -0.0030688047)
+shape = SubResource("CapsuleShape3D_diijs")

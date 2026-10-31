@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c8tnjc6ygjjvl"]
+
+[ext_resource type="ArrayMesh" uid="uid://bh70v7faq45s" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_SolarPanel_03.res" id="1_5xe3t"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_xttnx"]
+[ext_resource type="ArrayMesh" uid="uid://dys1q6t2q56im" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_SolarPanel_03_Panel_01.res" id="3_xttnx"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s3841"]
+points = PackedVector3Array(-2.1191642, -0.03408912, -0.59429693, -2.0429137, -5.6829304e-05, 0.5294609, -2.1881323, 0.10274276, 0.5681484, -2.1191642, 0.10274276, -0.59429693, 2.119164, -0.03408912, -0.59429693, 2.0424852, -5.6829304e-05, 0.5294609, 2.1881323, 0.10274276, 0.5681484, -1.9144015, 0.85456514, 0.36287707, -1.9144015, 0.9914975, 0.22599167, -1.9144015, 0.9914975, -0.2523678, -1.9144015, 0.85456514, -0.38913944, 2.119164, 0.10274276, -0.59429693, 1.9144015, 0.9914975, -0.2523678, 1.9144015, 0.9914975, 0.22599167, 1.9144015, 0.85456514, 0.36287707, 1.9144015, 0.85456514, -0.38913944)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0myqa"]
+points = PackedVector3Array(-2.7654197, 0.9208752, -2.0724678, -3.1601262, 0.9208752, -1.6774327, -2.457326, 1.2225358, -1.4025726, 2.3688574, 1.2225358, -1.490674, 2.7648015, 0.9208752, -2.0724678, 1.6041913, -0.24138717, -0.16712356, -1.7774162, -0.3627342, 0.1982739, -3.1601262, 0.9208752, 1.6801631, -2.3694758, 1.2225358, 1.4929984, 2.4567075, 1.2225358, 1.404897, 3.1601262, 0.9208752, -1.6774327, 1.7767978, -0.3627342, 0.1982739, 2.6658154, 0.9208752, 2.0751982, -2.8644056, 0.9208752, 1.9761348, 2.598381, 1.102275, 2.0228248, 3.1601262, 0.9208752, 1.6801631)
+
+[node name="SM_Prop_SolarPanel_03" type="MeshInstance3D" unique_id=1774833062]
+gi_mode = 2
+mesh = ExtResource("1_5xe3t")
+surface_material_override/0 = ExtResource("2_xttnx")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1126925173]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=60685910]
+shape = SubResource("ConvexPolygonShape3D_s3841")
+
+[node name="SM_Prop_SolarPanel_03_Panel_01" type="MeshInstance3D" parent="." unique_id=1860580150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0074241846, 0.65198666, -3.8146972e-08)
+gi_mode = 2
+mesh = ExtResource("3_xttnx")
+surface_material_override/0 = ExtResource("2_xttnx")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_SolarPanel_03_Panel_01" unique_id=23644950]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_SolarPanel_03_Panel_01/MeshCollider" unique_id=1551810742]
+shape = SubResource("ConvexPolygonShape3D_0myqa")

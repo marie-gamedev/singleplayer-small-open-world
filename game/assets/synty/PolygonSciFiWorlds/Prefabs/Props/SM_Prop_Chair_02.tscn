@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://q75upa1b1gd2"]
+
+[ext_resource type="ArrayMesh" uid="uid://dt00hssi0xslt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Chair_02.res" id="1_pbne1"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_om1wf"]
+[ext_resource type="ArrayMesh" uid="uid://cwf3ik0yw3g8m" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Chair_02_Pivot_01.res" id="3_om1wf"]
+[ext_resource type="ArrayMesh" uid="uid://bv10xf863g0xu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Chair_02_Backrest_01.res" id="4_lbkga"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v4koc"]
+points = PackedVector3Array(-0.02822724, 0.09894661, -0.34238207, -0.025333673, 0.017673535, -0.31509966, -0.29325634, 0.0013433566, 0.14136395, -0.30164185, 0.09894661, 0.1289112, -0.03767571, 0.4288246, -0.031321287, 0.02822724, 0.09894661, -0.34238207, -0.27660346, -2.7755576e-17, 0.17045486, 0.025274605, 0.017673535, -0.31509966, -0.28274494, 0.09894661, 0.1854912, -0.016830057, 0.40623942, 0.022778481, 0.03767571, 0.4288246, -0.031321287, 0.30164185, 0.09894661, 0.1289112, 0.27654442, -2.7755576e-17, 0.17045486, 0.27134773, 0.017043836, 0.11651009, 0.2827449, 0.09894661, 0.1854912, 0.29219338, 0.09894661, 0.17603534)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pbne1"]
+points = PackedVector3Array(0.21438152, 0.018691758, 0.097514495, -0.21770632, -0.14251101, 0.038392007, 0.24625081, 0.3051524, -0.07554124, -0.18689339, 0.3286441, 0.051712558, 0.20552212, -0.15066981, 0.038392007, -0.1834286, -0.09094116, 0.12208363, -0.09465246, 0.08760164, -0.06754862, 0.1905598, 0.32882643, 0.05174399, -0.21001518, 0.34524643, -0.05662241, 0.18721645, -0.08331145, 0.12214507, 0.0462004, 0.18395123, -0.08990736, -0.24107829, 0.27434945, 0.045329783, -0.24210465, 0.3051524, -0.07554124, 0.19881237, 0.36184853, -0.009609918, 0.045808256, 0.021496214, -0.05222485, -0.17855786, -0.04045602, 0.11918142, 0.18961407, -0.12486997, 0.107862286, -0.19915123, 0.35722962, 0.021699717, 0.2347104, 0.33487186, 0.021728782, 0.098069645, 0.08760164, -0.06754862, 0.22180387, -0.11808559, 0.03024914, -0.20928317, -0.11702665, 0.10001655, -0.20142457, -0.15066981, 0.038392007, 0.22943744, 0.11756662, 0.076739214, 0.1979801, 0.35294166, -0.04872536, 0.18878336, 0.08739154, 0.096291736, -0.04349417, 0.19269103, -0.091624744, -0.24210465, 0.17486647, -0.042947453, -0.2408474, 0.33688563, 0.013985708, -0.20212257, 0.3609589, -0.009526635, 0.21158805, -0.09215976, 0.10719745, -0.19201589, -0.12283276, 0.10704733)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbne1"]
+size = Vector3(0.53166664, 0.13395385, 0.46510267)
+
+[node name="SM_Prop_Chair_02" type="MeshInstance3D" unique_id=1393495922]
+gi_mode = 2
+mesh = ExtResource("1_pbne1")
+surface_material_override/0 = ExtResource("2_om1wf")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1533279771]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2133138605]
+shape = SubResource("ConvexPolygonShape3D_v4koc")
+
+[node name="SM_Prop_Chair_02_Pivot_01" type="MeshInstance3D" parent="." unique_id=483753996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.284972e-16, 0.31253386, -0.006261635)
+gi_mode = 2
+mesh = ExtResource("3_om1wf")
+surface_material_override/0 = ExtResource("2_om1wf")
+
+[node name="SM_Prop_Chair_02_Backrest_01" type="MeshInstance3D" parent="SM_Prop_Chair_02_Pivot_01" unique_id=2121722802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3647304e-07, 0.3470981, -0.31006336)
+gi_mode = 2
+mesh = ExtResource("4_lbkga")
+surface_material_override/0 = ExtResource("2_om1wf")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Chair_02_Pivot_01/SM_Prop_Chair_02_Backrest_01" unique_id=1436894821]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Chair_02_Pivot_01/SM_Prop_Chair_02_Backrest_01/MeshCollider" unique_id=1322127880]
+shape = SubResource("ConvexPolygonShape3D_pbne1")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Prop_Chair_02_Pivot_01" unique_id=1453943873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.17516771, -0.04843104)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Chair_02_Pivot_01/MeshCollider" unique_id=41893607]
+transform = Transform3D(1, 0, 0, 0, 0.9982346, 0.059393488, 0, -0.059393488, 0.9982346, 0, -0.06893003, 0.0772779)
+shape = SubResource("BoxShape3D_pbne1")

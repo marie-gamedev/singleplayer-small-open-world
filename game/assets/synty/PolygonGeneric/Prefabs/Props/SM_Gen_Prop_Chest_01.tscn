@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cidouiqqeuo8b"]
+
+[ext_resource type="ArrayMesh" uid="uid://dy56bway1by8s" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Chest_01.res" id="1_8yokk"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_kagal"]
+[ext_resource type="ArrayMesh" uid="uid://twufbb7ybgce" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Chest_01_Lid_01.res" id="3_kagal"]
+[ext_resource type="ArrayMesh" uid="uid://btsntgmmnwvi6" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Chest_01_Latch_01.res" id="4_km3vo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8yokk"]
+size = Vector3(0.97265625, 0.46539307, 0.5668335)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fpgnx"]
+points = PackedVector3Array(0.25400564, -0.013741071, -0.010450457, 0.45920852, 0.041095205, -0.00066855457, 0.27083728, -0.024026781, 0.016476072, -0.45310265, -1.6368926e-05, 0.0029076254, -0.45489326, 0.1273201, 0.016002752, 0.45974568, 0.25643858, 0.113979556, 0.45285186, 0.25471908, 0.41337943, 0.4389747, -1.6368926e-05, 0.5268179, 0.45132986, 0.20172736, 0.046610646, -0.45328173, -1.6368926e-05, 0.5125658, -0.44746226, 0.29536173, 0.22988985, -0.44182187, 0.25193664, 0.10603833, 0.44004908, 0.29282936, 0.29909945, -0.43931502, 0.26503608, 0.38140416, 0.2246398, 0.1976631, 0.46833688, -0.43546525, 0.11350161, 0.51051474)
+
+[node name="SM_Gen_Prop_Chest_01" type="MeshInstance3D" unique_id=949099487]
+gi_mode = 2
+mesh = ExtResource("1_8yokk")
+surface_material_override/0 = ExtResource("2_kagal")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=454377019]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=438248056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23123169, -0.019866943)
+shape = SubResource("BoxShape3D_8yokk")
+
+[node name="SM_Gen_Prop_Chest_01_Lid_01" type="MeshInstance3D" parent="." unique_id=154567591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0001625502, 0.45498216, -0.27690232)
+gi_mode = 2
+mesh = ExtResource("3_kagal")
+surface_material_override/0 = ExtResource("2_kagal")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Gen_Prop_Chest_01_Lid_01" unique_id=157861193]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Gen_Prop_Chest_01_Lid_01/MeshCollider" unique_id=1530388323]
+shape = SubResource("ConvexPolygonShape3D_fpgnx")
+
+[node name="SM_Gen_Prop_Chest_01_Latch_01" type="MeshInstance3D" parent="SM_Gen_Prop_Chest_01_Lid_01" unique_id=2048443538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00065432815, 0.02459073, 0.5371435)
+gi_mode = 2
+mesh = ExtResource("4_km3vo")
+surface_material_override/0 = ExtResource("2_kagal")

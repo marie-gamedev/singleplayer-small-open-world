@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://tra1hy688m5p"]
+
+[ext_resource type="ArrayMesh" uid="uid://mna6sj721twq" path="res://assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Env_Ground_Edge_03.res" id="1_8s34x"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_d8hbj"]
+
+[node name="SM_Gen_Env_Ground_Edge_03" type="MeshInstance3D" unique_id=251904804]
+mesh = ExtResource("1_8s34x")
+surface_material_override/0 = ExtResource("2_d8hbj")

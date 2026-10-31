@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://pmskqnetxoc7"]
+
+[ext_resource type="ArrayMesh" uid="uid://ceq04jg6jetnf" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_08.res" id="1_hqnpp"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ut77p"]
+[ext_resource type="ArrayMesh" uid="uid://np4guj40bybx" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_08_Screen_01.res" id="3_ut77p"]
+[ext_resource type="ArrayMesh" uid="uid://chnwoycnruy42" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Monitor_08_Screen_02.res" id="4_43p7g"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_72wvm"]
+points = PackedVector3Array(-0.37575006, 0.6309039, -0.4610563, -0.45386633, 0.20204991, -0.41715068, -0.43611875, 0.70903635, -0.35030478, 0.4219501, 0.70903635, -0.3288837, 0.4017824, 0.61005926, -0.46052456, 0.39304304, 0.22415362, -0.45239672, -0.16654366, 0.0051450287, -0.35129228, -0.6403504, -0.0029689912, -0.09218848, -0.6938621, 0.1510575, -0.0069599748, -0.4791432, 0.108109154, 0.2933908, 0.4864868, 0.086704925, 0.31496376, 0.67969346, 0.1510575, -0.0713751, 0.4316306, 0.18463275, -0.41130167, 0.63075316, -0.005557084, -0.009998411, -0.5715113, 0.0015077097, 0.10941267, 0.4634956, -0.003668476, 0.27599567)
+
+[node name="SM_Prop_Monitor_08" type="MeshInstance3D" unique_id=643819704]
+gi_mode = 2
+mesh = ExtResource("1_hqnpp")
+surface_material_override/0 = ExtResource("2_ut77p")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=495622465]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=507643594]
+shape = SubResource("ConvexPolygonShape3D_72wvm")
+
+[node name="SM_Prop_Monitor_08_Screen_01" type="MeshInstance3D" parent="." unique_id=610967946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46248987, 0.4233124, -0.34689456)
+gi_mode = 2
+mesh = ExtResource("3_ut77p")
+surface_material_override/0 = ExtResource("2_ut77p")
+
+[node name="SM_Prop_Monitor_08_Screen_02" type="MeshInstance3D" parent="." unique_id=8399238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46248996, 0.4233124, -0.34689456)
+gi_mode = 2
+mesh = ExtResource("4_43p7g")
+surface_material_override/0 = ExtResource("2_ut77p")

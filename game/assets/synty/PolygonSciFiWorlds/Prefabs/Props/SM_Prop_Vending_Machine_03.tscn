@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c3b665ybft8b7"]
+
+[ext_resource type="ArrayMesh" uid="uid://77yrwfr4thng" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vending_Machine_03.res" id="1_38ecj"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_rxoyx"]
+[ext_resource type="ArrayMesh" uid="uid://dwnwihd2cxrxt" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vending_Machine_03_Drum_01.res" id="3_rxoyx"]
+[ext_resource type="ArrayMesh" uid="uid://dx81x2pytq2yf" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vending_Machine_03_Glass_01.res" id="4_qegb6"]
+[ext_resource type="Material" uid="uid://cfvst6ye45syn" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Misc/Glass_01_mat.tres" id="5_c8c20"]
+[ext_resource type="ArrayMesh" uid="uid://cmt6uyoq4tu4i" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vending_Machine_03_Sign_01.res" id="6_y1ikn"]
+[ext_resource type="ArrayMesh" uid="uid://d0lxgrcdhcx7t" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Vending_Machine_03_Stick_01.res" id="7_c8c20"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_r8a0k"]
+points = PackedVector3Array(0.1901825, 0.9305011, 1.346165, 0.5861663, 2.6218193, 0.36002648, 0.22499424, 2.734691, 0.72785485, -0.21102321, 0.9305011, 1.346165, -0.26846266, -0.043852806, 1.1739855, 0.8785853, 0.18575856, 0.14176166, 0.65561587, 2.750514, -0.009935558, 0.07130027, 3.548352, -0.072876036, -0.56836605, 2.6415102, 0.41549933, -0.8996001, 0.18575856, -0.03041786, 0.29061443, 0.03842753, -0.78463674, 0.7637064, 0.128092, -0.48934993, -0.6846374, 0.06585431, -0.49831092, 0.23021597, 2.594744, -0.654702, -0.5728916, 2.648191, -0.3865116, -0.3259021, 0.24272189, -0.8334956)
+
+[node name="SM_Prop_Vending_Machine_03" type="MeshInstance3D" unique_id=1238390269]
+gi_mode = 2
+mesh = ExtResource("1_38ecj")
+surface_material_override/0 = ExtResource("2_rxoyx")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1274631235]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1292009918]
+shape = SubResource("ConvexPolygonShape3D_r8a0k")
+
+[node name="SM_Prop_Vending_Machine_03_Drum_01" type="MeshInstance3D" parent="." unique_id=1301044816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9073486e-08, 1.2795444, 0.0034924364)
+gi_mode = 2
+mesh = ExtResource("3_rxoyx")
+surface_material_override/0 = ExtResource("2_rxoyx")
+
+[node name="SM_Prop_Vending_Machine_03_Glass_01" type="MeshInstance3D" parent="." unique_id=231101327]
+gi_mode = 2
+mesh = ExtResource("4_qegb6")
+surface_material_override/0 = ExtResource("5_c8c20")
+
+[node name="SM_Prop_Vending_Machine_03_Sign_01" type="MeshInstance3D" parent="." unique_id=1863151542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.079706766)
+gi_mode = 2
+mesh = ExtResource("6_y1ikn")
+surface_material_override/0 = ExtResource("2_rxoyx")
+
+[node name="SM_Prop_Vending_Machine_03_Stick_01" type="MeshInstance3D" parent="." unique_id=723764070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22248538, 0.9073853, 1.2097489)
+gi_mode = 2
+mesh = ExtResource("7_c8c20")
+surface_material_override/0 = ExtResource("2_rxoyx")

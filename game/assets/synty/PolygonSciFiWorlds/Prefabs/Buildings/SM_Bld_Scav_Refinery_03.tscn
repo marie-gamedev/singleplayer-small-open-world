@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cfu6a1xia27ut"]
+
+[ext_resource type="ArrayMesh" uid="uid://ye54jrg1ih4g" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Scav_Refinery_03.res" id="1_iesqa"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_5n6qk"]
+[ext_resource type="Shape3D" uid="uid://b0nrjbshu2swg" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Scav_Refinery_03_Collision.res" id="3_5n6qk"]
+
+[node name="SM_Bld_Scav_Refinery_03" type="MeshInstance3D" unique_id=949711844]
+gi_mode = 2
+mesh = ExtResource("1_iesqa")
+surface_material_override/0 = ExtResource("2_5n6qk")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1522981396]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1636793646]
+shape = ExtResource("3_5n6qk")

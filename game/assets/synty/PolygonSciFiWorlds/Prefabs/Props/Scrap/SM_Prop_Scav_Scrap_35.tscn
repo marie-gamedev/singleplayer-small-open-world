@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ylu1aiwdpcce"]
+
+[ext_resource type="ArrayMesh" uid="uid://2wx6v5jgvxgg" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Scav_Scrap_35.res" id="1_jejrv"]
+[ext_resource type="Material" uid="uid://b6d78llggyu43" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_03_A_mat.tres" id="2_ajtyb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jejrv"]
+points = PackedVector3Array(-1.3878467, 3.9713151, 0.5760082, -0.28602886, -0.09718013, 1.0847028, -0.116773725, -0.09718013, 1.0847028, 0.9000846, 2.3604045, -3.1531801, 1.5784328, 2.784538, 0.8303555, -0.70983046, 0.24212658, -2.559526, 1.4934733, 0.9199437, -2.0508313, -0.7947899, 0.07287145, 2.101561, -1.4944626, 2.3419006, -2.223689, -1.7270207, 1.9370675, 0.32166094, 1.0696716, 2.784538, -3.1531801, 1.4088458, 1.8530374, 1.3390502, -0.28602886, 1.598159, 2.101561, 1.2392586, 3.3779266, 0.32166094, -1.3878467, 2.953395, -2.2207503, 1.5784328, 2.021496, -2.8138733, -0.28602886, 0.15769815, -2.6444855, -1.5574337, 3.9713151, 0.6609677, 1.2439623, 2.577281, 1.4002967, -1.5574337, 1.4289038, -1.2883204, -0.03214615, -0.09718013, 1.3390502, -0.2014013, -0.01235342, -2.0508313, 1.0696716, 0.49620843, -1.6270962, -1.0681571, 3.4431345, -1.3127444, -0.43354177, 0.19431597, 2.0947833, -0.6252029, 1.5133322, 2.101561, 1.2477974, 1.375396, -2.7690136, -0.70983046, 0.15769815, -2.4750974, -1.4728061, 3.8012636, 0.8303555, 1.2378545, 2.8927028, 1.1528741, -1.7244016, 2.8212, 0.2822677, -1.6423932, 1.6829857, -1.3727489)
+
+[node name="SM_Prop_Scav_Scrap_35" type="MeshInstance3D" unique_id=1715025793]
+gi_mode = 2
+mesh = ExtResource("1_jejrv")
+surface_material_override/0 = ExtResource("2_ajtyb")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1336767960]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=142807226]
+shape = SubResource("ConvexPolygonShape3D_jejrv")

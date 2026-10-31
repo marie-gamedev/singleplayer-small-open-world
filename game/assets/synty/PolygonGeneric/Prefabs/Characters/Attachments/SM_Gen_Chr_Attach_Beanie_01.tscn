@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c2cae0vj3dxin"]
+
+[ext_resource type="ArrayMesh" uid="uid://681twapm3enx" path="res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Chr_Attach_Beanie_01.res" id="1_way8k"]
+[ext_resource type="Material" uid="uid://djhleo6wc3yr8" path="res://Assets/Synty/PolygonGeneric/Materials/Alts/Generic_01_A_mat.tres" id="2_r627q"]
+
+[node name="SM_Gen_Chr_Attach_Beanie_01" type="MeshInstance3D" unique_id=705109207]
+mesh = ExtResource("1_way8k")
+surface_material_override/0 = ExtResource("2_r627q")

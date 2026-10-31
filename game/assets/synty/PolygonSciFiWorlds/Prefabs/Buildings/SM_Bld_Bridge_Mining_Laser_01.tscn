@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://clgsg6gs6pfeg"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxaxpnol64fh4" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Bridge_Mining_Laser_01.res" id="1_3kjaf"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_ah8qq"]
+[ext_resource type="Shape3D" uid="uid://bu76tg3djbu2p" path="res://Assets/Synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Bld_Bridge_Mining_Laser_01_Collision.res" id="3_ah8qq"]
+
+[node name="SM_Bld_Bridge_Mining_Laser_01" type="MeshInstance3D" unique_id=425358937]
+gi_mode = 2
+mesh = ExtResource("1_3kjaf")
+surface_material_override/0 = ExtResource("2_ah8qq")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2140129116]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1145798357]
+shape = ExtResource("3_ah8qq")

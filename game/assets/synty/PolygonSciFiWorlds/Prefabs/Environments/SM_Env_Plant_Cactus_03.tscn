@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c1abj7g2xa5da"]
+
+[ext_resource type="ArrayMesh" uid="uid://bqd2sduvnn213" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Cactus_03.res" id="1_q1a15"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_7sg10"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_i8hfw"]
+points = PackedVector3Array(-0.2258745, 0.53688824, -0.14268237, 0.052804604, 0.17915028, -0.2718925, -0.15066358, 0.00069154776, -0.09577303, -0.21060255, 0.17576572, 0.1852642, -0.12647174, 0.87872905, 0.10228282, -0.06355946, 1.04847, -0.0777632, 0.012935385, 0.86837023, -0.22089952, 0.051993713, 0.060588047, -0.2089104, 0.37811047, 0.6769886, -0.08179447, 0.18194036, 0.024280922, 0.004380524, 0.08557846, 0.19761154, 0.26290542, 0.0865245, 0.5048888, 0.2568847, 0.1173387, 0.92036945, 0.14416617, 0.4616331, 0.700578, 0.16819674, 0.4644037, 0.59924626, 0.08291179, 0.4602816, 0.59832317, 0.12851226)
+
+[node name="SM_Env_Plant_Cactus_03" type="MeshInstance3D" unique_id=1592933945]
+gi_mode = 2
+mesh = ExtResource("1_q1a15")
+surface_material_override/0 = ExtResource("2_7sg10")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1447507027]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=153352796]
+shape = SubResource("ConvexPolygonShape3D_i8hfw")

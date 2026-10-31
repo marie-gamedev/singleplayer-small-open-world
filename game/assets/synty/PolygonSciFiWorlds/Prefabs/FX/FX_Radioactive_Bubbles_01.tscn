@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://rdhnhafh7n1o"]
+
+[ext_resource type="ArrayMesh" uid="uid://bkilsyhv16cvt" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/FX_Bubble_Half_01.res" id="1_qatvg"]
+[ext_resource type="Material" uid="uid://bawe7xvjavct" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/FX/Bubble_mat_01.tres" id="2_3mrk4"]
+
+[sub_resource type="Curve" id="Curve_3mrk4"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_vtmb1"]
+curve = SubResource("Curve_3mrk4")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_y41ub"]
+emission_shape_scale = Vector3(4, 0, 4)
+emission_shape = 2
+emission_sphere_radius = 1.0
+direction = Vector3(0, 0, 0)
+gravity = Vector3(0, 0, 0)
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_vtmb1")
+sub_emitter_mode = 2
+sub_emitter_amount_at_end = 1
+
+[sub_resource type="Curve" id="Curve_vtmb1"]
+_data = [Vector2(0, 0.41117644), 0.0, 1.9327943, 0, 0, Vector2(0.35311574, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.16647053), -3.7435987, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_y41ub"]
+curve = SubResource("Curve_vtmb1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nj01c"]
+particle_flag_align_y = true
+emission_shape_scale = Vector3(2, 0, 2)
+emission_shape = 2
+emission_sphere_radius = 1.0
+direction = Vector3(0, 25, 0)
+spread = 90.0
+initial_velocity_min = 5.0
+initial_velocity_max = 5.0
+gravity = Vector3(0, -8, 0)
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_y41ub")
+
+[sub_resource type="SphereMesh" id="SphereMesh_3mrk4"]
+material = ExtResource("2_3mrk4")
+radius = 0.03
+height = 0.4
+radial_segments = 4
+rings = 2
+
+[node name="FX_Radioactive_Bubbles_01" type="GPUParticles3D" unique_id=2083163218]
+amount = 5
+sub_emitter = NodePath("FX_Lava_Bubbles_Splash_01")
+lifetime = 5.0
+preprocess = 0.1
+randomness = 0.8
+fixed_fps = 60
+interpolate = false
+fract_delta = false
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_y41ub")
+draw_pass_1 = ExtResource("1_qatvg")
+
+[node name="FX_Lava_Bubbles_Splash_01" type="GPUParticles3D" parent="." unique_id=342803592]
+emitting = false
+amount = 100
+preprocess = 1.01
+explosiveness = 1.0
+randomness = 1.0
+fixed_fps = 60
+interpolate = false
+fract_delta = false
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_nj01c")
+draw_pass_1 = SubResource("SphereMesh_3mrk4")

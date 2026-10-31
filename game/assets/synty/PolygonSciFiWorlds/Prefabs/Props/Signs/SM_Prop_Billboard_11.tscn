@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bqlbuiocnmnn2"]
+
+[ext_resource type="ArrayMesh" uid="uid://dar8g0m1gmkm3" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_11.res" id="1_s74xe"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_nsaun"]
+[ext_resource type="ArrayMesh" uid="uid://c4kdnvxcghf54" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Billboard_11_Glass_01.res" id="3_nsaun"]
+[ext_resource type="Material" uid="uid://dujlvy0ujn1ia" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Signs/Sign_04_mat.tres" id="4_q2fgw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o6c0l"]
+points = PackedVector3Array(-0.72886765, -0.41376585, -0.017244741, -0.62535864, -1.0345227, -0.017244741, -0.62535864, -0.9655977, 0.15520272, -0.72886765, 0.4137658, -0.017244741, -0.24592024, -1.1036637, -0.017244741, -0.5909029, -1.0001682, 0.15520272, -0.62535864, 0.9655976, 0.15520272, -0.62535864, 1.0345225, -0.017244741, 0.65063775, -1.0345227, -0.017244741, 0.61618197, -1.0001682, 0.15520272, -0.5909029, 1.0001681, 0.15520272, -0.24592024, 1.1036637, -0.017244741, 0.71969104, -0.44833636, -0.017244741, 0.61618197, 1.0001681, 0.15520272, 0.65063775, 1.0345225, -0.017244741, 0.71969104, 0.44833636, -0.017244741)
+
+[node name="SM_Prop_Billboard_11" type="MeshInstance3D" unique_id=1636751354]
+gi_mode = 2
+mesh = ExtResource("1_s74xe")
+surface_material_override/0 = ExtResource("2_nsaun")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1489661117]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=967025511]
+shape = SubResource("ConvexPolygonShape3D_o6c0l")
+
+[node name="SM_Prop_Billboard_11_Glass_01" type="MeshInstance3D" parent="." unique_id=1943548401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.099999994)
+gi_mode = 2
+mesh = ExtResource("3_nsaun")
+surface_material_override/0 = ExtResource("4_q2fgw")

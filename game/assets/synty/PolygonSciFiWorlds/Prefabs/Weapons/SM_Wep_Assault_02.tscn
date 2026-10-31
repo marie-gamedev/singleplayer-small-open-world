@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bq1b1ska2m3mx"]
+
+[ext_resource type="ArrayMesh" uid="uid://68ctt6prna0w" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Assault_02.res" id="1_gihwa"]
+[ext_resource type="Material" uid="uid://qhiaswhh1773" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_02_C_mat.tres" id="2_8ddct"]
+[ext_resource type="ArrayMesh" uid="uid://d0kfiok7ugjjd" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Assault_02_ForeBarrel_01.res" id="3_8ddct"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="4_0wybj"]
+[ext_resource type="ArrayMesh" uid="uid://yxlccuso1v5n" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Assault_02_Mag_01.res" id="5_ojblv"]
+[ext_resource type="ArrayMesh" uid="uid://bebs67ix61jql" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Assault_02_RedDot_01.res" id="6_0wybj"]
+[ext_resource type="ArrayMesh" uid="uid://c7lvn3r6embfu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Wep_Assault_02_Trigger_01.res" id="7_rm14y"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_msbly"]
+points = PackedVector3Array(-0.03254219, -0.12766926, 0.0025060475, -0.03254219, -0.040749595, -0.27279332, -0.016991641, -0.11503816, -0.03858985, 0.020808022, -0.100023836, -0.018517733, 0.039916385, -0.011742324, 0.5820883, -0.03254219, -0.011742324, 0.5820883, -0.0470288, 0.10415056, 0.59653676, -0.03254219, 0.10415056, -0.2873283, 0.025421266, -0.02621191, -0.2873283, 0.039924894, 0.031768575, 0.0025060475, 0.039916385, 0.11862016, 0.59653676, -0.01803856, 0.16213106, 0.5675533, -0.01803856, 0.22011156, 0.08936986, -0.01803856, 0.11865421, -0.2873283, 0.025421266, 0.11865421, -0.2873283, 0.025421266, 0.22011156, 0.07483488)
+
+[node name="SM_Wep_Assault_02" type="MeshInstance3D" unique_id=372434920]
+gi_mode = 2
+mesh = ExtResource("1_gihwa")
+surface_material_override/0 = ExtResource("2_8ddct")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=23068033]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=487939061]
+shape = SubResource("ConvexPolygonShape3D_msbly")
+
+[node name="SM_Wep_Assault_02_ForeBarrel_01" type="MeshInstance3D" parent="." unique_id=16549471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.019683266, 0.30430678)
+gi_mode = 2
+mesh = ExtResource("3_8ddct")
+surface_material_override/0 = ExtResource("4_0wybj")
+
+[node name="SM_Wep_Assault_02_Mag_01" type="MeshInstance3D" parent="." unique_id=1711942950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.038780976, 0.21163933)
+gi_mode = 2
+mesh = ExtResource("5_ojblv")
+surface_material_override/0 = ExtResource("4_0wybj")
+
+[node name="SM_Wep_Assault_02_RedDot_01" type="MeshInstance3D" parent="." unique_id=318090950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0005372742, 0.16355793, 0.09684246)
+gi_mode = 2
+mesh = ExtResource("6_0wybj")
+surface_material_override/0 = ExtResource("4_0wybj")
+
+[node name="SM_Wep_Assault_02_Trigger_01" type="MeshInstance3D" parent="." unique_id=1339108595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00079478737, 0.06160919)
+gi_mode = 2
+mesh = ExtResource("7_rm14y")
+surface_material_override/0 = ExtResource("4_0wybj")

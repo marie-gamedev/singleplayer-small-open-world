@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://butg3vvb3nt1d"]
+
+[ext_resource type="ArrayMesh" uid="uid://cepqy7liv77jk" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Banner_04_B.res" id="1_gyea8"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_jcifd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qji70"]
+size = Vector3(0.9527771, 2.3542128, 0.04803464)
+
+[node name="SM_Prop_Banner_04_B" type="MeshInstance3D" unique_id=1038227173]
+gi_mode = 2
+mesh = ExtResource("1_gyea8")
+surface_material_override/0 = ExtResource("2_jcifd")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=7951189]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=950091351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.9604645e-08, 0)
+shape = SubResource("BoxShape3D_qji70")

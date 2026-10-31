@@ -1,0 +1,232 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://di6jphckm5n5j"
+path="res://.godot/imported/SM_Veh_HoverTank_01.fbx-4ff05028eb61ef9c6a54c102884a580a.scn"
+
+[deps]
+
+source_file="res://Assets/Synty/PolygonSciFiWorlds/Models/SM_Veh_HoverTank_01.fbx"
+dest_files=["res://.godot/imported/SM_Veh_HoverTank_01.fbx-4ff05028eb61ef9c6a54c102884a580a.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_SM_Veh_HoverTank_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b4c7q3jri4o7q"
+},
+"Root Scene_SM_Veh_HoverTank_01_Barrell_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Barrell_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d1l6367npxlnx"
+},
+"Root Scene_SM_Veh_HoverTank_01_Barrell_02": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Barrell_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bqmyof1dyouuc"
+},
+"Root Scene_SM_Veh_HoverTank_01_Hatch_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Hatch_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://puvppyywci4f"
+},
+"Root Scene_SM_Veh_HoverTank_01_HoverPad_fl": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_fl.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d3yb64g5kcfav"
+},
+"Root Scene_SM_Veh_HoverTank_01_HoverPad_fr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_fr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dj7m7ml5j242p"
+},
+"Root Scene_SM_Veh_HoverTank_01_HoverPad_ml": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_ml.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ktvvm3ct4arn"
+},
+"Root Scene_SM_Veh_HoverTank_01_HoverPad_mr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_mr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c7n7jvmrs22ic"
+},
+"Root Scene_SM_Veh_HoverTank_01_HoverPad_rl": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_rl.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ddgkqmj20vyd8"
+},
+"Root Scene_SM_Veh_HoverTank_01_HoverPad_rr": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dh43tnq45cccn"
+},
+"Root Scene_SM_Veh_HoverTank_01_Turret_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Turret_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cn0dmfstd7xie"
+},
+"SM_Veh_HoverTank_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b4c7q3jri4o7q"
+},
+"SM_Veh_HoverTank_01_Barrell_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Barrell_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d1l6367npxlnx"
+},
+"SM_Veh_HoverTank_01_Barrell_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Barrell_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bqmyof1dyouuc"
+},
+"SM_Veh_HoverTank_01_Hatch_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Hatch_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://puvppyywci4f"
+},
+"SM_Veh_HoverTank_01_HoverPad_fl": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_fl.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d3yb64g5kcfav"
+},
+"SM_Veh_HoverTank_01_HoverPad_fr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_fr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dj7m7ml5j242p"
+},
+"SM_Veh_HoverTank_01_HoverPad_ml": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_ml.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ktvvm3ct4arn"
+},
+"SM_Veh_HoverTank_01_HoverPad_mr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_mr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c7n7jvmrs22ic"
+},
+"SM_Veh_HoverTank_01_HoverPad_rl": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_rl.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ddgkqmj20vyd8"
+},
+"SM_Veh_HoverTank_01_HoverPad_rr": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_HoverPad_rr.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dh43tnq45cccn"
+},
+"SM_Veh_HoverTank_01_Turret_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_HoverTank_01_Turret_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cn0dmfstd7xie"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

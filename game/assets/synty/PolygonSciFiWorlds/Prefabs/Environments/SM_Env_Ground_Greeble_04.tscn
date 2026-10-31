@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://btb0b66c7kifl"]
+
+[ext_resource type="ArrayMesh" uid="uid://c42u4n3e8xaaq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Ground_Greeble_04.res" id="1_104l5"]
+[ext_resource type="Material" uid="uid://dxcwn7myoprsp" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Environment/PolygonSciFiWorlds_Env_Triplanar_Core_01_mat.tres" id="2_rodek"]
+[ext_resource type="ArrayMesh" uid="uid://dichdmr1231vr" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Ground_Greeble_04_Metal_01.res" id="3_rodek"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="4_0jf5b"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_104l5"]
+points = PackedVector3Array(-0.019869208, -0.122556694, -1.6833708, -0.03781569, 0.01167316, -1.3077571, 0.91067445, 0.13395274, -0.6835179, 1.0607377, 0.01167316, -0.9860064, 1.2848777, -0.122556694, -1.2902784, -0.70794463, -0.122556694, -1.4436629, -0.5101516, 0.19500464, -0.8418963, 0.9786421, 0.20832571, -0.19268739, 1.6315883, -0.122556694, -0.59719443, -1.5399737, -0.122556694, -1.0830309, -1.3028512, 0.01167316, -0.8468902, -0.9542314, 0.13374186, -0.6396427, -1.2425205, 0.1572558, -0.154163, -0.9947064, 0.19356358, 0.5282197, 0.9526769, 0.23651433, 0.47721052, 1.9057492, -0.122556694, 0.21574342, -1.7988611, -0.122556694, -0.5119412, -1.9951268, -0.122556694, 0.3338139, -1.6510892, 0.01167316, 0.24963069, -1.3353076, 0.01167316, 1.064352, -0.3047217, 0.1572558, 1.0857546, 0.7201365, 0.17525151, 0.7654307, 0.52959836, -0.122556694, 1.8319881, 1.1764351, -0.122556694, 1.4759934, 1.5800399, -0.122556694, 0.8374858, -1.5544837, -0.122556694, 1.4067919, -1.0065434, -0.122556694, 1.7510154, -0.122584105, -0.122556694, 1.960403, 0.40550053, 0.01167316, 1.4114292)
+
+[node name="SM_Env_Ground_Greeble_04" type="MeshInstance3D" unique_id=1599836944]
+gi_mode = 2
+mesh = ExtResource("1_104l5")
+surface_material_override/0 = ExtResource("2_rodek")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1456042186]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=713317044]
+shape = SubResource("ConvexPolygonShape3D_104l5")
+
+[node name="SM_Env_Ground_Greeble_04_Metal_01" type="MeshInstance3D" parent="." unique_id=2085584513]
+gi_mode = 2
+mesh = ExtResource("3_rodek")
+surface_material_override/0 = ExtResource("4_0jf5b")

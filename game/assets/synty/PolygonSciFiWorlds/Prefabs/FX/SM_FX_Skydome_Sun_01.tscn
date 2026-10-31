@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bunuovw0rs1d2"]
+
+[ext_resource type="ArrayMesh" uid="uid://dqyvyu8h7u43u" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_FX_Skydone_Sun_01.res" id="1_eg20m"]
+[ext_resource type="Material" uid="uid://cywu8i1smvp08" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Sky/Sun_01_mat.tres" id="2_ppwj2"]
+
+[node name="SM_FX_Skydone_Sun_01" type="MeshInstance3D" unique_id=857667698]
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("1_eg20m")
+surface_material_override/0 = ExtResource("2_ppwj2")

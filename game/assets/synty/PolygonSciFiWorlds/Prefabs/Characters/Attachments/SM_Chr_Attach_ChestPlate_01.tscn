@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bc2q7viblmy2y"]
+
+[ext_resource type="ArrayMesh" uid="uid://cjbvu7bqpgld7" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_ChestPlate_01.res" id="1_dr72w"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_al55m"]
+
+[node name="SM_Chr_Attach_ChestPlate_01" type="MeshInstance3D" unique_id=2082043032]
+gi_mode = 2
+mesh = ExtResource("1_dr72w")
+surface_material_override/0 = ExtResource("2_al55m")

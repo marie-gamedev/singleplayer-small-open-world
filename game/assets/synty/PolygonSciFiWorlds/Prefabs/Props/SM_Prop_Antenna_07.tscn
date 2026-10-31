@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://be1g61isy1jjk"]
+
+[ext_resource type="ArrayMesh" uid="uid://0mr0w22ji08a" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Prop_Antenna_07.res" id="1_2n0xq"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_c0lmo"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cf6ms"]
+points = PackedVector3Array(-0.6675334, 1.0518068, -0.22423676, -0.22162005, -0.031056881, -0.09685719, -0.6675334, 1.0518068, 0.22152632, -0.66159666, 3.7348108, 0.14271593, -0.22162005, 3.9806843, -0.66999984, -0.22162005, 1.0518068, -0.66999984, 0.22416133, -0.031056881, 0.09414673, -0.22162005, 1.0518068, 0.66742027, 0.22416133, 1.0518068, -0.66999984, -0.22162005, 3.9806843, 0.66742027, 0.6700747, 3.9814696, -0.22423676, 0.6700747, 1.0518068, -0.22423676, 0.6700747, 1.0518068, 0.22152632, 0.22416133, 1.0518068, 0.66742027, 0.22416133, 3.9806843, 0.66742027, 0.6802331, 1.1217197, -0.08991873)
+
+[node name="SM_Prop_Antenna_07" type="MeshInstance3D" unique_id=538724153]
+gi_mode = 2
+mesh = ExtResource("1_2n0xq")
+surface_material_override/0 = ExtResource("2_c0lmo")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=118474823]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1270674063]
+shape = SubResource("ConvexPolygonShape3D_cf6ms")

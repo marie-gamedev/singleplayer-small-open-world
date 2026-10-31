@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://ce51yv5vg1rlo"]
+
+[ext_resource type="ArrayMesh" uid="uid://dom2eq5mwelq2" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Turret_Medium_01.res" id="1_imhy8"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_1px2k"]
+[ext_resource type="ArrayMesh" uid="uid://ixd05r4u14de" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Turret_Medium_01_Gun_01.res" id="3_1px2k"]
+[ext_resource type="ArrayMesh" uid="uid://d0fits85kys44" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Turret_Medium_01_Barrell_01.res" id="4_hfqpm"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_orbpj"]
+points = PackedVector3Array(1.4206442, 0.04133366, 0.32065487, 1.0635363, 0.7412935, 0.58017075, 1.0212618, 0.081813484, 1.1141804, -0.77679306, 0.04253238, 1.2340013, -1.4206442, 0.04133366, 0.32065487, 0.32095218, 0.04133366, -1.4207808, 1.3725291, 0.31667024, -0.5491988, -0.29008067, 0.402978, 1.4506007, 0.29008067, 0.9833426, -0.4838158, 0.29008067, 0.9833426, 0.14437985, -1.0638144, 0.7413857, 0.58017075, -1.0437896, 0.6810809, -0.54459035, -1.1558726, 0.08347325, -0.9714523, 0.18661952, 0.08006151, -1.4919244, 0.29008067, 0.402978, -1.4507359, -0.29008067, 0.402978, -1.4507359)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mr0ri"]
+points = PackedVector3Array(-0.10185653, -0.32443178, -0.34325397, -0.7096986, 0.3615551, -1.5257087, -0.47545263, 0.21716297, -1.727693, 0.10649514, -0.32443178, -0.34325397, 0.30302233, -0.27867723, 0.20078194, -0.5948956, 0.13808715, 0.5683423, -0.7424781, 1.0999277, -0.23797166, -0.14661026, 1.3676581, -1.5196793, 0.115326166, 1.2655393, -1.7202722, 0.6023781, 0.3990208, -1.7142428, 0.63216406, 0.21484208, -1.5148094, 0.6372531, 0.2125212, 0.56880605, -0.10934043, 1.2938871, 0.6413907, 0.15139854, 1.3691502, 0.5669509, 0.74726635, 1.100425, -0.23797166, 0.78663164, 0.94326794, 0.3107022)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gp82b"]
+points = PackedVector3Array(0.80626607, 0.2267496, 0.17282462, 0.2139355, -0.76067424, 0.17282462, 0.38528943, -0.04455805, 0.103654735, 0.1480673, 0.55589086, 0.107253164, 0.6745297, 0.55589086, 1.028452, 0.74039793, 0.29252118, 4.1882763, 0.1480673, -0.826304, 4.055134, -0.18079048, -0.826304, 0.17282462, -0.049215138, -0.89221734, 3.9243908, -0.83898926, 0.29252118, 0.17282462, -0.70725286, 0.55589086, 1.028452, 0.67791164, 0.43554598, 3.8928046, -0.7096686, 0.43441194, 3.7696583, -0.77312106, 0.2267496, 4.055134, -0.18079048, -0.76067424, 4.055134, -0.83898926, 0.35815102, 1.028452)
+
+[node name="SM_Veh_Turret_Medium_01" type="MeshInstance3D" unique_id=605541892]
+gi_mode = 2
+mesh = ExtResource("1_imhy8")
+surface_material_override/0 = ExtResource("2_1px2k")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=522581870]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=340480835]
+shape = SubResource("ConvexPolygonShape3D_orbpj")
+
+[node name="SM_Veh_Turret_Medium_01_Gun_01" type="MeshInstance3D" parent="." unique_id=969534730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.879593, -0.09751991)
+gi_mode = 2
+mesh = ExtResource("3_1px2k")
+surface_material_override/0 = ExtResource("2_1px2k")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_Turret_Medium_01_Gun_01" unique_id=903843224]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Turret_Medium_01_Gun_01/MeshCollider" unique_id=2020962493]
+shape = SubResource("ConvexPolygonShape3D_mr0ri")
+
+[node name="SM_Veh_Turret_Medium_01_Barrell_01" type="MeshInstance3D" parent="SM_Veh_Turret_Medium_01_Gun_01" unique_id=1697156596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6312895, 0.6753908)
+gi_mode = 2
+mesh = ExtResource("4_hfqpm")
+surface_material_override/0 = ExtResource("2_1px2k")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_Turret_Medium_01_Gun_01/SM_Veh_Turret_Medium_01_Barrell_01" unique_id=1138789582]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Turret_Medium_01_Gun_01/SM_Veh_Turret_Medium_01_Barrell_01/MeshCollider" unique_id=69573926]
+shape = SubResource("ConvexPolygonShape3D_gp82b")

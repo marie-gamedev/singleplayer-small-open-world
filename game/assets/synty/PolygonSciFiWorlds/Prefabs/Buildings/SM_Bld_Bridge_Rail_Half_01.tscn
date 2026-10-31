@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dcb1nv0xy3g5"]
+
+[ext_resource type="ArrayMesh" uid="uid://ca7piny7djg7f" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Bld_Bridge_Rail_Half_01.res" id="1_rvout"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_2b2xr"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cnkb4"]
+points = PackedVector3Array(-0.9664272, -0.8821348, 0.08660571, -0.99206394, 0.17715347, -0.03968239, 0, -0.8541343, 0.15521894, -0.9664272, -0.8821348, 4.9128995, -0.75395304, 0.73300076, -0.03968239, -0.99206394, 0.17715347, 5.039685, 0, 0.6841891, 0.15521894, 0, -0.8541343, 4.8442864, -0.75395304, 0.73300076, 5.039685, -0.595083, 0.971194, 0.35757822, 0, 1.0506548, 0.5952385, 0, 0.6841891, 4.8442864, -0.595083, 0.971194, 4.642424, 0, 1.0506548, 4.404267, -0.44019437, 1.0364654, 0.6235788, -0.44019437, 1.0364654, 4.3759265)
+
+[node name="SM_Bld_Bridge_Rail_Half_01" type="MeshInstance3D" unique_id=1705204231]
+gi_mode = 2
+mesh = ExtResource("1_rvout")
+surface_material_override/0 = ExtResource("2_2b2xr")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=611477085]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=571373122]
+shape = SubResource("ConvexPolygonShape3D_cnkb4")

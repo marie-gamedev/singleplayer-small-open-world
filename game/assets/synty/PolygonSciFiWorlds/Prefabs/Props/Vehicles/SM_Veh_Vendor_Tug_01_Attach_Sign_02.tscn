@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cn2ahuji5u36s"]
+
+[ext_resource type="ArrayMesh" uid="uid://wfgw7m6wsif2" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Vendor_Tug_01_Attach_Sign_02.res" id="1_26vwa"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_cvdbs"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hxjrk"]
+points = PackedVector3Array(-0.19889772, 3.1582856, -2.4779341, -0.113501705, 4.0973816, -2.564074, 0.22812414, 3.1582856, -2.4779341, -0.19889772, 3.1582856, 0.4246106, -0.19889772, 3.8418815, 2.730595, -0.113501705, 5.634745, 2.2180352, -0.113501705, 4.5245075, -2.222189, 0.14268634, 4.438937, -2.307794, 0.22812414, 3.329427, -2.4779341, 0.22812414, 3.329427, 2.730595, 0.14268634, 3.2438564, 2.9018054, -0.18543833, 3.3965745, 2.568481, 0.057290316, 4.695407, 2.8162003, 0.057290316, 5.634745, 2.1329656, 0.14268634, 5.463846, 2.2180352, 0.22812414, 3.8418815, 2.730595)
+
+[node name="SM_Veh_Vendor_Tug_01_Attach_Sign_02" type="MeshInstance3D" unique_id=945188654]
+gi_mode = 2
+mesh = ExtResource("1_26vwa")
+surface_material_override/0 = ExtResource("2_cvdbs")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=606325104]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=2117869238]
+shape = SubResource("ConvexPolygonShape3D_hxjrk")

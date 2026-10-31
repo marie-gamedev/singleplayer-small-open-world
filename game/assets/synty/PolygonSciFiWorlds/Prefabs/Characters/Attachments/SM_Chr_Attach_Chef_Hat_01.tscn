@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b8nqw4xbaoliy"]
+
+[ext_resource type="ArrayMesh" uid="uid://br0msepsqca6c" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Chef_Hat_01.res" id="1_w38n7"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_7lyjh"]
+
+[node name="SM_Chr_Attach_Chef_Hat_01" type="MeshInstance3D" unique_id=644259300]
+gi_mode = 2
+mesh = ExtResource("1_w38n7")
+surface_material_override/0 = ExtResource("2_7lyjh")

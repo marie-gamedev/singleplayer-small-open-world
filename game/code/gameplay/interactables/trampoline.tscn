@@ -1,23 +1,19 @@
 [gd_scene format=3 uid="uid://canjmfsujlbew"]
 
 [ext_resource type="Script" uid="uid://30lsymbesjtc" path="res://code/gameplay/interactables/trampoline.gd" id="1_j3a8o"]
+[ext_resource type="ArrayMesh" uid="uid://brr3axjsqkfuk" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Balloon_01.res" id="2_vba8p"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://assets/synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="3_l7e5p"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i833x"]
-albedo_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_4plt3"]
-material = SubResource("StandardMaterial3D_i833x")
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j3a8o"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vba8p"]
+points = PackedVector3Array(0.07078766, 1.8719783, -0.47189525, -0.108932994, 1.9332021, 0.5322607, -0.14697652, 1.9414501, 0.537956, -0.19583754, -0.0490824, 0.023221117, -0.54912543, 1.8347099, -0.29065076, 0.54989684, 1.91315, 0.062441174, 0.118076615, -0.009739399, 0.062441174, -0.15085566, 2.3778863, -0.09076112, -0.54912543, 1.8347099, 0.29798436, 0.31429985, 1.7169268, 0.45497602, 0.039544288, -0.009739399, -0.1335477, 0.3928322, 1.8347099, -0.36909088, -0.19583754, 1.7169268, -0.5260825, 0.18598126, 2.3183856, 0.24483949, -0.11730521, -0.0490824, 0.14088129, 0.18742174, 2.3273172, -0.2393834, -0.4110312, 2.252331, 0.17191033, -0.14459409, 2.1101887, -0.48566195, -0.11730521, -0.009739399, -0.1335477, -0.19583754, 1.7169268, 0.5334161, 0.118076615, -0.009739399, -0.094327636, -0.4769921, 2.1223269, -0.23489808, 0.31429985, 1.6778296, -0.40831092, 0.54989684, 1.8740529, -0.05510758, -0.14793207, 2.1686034, 0.46719307, 0.29053146, 2.110794, 0.38444692, 0.07881045, -0.009739399, 0.14088129, -0.038772885, 1.6384866, 0.5334161, 0.2977383, 2.1342218, -0.38657865, 0.4083008, 2.1685176, 0.096256346, -0.07433126, 2.3267598, -0.3142105, -0.14802681, 2.3180478, 0.28195903)
 
 [node name="Trampoline" type="StaticBody3D" unique_id=1428804331]
 script = ExtResource("1_j3a8o")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=652963795]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
-mesh = SubResource("BoxMesh_4plt3")
+[node name="SM_Env_Plant_Balloon_01" type="MeshInstance3D" parent="." unique_id=952015515]
+gi_mode = 2
+mesh = ExtResource("2_vba8p")
+surface_material_override/0 = ExtResource("3_l7e5p")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=888905646]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_j3a8o")
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=2044764820]
+shape = SubResource("ConvexPolygonShape3D_vba8p")

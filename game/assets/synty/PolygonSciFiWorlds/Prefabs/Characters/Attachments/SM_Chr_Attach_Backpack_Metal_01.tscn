@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b3chmj5ccgche"]
+
+[ext_resource type="ArrayMesh" uid="uid://d1xiw5psdvsxw" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Backpack_Metal_01.res" id="1_7bxji"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_bese2"]
+
+[node name="SM_Chr_Attach_Backpack_Metal_01" type="MeshInstance3D" unique_id=533634775]
+gi_mode = 2
+mesh = ExtResource("1_7bxji")
+surface_material_override/0 = ExtResource("2_bese2")

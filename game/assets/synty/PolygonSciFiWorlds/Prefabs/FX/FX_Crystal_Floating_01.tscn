@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://conqiwig15mx"]
+
+[ext_resource type="ArrayMesh" uid="uid://btuskli3gl4pt" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Floating_Crystal_01.res" id="1_8p00f"]
+[ext_resource type="ArrayMesh" uid="uid://p07asomjsb82" path="res://Assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Floating_Crystal_02.res" id="2_tvjpw"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_am20g"]
+particle_flag_rotate_y = true
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = -20.000015
+angular_velocity_max = -20.000015
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ml62j"]
+particle_flag_rotate_y = true
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = 19.999983
+angular_velocity_max = 19.999983
+gravity = Vector3(0, 0, 0)
+
+[node name="FX_Crystal_Floating_01" type="GPUParticles3D" unique_id=1690352375]
+amount = 1
+lifetime = 18.0
+fixed_fps = 0
+process_material = SubResource("ParticleProcessMaterial_am20g")
+draw_pass_1 = ExtResource("1_8p00f")
+
+[node name="FX_Crystal_Floating_02" type="GPUParticles3D" parent="." unique_id=920027462]
+amount = 1
+lifetime = 18.0
+fixed_fps = 0
+interpolate = false
+process_material = SubResource("ParticleProcessMaterial_ml62j")
+draw_pass_1 = ExtResource("2_tvjpw")

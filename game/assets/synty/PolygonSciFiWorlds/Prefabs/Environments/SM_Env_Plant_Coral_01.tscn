@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://quj0sn3ebvm8"]
+
+[ext_resource type="ArrayMesh" uid="uid://81cijqvdhmdq" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Coral_01.res" id="1_df1mt"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_qo330"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bl1wb"]
+points = PackedVector3Array(-1.8162704, 5.1961207, 0.015083015, -1.4318767, 4.427957, 1.0714252, -0.9514716, 5.9654694, 0.4948488, -0.08736861, 4.7157965, -0.36912256, -1.0474831, 1.3553009, -0.4652186, -1.5115384, 1.7319796, 0.82796985, 1.7375445, 3.6592007, 0.3028353, -0.85546017, 1.7390867, 1.0714252, 1.2571394, 4.4285493, -0.17710906, 0.6810708, 3.5638463, -0.56113607, 0.969105, 1.5471938, -0.75332814, 0.10430634, -0.08508062, -0.36912256, -0.27973938, 0.010865845, 0.4948488, 1.5451739, 1.2587621, 0.30301398, 1.7375445, 3.370769, 0.014725804, 0.87274575, 0.29870525, 0.39911002)
+
+[node name="SM_Env_Plant_Coral_01" type="MeshInstance3D" unique_id=2012187269]
+gi_mode = 2
+mesh = ExtResource("1_df1mt")
+surface_material_override/0 = ExtResource("2_qo330")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=390126645]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1048432987]
+shape = SubResource("ConvexPolygonShape3D_bl1wb")

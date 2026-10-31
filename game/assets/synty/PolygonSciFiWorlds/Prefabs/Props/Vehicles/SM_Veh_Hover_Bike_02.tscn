@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://dkwbilt7u8u7c"]
+
+[ext_resource type="ArrayMesh" uid="uid://bw3k4m6f8hnfv" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02.res" id="1_2v2v8"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_vyvm2"]
+[ext_resource type="ArrayMesh" uid="uid://bqwnw2ym161mu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02_FootRests_01.res" id="3_vyvm2"]
+[ext_resource type="ArrayMesh" uid="uid://d4k7j56nd73ri" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02_Handle_Bars_01.res" id="4_thcod"]
+[ext_resource type="ArrayMesh" uid="uid://bdmsfympids5t" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02_Seat_01.res" id="5_8d2a4"]
+[ext_resource type="ArrayMesh" uid="uid://dntpftq4njr2j" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_Hover_Bike_02_Steering_01.res" id="6_go75g"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mopf1"]
+points = PackedVector3Array(0.022598028, -0.48859024, -1.0444362, 0.3048224, -0.43210107, -0.7059692, -0.31568682, -0.3757334, -0.64935553, -0.14644499, -0.26287657, -1.4952803, 0.079056144, -0.43210107, -1.2695546, 0.3612805, -0.15026271, -0.64935553, 0.19190615, -0.2065089, -1.6081431, 0.3048224, 0.24467546, -1.8339903, 0.24836427, 0.18806481, -0.5928633, -0.25929496, 0.18806481, -0.5928633, -0.31568682, 0.6958598, -1.100807, -0.31568682, 0.24467546, -1.8339903, 0.3048224, 0.6958598, -1.100807, 0.24836427, 0.5266353, -1.7773767, 0.19197237, 0.7524705, -0.98794407, -0.25929496, 0.7524705, -1.4389095)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1kud5"]
+points = PackedVector3Array(0.022770435, -0.54507136, -0.53636014, 0.19192299, -0.43229422, -0.1980831, 0.07907179, -0.20663506, 1.2681844, -0.16476828, -0.3091311, 0.77902824, -0.20288226, -0.43229422, -0.1980831, -0.21908194, -0.2833235, -0.6778695, 0.13552225, -0.3758532, -0.59306, 0.24837345, 0.18813735, -0.59306, 0.24837345, -0.03731197, 1.3813438, 0.07907179, 0.13169634, 1.776561, -0.259283, -0.03731197, 1.3248842, -0.259283, 0.18813735, -0.59306, -0.09003106, 0.52667856, 0.25335336, 0.13552225, 0.4702376, 1.2681844, -0.1464318, 0.35735554, 1.4942629, -0.026325539, 0.5103128, 0.8371696)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p1euk"]
+points = PackedVector3Array(0.092879295, -0.6127992, 0.42031795, -0.09043497, -0.6127992, 0.42031795, 0.11585811, -0.7046369, 0.42031795, 0.09293091, 0.7634718, 0.0531224, -0.021653399, 0.7634718, 0.099068165, -0.2510286, -0.54395694, 0.12204105, -0.090486616, 0.7634718, 0.0531224, -0.12565197, -0.5418011, 0.0100667775, 0.10981649, -0.57902485, 0.052529544, 0.27650338, -0.47511464, 0.07609528, 0.09293091, 0.7634718, -0.061371475, -0.22804977, -0.108195245, -0.22203343, -0.021653399, 0.76332814, -0.10731724, -0.1592682, 0.052340925, -0.3367496, 0.16176414, 0.052340925, -0.3367496, 0.20994222, -0.15849757, -0.19831948)
+
+[node name="SM_Veh_Hover_Bike_02" type="MeshInstance3D" unique_id=26116107]
+gi_mode = 2
+mesh = ExtResource("1_2v2v8")
+surface_material_override/0 = ExtResource("2_vyvm2")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=2089423430]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1426146415]
+shape = SubResource("ConvexPolygonShape3D_mopf1")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="MeshCollider" unique_id=778551782]
+shape = SubResource("ConvexPolygonShape3D_1kud5")
+
+[node name="SM_Veh_Hover_Bike_02_FootRests_01" type="MeshInstance3D" parent="." unique_id=1562529370]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.31422395, -0.01775239)
+gi_mode = 2
+mesh = ExtResource("3_vyvm2")
+surface_material_override/0 = ExtResource("2_vyvm2")
+
+[node name="SM_Veh_Hover_Bike_02_Handle_Bars_01" type="MeshInstance3D" parent="." unique_id=613862606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45280492, 0.37627128)
+gi_mode = 2
+mesh = ExtResource("4_thcod")
+surface_material_override/0 = ExtResource("2_vyvm2")
+
+[node name="SM_Veh_Hover_Bike_02_Seat_01" type="MeshInstance3D" parent="." unique_id=372843398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31507456, -0.48070133)
+gi_mode = 2
+mesh = ExtResource("5_8d2a4")
+surface_material_override/0 = ExtResource("2_vyvm2")
+
+[node name="SM_Veh_Hover_Bike_02_Steering_01" type="MeshInstance3D" parent="." unique_id=2040662378]
+transform = Transform3D(1, 0, 0, 0, 0.5622566, 0.8269628, 0, -0.8269628, 0.5622566, 0, -0.40832546, 1.7975589)
+gi_mode = 2
+mesh = ExtResource("6_go75g")
+surface_material_override/0 = ExtResource("2_vyvm2")
+
+[node name="MeshCollider" type="StaticBody3D" parent="SM_Veh_Hover_Bike_02_Steering_01" unique_id=1266263850]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Veh_Hover_Bike_02_Steering_01/MeshCollider" unique_id=1958260551]
+shape = SubResource("ConvexPolygonShape3D_p1euk")

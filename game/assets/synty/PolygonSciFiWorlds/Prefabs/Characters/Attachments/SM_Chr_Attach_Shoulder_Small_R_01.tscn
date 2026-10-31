@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://culu3fipb8gp5"]
+
+[ext_resource type="ArrayMesh" uid="uid://xcsry1h84xud" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Chr_Attach_Shoulder_Small_R_01.res" id="1_773l0"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_n60fm"]
+
+[node name="SM_Chr_Attach_Shoulder_Small_R_01" type="MeshInstance3D" unique_id=816632653]
+gi_mode = 2
+mesh = ExtResource("1_773l0")
+surface_material_override/0 = ExtResource("2_n60fm")

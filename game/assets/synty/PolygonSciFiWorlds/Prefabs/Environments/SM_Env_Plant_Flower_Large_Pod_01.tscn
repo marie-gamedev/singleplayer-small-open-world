@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://v2ebunmwi5ak"]
+
+[ext_resource type="ArrayMesh" uid="uid://fakjnvfnstpu" path="res://assets/Synty/PolygonSciFiWorlds/Models/extracted/SM_Env_Plant_Flower_Large_Pod_01.res" id="1_l1aid"]
+[ext_resource type="Material" uid="uid://bs5gcuqq748eb" path="res://Assets/Synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_A_mat.tres" id="2_gk3ru"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e13ke"]
+points = PackedVector3Array(-0.061059237, 3.5996559, 1.0523446, 0.15225971, 4.1698885, 0.4815694, -0.67624736, 3.4671595, 0.53426254, -0.4423837, 3.0958977, 1.0344448, 0.16070807, 0.15338826, 1.034646, 0.010175109, 3.553531, 1.0253947, 0.76418376, 3.2460303, 0.73276675, -0.59330064, 3.6236231, -0.17226762, 0.6132668, 3.6236231, -0.24788827, -0.14054984, 3.5481045, -0.4741469, -0.970593, 0.15338826, -0.39872736, -0.8951345, 0.07786971, 0.73276675, -0.14054984, -0.44985557, -0.24768716, 0.9909432, 0.002803415, 0.35546803, 0.91529274, 0.22845459, -0.5493653, -0.06509137, 0.07786971, -1.0022848)
+
+[node name="SM_Env_Plant_Flower_Large_Pod_01" type="MeshInstance3D" unique_id=1901389662]
+gi_mode = 2
+mesh = ExtResource("1_l1aid")
+surface_material_override/0 = ExtResource("2_gk3ru")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1483438733]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=1511393583]
+shape = SubResource("ConvexPolygonShape3D_e13ke")

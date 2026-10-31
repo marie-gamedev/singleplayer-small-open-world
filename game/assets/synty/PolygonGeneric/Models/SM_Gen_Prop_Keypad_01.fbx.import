@@ -1,0 +1,232 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://et7c14nlbtx1"
+path="res://.godot/imported/SM_Gen_Prop_Keypad_01.fbx-2b67f2baa024336c45d01b9d433c36c1.scn"
+
+[deps]
+
+source_file="res://Assets/Synty/PolygonGeneric/Models/SM_Gen_Prop_Keypad_01.fbx"
+dest_files=["res://.godot/imported/SM_Gen_Prop_Keypad_01.fbx-2b67f2baa024336c45d01b9d433c36c1.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=2
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_SM_Gen_Prop_Keypad_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dq0vcwsi2jaqa"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bp08nnhu3fwyk"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_02": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b688qekllrw3b"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_03": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_03.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b3isy4qubnwus"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_04": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_04.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://duxykna2ffjij"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_05": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_05.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c81jdg1dmjh0k"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_06": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_06.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cwgslawrdo7tl"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_07": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_07.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bcrrnnkn3wgp5"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_08": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_08.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://s3kf5hv4bdnp"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Key_09": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_09.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://frvcpsku4f05"
+},
+"Root Scene_SM_Gen_Prop_Keypad_01_Light_01": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Light_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bghmv8d8pvlwu"
+},
+"SM_Gen_Prop_Keypad_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dq0vcwsi2jaqa"
+},
+"SM_Gen_Prop_Keypad_01_Key_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bp08nnhu3fwyk"
+},
+"SM_Gen_Prop_Keypad_01_Key_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_02.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b688qekllrw3b"
+},
+"SM_Gen_Prop_Keypad_01_Key_03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_03.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b3isy4qubnwus"
+},
+"SM_Gen_Prop_Keypad_01_Key_04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_04.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://duxykna2ffjij"
+},
+"SM_Gen_Prop_Keypad_01_Key_05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_05.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c81jdg1dmjh0k"
+},
+"SM_Gen_Prop_Keypad_01_Key_06": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_06.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cwgslawrdo7tl"
+},
+"SM_Gen_Prop_Keypad_01_Key_07": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_07.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bcrrnnkn3wgp5"
+},
+"SM_Gen_Prop_Keypad_01_Key_08": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_08.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://s3kf5hv4bdnp"
+},
+"SM_Gen_Prop_Keypad_01_Key_09": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Key_09.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://frvcpsku4f05"
+},
+"SM_Gen_Prop_Keypad_01_Light_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Assets/Synty/PolygonGeneric/Models/extracted/SM_Gen_Prop_Keypad_01_Light_01.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bghmv8d8pvlwu"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2
