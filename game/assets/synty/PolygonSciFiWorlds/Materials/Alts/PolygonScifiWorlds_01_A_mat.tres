@@ -1,9 +1,9 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://bs5gcuqq748eb"]
 
-[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://Assets/Synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_1yjs6"]
-[ext_resource type="Texture2D" uid="uid://chc5rrvtj8v38" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Alts/PolygonScifiWorlds_01_A.png" id="2_l2j2b"]
-[ext_resource type="Texture2D" uid="uid://cv77ka3aboaer" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Emissive/PolygonScifiWorlds_01_Emissive.png" id="3_poay7"]
-[ext_resource type="Texture2D" uid="uid://itvrnyr1ulj0" path="res://Assets/Synty/PolygonSciFiWorlds/Textures/Misc/PolygonScifiWorlds_A_01_Normals_8k.png" id="4_3uwg5"]
+[ext_resource type="Shader" uid="uid://dwevfbkjqkpcw" path="res://assets/synty/PolygonGeneric/Shaders/Generic_Basic.gdshader" id="1_1yjs6"]
+[ext_resource type="Texture2D" uid="uid://chc5rrvtj8v38" path="res://assets/synty/PolygonSciFiWorlds/Textures/Alts/PolygonScifiWorlds_01_A.png" id="2_l2j2b"]
+[ext_resource type="Texture2D" uid="uid://cv77ka3aboaer" path="res://assets/synty/PolygonSciFiWorlds/Textures/Emissive/PolygonScifiWorlds_01_Emissive.png" id="3_poay7"]
+[ext_resource type="Texture2D" uid="uid://itvrnyr1ulj0" path="res://assets/synty/PolygonSciFiWorlds/Textures/Misc/PolygonScifiWorlds_A_01_Normals_8k.png" id="4_3uwg5"]
 
 [resource]
 resource_name = "PolygonScifiWorlds_01_A_mat"

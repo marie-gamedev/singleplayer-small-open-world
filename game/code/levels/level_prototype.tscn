@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://wxw3v1fy8mr5"]
 
 [ext_resource type="Script" uid="uid://digh88dpkin77" path="res://code/levels/level.gd" id="1_u8eri"]
+[ext_resource type="Material" uid="uid://b3kykv1yn765r" path="res://assets/materials/painterlylookobject.material" id="2_0x3ks"]
 [ext_resource type="Environment" uid="uid://cc48whmj1yhph" path="res://assets/synty/PolygonSciFiWorlds/Materials/World Environments/WorldEnvironmentLighting_Explorer.tres" id="2_lgtl3"]
 [ext_resource type="PackedScene" uid="uid://canjmfsujlbew" path="res://code/gameplay/interactables/trampoline.tscn" id="2_tv6m2"]
 [ext_resource type="ArrayMesh" uid="uid://ca8j6pkohlq6x" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01.res" id="3_p2fqh"]
@@ -64,6 +65,11 @@
 [ext_resource type="PackedScene" uid="uid://c1em10i75slru" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_01.tscn" id="62_juxfn"]
 [ext_resource type="PackedScene" uid="uid://d1dxclhfstd5g" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_02.tscn" id="63_0x3ks"]
 
+[sub_resource type="QuadMesh" id="QuadMesh_fymwd"]
+material = ExtResource("2_0x3ks")
+flip_faces = true
+size = Vector2(2, 2)
+
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5tdup"]
 points = PackedVector3Array(-5.057419, 5.5114803, -1.4397776, -4.9972653, 4.6090093, -1.5199194, -4.817792, 0.24419941, -0.37850654, -4.817792, 0.50434625, -0.05811298, -4.4193993, 4.84475, -1.2173929, -2.7143984, 4.95014, -1.159455, 2.7132049, 4.95014, -1.159455, 5.01678, 5.488184, -1.4942462, -4.958807, 5.3583875, -1.6897435, 4.996072, 5.069952, -1.640132, 4.97635, 0.7045873, -0.4987191, -4.5022335, -0.15517323, -0.14311182, 4.4103165, -0.0719706, -0.27113044, -2.7143984, 0.1842935, 0.082395315, 2.7132049, 0.1842935, 0.082395315, 4.875765, 0.6446814, -0.09818387)
 
@@ -75,6 +81,11 @@ points = PackedVector3Array(4.8983717, -3.6765156, -4.6998277, -0.5021785, -3.57
 
 [node name="LevelPrototype" type="Node3D" unique_id=379469037]
 script = ExtResource("1_u8eri")
+
+[node name="PainterlyLookPostProcessingTest" type="MeshInstance3D" parent="." unique_id=1411425503]
+visible = false
+extra_cull_margin = 1000.0
+mesh = SubResource("QuadMesh_fymwd")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1419311849]
 environment = ExtResource("2_lgtl3")
@@ -399,3 +410,4 @@ transform = Transform3D(-0.69739383, 0, 0.7166881, 0, 1, 0, -0.7166881, 0, -0.69
 [editable path="Environment/SkyDome/SM_Generic_CloudRing_01"]
 [editable path="Environment/SkyDome/SM_Generic_CloudRing_02"]
 [editable path="Environment/SkyDome/SM_Generic_CloudRing_03"]
+[editable path="Environment/SM_Env_Plant_Flower_Large_03"]

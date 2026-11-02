@@ -12,7 +12,6 @@ config_version=5
 
 config/name="Singleplayer Small Open World"
 config/version="0.1.0"
-config/tags=PackedStringArray()
 run/main_scene="uid://csrfmmqrclbmn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/bg_color=Color(0.575904, 0.3604664, 0.63605297, 1)
