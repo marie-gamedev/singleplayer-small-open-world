@@ -12,6 +12,8 @@ var speed : float
 @export var jump_strength : float = 15.0
 @export var gravity : float = 50.0
 
+var gliding : bool = false
+
 const ANIMATION_BLEND : float = 7.0
 
 @onready var player_mesh : Node3D = $Mesh
@@ -35,7 +37,12 @@ func _physics_process(delta):
 	move_direction.z = Input.get_action_strength("move_backwards") - Input.get_action_strength("move_forwards")
 	move_direction = move_direction.rotated(Vector3.UP, spring_arm_pivot.rotation.y)
 	
-	velocity.y -= gravity * delta
+	if not gliding:
+		velocity.y -= (gravity * delta)
+	else:
+		velocity.y = 0
+		position.y -= gravity * delta * 0.1
+		print("gliding!")
 	
 	if Input.is_action_pressed("run"):
 		speed = run_speed
@@ -52,6 +59,7 @@ func _physics_process(delta):
 		in_air_time += delta
 	
 	var just_landed := is_on_floor() and snap_vector == Vector3.ZERO
+	var toggle_gliding := not is_on_floor() and Input.is_action_just_pressed("jump")
 	var is_jumping := is_on_floor() and Input.is_action_just_pressed("jump")
 	var on_trampoline := true if floor_raycast.is_colliding() and floor_raycast.get_collider() is Trampoline else false
 	
@@ -60,12 +68,15 @@ func _physics_process(delta):
 		snap_vector = Vector3.ZERO
 	elif just_landed:
 		snap_vector = Vector3.DOWN
+		gliding = false
 		if on_trampoline:
 			print("first value= ", jump_strength + jump_strength * in_air_time**2)
 			print("added jump strength = ", clampf(jump_strength + jump_strength * in_air_time, jump_strength, jump_strength*3))
 			velocity.y = clampf(jump_strength + jump_strength * in_air_time**2, jump_strength, jump_strength*3)
 			snap_vector = Vector3.ZERO
 		in_air_time = 0
+	elif toggle_gliding:
+		gliding = !gliding
 	
 	apply_floor_snap()
 	move_and_slide()
