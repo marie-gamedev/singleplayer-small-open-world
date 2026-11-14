@@ -28,14 +28,18 @@ const ANIMATION_BLEND : float = 7.0
 @onready var floor_raycast = $FloorRaycast
 var in_air_time: float = 0
 
+var npc_in_talkable_range : Npc
+var is_dialogue_active : bool
+
+var player_inputs_active : bool = true
+
 func _ready():
-	pass
+	DialogueManager.dialogue_started.connect(_on_dialogue_started)
+	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
 func _physics_process(delta):
-	var move_direction : Vector3 = Vector3.ZERO
-	move_direction.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
-	move_direction.z = Input.get_action_strength("move_backwards") - Input.get_action_strength("move_forwards")
-	move_direction = move_direction.rotated(Vector3.UP, spring_arm_pivot.rotation.y)
+	if player_inputs_active and npc_in_talkable_range and Input.is_action_just_pressed("interact"):
+		npc_in_talkable_range._start_dialogue()
 	
 	if not gliding:
 		velocity.y -= (gravity * delta)
@@ -44,10 +48,13 @@ func _physics_process(delta):
 		position.y -= gravity * delta * 0.1
 		print("gliding!")
 	
-	if Input.is_action_pressed("run"):
-		speed = run_speed
-	else:
-		speed = walk_speed
+	var move_direction : Vector3 = Vector3.ZERO
+	var toggle_gliding
+	var is_jumping
+	if player_inputs_active:
+		move_direction = _get_move_direction() 
+		toggle_gliding = not is_on_floor() and Input.is_action_just_pressed("jump")
+		is_jumping = is_on_floor() and Input.is_action_just_pressed("jump")
 	
 	velocity.x = move_direction.x * speed
 	velocity.z = move_direction.z * speed
@@ -59,8 +66,6 @@ func _physics_process(delta):
 		in_air_time += delta
 	
 	var just_landed := is_on_floor() and snap_vector == Vector3.ZERO
-	var toggle_gliding := not is_on_floor() and Input.is_action_just_pressed("jump")
-	var is_jumping := is_on_floor() and Input.is_action_just_pressed("jump")
 	var on_trampoline := true if floor_raycast.is_colliding() and floor_raycast.get_collider() is Trampoline else false
 	
 	if is_jumping:
@@ -83,6 +88,19 @@ func _physics_process(delta):
 	animate(delta)
 	_apply_animation()
 
+func _get_move_direction() -> Vector3:
+	var move_direction : Vector3 = Vector3.ZERO
+	move_direction.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
+	move_direction.z = Input.get_action_strength("move_backwards") - Input.get_action_strength("move_forwards")
+	move_direction = move_direction.rotated(Vector3.UP, spring_arm_pivot.rotation.y)
+	
+	if Input.is_action_pressed("run"):
+		speed = run_speed
+	else:
+		speed = walk_speed
+	
+	return move_direction
+
 func animate(delta):
 	if is_on_floor():
 		animation_state = "grounded"
@@ -100,3 +118,20 @@ func animate(delta):
 func _apply_animation() -> void:
 	animator.set("parameters/ground_air_transition/transition_request",animation_state)
 	animator.set("parameters/iwr_blend/blend_amount", movement_blend)
+
+func _npc_entered_player_vicinity(npc):
+	if npc is not Npc:
+		push_error("Not an Npc!")
+	
+	npc_in_talkable_range = npc as Npc
+
+func _on_dialogue_started(resource: DialogueResource):
+	is_dialogue_active = true
+	_toggle_player_inputs()
+
+func _on_dialogue_ended(resource: DialogueResource):
+	is_dialogue_active = false
+	_toggle_player_inputs()
+
+func _toggle_player_inputs():
+	player_inputs_active = not player_inputs_active

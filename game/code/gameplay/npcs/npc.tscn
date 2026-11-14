@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cmc8tb6gwesjs"]
+
+[ext_resource type="Script" uid="uid://cd50gpqrt8o8e" path="res://code/gameplay/npcs/npc.gd" id="1_imwm0"]
+[ext_resource type="Resource" uid="uid://dwlerqgigsqca" path="res://code/gameplay/npcs/dialogue/test.dialogue" id="2_e4l2g"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4plt3"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4plt3"]
+radius = 1.4111651
+
+[node name="Npc" type="Node3D" unique_id=958776592]
+script = ExtResource("1_imwm0")
+resource = ExtResource("2_e4l2g")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=532771814]
+mesh = SubResource("BoxMesh_4plt3")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=302401247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8347752, 0)
+text = "npc name :3"
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1918894127]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2018868902]
+shape = SubResource("SphereShape3D_4plt3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

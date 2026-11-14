@@ -64,6 +64,7 @@
 [ext_resource type="PackedScene" uid="uid://4q3n1r68k8xr" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Plant_Bulb_02.tscn" id="61_0gdse"]
 [ext_resource type="PackedScene" uid="uid://c1em10i75slru" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_01.tscn" id="62_juxfn"]
 [ext_resource type="PackedScene" uid="uid://d1dxclhfstd5g" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_02.tscn" id="63_0x3ks"]
+[ext_resource type="PackedScene" uid="uid://cmc8tb6gwesjs" path="res://code/gameplay/npcs/npc.tscn" id="65_mfuwk"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_fymwd"]
 material = ExtResource("2_0x3ks")
@@ -97,6 +98,9 @@ mesh = SubResource("QuadMesh_fymwd")
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=751483994]
 
 [node name="Interactable" type="Node3D" parent="." unique_id=844206784]
+
+[node name="Npc" parent="Interactable" unique_id=958776592 instance=ExtResource("65_mfuwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.111432, 1.8675473, 26.024324)
 
 [node name="Trampoline4" parent="Interactable" unique_id=1428804331 instance=ExtResource("2_tv6m2")]
 transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -16.559807, -2.2286448, 9.917873)
