@@ -21,6 +21,7 @@ config/icon="res://assets/astronaut-girl.png"
 
 DialogueManager="*uid://c3rodes2l3gxb"
 PlayerInventory="*uid://hlgnl0f53473"
+QuestStates="*uid://b8ipbq4dlohfb"
 
 [display]
 

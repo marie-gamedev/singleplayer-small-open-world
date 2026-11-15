@@ -1,7 +1,16 @@
 ~ start
+if QuestStates.has_flag("gave_battery_to_nathan"):
+	=> gotBattery
+
 Nathan: [[Hi|Hello|Howdy]] Do you have a battery?
 if PlayerInventory.has_item("battery")
 	Nathan: niiceee you do!
+	$> PlayerInventory.remove_item("battery")
+	$> QuestStates.set_flag("gave_battery_to_nathan", true)
 else:
 	Nathan: come back when you have a battery!
 => END
+
+
+~ gotBattery
+Nathan: Thanks for the Battery again!
