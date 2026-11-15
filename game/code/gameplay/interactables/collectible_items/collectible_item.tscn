@@ -5,7 +5,7 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_4plt3"]
 radius = 0.81111515
 
-[node name="CollectibleItem" type="RigidBody3D" unique_id=409151724 groups=["collectible-item"]]
+[node name="CollectibleItem" type="StaticBody3D" unique_id=544909464 groups=["collectible-item"]]
 script = ExtResource("1_e6aaw")
 
 [node name="Hitbox" type="Area3D" parent="." unique_id=442305695]

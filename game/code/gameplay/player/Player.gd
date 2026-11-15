@@ -49,7 +49,6 @@ func _physics_process(delta):
 			PlayerInventory.add_item(interactable_object_in_range.item.item_id, 1)
 			interactable_object_in_range.pickup()
 			interactable_object_in_range = null
-			PlayerInventory.print_items()
 	
 	if not gliding:
 		velocity.y -= (gravity * delta)

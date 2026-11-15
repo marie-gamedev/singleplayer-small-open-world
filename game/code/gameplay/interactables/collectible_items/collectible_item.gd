@@ -1,4 +1,4 @@
-class_name CollectibleItem extends RigidBody3D
+class_name CollectibleItem extends StaticBody3D
 
 @export var item : ItemData
 

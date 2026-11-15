@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ekax3e30bqym"]
+
+[ext_resource type="Script" uid="uid://c1f3fas2mynt0" path="res://code/ui/debug_hud.gd" id="1_u477o"]
+[ext_resource type="Theme" uid="uid://cb8a4y5si5mil" path="res://code/ui/themes/debug.tres" id="2_mobmu"]
+
+[node name="DebugHud" type="Control" unique_id=1249197591]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u477o")
+
+[node name="PlayerInventory" type="Label" parent="." unique_id=2033651146]
+layout_mode = 0
+offset_right = 329.0
+offset_bottom = 237.0
+theme = ExtResource("2_mobmu")
+theme_override_font_sizes/font_size = 48
+text = "Player Inventory:"
+
+[node name="InventoryContentsLbl" type="Label" parent="PlayerInventory" unique_id=1636447026]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 77.0
+offset_right = 343.0
+offset_bottom = 266.0
+theme = ExtResource("2_mobmu")
+text = "item1, amount
+item2, amount
+..."

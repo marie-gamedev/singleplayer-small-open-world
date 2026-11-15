@@ -1,7 +1,5 @@
 extends Node
 
-signal inventory_changed(item_id: String, amount: int)
-
 # Item ID -> quantity
 var items: Dictionary[String, int] = {}
 
@@ -10,7 +8,7 @@ func add_item(item_id: String, amount: int = 1):
 		return
 	
 	items[item_id] = items.get(item_id, 0) + amount
-	inventory_changed.emit(item_id, items[item_id])
+	Events.player_inventory_changed.emit(item_id, items[item_id])
 
 func has_item(item_id: String, amount: int = 1) -> bool:
 	return items.get(item_id, 0) >= amount
@@ -24,12 +22,5 @@ func remove_item(item_id: String, amount: int = 1):
 	if items[item_id] == 0:
 		items.erase(item_id)
 	
-	inventory_changed.emit(item_id, items.get(item_id, 0))
+	Events.player_inventory_changed.emit(item_id, items.get(item_id, 0))
 	return true
-
-func print_items():
-	var text = "Player Inventory: "
-	for item in items:
-		text += item + ", "
-	
-	print(text)

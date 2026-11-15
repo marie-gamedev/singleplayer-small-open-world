@@ -14,6 +14,10 @@ points = PackedVector3Array(-0.8792647, -0.6684823, -0.16473304, 0.87836105, 0.6
 [node name="Ship Part" unique_id=409151724 instance=ExtResource("1_0wpfh")]
 item = ExtResource("2_0wpfh")
 
+[node name="Label" parent="." index="1" unique_id=1785354280]
+visible = true
+text = "Ship part"
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2" unique_id=409640442]
 mesh = SubResource("CylinderMesh_rtbau")
 

@@ -13,6 +13,10 @@ points = PackedVector3Array(0.14843403, 0.3170144, 0.055905968, -0.15645938, -0.
 [node name="Battery" unique_id=409151724 instance=ExtResource("1_2x7qi")]
 item = ExtResource("2_arcnr")
 
+[node name="Label" parent="." index="1" unique_id=1785354280]
+visible = true
+text = "Battery"
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2" unique_id=409640442]
 mesh = SubResource("CapsuleMesh_oakik")
 
