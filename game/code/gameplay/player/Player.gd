@@ -33,20 +33,29 @@ var is_dialogue_active : bool
 
 var player_inputs_active : bool = true
 
+@onready var env_interaction_scan = $EnvInteractionScan
+var interactable_object_in_range : CollectibleItem = null
+
+
 func _ready():
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
 func _physics_process(delta):
-	if player_inputs_active and npc_in_talkable_range and Input.is_action_just_pressed("interact"):
-		npc_in_talkable_range._start_dialogue()
+	if player_inputs_active:
+		if npc_in_talkable_range and Input.is_action_just_pressed("interact"):
+			npc_in_talkable_range._start_dialogue()
+		elif interactable_object_in_range and Input.is_action_just_pressed("interact"):
+			PlayerInventory.add_item(interactable_object_in_range.item.item_id, 1)
+			interactable_object_in_range.pickup()
+			interactable_object_in_range = null
+			PlayerInventory.print_items()
 	
 	if not gliding:
 		velocity.y -= (gravity * delta)
 	else:
 		velocity.y = 0
 		position.y -= gravity * delta * 0.1
-		print("gliding!")
 	
 	var move_direction : Vector3 = Vector3.ZERO
 	var toggle_gliding
@@ -75,8 +84,6 @@ func _physics_process(delta):
 		snap_vector = Vector3.DOWN
 		gliding = false
 		if on_trampoline:
-			print("first value= ", jump_strength + jump_strength * in_air_time**2)
-			print("added jump strength = ", clampf(jump_strength + jump_strength * in_air_time, jump_strength, jump_strength*3))
 			velocity.y = clampf(jump_strength + jump_strength * in_air_time**2, jump_strength, jump_strength*3)
 			snap_vector = Vector3.ZERO
 		in_air_time = 0
@@ -125,6 +132,9 @@ func _npc_entered_player_vicinity(npc):
 	
 	npc_in_talkable_range = npc as Npc
 
+func _npc_left_player_vicinity():
+	npc_in_talkable_range = null
+
 func _on_dialogue_started(resource: DialogueResource):
 	is_dialogue_active = true
 	_toggle_player_inputs()
@@ -135,3 +145,19 @@ func _on_dialogue_ended(resource: DialogueResource):
 
 func _toggle_player_inputs():
 	player_inputs_active = not player_inputs_active
+
+
+func _on_env_interaction_scan_body_entered(body):
+	if body is not CollectibleItem:
+		return
+	
+	print("interactable object detected!")
+	interactable_object_in_range = body as CollectibleItem
+
+
+func _on_env_interaction_scan_body_exited(body):
+	if body is not CollectibleItem:
+		return
+		
+	print("interactable object ouf of interaction area!")
+	interactable_object_in_range = null

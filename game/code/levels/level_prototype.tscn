@@ -9,7 +9,9 @@
 [ext_resource type="Material" uid="uid://bb0jivr4lvtmf" path="res://assets/synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_C_mat.tres" id="4_mqff5"]
 [ext_resource type="Material" uid="uid://dkdp38e88tdq" path="res://assets/synty/PolygonSciFiWorlds/Materials/Alts/PolygonScifiWorlds_01_C_Destroyed_mat.tres" id="4_tuij6"]
 [ext_resource type="Shape3D" uid="uid://cer7td8oqb4o2" path="res://assets/synty/PolygonSciFiWorlds/Models/Collision/extracted/SM_Veh_DropShip_01_Collision.res" id="5_mqff5"]
+[ext_resource type="PackedScene" uid="uid://c3ylb18hspq03" path="res://code/gameplay/interactables/collectible_items/battery.tscn" id="6_fymwd"]
 [ext_resource type="ArrayMesh" uid="uid://ch18cncyxr5vl" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_CargoDoor_01.res" id="6_tuij6"]
+[ext_resource type="PackedScene" uid="uid://cy5uwljqvqi2w" path="res://code/gameplay/interactables/collectible_items/ship-part.tscn" id="7_2oj87"]
 [ext_resource type="ArrayMesh" uid="uid://byst2y8eie4dp" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Cockpit_01.res" id="7_n15je"]
 [ext_resource type="ArrayMesh" uid="uid://6sgjmdkq0ocw" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_01.res" id="8_sml6l"]
 [ext_resource type="ArrayMesh" uid="uid://dtdb8wn6mwod7" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_02.res" id="9_i6vsf"]
@@ -116,6 +118,12 @@ transform = Transform3D(2.5407164, 0, 1.5952306, 0, 2, 0, -1.5952306, 0, 2.54071
 
 [node name="Trampoline3" parent="Interactable" unique_id=1793045224 instance=ExtResource("2_tv6m2")]
 transform = Transform3D(2.7842426, 0, -1.1171355, 0, 2, 0, 1.1171355, 0, 2.7842426, 10.977908, 19.262676, 11.65483)
+
+[node name="Battery" parent="Interactable" unique_id=409151724 instance=ExtResource("6_fymwd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, 9)
+
+[node name="Ship Part" parent="Interactable" unique_id=1557248575 instance=ExtResource("7_2oj87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.177429, 2.108821, 7.467029)
 
 [node name="SM_Veh_DropShip_01" type="MeshInstance3D" parent="." unique_id=1303975371]
 transform = Transform3D(0.9715004, -0.23332764, 0.04177649, 0.23703815, 0.95629305, -0.17122088, -3.963407e-09, 0.17624377, 0.98434657, 12.390131, 4.9049854, -10.54896)

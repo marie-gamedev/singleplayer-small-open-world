@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cy5uwljqvqi2w"]
+
+[ext_resource type="PackedScene" uid="uid://bqfd0gg1dlc6i" path="res://code/gameplay/interactables/collectible_items/collectible_item.tscn" id="1_0wpfh"]
+[ext_resource type="Resource" uid="uid://d0r0qw6ev5ny7" path="res://code/gameplay/interactables/item_resources/ship-part.res" id="2_0wpfh"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rtbau"]
+top_radius = 0.89501953
+bottom_radius = 0.89501953
+height = 1.3544922
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0wpfh"]
+points = PackedVector3Array(-0.8792647, -0.6684823, -0.16473304, 0.87836105, 0.67719996, 0.16456373, 0.8508477, 0.67719996, 0.2742729, 0.8792647, -0.6684823, 0.16473304, 0.1647357, 0.67719996, -0.8783611, -0.464018, 0.67334425, 0.7640739, 0.16490051, -0.66846323, 0.87923986, 0.41089973, -0.66653657, -0.7945092, -0.6849715, 0.676082, -0.57544476, -0.35565755, -0.6656134, -0.82066923, -0.6849715, -0.66667247, 0.57544476, -0.87836105, 0.67719996, 0.16456373, 0.41089973, 0.6759461, 0.7945092, 0.764149, 0.67340994, -0.46389264, 0.6849715, -0.66667247, 0.57544476, 0.851271, -0.668125, -0.27440932, -0.16473298, -0.66848224, 0.8792647, -0.16456369, 0.67719996, 0.8783611, -0.2744448, 0.67719996, -0.8508478, -0.6849715, -0.66667247, -0.57544476, -0.8508477, 0.67719996, -0.27444485, -0.16473298, -0.66848224, -0.8792647, -0.8512158, -0.66808134, 0.27456355, -0.76414895, 0.67341, 0.4638927, 0.5451087, 0.6725675, -0.70870954, 0.6849715, -0.66667247, -0.57544476, 0.87836105, 0.67719996, -0.16456373, 0.6849715, 0.676082, 0.57544476, 0.46389264, -0.6640004, 0.764149, -0.4108997, -0.6665366, 0.7945092, 0.16490051, -0.66846323, -0.87923986, 0.1647357, 0.67719996, 0.8783611)
+
+[node name="Ship Part" unique_id=409151724 instance=ExtResource("1_0wpfh")]
+item = ExtResource("2_0wpfh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2" unique_id=409640442]
+mesh = SubResource("CylinderMesh_rtbau")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="3" unique_id=1189053624]
+shape = SubResource("ConvexPolygonShape3D_0wpfh")

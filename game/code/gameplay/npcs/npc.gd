@@ -23,3 +23,4 @@ func _on_area_3d_body_exited(body):
 	if body is Player:
 		print("player exited npc area yey!")
 		player_in_area = false
+		body._npc_left_player_vicinity()

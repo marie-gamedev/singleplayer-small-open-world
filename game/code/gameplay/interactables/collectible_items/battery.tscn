@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c3ylb18hspq03"]
+
+[ext_resource type="PackedScene" uid="uid://bqfd0gg1dlc6i" path="res://code/gameplay/interactables/collectible_items/collectible_item.tscn" id="1_2x7qi"]
+[ext_resource type="Resource" uid="uid://8g86wr8i4e52" path="res://code/gameplay/interactables/item_resources/battery.res" id="2_arcnr"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_oakik"]
+radius = 0.16113281
+height = 0.90234375
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2x7qi"]
+points = PackedVector3Array(0.14843403, 0.3170144, 0.055905968, -0.15645938, -0.31899428, -0.023446606, -0.14280978, -0.34490997, -0.049961995, -0.10293875, 0.35773236, -0.10293875, 0.09451314, -0.31364936, -0.12772849, -0.03687872, -0.33341926, 0.14988881, -0.10227179, 0.31583235, 0.12151666, 0.13702978, -0.36145768, 0.04331786, 0.12151732, 0.31583405, -0.10227231, 0.055904843, 0.31700838, 0.14843115, -0.02344662, -0.31899452, -0.15645948, 0.030960387, 0.44166717, 0.044759784, 0.02955831, 0.31770486, -0.15584125, -0.02415381, -0.44054943, -0.051713757, 0.092922784, -0.28286198, 0.1314666, -0.15584184, 0.3177061, 0.029558443, -0.12772407, -0.31363815, 0.09450965, 0.14733809, -0.30166247, -0.062553495, -0.09995469, 0.29561648, -0.12565805, -0.037490588, -0.4210614, 0.08476895, 0.044198498, 0.42286068, -0.07855276, -0.1533739, 0.28652507, -0.049122445, -0.12565805, -0.29561648, -0.09995469, -0.07855194, 0.42285606, 0.04419798, -0.036881488, 0.33344695, 0.14990155, 0.14988881, 0.33341926, -0.03687872, 0.08476433, -0.4210394, -0.03748881, 0.14843115, -0.31700838, 0.055904843, 0.042860914, -0.33143455, 0.14897552, 0.119609915, 0.2981051, 0.10662085, 0.057683613, -0.42180026, 0.07128844, -0.023446606, 0.31899428, -0.15645938)
+
+[node name="Battery" unique_id=409151724 instance=ExtResource("1_2x7qi")]
+item = ExtResource("2_arcnr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2" unique_id=409640442]
+mesh = SubResource("CapsuleMesh_oakik")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="3" unique_id=1450775464]
+shape = SubResource("ConvexPolygonShape3D_2x7qi")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemResourcesDatabse" format=3 uid="uid://3fvu36r10pky"]
+
+[ext_resource type="Script" uid="uid://cxil0kf462qma" path="res://code/gameplay/interactables/item_data.gd" id="1_8ela8"]
+[ext_resource type="Resource" uid="uid://8g86wr8i4e52" path="res://code/gameplay/interactables/item_resources/battery.res" id="2_1vq68"]
+[ext_resource type="Script" uid="uid://cq5f5jfjxgndd" path="res://code/gameplay/interactables/item_resources/item_resources_database.gd" id="2_txumt"]
+[ext_resource type="Resource" uid="uid://d0r0qw6ev5ny7" path="res://code/gameplay/interactables/item_resources/ship-part.res" id="3_1vq68"]
+
+[resource]
+script = ExtResource("2_txumt")
+entries = Array[ExtResource("1_8ela8")]([ExtResource("2_1vq68"), ExtResource("3_1vq68")])
+metadata/_custom_type_script = "uid://cq5f5jfjxgndd"

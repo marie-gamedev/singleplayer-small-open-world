@@ -20,6 +20,7 @@ config/icon="res://assets/astronaut-girl.png"
 [autoload]
 
 DialogueManager="*uid://c3rodes2l3gxb"
+PlayerInventory="*uid://hlgnl0f53473"
 
 [display]
 

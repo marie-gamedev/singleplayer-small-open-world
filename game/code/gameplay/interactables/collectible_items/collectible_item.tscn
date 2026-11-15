@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bqfd0gg1dlc6i"]
+
+[ext_resource type="Script" uid="uid://cn6h0ww3fxqyg" path="res://code/gameplay/interactables/collectible_items/collectible_item.gd" id="1_e6aaw"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4plt3"]
+radius = 0.81111515
+
+[node name="CollectibleItem" type="RigidBody3D" unique_id=409151724 groups=["collectible-item"]]
+script = ExtResource("1_e6aaw")
+
+[node name="Hitbox" type="Area3D" parent="." unique_id=442305695]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollissionShape3D" type="CollisionShape3D" parent="Hitbox" unique_id=12296824]
+shape = SubResource("SphereShape3D_4plt3")
+
+[node name="Label" type="Label3D" parent="." unique_id=1785354280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.74069524, 0)
+visible = false
+billboard = 1
+text = "[E] Pick up"
