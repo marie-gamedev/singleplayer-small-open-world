@@ -1,0 +1,18 @@
+~ start
+if QuestStates.is_flag("watched_clouds"):
+	=> watchedclouds
+Cloudboy: Hey, stanger.
+Cloudboy: What am I doing? Oh I'm just watching the clouds.
+Cloudboy: You'd be surprised how entertaining that can be.
+Cloudboy: Wanna try?
+- sure, sounds fun!
+	$> QuestStates.set_flag("watched_clouds", false)
+- uhmm.. I'll pass..
+=> END
+
+~ watchedclouds
+Cloudboy: Ouh nice, you watched the clouds.. How was it?
+- I saw a cat
+- it was fun!
+- idkk boring..
+Cloudboy: see ya around

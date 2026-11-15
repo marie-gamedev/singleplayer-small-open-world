@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ck4n76icw2bl3"
+path="res://.godot/imported/cloud_watcher.dialogue-519b810acba4852592caf4a3fdcdff6d.tres"
+
+[deps]
+
+source_file="res://code/gameplay/npcs/dialogue/cloud_watcher.dialogue"
+dest_files=["res://.godot/imported/cloud_watcher.dialogue-519b810acba4852592caf4a3fdcdff6d.tres"]
+
+[params]
+
+defaults=true

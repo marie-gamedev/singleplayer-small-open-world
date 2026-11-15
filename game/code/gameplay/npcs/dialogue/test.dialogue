@@ -1,5 +1,5 @@
 ~ start
-if QuestStates.has_flag("gave_battery_to_nathan"):
+if QuestStates.is_flag("gave_battery_to_nathan"):
 	=> gotBattery
 
 Nathan: [[Hi|Hello|Howdy]] Do you have a battery?

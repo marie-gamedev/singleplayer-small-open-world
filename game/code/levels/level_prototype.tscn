@@ -67,6 +67,7 @@
 [ext_resource type="PackedScene" uid="uid://c1em10i75slru" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_01.tscn" id="62_juxfn"]
 [ext_resource type="PackedScene" uid="uid://d1dxclhfstd5g" path="res://assets/synty/PolygonSciFiWorlds/Prefabs/Environments/SM_Env_Floating_Rocks_Spiral_02.tscn" id="63_0x3ks"]
 [ext_resource type="PackedScene" uid="uid://cmc8tb6gwesjs" path="res://code/gameplay/npcs/npc.tscn" id="65_mfuwk"]
+[ext_resource type="PackedScene" uid="uid://1p7l7abr6n8r" path="res://code/gameplay/npcs/cloud_watcher.tscn" id="68_gdxeu"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_fymwd"]
 material = ExtResource("2_0x3ks")
@@ -422,6 +423,9 @@ transform = Transform3D(0.72010434, 0, 0.6938658, 0, 1, 0, -0.6938658, 0, 0.7201
 
 [node name="SM_Env_Floating_Rocks_Spiral_02" parent="Environment" unique_id=187704637 instance=ExtResource("63_0x3ks")]
 transform = Transform3D(-0.69739383, 0, 0.7166881, 0, 1, 0, -0.7166881, 0, -0.69739383, -20.028076, 6.615858, 43.54636)
+
+[node name="CloudWatcher" parent="." unique_id=1990864920 instance=ExtResource("68_gdxeu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.299591, 2.0626423, -0.08755922)
 
 [editable path="Environment/SkyDome/GameObject_Sun_Pivot/SM_FX_Skydone_Sun_01"]
 [editable path="Environment/SkyDome/SM_Generic_CloudRing_01"]

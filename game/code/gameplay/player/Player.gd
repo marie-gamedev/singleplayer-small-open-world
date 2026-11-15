@@ -19,6 +19,7 @@ const ANIMATION_BLEND : float = 7.0
 @onready var player_mesh : Node3D = $Mesh
 @onready var spring_arm_pivot : Node3D = $SpringArmPivot
 @onready var animator : AnimationTree = $AnimationTree
+@onready var animation_player = $AnimationPlayer
 
 @export var animation_state: String = "grounded"
 @export var movement_blend: float = -1.0
@@ -36,10 +37,18 @@ var player_inputs_active : bool = true
 @onready var env_interaction_scan = $EnvInteractionScan
 var interactable_object_in_range : CollectibleItem = null
 
+var emote_active : bool = false
 
 func _ready():
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
+
+func is_any_action_pressed() -> bool:
+	for action in InputMap.get_actions():
+		if Input.is_action_just_pressed(action):
+			return true
+	
+	return false
 
 func _physics_process(delta):
 	if player_inputs_active:
@@ -49,6 +58,20 @@ func _physics_process(delta):
 			PlayerInventory.add_item(interactable_object_in_range.item.item_id, 1)
 			interactable_object_in_range.pickup()
 			interactable_object_in_range = null
+		
+		# "Emotes" :
+		if Input.is_action_just_pressed("watch_clouds"):
+			animation_player.play("Lay-Down")
+			emote_active = true
+			if QuestStates.has_flag("watched_clouds"):
+				QuestStates.set_flag("watched_clouds", true)
+				print("watched clouds flag set to true!")
+			#player_inputs_active = false
+		
+		elif emote_active and is_any_action_pressed():
+			# TODO need ref to specific emote here to play specific ending thingy
+			emote_active = false
+			animation_player.play("Get-Up")
 	
 	if not gliding:
 		velocity.y -= (gravity * delta)

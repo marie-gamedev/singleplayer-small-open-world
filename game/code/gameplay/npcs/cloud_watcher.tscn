@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://1p7l7abr6n8r"]
+
+[ext_resource type="PackedScene" uid="uid://cmc8tb6gwesjs" path="res://code/gameplay/npcs/npc.tscn" id="1_xltnd"]
+[ext_resource type="Resource" uid="uid://ck4n76icw2bl3" path="res://code/gameplay/npcs/dialogue/cloud_watcher.dialogue" id="2_28upp"]
+
+[node name="CloudWatcher" unique_id=958776592 instance=ExtResource("1_xltnd")]
+resource = ExtResource("2_28upp")
+
+[node name="Label3D" parent="." index="1" unique_id=302401247]
+text = "Cloud Watcher"
