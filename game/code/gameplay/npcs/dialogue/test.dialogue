@@ -4,9 +4,11 @@ if QuestStates.has_flag("gave_battery_to_nathan"):
 
 Nathan: [[Hi|Hello|Howdy]] Do you have a battery?
 if PlayerInventory.has_item("battery")
-	Nathan: niiceee you do!
+	Nathan: niiceee you do! Thank you!
 	$> PlayerInventory.remove_item("battery")
 	$> QuestStates.set_flag("gave_battery_to_nathan", true)
+	Nathan: Here, I have this spare ship part you can have! I found it in the woods.
+	$> PlayerInventory.add_item("ship-part")
 else:
 	Nathan: come back when you have a battery!
 => END
