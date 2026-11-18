@@ -1,9 +1,10 @@
 [gd_resource type="Environment" format=3 uid="uid://cc48whmj1yhph"]
 
 [ext_resource type="Shader" uid="uid://dam0ci0fjnh60" path="res://code/shaders/clouds-sky.gdshader" id="1_x3m28"]
+[ext_resource type="Texture2D" uid="uid://jeij2pcjkj0w" path="res://assets/textures/shooting_star_sampler.png" id="2_kut5l"]
 
 [sub_resource type="Curve" id="Curve_1ctad"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.11194031, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.76767683), 0.0, 0.0, 0, 0]
+_data = [Vector2(0, 0.53333336), 0.0, 0.0, 0, 0, Vector2(0.072874494, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.76666677), 0.0, 0.0, 0, 0]
 point_count = 3
 
 [sub_resource type="CurveTexture" id="CurveTexture_58sut"]
@@ -31,22 +32,23 @@ shader_parameter/cloud_noise_sampler = SubResource("NoiseTexture2D_x3m28")
 shader_parameter/cloud_curves = SubResource("CurveTexture_58sut")
 shader_parameter/clouds_samples = 32
 shader_parameter/shadow_sample = 4
-shader_parameter/clouds_density = 0.5000000074506
+shader_parameter/clouds_density = 0.40000000596048
 shader_parameter/clouds_scale = 1.5
 shader_parameter/clouds_smoothness = 0.0999999977648
-shader_parameter/clouds_light_color = Color(1, 1, 1, 1)
-shader_parameter/clouds_shadow_intensity = 1.0000000149012
+shader_parameter/clouds_light_color = Color(0.21128687, 0.25175276, 0.51272684, 1)
+shader_parameter/clouds_shadow_intensity = 0.40000000596048
 shader_parameter/high_clouds_sampler = SubResource("NoiseTexture2D_kut5l")
-shader_parameter/high_clouds_density = 0.30000000447036
-shader_parameter/top_color = Color(0.43561333, 0.3771795, 0.5757536, 1)
-shader_parameter/bottom_color = Color(0.3496759, 0.2937654, 0.5332165, 1)
-shader_parameter/sun_scatter = Color(0.7009871, 0.4859951, 0.513337, 1)
-shader_parameter/astro_tint = Color(0.96960706, 0.9442804, 0.952547, 1)
-shader_parameter/astro_scale = 9.000000134110799
-shader_parameter/astro_intensity = 3.0
-shader_parameter/stars_intensity = 0.0
-shader_parameter/shooting_stars_intensity = 0.0
-shader_parameter/shooting_star_tint = Color(0, 0, 0, 1)
+shader_parameter/high_clouds_density = 0.0
+shader_parameter/top_color = Color(0.10317432, 0.08189667, 0.15357953, 1)
+shader_parameter/bottom_color = Color(0.026412083, 0.018687844, 0.06413165, 1)
+shader_parameter/sun_scatter = Color(0.10289837, 0.0853743, 0.24743387, 1)
+shader_parameter/astro_tint = Color(0.10215386, 0.08837441, 0.25859392, 1)
+shader_parameter/astro_scale = 10.0
+shader_parameter/astro_intensity = 1.0
+shader_parameter/stars_intensity = 5.0
+shader_parameter/shooting_stars_intensity = 4.90000007301588
+shader_parameter/shooting_star_sampler = ExtResource("2_kut5l")
+shader_parameter/shooting_star_tint = Color(0.33888125, 0.13349767, 0.14408445, 1)
 
 [sub_resource type="Sky" id="Sky_pf7b3"]
 sky_material = SubResource("ShaderMaterial_s73fs")
