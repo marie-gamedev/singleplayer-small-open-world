@@ -27,4 +27,3 @@ mono_crash.*.json
 
 # Ignore builds and docs files
 builds/*
-docs/*

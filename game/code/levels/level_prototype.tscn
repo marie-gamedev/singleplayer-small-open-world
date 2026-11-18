@@ -86,17 +86,17 @@ points = PackedVector3Array(4.8983717, -3.6765156, -4.6998277, -0.5021785, -3.57
 [node name="LevelPrototype" type="Node3D" unique_id=379469037]
 script = ExtResource("1_u8eri")
 
+[node name="PainterlyLookPostProcessingTest" type="MeshInstance3D" parent="." unique_id=1411425503]
+visible = false
+extra_cull_margin = 1000.0
+mesh = SubResource("QuadMesh_fymwd")
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1419311849]
 environment = ExtResource("2_lgtl3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1822631552]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
-
-[node name="PainterlyLookPostProcessingTest" type="MeshInstance3D" parent="." unique_id=1411425503]
-visible = false
-extra_cull_margin = 1000.0
-mesh = SubResource("QuadMesh_fymwd")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=751483994]
 
@@ -293,6 +293,10 @@ transform = Transform3D(0.18851402, 0, -0.9820705, 0, 1, 0, 0.9820705, 0, 0.1885
 
 [node name="SM_Env_Ground_07" parent="Environment/Ground" unique_id=1291997864 instance=ExtResource("15_5n7ov")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.284603, -1.0349021, 10.645643)
+surface_material_override/0 = ExtResource("14_sml6l")
+
+[node name="SM_Env_Ground_09" parent="Environment/Ground" unique_id=1307684433 instance=ExtResource("15_5n7ov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.101969, -2.2590117, 24.037703)
 surface_material_override/0 = ExtResource("14_sml6l")
 
 [node name="SM_Env_Ground_08" parent="Environment/Ground" unique_id=2007333283 instance=ExtResource("16_xd42x")]
