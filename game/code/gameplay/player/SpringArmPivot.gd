@@ -13,6 +13,8 @@ const CAMERA_BLEND : float = 0.05
 
 @onready var spring_arm : SpringArm3D = $SpringArm3D
 @onready var camera : Camera3D = $SpringArm3D/Camera3D
+@onready var first_person_static_camera_3d = $"../FirstPersonStaticCamera3D"
+@onready var mesh = $"../Mesh"
 
 var is_first_person: bool = false
 var camera_tween: Tween
@@ -37,7 +39,14 @@ func set_first_person(enabled: bool):
 	
 	is_first_person = enabled
 	
-	spring_arm.spring_length = 0 if enabled else third_person_distance
+	#spring_arm.spring_length = 0 if enabled else third_person_distance
+	if enabled:
+		first_person_static_camera_3d.current = true
+		first_person_static_camera_3d.position = camera.position
+		mesh.hide()
+	else:
+		camera.current = true
+		mesh.show()
 
 func _physics_process(_delta):
 	if change_fov_on_run:
