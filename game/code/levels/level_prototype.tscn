@@ -13,6 +13,7 @@
 [ext_resource type="ArrayMesh" uid="uid://ch18cncyxr5vl" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_CargoDoor_01.res" id="6_tuij6"]
 [ext_resource type="PackedScene" uid="uid://cy5uwljqvqi2w" path="res://code/gameplay/interactables/collectible_items/ship-part.tscn" id="7_2oj87"]
 [ext_resource type="ArrayMesh" uid="uid://byst2y8eie4dp" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Cockpit_01.res" id="7_n15je"]
+[ext_resource type="PackedScene" uid="uid://cf8vlqrsnurvf" path="res://code/gameplay/react-objects/crystal_tunes.tscn" id="8_h77ds"]
 [ext_resource type="ArrayMesh" uid="uid://6sgjmdkq0ocw" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_01.res" id="8_sml6l"]
 [ext_resource type="ArrayMesh" uid="uid://dtdb8wn6mwod7" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Engine_02.res" id="9_i6vsf"]
 [ext_resource type="ArrayMesh" uid="uid://dr8138frs08gn" path="res://assets/synty/PolygonSciFiWorlds/Models/extracted/SM_Veh_DropShip_01_Glass_01.res" id="10_gk7r8"]
@@ -126,6 +127,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, 9)
 
 [node name="Ship Part" parent="Interactable" unique_id=1557248575 instance=ExtResource("7_2oj87")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.177429, 2.108821, 7.467029)
+
+[node name="CrystalTunes" parent="Interactable" unique_id=835959995 instance=ExtResource("8_h77ds")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.618283, 1.5642953, 2.4023187)
 
 [node name="SM_Veh_DropShip_01" type="MeshInstance3D" parent="." unique_id=1303975371]
 transform = Transform3D(0.9715004, -0.23332764, 0.04177649, 0.23703815, 0.95629305, -0.17122088, -3.963407e-09, 0.17624377, 0.98434657, 12.390131, 4.9049854, -10.54896)

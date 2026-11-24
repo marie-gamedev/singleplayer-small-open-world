@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c1g0h78y4jyjx"]
+
+[ext_resource type="Script" uid="uid://4s7lv7kpyghq" path="res://code/gameplay/react-objects/react_object.gd" id="1_vdj20"]
+[ext_resource type="AudioStream" uid="uid://bwc2jvu8bw5u8" path="res://assets/audio/crystal-sound.wav" id="2_ytmle"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4plt3"]
+radius = 1.1387465
+
+[node name="ReactObject" type="AnimatableBody3D" unique_id=835959995]
+script = ExtResource("1_vdj20")
+
+[node name="OutputSound" type="AudioStreamPlayer3D" parent="." unique_id=1335068299]
+stream = ExtResource("2_ytmle")
+
+[node name="TouchArea3D" type="Area3D" parent="." unique_id=1571557298]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TouchArea3D" unique_id=125237967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3361106, 0)
+shape = SubResource("SphereShape3D_4plt3")
+
+[connection signal="perform_output" from="." to="." method="_on_perform_output"]
+[connection signal="body_entered" from="TouchArea3D" to="." method="_on_touch_area_3d_body_entered"]
