@@ -1,4 +1,6 @@
 ## git-lfs ##
+* text=auto eol=lf
+
 # PowerPoint
 *.pptx filter=lfs diff=lfs merge=lfs -text
 # Image
