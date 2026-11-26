@@ -17,7 +17,8 @@ uniform vec4 Emission_Color : source_color = vec4(0.000000, 0.000000, 0.000000, 
 uniform sampler2D Normal_Map : hint_normal;
 uniform float Alpha_Clip_Threshold;
 
-
+// Custom Glow
+uniform float glow_intensity : hint_range(0.0, 10.0, 0.1) = 0.0;
 
 void fragment() {
 	vec4 n_out2p0;
@@ -170,6 +171,7 @@ void fragment() {
 	METALLIC = n_out32p1;
 	ROUGHNESS = n_out32p0;
 	EMISSION = n_out20p0;
+	EMISSION += ALBEDO * glow_intensity;
 	NORMAL_MAP = vec3(n_out21p0.xyz);
 	ALPHA_SCISSOR_THRESHOLD = n_out13p0;
 

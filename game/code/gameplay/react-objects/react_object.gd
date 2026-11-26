@@ -11,6 +11,7 @@ enum OutputType {GLOW, SOUND, COLORCHANGE}
 
 @export var input : InputType = InputType.TOUCH
 @export var output : OutputType = OutputType.GLOW
+@export var objects_to_glow : Array[MeshInstance3D]
 
 var _player : Player
 
@@ -31,6 +32,23 @@ func _on_perform_output():
 
 func _output_glow():
 	print("glow!")
+	for object in objects_to_glow:
+		var amount = object.get_surface_override_material_count()
+		print("meow-1")
+		for i in amount:
+			var mat = object.get_surface_override_material(i)
+			print("meow0")
+			if not mat is ShaderMaterial:
+				continue
+			
+			print("meow")
+			var tween = create_tween()
+			
+			tween.tween_property(mat, "shader_parameter/glow_intensity", 5.0, 0.1)
+			
+			tween.tween_property(mat, "shader_parameter/glow_intensity", 0.0, 5.0)\
+			.set_trans(Tween.TRANS_SINE)\
+			.set_ease(Tween.EASE_IN_OUT)
 
 func _output_sound():
 	print("play sound!")
